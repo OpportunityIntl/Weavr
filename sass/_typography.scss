@@ -25,3 +25,31 @@
    font-family: "Times New Roman", serif !important;
    font-style: italic !important;
 }
+
+/************************/
+/**** Text alignment ****/
+/************************/
+
+.align-center {
+  text-align: center;
+}
+
+.align-right {
+  text-align: right;
+}
+
+.align-left {
+  text-align: left;
+}
+
+/*******************/
+/**** Font size ****/
+/*******************/
+
+p.large {
+  font-size: 16px;
+}
+
+p.small {
+  font-size: 12px;
+}
