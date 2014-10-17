@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+.brand-font-primary {
+  font-famliy: "proxima-nova", Arial, sans-serif;
+}
+
+.brand-font-secondary {
+  font-family: "Times New Roman", serif;
+  font-style: italic;
+}

@@ -1,0 +1,27 @@
+/**************************/
+/**** Placeholder text ****/
+/**************************/
+
+::-webkit-input-placeholder {
+   color: #8f8e8c;
+   font-family: "Times New Roman", serif;
+   font-style: italic;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: #8f8e8c;
+   font-family: "Times New Roman", serif;
+   font-style: italic;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #8f8e8c;
+   font-family: "Times New Roman", serif;
+   font-style: italic;
+}
+
+:-ms-input-placeholder {
+   color: #8f8e8c !important;
+   font-family: "Times New Roman", serif !important;
+   font-style: italic !important;
+}
