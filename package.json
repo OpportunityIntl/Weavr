@@ -1,0 +1,18 @@
+{
+  "name": "OI-Framework",
+  "version": "0.1.0",
+  "author": "Opportunity International",
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "description": "Frontend framework for Opportunity International",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/opportunityintl/framework.git"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-sass": "^0.8.1",
+    "grunt-contrib-watch": "^0.6.1"
+  }
+}
