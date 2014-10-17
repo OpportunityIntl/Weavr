@@ -46,10 +46,25 @@
 /**** Font size ****/
 /*******************/
 
+p {
+  margin: 0 0 1em 0;
+  font-size: 15px;
+}
+
 p.large {
-  font-size: 16px;
+  font-size: 20px;
 }
 
 p.small {
   font-size: 12px;
+}
+
+/******************/
+/**** Headings ****/
+/******************/
+
+h1, h2, h3 {
+  text-transform: uppercase;
+  margin-top: 0;
+  letter-spacing: 1px;
 }
