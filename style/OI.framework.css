@@ -246,29 +246,29 @@ form .col {
   float: left;
   padding-left: 20px;
   padding-right: 20px; }
-  .col .col-12 {
+  .col.col-12 {
     width: 100%; }
-  .col .col-11 {
+  .col.col-11 {
     width: 91.6666%; }
-  .col .col-10 {
+  .col.col-10 {
     width: 83.3333%; }
-  .col .col-9 {
+  .col.col-9 {
     width: 75%; }
-  .col .col-8 {
+  .col.col-8 {
     width: 66.6666%; }
-  .col .col-7 {
+  .col.col-7 {
     width: 58.3333%; }
-  .col .col-6 {
+  .col.col-6 {
     width: 50%; }
-  .col .col-5 {
+  .col.col-5 {
     width: 41.66666%; }
-  .col .col-4 {
+  .col.col-4 {
     width: 33.3333%; }
-  .col .col-3 {
+  .col.col-3 {
     width: 25%; }
-  .col .col-2 {
+  .col.col-2 {
     width: 16.6666%; }
-  .col .col-1 {
+  .col.col-1 {
     width: 8.3333%; }
 
 @media (max-width: 960px) {
