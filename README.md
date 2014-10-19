@@ -44,7 +44,19 @@ You can specify different column widths for tablet and mobile devices, as well:
 
 ##Radio buttons and checkboxes
 
-_Insert documentation for radio buttons and checkboxes here_
+Radio button and checkboxes are styled using the `:checked` and `:before` psuedo-classes. The actual native radio button or checkbox element is hidden (via absolute positioning off the screen, not via the display property) and the element is recreated using the `:before` psuedo-class on the label element. The following classes can be used to change the size and display of radio buttons and checkboxes:
+
+`label.inline`
+Display element using inline-block.
+
+`label.radio`, `label.checkbox`
+Label will be styled for a radio element or checkbox, respectively.
+
+`label.small`
+Label and radio button / checkbox will be small.
+
+`label.v-center`
+Label and radio button / checkbox will be vertically centered in wrapping container.
 
 ##Select boxes
 
