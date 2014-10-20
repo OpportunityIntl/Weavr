@@ -5,7 +5,9 @@ Frontend framework for Opportunity International. Documentation below.
 
 ##General
 
-_Insert documentation on random but useful classes that don't fit easily in other categories_
+Every html element has `box-sizing: border-box`.
+
+`.clearfix` can be applied to divs to clear the floats of their child elements. Some classes, such as `.row` are self-clearing and don't need the `.clearfix` class applied.
 
 ##Typography
 `.brand-font-primary`
@@ -60,11 +62,27 @@ Label and radio button / checkbox will be vertically centered in wrapping contai
 
 ##Select boxes
 
-_Insert documentation for select boxes here_
+Select boxes are styled by wrapping them in a `div` with the class of `.select`. To make the select box text match the placeholder text styling of the rest of the input elements, add the class `.select-placeholder` to the `select` element. The OI Framework javascript will handle adding and removing the placeholder style for you.
 
 ##Colors
 
-_Insert documentation for colors here_
+The OI brand web colors are as follows:
+
+- Pink: `#ed027e;`
+- Purple: `#611171;`
+- Orange: `#f15b22;`
+- Teal: `#00abab;`
+- Green: `#7bc557;`
+- Gray: `#8f8e8c;`
+- Offwhite: `#efeeea`
+
+These colors can be applied to the color or background color of any element with the following classes:
+
+`.brand-pink`, `.brand-purple`, `.brand-orange`, `.brand-teal`, `.brand-green`, `.brand-gray`, `.brand-offwhite`, `.brand-white` set the color.
+
+`.brand-pink-bg`, `.brand-purple-bg`, `.brand-orange-bg`, `.brand-teal-bg`, `.brand-green-bg`, `.brand-gray-bg`, `.brand-offwhite-bg`, `.brand-white-bg` set the background color to the corresponding color. These classes also set the text-color to white (with the exception of `.brand-offwhite-bg` and `.brand-white-bg`).
+
+A lighter teal and lighter purple background are available via `.brand-light-teal-bg` and `.brand-light-purple-bg`, and `.transparent-bg` is also available to set a transparent background on any element.
 
 ##Lists
 
