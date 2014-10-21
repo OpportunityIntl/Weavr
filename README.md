@@ -86,7 +86,11 @@ A lighter teal and lighter purple background are available via `.brand-light-tea
 
 ##Lists
 
-_Insert documentation for lists here_
+`.no-list-style`
+Set list-style property to `none`
+
+`ul.inline`
+Display list items as inline-block, with no list style and 10px padding.
 
 ##Icon fonts
 
