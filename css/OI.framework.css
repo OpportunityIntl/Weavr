@@ -19,20 +19,32 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
-.icon-email:before {
+.icon-down:before {
   content: "\e617"; }
 
-.icon-menu-icon:before {
-  content: "\e616"; }
+.icon-nav-right:before {
+  content: "\e61b"; }
+
+.icon-up:before {
+  content: "\e618"; }
+
+.icon-right:before {
+  content: "\e619"; }
+
+.icon-left:before {
+  content: "\e61a"; }
+
+.icon-nav-up:before {
+  content: "\e61c"; }
 
 .icon-addThis:before {
   content: "\e614"; }
 
+.icon-menu:before {
+  content: "\e616"; }
+
 .icon-user:before {
   content: "\e609"; }
-
-.icon-earth:before {
-  content: "\e615"; }
 
 .icon-checkmark:before {
   content: "\e607"; }
@@ -46,16 +58,16 @@
 .icon-play:before {
   content: "\e60a"; }
 
-.icon-arrow-left2:before {
+.icon-arrow-left-small:before {
   content: "\e60e"; }
 
-.icon-arrow-down2:before {
+.icon-arrow-down-small:before {
   content: "\e610"; }
 
-.icon-arrow-up2:before {
+.icon-arrow-up-small:before {
   content: "\e611"; }
 
-.icon-arrow-right2:before {
+.icon-arrow-right-small:before {
   content: "\e612"; }
 
 .icon-arrow-left:before {
@@ -433,7 +445,7 @@ ul.inline li {
 input[type='text'], input[type='number'], input[type='email'], input[type='password'], textarea {
   display: block;
   width: 100%;
-  height: 40px;
+  height: 46px;
   border: solid 1px #8f8e8c;
   padding: 10px;
   font-size: 14px;
@@ -618,8 +630,8 @@ input[type="checkbox"] {
   display: block;
   border: solid 1px #8f8e8c;
   padding: 10px 10px;
-  line-height: 16px;
-  height: 40px;
+  line-height: 24px;
+  height: 46px;
   float: left;
   background: white url("/images/oi-select-arrow.png") no-repeat 83% center;
   overflow: hidden;

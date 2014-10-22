@@ -4,15 +4,23 @@
 
 [class^="icon-"], [class*=" icon-"] { font-family: 'OI-icons'; speak: none; font-style: normal; font-weight: normal; font-variant: normal; text-transform: none; line-height: 1; /* Better Font Rendering =========== */ -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
 
-.icon-email:before { content: "\e617"; }
+.icon-down:before { content: "\e617"; }
 
-.icon-menu-icon:before { content: "\e616"; }
+.icon-nav-right:before { content: "\e61b"; }
+
+.icon-up:before { content: "\e618"; }
+
+.icon-right:before { content: "\e619"; }
+
+.icon-left:before { content: "\e61a"; }
+
+.icon-nav-up:before { content: "\e61c"; }
 
 .icon-addThis:before { content: "\e614"; }
 
-.icon-user:before { content: "\e609"; }
+.icon-menu:before { content: "\e616"; }
 
-.icon-earth:before { content: "\e615"; }
+.icon-user:before { content: "\e609"; }
 
 .icon-checkmark:before { content: "\e607"; }
 
@@ -22,13 +30,13 @@
 
 .icon-play:before { content: "\e60a"; }
 
-.icon-arrow-left2:before { content: "\e60e"; }
+.icon-arrow-left-small:before { content: "\e60e"; }
 
-.icon-arrow-down2:before { content: "\e610"; }
+.icon-arrow-down-small:before { content: "\e610"; }
 
-.icon-arrow-up2:before { content: "\e611"; }
+.icon-arrow-up-small:before { content: "\e611"; }
 
-.icon-arrow-right2:before { content: "\e612"; }
+.icon-arrow-right-small:before { content: "\e612"; }
 
 .icon-arrow-left:before { content: "\e60d"; }
 
@@ -216,7 +224,7 @@ ul.inline li { display: inline-block; padding-left: 10px; padding-right: 10px; }
 /***************/
 /**** Forms ****/
 /***************/
-input[type='text'], input[type='number'], input[type='email'], input[type='password'], textarea { display: block; width: 100%; height: 40px; border: solid 1px #8f8e8c; padding: 10px; font-size: 14px; color: #333; outline: none; transition: border-color .2s; -webkit-transition: border-color .2s; -moz-transition: border-color .2s; font-family: "proxima-nova", Arial, sans-serif; appearance: none; -webkit-appearance: none; -moz-appearance: none; border-radius: 0; box-shadow: none; }
+input[type='text'], input[type='number'], input[type='email'], input[type='password'], textarea { display: block; width: 100%; height: 46px; border: solid 1px #8f8e8c; padding: 10px; font-size: 14px; color: #333; outline: none; transition: border-color .2s; -webkit-transition: border-color .2s; -moz-transition: border-color .2s; font-family: "proxima-nova", Arial, sans-serif; appearance: none; -webkit-appearance: none; -moz-appearance: none; border-radius: 0; box-shadow: none; }
 input[type='text']:focus, input[type='number']:focus, input[type='email']:focus, input[type='password']:focus, textarea:focus { border-color: #555; }
 
 input.inline { display: inline-block; }
@@ -289,7 +297,7 @@ input[type="checkbox"] { position: absolute; left: -10000px; }
   37.5% { transform: translate(-5px); -webkit-transform: translate(-5px); }
   50% { transform: translate(0px); -webkit-transform: translate(0px); } }
 
-.select { display: block; border: solid 1px #8f8e8c; padding: 10px 10px; line-height: 16px; height: 40px; float: left; background: white url("/images/oi-select-arrow.png") no-repeat 83% center; overflow: hidden; width: 100%; text-align: left; transition: border-color .2s; -webkit-transition: border-color .2s; -moz-transition: border-color .2s; }
+.select { display: block; border: solid 1px #8f8e8c; padding: 10px 10px; line-height: 24px; height: 46px; float: left; background: white url("/images/oi-select-arrow.png") no-repeat 83% center; overflow: hidden; width: 100%; text-align: left; transition: border-color .2s; -webkit-transition: border-color .2s; -moz-transition: border-color .2s; }
 .select select { background: transparent; border: none; border-radius: 0; color: #333; font-size: 14px; -moz-border-radius: 0; -webkit-border-radius: 0; -webkit-appearance: none; -moz-appearance: none; cursor: pointer; width: 150%; outline: none; }
 .select select::-ms-expand { display: none; }
 
