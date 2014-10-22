@@ -8,9 +8,25 @@ module.exports = function(grunt) {
       '* Copyright (c) <%= grunt.template.today("yyyy") %> <%= pkg.author.name %> */\n',
     
     sass: {
-      dist: {
+      dev: {
         files: {
           'style/OI.framework.css' : 'sass/framework.scss'
+        }
+      },
+      production: {
+        options: {
+          style: 'compact'
+        },
+        files: {
+          'style/OI.framework.min.css' : 'sass/framework.scss'
+        }
+      }
+    },
+    
+    uglify: {
+      dist: {
+        files: {
+          'js/OI.framework.min.js': ['js/OI.framework.js']
         }
       }
     }
@@ -20,8 +36,9 @@ module.exports = function(grunt) {
   // Load plugins
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-contrib-uglify');
 
   // Default task(s).
-  grunt.registerTask('default', [ 'sass:dist' ] );
+  grunt.registerTask('default', [ 'sass:dev', 'sass:production' ] );
 
 };
