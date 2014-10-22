@@ -10,7 +10,7 @@ module.exports = function(grunt) {
     sass: {
       dev: {
         files: {
-          'style/OI.framework.css' : 'sass/framework.scss'
+          'css/OI.framework.css' : 'sass/framework.scss'
         }
       },
       production: {
@@ -18,7 +18,7 @@ module.exports = function(grunt) {
           style: 'compact'
         },
         files: {
-          'style/OI.framework.min.css' : 'sass/framework.scss'
+          'css/OI.framework.min.css' : 'sass/framework.scss'
         }
       }
     },
