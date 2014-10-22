@@ -20,16 +20,16 @@ form {
   margin-right: -20px;
   margin-bottom: 40px;
   
-  .no-padding {
+  &.no-padding {
     margin-left: 0;
     margin-right: 0;
   }
   
-  .last-child {
+  &:last-child {
     margin-bottom: 0;
   }
   
-  .no-gutter {
+  &.no-gutter {
     margin: 0;
   }
   
