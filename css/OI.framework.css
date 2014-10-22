@@ -749,3 +749,58 @@ select .select-placeholder {
       .btn .ghost .brand-green:hover {
         color: #fff;
         background-color: #7bc557; }
+
+/************************************/
+/**** Popover and Tooltip styles ****/
+/************************************/
+.popover, .tooltip {
+  position: relative;
+  left: 0;
+  width: 100%; }
+  .popover div, .tooltip div {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    color: #fff;
+    font-size: 12px;
+    padding: 10px;
+    display: none; }
+    .popover div:after, .tooltip div:after {
+      font-family: 'oi-icons';
+      speak: none;
+      font-style: normal;
+      font-weight: normal;
+      font-variant: normal;
+      text-transform: none;
+      line-height: 1;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      display: inline-block;
+      text-align: center;
+      position: absolute;
+      width: 100%;
+      left: 0; }
+  .popover.bottom, .tooltip.bottom {
+    top: 15px; }
+    .popover.bottom div, .tooltip.bottom div {
+      top: 15px; }
+      .popover.bottom div:after, .tooltip.bottom div:after {
+        content: "\e618";
+        top: -10px; }
+  .popover.top, .tooltip.top {
+    bottom: 0; }
+    .popover.top div, .tooltip.top div {
+      bottom: 15px; }
+      .popover.top div:after, .tooltip.top div:after {
+        content: "\e617";
+        bottom: -10px; }
+
+.popover div {
+  background-color: #f15b22; }
+  .popover div:after {
+    color: #f15b22; }
+
+.tooltip div {
+  background-color: #611171; }
+  .tooltip div:after {
+    color: #611171; }
