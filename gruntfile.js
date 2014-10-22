@@ -24,7 +24,7 @@ module.exports = function(grunt) {
     },
     
     uglify: {
-      dist: {
+      production: {
         files: {
           'js/OI.framework.min.js': ['js/OI.framework.js']
         }
@@ -39,6 +39,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-uglify');
 
   // Default task(s).
-  grunt.registerTask('default', [ 'sass:dev', 'sass:production' ] );
+  grunt.registerTask('default', [ 'sass:dev', 'sass:production', 'uglify:production' ] );
 
 };
