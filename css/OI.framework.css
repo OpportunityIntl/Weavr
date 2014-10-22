@@ -262,6 +262,15 @@ h1, h2, h3 {
   font-family: "Times New Roman", serif;
   font-style: italic; }
 
+.italic {
+  font-style: italic; }
+
+.transform-uppercase {
+  text-transform: uppercase; }
+
+.transform-normal {
+  text-transform: none; }
+
 /************************/
 /**** Grid 12 system ****/
 /************************/

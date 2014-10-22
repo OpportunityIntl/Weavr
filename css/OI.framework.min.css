@@ -151,6 +151,12 @@ h1, h2, h3 { text-transform: uppercase; margin-top: 0; letter-spacing: 1px; }
 
 .brand-font-secondary { font-family: "Times New Roman", serif; font-style: italic; }
 
+.italic { font-style: italic; }
+
+.transform-uppercase { text-transform: uppercase; }
+
+.transform-normal { text-transform: none; }
+
 /************************/
 /**** Grid 12 system ****/
 /************************/
