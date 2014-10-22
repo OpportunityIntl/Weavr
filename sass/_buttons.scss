@@ -6,7 +6,7 @@
   font-size: 12px;
   letter-spacing: 1px;
   font-weight: bold;
-  height: 40px;
+  height: 46px;
   box-shadow: none;
   -moz-transition: -moz-box-shadow 0.6s ease-out 0s;
    -webkit-transition: -webkit-box-shadow 0.6s ease-out 0s;
@@ -18,70 +18,68 @@
   border: none;
   outline: none;
   
-  .brand-gray-bg {
+  &.brand-gray-bg {
     box-shadow: inset 0 100px 0 0 $brand-gray;
     &:hover{
       box-shadow: 0 0 0 0 #666 inset;
     }
   }
 
-  .brand-green-bg {
+  &.brand-green-bg {
     box-shadow: inset 0 100px 0 0 $brand-green;
     &:hover{
       box-shadow: 0 0 0 0 #6fbc49 inset;
     }
   }
 
-  .brand-orange-bg {
+  &.brand-orange-bg {
     box-shadow: inset 0 100px 0 0 $brand-orange;
     &:hover{
       box-shadow: 0 0 0 0 #f27444 inset;
     }
   }
 
-  .brand-teal-bg {
+  &.brand-teal-bg {
     box-shadow: inset 0 100px 0 0 $brand-teal;
     &:hover{
       box-shadow: 0 0 0 0 #009090 inset;
     }
   }
 
-  .brand-pink-bg {
+  &.brand-pink-bg {
     box-shadow: inset 0 100px 0 0 $brand-pink;
     &:hover{
       box-shadow: 0 0px 0 0 #ca066d inset;
     }
   }
 
-  .brand-purple-bg {
+  &.brand-purple-bg {
     box-shadow: inset 0 100px 0 0 $brand-purple;
     &:hover{
       box-shadow: 0 0 0 0 #703386 inset;
     }
   }
 
-  .brand-white-bg {
+  &.brand-white-bg {
     box-shadow: inset 0 100px 0 0 #fff;
     &:hover {
       box-shadow: 0 0 0 0 #efeeea inset;
     }
   }
   
-  .inline {
+  &.inline {
     display: inline-block;
     line-height: 1.2em;
   }
     
-  .ghost {
+  &.ghost {
     background-color: transparent;
     border: solid 2px;
-    height: auto;
-    padding: 20px 30px;
     transition: color .3s, border-color .3s, background-color .3s;
     -moz-transition: color .3s, border-color .3s, background-color .3s;
     -webkit-transition: color .3s, border-color .3s, background-color .3s;
     
-    .brand-pink {
+    &.brand-pink {
       color: $brand-pink;
       border-color: $brand-pink;
       &:hover {
@@ -90,7 +88,7 @@
       }
     }
 
-    .brand-orange {
+    &.brand-orange {
       color: $brand-orange;
       border-color: $brand-orange;
       &:hover {
@@ -99,7 +97,7 @@
       }
     }
 
-    .brand-teal {
+    &.brand-teal {
       color: $brand-teal;
       border-color: $brand-teal;
       &:hover {
@@ -108,7 +106,7 @@
       }
     }
 
-    .brand-purple {
+    &.brand-purple {
       color: $brand-purple;
       border-color: $brand-purple;
       &:hover {
@@ -117,7 +115,7 @@
       }
     }
 
-    .brand-green {
+    &.brand-green {
       color: $brand-green;
       border-color: $brand-green;
       &:hover {

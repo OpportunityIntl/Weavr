@@ -237,6 +237,10 @@ input[type="checkbox"] {
   -webkit-transition: border-color .2s;
   -moz-transition: border-color .2s;
   
+  &.focus {
+    border-color: #555;
+  }
+  
   select {
     background: transparent;
     border: none;
@@ -258,7 +262,9 @@ input[type="checkbox"] {
 }
 
 select {
-  .select-placeholder {
+  font-family: "proxima-nova", Arial, sans-serif;
+  
+  &.select-placeholder {
     font-family: "Times New Roman", serif;
     font-style: italic;
     color: #8f8e8c;
