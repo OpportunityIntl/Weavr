@@ -289,7 +289,7 @@ input[type="checkbox"] { position: absolute; left: -10000px; }
   37.5% { transform: translate(-5px); -webkit-transform: translate(-5px); }
   50% { transform: translate(0px); -webkit-transform: translate(0px); } }
 
-.select { display: block; border: solid 1px #8f8e8c; padding: 10px 10px; line-height: 16px; height: 40px; float: left; background: white url("/images/oi-select-arrow.png") no-repeat 83% center; overflow: hidden; width: 100%; text-align: left; }
+.select { display: block; border: solid 1px #8f8e8c; padding: 10px 10px; line-height: 16px; height: 40px; float: left; background: white url("/images/oi-select-arrow.png") no-repeat 83% center; overflow: hidden; width: 100%; text-align: left; transition: border-color .2s; -webkit-transition: border-color .2s; -moz-transition: border-color .2s; }
 .select select { background: transparent; border: none; border-radius: 0; color: #333; font-size: 14px; -moz-border-radius: 0; -webkit-border-radius: 0; -webkit-appearance: none; -moz-appearance: none; cursor: pointer; width: 150%; outline: none; }
 .select select::-ms-expand { display: none; }
 

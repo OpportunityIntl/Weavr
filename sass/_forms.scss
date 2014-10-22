@@ -233,6 +233,9 @@ input[type="checkbox"] {
   overflow: hidden;
   width: 100%;
   text-align: left;
+  transition: border-color .2s;
+  -webkit-transition: border-color .2s;
+  -moz-transition: border-color .2s;
   
   select {
     background: transparent;

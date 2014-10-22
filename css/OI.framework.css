@@ -624,7 +624,10 @@ input[type="checkbox"] {
   background: white url("/images/oi-select-arrow.png") no-repeat 83% center;
   overflow: hidden;
   width: 100%;
-  text-align: left; }
+  text-align: left;
+  transition: border-color .2s;
+  -webkit-transition: border-color .2s;
+  -moz-transition: border-color .2s; }
   .select select {
     background: transparent;
     border: none;

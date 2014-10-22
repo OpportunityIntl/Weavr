@@ -46,8 +46,10 @@ OI.utils = {
   },
   
   setupSelect : function(elem) {
-    elem.parent('.select').focus(function(){
-      elem.focus();
+    elem.focus(function(){
+      elem.parents('.select').addClass('focus');
+    }).blur(function(){
+      elem.parents('.select').removeClass('focus');
     })
     elem.change(function(){
       if (elem.val() === '') {
