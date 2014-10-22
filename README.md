@@ -3,13 +3,15 @@ OI Framework
 
 Frontend framework for Opportunity International. Documentation below.
 
-##General
+##CSS
+
+###General
 
 Every html element has `box-sizing: border-box`.
 
 `.clearfix` can be applied to divs to clear the floats of their child elements. Some classes, such as `.row` are self-clearing and don't need the `.clearfix` class applied.
 
-##Typography
+###Typography
 `.brand-font-primary`
 Set font to Proxima Nova Regular. Probably unecessary, as the `body` should already have Proxima Nova set as the font-family.
 
@@ -25,7 +27,7 @@ Use larger paragraph font-size.
 `p.small`
 Use smaller paragraph font-size.
 
-##Grid System
+###Grid System
 
 OI Framework uses a responsive 12-column grid system with fixed gutters (though gutters can be removed with `.no-gutter`).
 
@@ -44,7 +46,7 @@ You can specify different column widths for tablet and mobile devices, as well:
 
 `.t-col-1`, `.t-col-2`, `.t-col-3`, `.t-col-4`, `.t-col-5`, `.t-col-7`, `.t-col-8`, `.t-col-9`, `.t-col-10`, `.t-col-11`, `.t-col-12` for tablet, `.m-col-1`, `.m-col-2`, `.m-col-3`, `.m-col-4`, `.m-col-5`, `.m-col-7`, `.m-col-8`, `m-col-9`, `.m-col-10`, `.m-col-11`, `.m-col-12` for mobile devices.
 
-##Radio buttons and checkboxes
+###Radio buttons and checkboxes
 
 Radio button and checkboxes are styled using the `:checked` and `:before` psuedo-classes. The actual native radio button or checkbox element is hidden (via absolute positioning off the screen, not via the display property) and the element is recreated using the `:before` psuedo-class on the label element. The following classes can be used to change the size and display of radio buttons and checkboxes:
 
@@ -60,11 +62,11 @@ Label and radio button / checkbox will be small.
 `label.v-center`
 Label and radio button / checkbox will be vertically centered in wrapping container.
 
-##Select boxes
+###Select boxes
 
 Select boxes are styled by wrapping them in a `div` with the class of `.select`. To make the select box text match the placeholder text styling of the rest of the input elements, add the class `.select-placeholder` to the `select` element. The OI Framework javascript will handle adding and removing the placeholder style for you.
 
-##Colors
+###Colors
 
 The OI brand web colors are as follows:
 
@@ -84,7 +86,7 @@ These colors can be applied to the color or background color of any element with
 
 A lighter teal and lighter purple background are available via `.brand-light-teal-bg` and `.brand-light-purple-bg`, and `.transparent-bg` is also available to set a transparent background on any element.
 
-##Lists
+###Lists
 
 `.no-list-style`
 Set list-style property to `none`
@@ -92,10 +94,17 @@ Set list-style property to `none`
 `ul.inline`
 Display list items as inline-block, with no list style and 10px padding.
 
-##Icon fonts
+###Icon fonts
 
 _Insert documentation on icon fonts here_
 
-##Buttons
+###Buttons
 
 _Insert documentation on buttons here_
+
+##Javascript
+
+###Utility functions
+
+`OI.utils.tooltip(element, position, message)`
+Generate a tooltip, which will appear on mouseover. Element should be a jQuery object. Position can be 'top' or 'bottom.'
