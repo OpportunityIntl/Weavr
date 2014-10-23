@@ -117,6 +117,23 @@ OI.utils = {
       //console.log('Is mobile');
     }
   },
+  
+  handleWideScreens: function(element, ratio, className) {
+    var className = (typeof className != 'undefined') ? className : 'widescreen';
+    OI.utils.determineWindowRatio(element, ratio, className);
+    $(window).resize(function(){
+      OI.utils.determineWindowRatio(element, ratio, className);
+    })
+  },
+  
+  determineWindowRatio: function(element, ratio, className) {
+    var windowRatio = $(window).width() / $(window).height();
+    if (windowRatio > ratio) {
+      element.addClass(className);
+    } else {
+      element.removeClass(className);
+    }
+  },
 }
 
 // set up select input placeholder styling
