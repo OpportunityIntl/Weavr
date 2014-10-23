@@ -70,11 +70,11 @@ OI.utils = {
     selector = typeof selector !== 'undefined' ?  selector : $('body');
     children = typeof children !== 'undefined' ? children : true;
     
-    if (typeof OI.child.isDesktop === 'undefined') OI.utils.detectScreenSize();
+    if (typeof OI.utils.isDesktop === 'undefined') OI.utils.detectScreenSize();
     
-    if (OI.child.isDesktop || OI.child.isNetbook) var obj = children ? $('.valign', selector) : selector;
-    if (OI.child.isTablet) var obj = children ? $('.t-valign', selector) : selector;
-    if (OI.child.isMobile) var obj = children ? $('.m-valign', selector) : selector;
+    if (OI.utils.isDesktop || OI.utils.isNetbook) var obj = children ? $('.valign', selector) : selector;
+    if (OI.utils.isTablet) var obj = children ? $('.t-valign', selector) : selector;
+    if (OI.util.isMobile) var obj = children ? $('.m-valign', selector) : selector;
     
     obj.each(function(){
       $(this).imagesLoaded(function(){
@@ -99,21 +99,21 @@ OI.utils = {
   detectScreenSize: function() {
     console.log('Detecting screen size');
     
-    OI.child.isDesktop = false;
-    OI.child.isTablet = false;
-    OI.child.isMobile = false;
-    var windowWidth = OI.child.windowWidth;
+    OI.utils.isDesktop = false;
+    OI.utils.isTablet = false;
+    OI.utils.isMobile = false;
+    var windowWidth = $(window).width();
     if (windowWidth >= 1024) {
-      OI.child.isDesktop = true;
+      OI.utils.isDesktop = true;
       //console.log('Is desktop');
     } else if (windowWidth < 1024 && windowWidth >= 960) {
-      OI.child.isNetbook = true;
+      OI.utils.isNetbook = true;
       //console.log('Is netbook');
     } else if (windowWidth < 960 && windowWidth > 480) {
-      OI.child.isTablet = true;
+      OI.utils.isTablet = true;
       //console.log('Is tablet');
     } else if (windowWidth <= 480) {
-      OI.child.isMobile = true;
+      OI.utils.isMobile = true;
       //console.log('Is mobile');
     }
   },
