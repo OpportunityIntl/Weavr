@@ -93,3 +93,9 @@ h1, h2, h3 {
 .transform-normal {
   text-transform: none;
 }
+
+@media (max-width: 480px) {
+  p.large {
+    font-size: 16px;
+  }
+}
