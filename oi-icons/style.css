@@ -1,10 +1,10 @@
 @font-face {
 	font-family: 'oi-icons';
-	src:url('fonts/oi-icons.eot?26pij2');
-	src:url('fonts/oi-icons.eot?#iefix26pij2') format('embedded-opentype'),
-		url('fonts/oi-icons.woff?26pij2') format('woff'),
-		url('fonts/oi-icons.ttf?26pij2') format('truetype'),
-		url('fonts/oi-icons.svg?26pij2#oi-icons') format('svg');
+	src:url('fonts/oi-icons.eot?-2bxlr6');
+	src:url('fonts/oi-icons.eot?#iefix-2bxlr6') format('embedded-opentype'),
+		url('fonts/oi-icons.woff?-2bxlr6') format('woff'),
+		url('fonts/oi-icons.ttf?-2bxlr6') format('truetype'),
+		url('fonts/oi-icons.svg?-2bxlr6#oi-icons') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -46,6 +46,9 @@
 }
 .icon-menu:before {
 	content: "\e616";
+}
+.icon-mail:before {
+	content: "\e615";
 }
 .icon-user:before {
 	content: "\e609";
