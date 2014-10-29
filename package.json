@@ -1,6 +1,6 @@
 {
-  "name": "OI-Framework",
-  "version": "0.1.0",
+  "name": "Weavr",
+  "version": "0.9.1",
   "author": "Opportunity International",
   "engines": {
     "node": ">= 0.8.0"
@@ -8,7 +8,7 @@
   "description": "Frontend framework for Opportunity International",
   "repository": {
     "type": "git",
-    "url": "http://github.com/opportunityintl/framework.git"
+    "url": "http://github.com/opportunityintl/Weavr.git"
   },
   "devDependencies": {
     "grunt": "^0.4.5",

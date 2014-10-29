@@ -10,7 +10,7 @@ module.exports = function(grunt) {
     sass: {
       dev: {
         files: {
-          'css/OI.framework.css' : 'sass/framework.scss'
+          'css/OI.weavr-<%=pkg.version %>.css' : 'sass/framework.scss'
         }
       },
       production: {
@@ -18,7 +18,7 @@ module.exports = function(grunt) {
           style: 'compact'
         },
         files: {
-          'css/OI.framework.min.css' : 'sass/framework.scss'
+          'css/OI.weavr-<%=pkg.version %>.min.css' : 'sass/framework.scss'
         }
       }
     },
@@ -26,7 +26,7 @@ module.exports = function(grunt) {
     uglify: {
       production: {
         files: {
-          'js/OI.framework.min.js': ['js/OI.framework.js']
+          'js/OI.weavr-<%=pkg.version %>.min.js': ['js/OI.framework.js']
         }
       }
     }
