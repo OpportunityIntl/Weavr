@@ -1,7 +1,7 @@
-OI Framework
+Weavr
 =========
 
-Frontend framework for Opportunity International. Documentation below.
+Weavr is a frontend framework for Opportunity International. Documentation below.
 
 ##CSS
 
@@ -100,11 +100,30 @@ _Insert documentation on icon fonts here_
 
 ###Buttons
 
-_Insert documentation on buttons here_
+`.btn`
+Style an element like a standard button. A background-color class (e.g. `.brand-pink-bg`) should also be applied to the element.
+
+`.btn.ghost`
+Style an element like a ghost button. A color class (e.g. `.brand-pink`) should also be applied to the element.
+
+`.btn.large`
+Make a large button.
+
+`.btn.inline`
+Display button inline block. Buttons display as `block` by default.
 
 ##Javascript
 
 ###Utility functions
 
 `OI.utils.tooltip(element, position, message)`
-Generate a tooltip, which will appear on mouseover. Element should be a jQuery object. Position can be 'top' or 'bottom.'
+Generate a tooltip, which will appear on mouseover. The _element_ argument should be a jQuery object. Position can be 'top' or 'bottom.' Tooltip is colored purple by default.
+
+`OI.utils.popover(element, position, message)`
+Similar to a tooltip, but not tied to the mouseover event. Popover appears when the function is called, and fades out after 4 seconds. Popover is colored orange by default.
+
+`OI.utils.limitToRegex(input, regex)`
+Limit the characters allowed in an input. The _input_ argument should be a jQuery object. The _regex_ argument should be a regex expression (e.g. `/[0-9]/`). This function uses a keypress event handler to test the key against the regex, returning true or false. Note that Android browsers do not provide a keypress event, so this function does not work for Android users.
+
+`OI.utils.validateEmail(email)`
+Tests an email address against a regex pattern to determine if it is in a valid format. The email address must contain 4 parts: the username, an @ symbol, a domain, and a domain extension (e.g. username@domain.extension). The extension must contain two or more letters. Note that the _email_ argument should be the actual email address as a string, not an input element.
