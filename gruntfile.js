@@ -3,30 +3,38 @@ module.exports = function(grunt) {
   // Project configuration.
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
-    banner: '/*! <%= pkg.name %> - v<%= pkg.version %> - ' +
-      '<%= grunt.template.today("yyyy-mm-dd") %>\n' +
-      '* Copyright (c) <%= grunt.template.today("yyyy") %> <%= pkg.author.name %> */\n',
+    banner: '/* <%= pkg.name %> v<%= pkg.version %> \n' +
+      ' * Compiled <%= grunt.template.today("mm-dd-yyyy") %>\n' +
+      ' * Copyright (c) <%= grunt.template.today("yyyy") %> <%= pkg.author %> \n */\n',
     
     sass: {
       dev: {
+        options: {
+          style: 'expanded'
+        },
         files: {
-          'css/OI.weavr-<%=pkg.version %>.css' : 'sass/framework.scss'
+          'css/OI.weavr.css' : 'sass/framework.scss'
         }
       },
       production: {
         options: {
-          style: 'compact'
+          style: 'compact',
+          sourcemap: 'none',
+          banner: '<%= banner %>'
         },
         files: {
-          'css/OI.weavr-<%=pkg.version %>.min.css' : 'sass/framework.scss'
+          'css/OI.weavr.min.css' : 'sass/framework.scss'
         }
       }
     },
     
     uglify: {
       production: {
+        options: {
+          banner: '<%= banner %>'
+        },
         files: {
-          'js/OI.weavr-<%=pkg.version %>.min.js': ['js/OI.framework.js']
+          'js/OI.weavr.min.js': ['js/OI.weavr.js']
         }
       }
     }
