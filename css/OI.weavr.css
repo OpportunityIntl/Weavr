@@ -595,7 +595,6 @@ input[type='text'], input[type='number'], input[type='email'], input[type='passw
   border: solid 1px #8f8e8c;
   padding: 10px;
   font-size: 14px;
-  color: #333;
   outline: none;
   transition: border-color .2s;
   -webkit-transition: border-color .2s;
@@ -1028,6 +1027,38 @@ select.select-placeholder {
 }
 .tooltip div:after {
   color: #611171;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.padding-0-40 {
+  padding: 0 40px;
+}
+
+.padding-20 {
+  padding: 20px;
+}
+
+.padding-40 {
+  padding: 40px;
+}
+
+.padding-40-0 {
+  padding: 40px 0;
+}
+
+.padding-80 {
+  padding: 80px;
+}
+
+.padding-80-40 {
+  padding: 80px 40px;
+}
+
+.padding-80-0 {
+  padding: 80px 0;
 }
 
 /*# sourceMappingURL=OI.weavr.css.map */
