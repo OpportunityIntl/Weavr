@@ -11,6 +11,8 @@ Every html element has `box-sizing: border-box`.
 
 `.clearfix` can be applied to divs to clear the floats of their child elements. Some classes, such as `.row` are self-clearing and don't need the `.clearfix` class applied.
 
+Alternatively, you can add an empty div with the class `.clear` after floated elements to clear the float.
+
 ###Typography
 `.brand-font-primary`
 Set font to Proxima Nova Regular. Probably unecessary, as the `body` should already have Proxima Nova set as the font-family.
@@ -75,6 +77,7 @@ The OI brand web colors are as follows:
 - Orange: `#f15b22;`
 - Teal: `#00abab;`
 - Green: `#7bc557;`
+- Dark gray: `#222222`
 - Gray: `#8f8e8c;`
 - Offwhite: `#efeeea`
 
@@ -82,7 +85,7 @@ These colors can be applied to the color or background color of any element with
 
 `.brand-pink`, `.brand-purple`, `.brand-orange`, `.brand-teal`, `.brand-green`, `.brand-gray`, `.brand-offwhite`, `.brand-white` set the color.
 
-`.brand-pink-bg`, `.brand-purple-bg`, `.brand-orange-bg`, `.brand-teal-bg`, `.brand-green-bg`, `.brand-gray-bg`, `.brand-offwhite-bg`, `.brand-white-bg` set the background color to the corresponding color. These classes also set the text-color to white (with the exception of `.brand-offwhite-bg` and `.brand-white-bg`).
+`.brand-pink-bg`, `.brand-purple-bg`, `.brand-orange-bg`, `.brand-teal-bg`, `.brand-green-bg`, `.brand-darkgray-bg`. `.brand-gray-bg`, `.brand-offwhite-bg`, `.brand-white-bg` set the background color to the corresponding color. These classes also set the text-color to white (with the exception of `.brand-offwhite-bg` and `.brand-white-bg`).
 
 A lighter teal and lighter purple background are available via `.brand-light-teal-bg` and `.brand-light-purple-bg`, and `.transparent-bg` is also available to set a transparent background on any element.
 
@@ -96,7 +99,7 @@ Display list items as inline-block, with no list style and 10px padding.
 
 ###Icon fonts
 
-Weavr uses a custom icon fontset largely comprised of select icons from the [Entypo library](http://www.entypo.com/) plus some custom icons. You can [view the full set here](http://opportunityintl.github.io/Weavr/icons.html).
+Weavr uses a custom icon fontset largely comprised of select icons from the [Entypo library](http://www.entypo.com/) plus some custom icons. You can [view the full set here](http://opportunityintl.github.io/Weavr/icons).
 
 ###Buttons
 
