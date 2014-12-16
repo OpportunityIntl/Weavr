@@ -76,6 +76,8 @@ body { margin: 0; padding: 0; }
 
 .clearfix { *zoom: 1; }
 
+.clear { clear: both; }
+
 .brand-pink-bg { background: #ed027e; color: #fff; }
 
 .brand-orange-bg { background: #f15b22; color: #fff; }
@@ -139,7 +141,7 @@ body { margin: 0; padding: 0; }
 /*******************/
 /**** Font size ****/
 /*******************/
-p { margin: 0 0 1em 0; font-size: 15px; }
+p { margin: 0 0 1em 0; font-size: 16px; line-height: 1.75em; }
 
 p.large { font-size: 20px; }
 
@@ -148,7 +150,11 @@ p.small { font-size: 12px; }
 /******************/
 /**** Headings ****/
 /******************/
-h1, h2, h3 { text-transform: uppercase; margin-top: 0; letter-spacing: 1px; }
+h1, h2, h3, h4, h5, h6 { text-transform: uppercase; margin: 0 0 1em 0; letter-spacing: 1px; }
+
+h1 { font-size: 4em; margin-bottom: 40px; }
+
+h2 { font-size: 2em; }
 
 /***********************/
 /**** Font-families ****/
@@ -378,3 +384,20 @@ select.select-placeholder { font-family: "Times New Roman", serif; font-style: i
 .padding-80-40 { padding: 80px 40px; }
 
 .padding-80-0 { padding: 80px 0; }
+
+@media (max-width: 768px) { .t-padding-40 { padding: 40px; }
+  .t-padding-30 { padding: 30px; }
+  .t-padding-20 { padding: 20px; }
+  .t-padding-40-20 { padding: 40px 20px; }
+  .t-padding-30-15 { padding: 30px 15px; }
+  .t-padding-40-0 { padding: 40px 0; }
+  .t-padding-30-0 { padding: 30px 0; }
+  .t-padding-20-0 { padding: 20px 0; } }
+@media (max-width: 480px) { .m-padding-40 { padding: 40px; }
+  .m-padding-30 { padding: 30px; }
+  .m-padding-20 { padding: 20px; }
+  .m-padding-40-20 { padding: 40px 20px; }
+  .m-padding-30-15 { padding: 30px 15px; }
+  .m-padding-40-0 { padding: 40px 0; }
+  .m-padding-30-0 { padding: 30px 0; }
+  .m-padding-20-0 { padding: 20px 0; } }
