@@ -37,6 +37,15 @@ module.exports = function(grunt) {
           'js/OI.weavr.min.js': ['js/OI.weavr.js']
         }
       }
+    },
+    
+    copy: {
+      production: {
+        files: [
+          {expand: true, src: ['css/*'], dest: 'dist/weavr/', flatten: true},
+          {expand: true, src: ['js/*'], dest: 'dist/weavr/', flatten: true}
+        ]
+      }
     }
     
   });
@@ -45,8 +54,9 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-uglify');
+  grunt.loadNpmTasks('grunt-contrib-copy');
 
   // Default task(s).
-  grunt.registerTask('default', [ 'sass:dev', 'sass:production', 'uglify:production' ] );
+  grunt.registerTask('default', [ 'sass:dev', 'sass:production', 'uglify:production', 'copy:production' ] );
 
 };
