@@ -96,7 +96,7 @@ Display list items as inline-block, with no list style and 10px padding.
 
 ###Icon fonts
 
-_Insert documentation on icon fonts here_
+Weavr uses a custom icon fontset largely comprised of select icons from the [Entypo library](http://www.entypo.com/) plus some custom icons. You can [view the full set here](http://opportunityintl.github.io/Weavr/icons.html).
 
 ###Buttons
 
