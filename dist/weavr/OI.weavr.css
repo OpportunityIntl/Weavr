@@ -2,8 +2,8 @@
 /* Colors */
 @font-face {
   font-family: 'OI-icons';
-  src: url("fonts/OI-icons.eot?un57ba");
-  src: url("fonts/OI-icons.eot?#iefixun57ba") format("embedded-opentype"), url("fonts/OI-icons.woff?un57ba") format("woff"), url("fonts/OI-icons.ttf?un57ba") format("truetype"), url("fonts/OI-icons.svg?un57ba#OI-icons") format("svg");
+  src: url("fonts/OI-icons.eot?-478fm8");
+  src: url("fonts/OI-icons.eot?#iefix-478fm8") format("embedded-opentype"), url("fonts/OI-icons.woff?-478fm8") format("woff"), url("fonts/OI-icons.ttf?-478fm8") format("truetype"), url("fonts/OI-icons.svg?-478fm8#OI-icons") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -74,6 +74,10 @@
 
 .icon-play:before {
   content: "\e60a";
+}
+
+.icon-resize-enlarge:before {
+  content: "\e61d";
 }
 
 .icon-arrow-left-small:before {
