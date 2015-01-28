@@ -74,7 +74,7 @@ OI.utils = {
     
     if (OI.utils.isDesktop || OI.utils.isNetbook) var obj = children ? $('.valign', selector) : selector;
     if (OI.utils.isTablet) var obj = children ? $('.t-valign', selector) : selector;
-    if (OI.util.isMobile) var obj = children ? $('.m-valign', selector) : selector;
+    if (OI.utils.isMobile) var obj = children ? $('.m-valign', selector) : selector;
     
     obj.each(function(){
       $(this).imagesLoaded(function(){
@@ -97,8 +97,6 @@ OI.utils = {
   },
   
   detectScreenSize: function() {
-    console.log('Detecting screen size');
-    
     OI.utils.isDesktop = false;
     OI.utils.isTablet = false;
     OI.utils.isMobile = false;
