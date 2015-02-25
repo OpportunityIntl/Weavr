@@ -13,7 +13,8 @@ module.exports = function(grunt) {
           style: 'expanded'
         },
         files: {
-          'css/OI.weavr.css' : 'sass/framework.scss'
+          'css/OI.weavr.css' : 'sass/framework.scss',
+          'css/OI.weavr.grid.css' : 'sass/grid-only.scss'
         }
       },
       production: {
@@ -23,7 +24,8 @@ module.exports = function(grunt) {
           banner: '<%= banner %>'
         },
         files: {
-          'css/OI.weavr.min.css' : 'sass/framework.scss'
+          'css/OI.weavr.min.css' : 'sass/framework.scss',
+          'css/OI.weavr.grid.min.css' : 'sass/grid-only.scss'
         }
       }
     },
