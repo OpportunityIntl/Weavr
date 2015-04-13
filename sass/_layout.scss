@@ -2,98 +2,74 @@
   width: 100%;
 }
 
-.padding-0-40 {
-  padding: 0 40px;
+.padding-0-1x {
+  padding: 0 $gutter;
 }
 
-.padding-20 {
-  padding: 20px;
+.padding-0-2x {
+  padding: 0 2 * $gutter;
 }
 
-.padding-40 {
-  padding: 40px;
+.padding-0-3x {
+  padding: 0 3 * $gutter;
 }
 
-.padding-40-0 {
-  padding: 40px 0;
+.padding-0-4x {
+  padding: 0 4 * $gutter;
 }
 
-.padding-80 {
-  padding: 80px;
+.padding-1x {
+  padding: $gutter;
 }
 
-.padding-80-40 {
-  padding: 80px 40px;
+.padding-1x-0 {
+  padding: $gutter 0;
 }
 
-.padding-80-0 {
-  padding: 80px 0;
+.padding-2x {
+  padding: 2 * $gutter;
 }
 
-@media (max-width: 768px) {
-  .t-padding-40 {
-    padding: 40px;
-  }
-  
-  .t-padding-30 {
-    padding: 30px;
-  }
-  
-  .t-padding-20 {
-    padding: 20px;
-  }
-  
-  .t-padding-40-20 {
-    padding: 40px 20px;
-  }
-  
-  .t-padding-30-15 {
-    padding: 30px 15px;
-  }
-  
-  .t-padding-40-0 {
-    padding: 40px 0;
-  }
-  
-  .t-padding-30-0 {
-    padding: 30px 0;
-  }
-  
-  .t-padding-20-0 {
-    padding: 20px 0;
-  }
+.padding-2x-1x {
+  padding: 2 * $gutter $gutter
 }
 
-@media (max-width: 480px) {
-  .m-padding-40 {
-    padding: 40px;
-  }
-  
-  .m-padding-30 {
-    padding: 30px;
-  }
-  
-  .m-padding-20 {
-    padding: 20px;
-  }
-  
-  .m-padding-40-20 {
-    padding: 40px 20px;
-  }
-  
-  .m-padding-30-15 {
-    padding: 30px 15px;
-  }
-  
-  .m-padding-40-0 {
-    padding: 40px 0;
-  }
-  
-  .m-padding-30-0 {
-    padding: 30px 0;
-  }
-  
-  .m-padding-20-0 {
-    padding: 20px 0;
-  }
+.padding-2x-0 {
+  padding: 2 * $gutter 0;
+}
+
+.padding-3x {
+  padding: 3 * $gutter;
+}
+
+.padding-3x-2x {
+  padding: 3 * $gutter 2 * $gutter;
+}
+
+.padding-3x-1x {
+  padding: 3 * $gutter $gutter;
+}
+
+.padding-3x-0 {
+  padding: 3 * $gutter 0;
+}
+
+.padding-4x {
+  padding: 4 * $gutter;
+}
+
+.padding-4x-3x {
+  padding: 4 * $gutter 3 * $gutter;
+}
+
+.padding-4x-2x {
+  padding: 4 * $gutter 2 * $gutter;
+}
+
+.padding-4x-1x {
+  padding: 4 * $gutter $gutter;
+}
+
+.padding-4x-0 {
+  padding: 4 * $gutter 0;
 }

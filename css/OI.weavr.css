@@ -1123,99 +1123,76 @@ select.select-placeholder {
   width: 100%;
 }
 
-.padding-0-40 {
+.padding-0-1x {
+  padding: 0 20px;
+}
+
+.padding-0-2x {
   padding: 0 40px;
 }
 
-.padding-20 {
+.padding-0-3x {
+  padding: 0 60px;
+}
+
+.padding-0-4x {
+  padding: 0 80px;
+}
+
+.padding-1x {
   padding: 20px;
 }
 
-.padding-40 {
+.padding-1x-0 {
+  padding: 20px 0;
+}
+
+.padding-2x {
   padding: 40px;
 }
 
-.padding-40-0 {
+.padding-2x-1x {
+  padding: 40px 20px;
+}
+
+.padding-2x-0 {
   padding: 40px 0;
 }
 
-.padding-80 {
+.padding-3x {
+  padding: 60px;
+}
+
+.padding-3x-2x {
+  padding: 60px 40px;
+}
+
+.padding-3x-1x {
+  padding: 60px 20px;
+}
+
+.padding-3x-0 {
+  padding: 60px 0;
+}
+
+.padding-4x {
   padding: 80px;
 }
 
-.padding-80-40 {
+.padding-4x-3x {
+  padding: 80px 60px;
+}
+
+.padding-4x-2x {
   padding: 80px 40px;
 }
 
-.padding-80-0 {
+.padding-4x-1x {
+  padding: 80px 20px;
+}
+
+.padding-4x-0 {
   padding: 80px 0;
-}
-
-@media (max-width: 768px) {
-  .t-padding-40 {
-    padding: 40px;
-  }
-
-  .t-padding-30 {
-    padding: 30px;
-  }
-
-  .t-padding-20 {
-    padding: 20px;
-  }
-
-  .t-padding-40-20 {
-    padding: 40px 20px;
-  }
-
-  .t-padding-30-15 {
-    padding: 30px 15px;
-  }
-
-  .t-padding-40-0 {
-    padding: 40px 0;
-  }
-
-  .t-padding-30-0 {
-    padding: 30px 0;
-  }
-
-  .t-padding-20-0 {
-    padding: 20px 0;
-  }
-}
-@media (max-width: 480px) {
-  .m-padding-40 {
-    padding: 40px;
-  }
-
-  .m-padding-30 {
-    padding: 30px;
-  }
-
-  .m-padding-20 {
-    padding: 20px;
-  }
-
-  .m-padding-40-20 {
-    padding: 40px 20px;
-  }
-
-  .m-padding-30-15 {
-    padding: 30px 15px;
-  }
-
-  .m-padding-40-0 {
-    padding: 40px 0;
-  }
-
-  .m-padding-30-0 {
-    padding: 30px 0;
-  }
-
-  .m-padding-20-0 {
-    padding: 20px 0;
-  }
 }
 
 /*# sourceMappingURL=OI.weavr.css.map */
