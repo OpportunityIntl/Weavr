@@ -50,14 +50,19 @@ OI.utils = {
       elem.parents('.select').addClass('focus');
     }).blur(function(){
       elem.parents('.select').removeClass('focus');
-    })
+    });
     elem.change(function(){
       if (elem.val() === '') {
         elem.addClass('select-placeholder');
       } else {
         elem.removeClass('select-placeholder');
       }
-    }).change();
+    });
+    
+    // Add placeholder class on init if value is blank
+    if (elem.val() === '') {
+      elem.addClass('select-placeholder');
+    }
   },
   
   validateEmail : function(email) {
@@ -72,9 +77,11 @@ OI.utils = {
     
     if (typeof OI.utils.isDesktop === 'undefined') OI.utils.detectScreenSize();
     
-    if (OI.utils.isDesktop || OI.utils.isNetbook) var obj = children ? $('.valign', selector) : selector;
-    if (OI.utils.isTablet) var obj = children ? $('.t-valign', selector) : selector;
-    if (OI.utils.isMobile) var obj = children ? $('.m-valign', selector) : selector;
+    var obj;
+    
+    if (OI.utils.isDesktop || OI.utils.isNetbook) obj = children ? $('.valign', selector) : selector;
+    if (OI.utils.isTablet) obj = children ? $('.t-valign', selector) : selector;
+    if (OI.utils.isMobile) obj = children ? $('.m-valign', selector) : selector;
     
     obj.each(function(){
       $(this).imagesLoaded(function(){
@@ -93,7 +100,7 @@ OI.utils = {
           });
         }
       });
-    })
+    });
   },
   
   detectScreenSize: function() {
@@ -117,11 +124,11 @@ OI.utils = {
   },
   
   handleWideScreens: function(element, ratio, className) {
-    var className = (typeof className != 'undefined') ? className : 'widescreen';
+    className = (typeof className != 'undefined') ? className : 'widescreen';
     OI.utils.determineWindowRatio(element, ratio, className);
     $(window).resize(function(){
       OI.utils.determineWindowRatio(element, ratio, className);
-    })
+    });
   },
   
   determineWindowRatio: function(element, ratio, className) {
@@ -132,7 +139,7 @@ OI.utils = {
       element.removeClass(className);
     }
   },
-}
+};
 
 // set up select input placeholder styling
 $('.select select').each(function(){
