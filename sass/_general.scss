@@ -7,6 +7,8 @@
 body {
   margin: 0;
   padding: 0;
+  font-family: "proxima-nova", Arial, sans-serif;
+  color: #333;
 }
 
 .clearfix:before,
@@ -25,4 +27,12 @@ body {
 
 .clear {
   clear: both;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  background-color: $brand-offwhite;
+  border: none;
+  margin: $gutter 0;
 }
