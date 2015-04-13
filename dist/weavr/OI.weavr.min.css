@@ -1,5 +1,5 @@
 /* Weavr v0.9.1 
- * Compiled 01-28-2015
+ * Compiled 04-13-2015
  * Copyright (c) 2015 Opportunity International 
  */
 
@@ -70,7 +70,7 @@
 
 * { box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; }
 
-body { margin: 0; padding: 0; }
+body { margin: 0; padding: 0; font-family: "proxima-nova", Arial, sans-serif; color: #333; }
 
 .clearfix:before, .clearfix:after { content: " "; display: table; }
 
@@ -79,6 +79,8 @@ body { margin: 0; padding: 0; }
 .clearfix { *zoom: 1; }
 
 .clear { clear: both; }
+
+hr { display: block; height: 1px; background-color: #efeeea; border: none; margin: 20px 0; }
 
 .brand-pink-bg { background: #ed027e; color: #fff; }
 
@@ -152,11 +154,26 @@ p.small { font-size: 12px; }
 /******************/
 /**** Headings ****/
 /******************/
-h1, h2, h3, h4, h5, h6 { text-transform: uppercase; margin: 0 0 1em 0; letter-spacing: 1px; }
+h1, h2, h3, h4, h5, h6 { text-transform: uppercase; margin: 0 0 20px 0; letter-spacing: 1px; font-family: "proxima-nova", Arial, sans-serif; }
 
-h1 { font-size: 4em; margin-bottom: 40px; }
+h1 { font-size: 3.5em; }
 
 h2 { font-size: 2em; }
+
+h3 { font-size: 1.5em; }
+
+/*********************/
+/**** Blockquotes ****/
+/*********************/
+blockquote { font-style: italic; padding: 20px 20px 5px 50px; margin-left: 0; margin-right: 0; position: relative; border-top: solid 1px #efeeea; border-bottom: solid 1px #efeeea; }
+blockquote p { font-family: "Time New Roman", serif; font-size: 18px; line-height: 28px; color: #555; }
+blockquote cite { font-family: "Times New Roman", serif; text-align: right; display: block; margin-bottom: 15px; color: #555; }
+blockquote cite:before { content: "– "; }
+blockquote:before { content: "\201c"; display: block; position: absolute; top: 15px; left: 0; font-size: 70px; font-weight: bold; font-style: normal; line-height: 70px; color: #611171; }
+
+.brand-purple-bg blockquote:before { color: #f15b22; }
+
+.brand-orange-bg blockquote:before { color: #611171; }
 
 /***********************/
 /**** Font-families ****/
@@ -175,60 +192,72 @@ h2 { font-size: 2em; }
 /************************/
 /**** Grid 12 system ****/
 /************************/
-form .row { margin-left: -10px; margin-right: -10px; margin-bottom: 20px; }
-form .col { padding-left: 10px; padding-right: 10px; }
-
-.row { margin-left: -20px; margin-right: -20px; margin-bottom: 40px; }
-.row.no-padding { margin-left: 0; margin-right: 0; }
+.row { margin-left: -10px; margin-right: -10px; margin-bottom: 20px; }
+.row.large-gutter { margin-left: -20px; margin-right: -20px; margin-bottom: 40px; }
+.row.large-gutter .col { padding-left: 20px; padding-right: 20px; }
 .row:last-child { margin-bottom: 0; }
-.row.no-gutter { margin: 0; }
+.row.no-gutter { margin-left: 0; margin-right: 0; }
+.row.no-gutter .col { padding-left: 0; padding-right: 0; margin-bottom: 0; }
 .row:before, .row:after { content: " "; display: table; }
 .row:after { clear: both; }
 
-.col { display: block; float: left; padding-left: 20px; padding-right: 20px; }
+.col { padding-left: 10px; padding-right: 10px; float: left; }
 .col.col-12 { width: 100%; }
-.col.col-11 { width: 91.6666%; }
-.col.col-10 { width: 83.3333%; }
+.col.col-11 { width: 91.66667%; }
+.col.col-10 { width: 83.33333%; }
 .col.col-9 { width: 75%; }
-.col.col-8 { width: 66.6666%; }
-.col.col-7 { width: 58.3333%; }
+.col.col-8 { width: 66.66667%; }
+.col.col-7 { width: 58.33333%; }
 .col.col-6 { width: 50%; }
-.col.col-5 { width: 41.66666%; }
-.col.col-4 { width: 33.3333%; }
+.col.col-5 { width: 41.66667%; }
+.col.col-4 { width: 33.33333%; }
 .col.col-3 { width: 25%; }
-.col.col-2 { width: 16.6666%; }
-.col.col-1 { width: 8.3333%; }
+.col.col-2 { width: 16.66667%; }
+.col.col-1 { width: 8.33333%; }
 
 @media (max-width: 960px) { .row { margin-bottom: 0; }
-  *[class*='t-col-'] { margin-bottom: 20px; }
-  .row.no-gutter > *[class*='t-col-'] { margin-bottom: 0; }
-  .col.t-col-12 { width: 100%; }
-  .col.t-col-11 { width: 91.6666%; }
-  .col.t-col-10 { width: 83.3333%; }
-  .col.t-col-9 { width: 75%; }
-  .col.t-col-8 { width: 66.6666%; }
-  .col.t-col-7 { width: 58.3333%; }
-  .col.t-col-6 { width: 50%; }
-  .col.t-col-5 { width: 41.66666%; }
-  .col.t-col-4 { width: 33.3333%; }
-  .col.t-col-3 { width: 25%; }
-  .col.t-col-2 { width: 16.6666%; }
-  .col.t-col-1 { width: 8.3333%; } }
-@media (max-width: 480px) { .row, form .row { margin-bottom: 0; margin-left: -10px; margin-right: -10px; }
-  *[class*='m-col-'] { padding-left: 10px; padding-right: 10px; margin-bottom: 20px; }
-  .row.no-gutter *[class*='m-col-'] { margin-bottom: 0; }
-  .col.m-col-12 { width: 100%; }
-  .col.m-col-11 { width: 91.6666%; }
-  .col.m-col-10 { width: 83.3333%; }
-  .col.m-col-9 { width: 75%; }
-  .col.m-col-8 { width: 66.6666%; }
-  .col.m-col-7 { width: 58.3333%; }
-  .col.m-col-6 { width: 50%; }
-  .col.m-col-5 { width: 41.66666%; }
-  .col.m-col-4 { width: 33.3333%; }
-  .col.m-col-3 { width: 25%; }
-  .col.m-col-2 { width: 16.6666%; }
-  .col.m-col-1 { width: 8.3333%; } }
+  .row:after { clear: none; }
+  .row .col { margin-bottom: 20px; }
+  .row .col.n-col-12 { width: 100%; }
+  .row .col.n-col-11 { width: 91.66667%; }
+  .row .col.n-col-10 { width: 83.33333%; }
+  .row .col.n-col-9 { width: 75%; }
+  .row .col.n-col-8 { width: 66.66667%; }
+  .row .col.n-col-7 { width: 58.33333%; }
+  .row .col.n-col-6 { width: 50%; }
+  .row .col.n-col-5 { width: 41.66667%; }
+  .row .col.n-col-4 { width: 33.33333%; }
+  .row .col.n-col-3 { width: 25%; }
+  .row .col.n-col-2 { width: 16.66667%; }
+  .row .col.n-col-1 { width: 8.33333%; } }
+@media (max-width: 768px) { .row { margin-bottom: 0; }
+  .row:after { clear: none; }
+  .row .col { margin-bottom: 20px; }
+  .row .col.t-col-12 { width: 100%; }
+  .row .col.t-col-11 { width: 91.66667%; }
+  .row .col.t-col-10 { width: 83.33333%; }
+  .row .col.t-col-9 { width: 75%; }
+  .row .col.t-col-8 { width: 66.66667%; }
+  .row .col.t-col-7 { width: 58.33333%; }
+  .row .col.t-col-6 { width: 50%; }
+  .row .col.t-col-5 { width: 41.66667%; }
+  .row .col.t-col-4 { width: 33.33333%; }
+  .row .col.t-col-3 { width: 25%; }
+  .row .col.t-col-2 { width: 16.66667%; }
+  .row .col.t-col-1 { width: 8.33333%; } }
+@media (max-width: 480px) { .row:after { clear: none; }
+  .row .col.m-col-12 { width: 100%; }
+  .row .col.m-col-11 { width: 91.66667%; }
+  .row .col.m-col-10 { width: 83.33333%; }
+  .row .col.m-col-9 { width: 75%; }
+  .row .col.m-col-8 { width: 66.66667%; }
+  .row .col.m-col-7 { width: 58.33333%; }
+  .row .col.m-col-6 { width: 50%; }
+  .row .col.m-col-5 { width: 41.66667%; }
+  .row .col.m-col-4 { width: 33.33333%; }
+  .row .col.m-col-3 { width: 25%; }
+  .row .col.m-col-2 { width: 16.66667%; }
+  .row .col.m-col-1 { width: 8.33333%; } }
 /***************/
 /**** Lists ****/
 /***************/
