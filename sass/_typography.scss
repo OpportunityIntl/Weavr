@@ -82,6 +82,61 @@ h2 {
 h3 {
   font-size: 1.5em;
 }
+
+/*********************/
+/**** Blockquotes ****/
+/*********************/
+
+blockquote {
+  font-style: italic;
+  padding: 20px 20px 5px 50px;
+  margin-left: 0;
+  margin-right: 0;
+  position: relative;
+  border-top: solid 1px $brand-offwhite;
+  border-bottom: solid 1px $brand-offwhite;
+  
+  p {
+    font-family: "Time New Roman", serif;
+    font-size: 18px;
+    line-height: 28px;
+    color: #555;
+  }
+  
+  cite {
+    font-family: "Times New Roman", serif;
+    text-align: right;
+    display: block;
+    margin-bottom: 15px;
+    color: #555;
+    
+    &:before {
+      content: "– ";
+    }
+  }
+  
+  &:before {
+    content: "\201c";
+    display: block;
+    position: absolute;
+    top: 15px;
+    left: 0;
+    font-size: 70px;
+    font-weight: bold;
+    font-style: normal;
+    line-height: 70px;
+    color: #611171;
+  }  
+}
+
+.brand-purple-bg blockquote:before {
+  color: #f15b22;
+}
+
+.brand-orange-bg blockquote:before {
+  color: #611171;
+}
+
 /***********************/
 /**** Font-families ****/
 /***********************/
