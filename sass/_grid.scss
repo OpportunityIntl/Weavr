@@ -2,27 +2,20 @@
 /**** Grid 12 system ****/
 /************************/
 
-form {
-  .row {
-    margin-left: -10px;
-    margin-right: -10px;
-    margin-bottom: 20px;
-  }
-  
-  .col {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-}
-
 .row {
-  margin-left: -20px;
-  margin-right: -20px;
-  margin-bottom: 40px;
+  margin-left: -0.5 * $gutter;
+  margin-right: -0.5 * $gutter;
+  margin-bottom: $gutter;
   
-  &.no-padding {
-    margin-left: 0;
-    margin-right: 0;
+  &.large-gutter {
+    margin-left: -$gutter;
+    margin-right: -$gutter;
+    margin-bottom: 2 * $gutter;
+    
+    .col {
+      padding-left: $gutter;
+      padding-right: $gutter;
+    }
   }
   
   &:last-child {
@@ -30,7 +23,14 @@ form {
   }
   
   &.no-gutter {
-    margin: 0;
+    margin-left: 0;
+    margin-right: 0;
+    
+    .col {
+      padding-left: 0;
+      padding-right: 0;
+      margin-bottom: 0;
+    }
   }
   
   &:before,
@@ -45,185 +45,236 @@ form {
 }
 
 .col {
-  display: block;
-  float:left;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 0.5 * $gutter;
+  padding-right: 0.5 * $gutter;
+  float: left;
   
   &.col-12 {
-    width: 100%;
+    width: 12/12 * 100%;
   }
-
+  
   &.col-11 {
-    width: 91.6666%;
+    width: 11/12 * 100%;
   }
-
+  
   &.col-10 {
-    width: 83.3333%;
+    width: 10/12 * 100%;
   }
-
+  
   &.col-9 {
-    width: 75%;
+    width: 9/12 * 100%;
   }
-
+  
   &.col-8 {
-    width: 66.6666%;
+    width: 8/12 * 100%;
   }
-
+  
   &.col-7 {
-    width: 58.3333%;
+    width: 7/12 * 100%;
   }
-
+  
   &.col-6 {
-    width: 50%;
+    width: 6/12 * 100%;
   }
-
+  
   &.col-5 {
-    width: 41.66666%;
+    width: 5/12 * 100%;
   }
-
+  
   &.col-4 {
-    width: 33.3333%;
+    width: 4/12 * 100%;
   }
-
+  
   &.col-3 {
-    width: 25%;
+    width: 3/12 * 100%;
   }
-
+  
   &.col-2 {
-    width: 16.6666%;
+    width: 2/12 * 100%;
   }
-
+  
   &.col-1 {
-    width: 8.3333%
-  }  
+    width: 1/12 * 100%;
+  }
 }
 
 @media (max-width: 960px) {
-  
   .row {
     margin-bottom: 0;
+    
+    &:after {
+      clear: none;
+    }
+    
+    .col {
+      margin-bottom: $gutter;
+      
+      &.n-col-12 {
+        width: 12/12 * 100%;
+      }
+      
+      &.n-col-11 {
+        width: 11/12 * 100%;
+      }
+      
+      &.n-col-10 {
+        width: 10/12 * 100%;
+      }
+      
+      &.n-col-9 {
+        width: 9/12 * 100%;
+      }
+      
+      &.n-col-8 {
+        width: 8/12 * 100%;
+      }
+      
+      &.n-col-7 {
+        width: 7/12 * 100%;
+      }
+      
+      &.n-col-6 {
+        width: 6/12 * 100%;
+      }
+      
+      &.n-col-5 {
+        width: 5/12 * 100%;
+      }
+      
+      &.n-col-4 {
+        width: 4/12 * 100%;
+      }
+      
+      &.n-col-3 {
+        width: 3/12 * 100%;
+      }
+      
+      &.n-col-2 {
+        width: 2/12 * 100%;
+      }
+      
+      &.n-col-1 {
+        width: 1/12 * 100%;
+      }
+    }
   }
-  
-  *[class*='t-col-'] {
-    margin-bottom: 20px;
-  }
-  
-  .row.no-gutter > *[class*='t-col-'] {
+}
+
+@media (max-width: 768px) {
+  .row {
     margin-bottom: 0;
-  }
-  
-  .col.t-col-12 {
-    width: 100%;
-  }
-  
-  .col.t-col-11 {
-    width: 91.6666%;
-  }
-  
-  .col.t-col-10 {
-    width: 83.3333%;
-  }
-  
-  .col.t-col-9 {
-    width: 75%;
-  }
-  
-  .col.t-col-8 {
-    width: 66.6666%;
-  }
-  
-  .col.t-col-7 {
-    width: 58.3333%;
-  }
-  
-  .col.t-col-6 {
-    width: 50%;
-  }
-  
-  .col.t-col-5 {
-    width: 41.66666%;
-  }
-  
-  .col.t-col-4 {
-    width: 33.3333%;
-  }
-  
-  .col.t-col-3 {
-    width: 25%;
-  }
-  
-  .col.t-col-2 {
-    width: 16.6666%;
-  }
-  
-  .col.t-col-1 {
-    width: 8.3333%
+    &:after {
+      clear: none;
+    }
+    
+    .col {
+      margin-bottom: $gutter;
+      
+      &.t-col-12 {
+        width: 12/12 * 100%;
+      }
+      
+      &.t-col-11 {
+        width: 11/12 * 100%;
+      }
+      
+      &.t-col-10 {
+        width: 10/12 * 100%;
+      }
+      
+      &.t-col-9 {
+        width: 9/12 * 100%;
+      }
+      
+      &.t-col-8 {
+        width: 8/12 * 100%;
+      }
+      
+      &.t-col-7 {
+        width: 7/12 * 100%;
+      }
+      
+      &.t-col-6 {
+        width: 6/12 * 100%;
+      }
+      
+      &.t-col-5 {
+        width: 5/12 * 100%;
+      }
+      
+      &.t-col-4 {
+        width: 4/12 * 100%;
+      }
+      
+      &.t-col-3 {
+        width: 3/12 * 100%;
+      }
+      
+      &.t-col-2 {
+        width: 2/12 * 100%;
+      }
+      
+      &.t-col-1 {
+        width: 1/12 * 100%;
+      }
+    }
   }
 }
 
 @media (max-width: 480px) {
-  .row, form .row {
-    margin-bottom: 0;
-    margin-left: -10px;
-    margin-right: -10px;
-  }
-  
-  *[class*='m-col-'] {
-    padding-left: 10px;
-    padding-right: 10px;
-    margin-bottom: 20px;
-  }
-  
-  .row.no-gutter *[class*='m-col-'] {
-    margin-bottom: 0;
-  }
-  
-  .col.m-col-12 {
-    width: 100%;
-  }
-  
-  .col.m-col-11 {
-    width: 91.6666%;
-  }
-  
-  .col.m-col-10 {
-    width: 83.3333%;
-  }
-  
-  .col.m-col-9 {
-    width: 75%;
-  }
-  
-  .col.m-col-8 {
-    width: 66.6666%;
-  }
-  
-  .col.m-col-7 {
-    width: 58.3333%;
-  }
-  
-  .col.m-col-6 {
-    width: 50%;
-  }
-  
-  .col.m-col-5 {
-    width: 41.66666%;
-  }
-  
-  .col.m-col-4 {
-    width: 33.3333%;
-  }
-  
-  .col.m-col-3 {
-    width: 25%;
-  }
-  
-  .col.m-col-2 {
-    width: 16.6666%;
-  }
-  
-  .col.m-col-1 {
-    width: 8.3333%
+  .row {
+    &:after {
+      clear: none;
+    }
+    
+    .col {
+      &.m-col-12 {
+        width: 12/12 * 100%;
+      }
+      
+      &.m-col-11 {
+        width: 11/12 * 100%;
+      }
+      
+      &.m-col-10 {
+        width: 10/12 * 100%;
+      }
+      
+      &.m-col-9 {
+        width: 9/12 * 100%;
+      }
+      
+      &.m-col-8 {
+        width: 8/12 * 100%;
+      }
+      
+      &.m-col-7 {
+        width: 7/12 * 100%;
+      }
+      
+      &.m-col-6 {
+        width: 6/12 * 100%;
+      }
+      
+      &.m-col-5 {
+        width: 5/12 * 100%;
+      }
+      
+      &.m-col-4 {
+        width: 4/12 * 100%;
+      }
+      
+      &.m-col-3 {
+        width: 3/12 * 100%;
+      }
+      
+      &.m-col-2 {
+        width: 2/12 * 100%;
+      }
+      
+      &.m-col-1 {
+        width: 1/12 * 100%;
+      }
+    }
   }
 }
