@@ -34,7 +34,7 @@ textarea {
   max-width: 100%;
 }
 
-input[type='submit'] {
+input[type='submit'], input[type="button"] {
   display: block;
   width: 100%;
   border: none;

@@ -60,6 +60,12 @@ p.small {
   font-size: 12px;
 }
 
+@media (max-width: 480px) {
+  p.large {
+    font-size: 16px;
+  }
+}
+
 /******************/
 /**** Headings ****/
 /******************/
@@ -137,6 +143,48 @@ blockquote {
   color: #611171;
 }
 
+/***************/
+/**** Lists ****/
+/***************/
+
+ul, ol {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  counter-reset: list;
+  
+  li {
+    position: relative;
+    padding-left: $gutter;
+    line-height: 1.75em;
+    counter-increment: list;
+  }
+}
+
+ul li {
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 7px;
+    height: 7px;
+    margin-top: 10px;
+    border-radius: 100%;
+    background-color: #555;
+  }
+}
+
+ol li {
+  &:before {
+    content: counter(list) '.';
+    display: block;
+    position: absolute;
+    left: 0;
+  }
+}
+
 /***********************/
 /**** Font-families ****/
 /***********************/
@@ -160,10 +208,4 @@ blockquote {
 
 .transform-normal {
   text-transform: none;
-}
-
-@media (max-width: 480px) {
-  p.large {
-    font-size: 16px;
-  }
 }

@@ -1,3 +1,14 @@
+a.btn {
+  text-decoration: none;
+  vertical-align: top;
+  line-height: 46px;
+}
+
+button.btn {
+  display: block;
+  width: 100%;
+}
+
 .btn {
   display: block;
   text-align: center;
@@ -6,6 +17,7 @@
   font-size: 12px;
   letter-spacing: 1px;
   font-weight: bold;
+  font-family: $font-primary;
   height: 46px;
   box-shadow: none;
   -moz-transition: -moz-box-shadow 0.6s ease-out 0s;
@@ -69,12 +81,14 @@
   
   &.inline {
     display: inline-block;
-    line-height: 1.2em;
+    line-height: 46px;
+    width: auto;
   }
     
   &.ghost {
     background-color: transparent;
     border: solid 2px;
+    line-height: 42px;
     transition: color .3s, border-color .3s, background-color .3s;
     -moz-transition: color .3s, border-color .3s, background-color .3s;
     -webkit-transition: color .3s, border-color .3s, background-color .3s;
