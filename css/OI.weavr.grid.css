@@ -82,9 +82,6 @@
   .row {
     margin-bottom: 0;
   }
-  .row:after {
-    clear: none;
-  }
   .row .col {
     margin-bottom: 20px;
   }
@@ -129,9 +126,6 @@
   .row {
     margin-bottom: 0;
   }
-  .row:after {
-    clear: none;
-  }
   .row .col {
     margin-bottom: 20px;
   }
@@ -173,9 +167,6 @@
   }
 }
 @media (max-width: 480px) {
-  .row:after {
-    clear: none;
-  }
   .row .col.m-col-12 {
     width: 100%;
   }

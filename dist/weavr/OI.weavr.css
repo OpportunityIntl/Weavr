@@ -331,6 +331,11 @@ p.small {
   font-size: 12px;
 }
 
+@media (max-width: 480px) {
+  p.large {
+    font-size: 16px;
+  }
+}
 /******************/
 /**** Headings ****/
 /******************/
@@ -402,6 +407,42 @@ blockquote:before {
   color: #611171;
 }
 
+/***************/
+/**** Lists ****/
+/***************/
+ul, ol {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  counter-reset: list;
+}
+ul li, ol li {
+  position: relative;
+  padding-left: 20px;
+  line-height: 1.75em;
+  counter-increment: list;
+}
+
+ul li:before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 7px;
+  height: 7px;
+  margin-top: 10px;
+  border-radius: 100%;
+  background-color: #555;
+}
+
+ol li:before {
+  content: counter(list) ".";
+  display: block;
+  position: absolute;
+  left: 0;
+}
+
 /***********************/
 /**** Font-families ****/
 /***********************/
@@ -426,11 +467,6 @@ blockquote:before {
   text-transform: none;
 }
 
-@media (max-width: 480px) {
-  p.large {
-    font-size: 16px;
-  }
-}
 /************************/
 /**** Grid 12 system ****/
 /************************/
@@ -514,9 +550,6 @@ blockquote:before {
   .row {
     margin-bottom: 0;
   }
-  .row:after {
-    clear: none;
-  }
   .row .col {
     margin-bottom: 20px;
   }
@@ -561,9 +594,6 @@ blockquote:before {
   .row {
     margin-bottom: 0;
   }
-  .row:after {
-    clear: none;
-  }
   .row .col {
     margin-bottom: 20px;
   }
@@ -605,9 +635,6 @@ blockquote:before {
   }
 }
 @media (max-width: 480px) {
-  .row:after {
-    clear: none;
-  }
   .row .col.m-col-12 {
     width: 100%;
   }
@@ -709,7 +736,7 @@ textarea {
   max-width: 100%;
 }
 
-input[type='submit'] {
+input[type='submit'], input[type="button"] {
   display: block;
   width: 100%;
   border: none;
@@ -718,7 +745,7 @@ input[type='submit'] {
   -moz-appearance: none;
   border-radius: 0;
 }
-input[type='submit'] .error-animate {
+input[type='submit'] .error-animate, input[type="button"] .error-animate {
   -webkit-animation: button-error .2s;
   animation: button-error .2s;
 }
@@ -937,6 +964,17 @@ select.select-placeholder {
   color: #8f8e8c;
 }
 
+a.btn {
+  text-decoration: none;
+  vertical-align: top;
+  line-height: 46px;
+}
+
+button.btn {
+  display: block;
+  width: 100%;
+}
+
 .btn {
   display: block;
   text-align: center;
@@ -945,6 +983,7 @@ select.select-placeholder {
   font-size: 12px;
   letter-spacing: 1px;
   font-weight: bold;
+  font-family: "proxima-nova", Arial, sans-serif;
   height: 46px;
   box-shadow: none;
   -moz-transition: -moz-box-shadow 0.6s ease-out 0s;
@@ -1001,11 +1040,13 @@ select.select-placeholder {
 }
 .btn.inline {
   display: inline-block;
-  line-height: 1.2em;
+  line-height: 46px;
+  width: auto;
 }
 .btn.ghost {
   background-color: transparent;
   border: solid 2px;
+  line-height: 42px;
   transition: color .3s, border-color .3s, background-color .3s;
   -moz-transition: color .3s, border-color .3s, background-color .3s;
   -webkit-transition: color .3s, border-color .3s, background-color .3s;
