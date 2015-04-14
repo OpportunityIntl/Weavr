@@ -17,6 +17,11 @@
         margin: 0 auto;
       }
       
+      .contained-680 {
+        width: 680px;
+        margin: 0 auto;
+      }
+      
       @media (max-width: 1340px) {
         .contained {
           width: 100%;
@@ -25,6 +30,12 @@
       
       @media (max-width: 1040px) {
         .contained-960 {
+          width: 100%;
+        }
+      }
+      
+      @media (max-width: 740px) {
+        .contained-680 {
           width: 100%;
         }
       }
@@ -669,7 +680,7 @@
       <hr>
       
       <h2>Forms</h2>
-      <div class="bordered-box padding-2x" style="width: 700px;">
+      <div class="bordered-box padding-2x contained-680">
         <form novalidate>
           <div class="row">
             <div class="col col-6 t-col-6 m-col-12">
@@ -700,6 +711,12 @@
                   <option value="3">Option 3</option>
                 </select>
               </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col col-12 t-col-12 m-col-12">
+              <label for="textarea">Textarea</label>
+              <textarea id="textarea"></textarea>
             </div>
           </div>
           <div class="row">
