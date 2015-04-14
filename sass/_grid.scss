@@ -102,10 +102,6 @@
   .row {
     margin-bottom: 0;
     
-    &:after {
-      clear: none;
-    }
-    
     .col {
       margin-bottom: $gutter;
       
@@ -163,9 +159,6 @@
 @media (max-width: 768px) {
   .row {
     margin-bottom: 0;
-    &:after {
-      clear: none;
-    }
     
     .col {
       margin-bottom: $gutter;
@@ -223,9 +216,6 @@
 
 @media (max-width: 480px) {
   .row {
-    &:after {
-      clear: none;
-    }
     
     .col {
       &.m-col-12 {
