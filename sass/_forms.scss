@@ -119,12 +119,13 @@ label.radio, label.checkbox {
   
   &.small {
     font-size: 12px;
-    padding-left: 22px;
+    padding-left: 18px;
     
     &:before {
-      width: 12px;
-      height: 12px;
-      line-height: 12px;
+      width: 10px;
+      height: 10px;
+      line-height: 10px;
+      top: 1px;
     }
   }
 }

@@ -308,8 +308,8 @@ label.radio, label.checkbox { font-family: "proxima-nova", Arial, sans-serif; fo
 label.radio:before, label.checkbox:before { content: ''; display: block; border: solid 1px #8f8e8c; width: 12px; height: 12px; text-align: center; line-height: 16px; position: absolute; left: 0; }
 label.radio.inline, label.checkbox.inline { display: inline-block; margin-right: 20px; }
 label.radio.inline:last-of-type, label.checkbox.inline:last-of-type { margin-right: 0; }
-label.radio.small, label.checkbox.small { font-size: 12px; padding-left: 22px; }
-label.radio.small:before, label.checkbox.small:before { width: 12px; height: 12px; line-height: 12px; }
+label.radio.small, label.checkbox.small { font-size: 12px; padding-left: 18px; }
+label.radio.small:before, label.checkbox.small:before { width: 10px; height: 10px; line-height: 10px; top: 1px; }
 
 label.radio { padding-left: 20px; }
 label.radio:before { border-radius: 100%; }

@@ -810,12 +810,13 @@ label.radio.inline:last-of-type, label.checkbox.inline:last-of-type {
 }
 label.radio.small, label.checkbox.small {
   font-size: 12px;
-  padding-left: 22px;
+  padding-left: 18px;
 }
 label.radio.small:before, label.checkbox.small:before {
-  width: 12px;
-  height: 12px;
-  line-height: 12px;
+  width: 10px;
+  height: 10px;
+  line-height: 10px;
+  top: 1px;
 }
 
 label.radio {
