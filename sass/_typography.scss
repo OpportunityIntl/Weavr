@@ -147,16 +147,16 @@ blockquote {
     font-weight: bold;
     font-style: normal;
     line-height: 70px;
-    color: #611171;
+    color: $brand-purple;
   }  
 }
 
 .brand-purple-bg blockquote:before {
-  color: #f15b22;
+  color: $brand-orange;
 }
 
 .brand-orange-bg blockquote:before {
-  color: #611171;
+  color: $brand-purple;
 }
 
 /***************/
@@ -206,11 +206,11 @@ ol li {
 /***********************/
 
 .brand-font-primary {
-  font-famliy: "proxima-nova", Arial, sans-serif;
+  font-famliy: $font-primary;
 }
 
 .brand-font-secondary {
-  font-family: "Times New Roman", serif;
+  font-family: $font-secondary;
   font-style: italic;
 }
 
