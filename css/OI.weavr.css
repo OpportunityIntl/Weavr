@@ -705,6 +705,11 @@ ul.inline li {
 /***************/
 /**** Forms ****/
 /***************/
+form {
+  display: block;
+  margin: 0;
+}
+
 input[type='text'], input[type='number'], input[type='email'], input[type='password'], input[type='phone'], textarea {
   display: block;
   width: 100%;
@@ -899,7 +904,7 @@ label.checkbox:hover:before {
   padding: 10px 10px;
   line-height: 24px;
   height: 46px;
-  background: #fff url("images/oi-select-arrow.png") no-repeat 83% center;
+  background: #fff url("images/oi-select-arrow.png") no-repeat right center;
   overflow: hidden;
   width: 100%;
   text-align: left;
@@ -916,6 +921,7 @@ label.checkbox:hover:before {
   border-radius: 0;
   color: #333;
   font-size: 14px;
+  line-height: 26px;
   -moz-border-radius: 0;
   -webkit-border-radius: 0;
   -webkit-appearance: none;
@@ -1063,6 +1069,10 @@ button.btn {
 .btn.ghost.brand-green:hover {
   color: #fff;
   background-color: #7bc557;
+}
+
+.btn.inline + .btn.inline {
+  margin-left: 20px;
 }
 
 /************************************/
