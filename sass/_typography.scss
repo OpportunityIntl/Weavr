@@ -47,9 +47,17 @@
 /*******************/
 
 p {
-  margin: 0 0 1em 0;
+  margin: 1em 0;
   font-size: 16px;
-  line-height: 1.75em;
+  line-height: 28px;
+  
+  &:first-child {
+    margin-top: 0;
+  }
+  
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 p.large {
@@ -72,9 +80,17 @@ p.small {
 
 h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
-  margin: 0 0 $gutter 0;
+  margin: $gutter 0;
   letter-spacing: 1px;
   font-family: $font-primary;
+  
+  &:first-child {
+    margin-top: 0;
+  }
+  
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 h1 {
