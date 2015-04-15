@@ -139,3 +139,7 @@ button.btn {
     }
   }
 }
+
+.btn.inline + .btn.inline {
+  margin-left: $gutter;
+}
