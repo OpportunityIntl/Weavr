@@ -1025,11 +1025,24 @@ button.btn {
   border: none;
   outline: none;
 }
+.btn.brand-darkgray-bg {
+  box-shadow: inset 0 100px 0 0 #222;
+}
+.btn.brand-darkgray-bg:hover {
+  box-shadow: 0 0 0 0 #333 inset;
+}
 .btn.brand-gray-bg {
   box-shadow: inset 0 100px 0 0 #8f8e8c;
 }
 .btn.brand-gray-bg:hover {
   box-shadow: 0 0 0 0 #666 inset;
+}
+.btn.brand-offwhite-bg {
+  color: #8f8e8c;
+  box-shadow: inset 0 100px 0 0 #efeeea;
+}
+.btn.brand-offwhite-bg:hover {
+  box-shadow: 0 0 0 0 #ddd inset;
 }
 .btn.brand-green-bg {
   box-shadow: inset 0 100px 0 0 #7bc557;
@@ -1119,6 +1132,74 @@ button.btn {
 .btn.ghost.brand-green:hover {
   color: #fff;
   background-color: #7bc557;
+}
+.btn.ghost.brand-darkgray {
+  color: #222;
+  border-color: #222;
+}
+.btn.ghost.brand-darkgray:hover {
+  color: #fff;
+  background-color: #222;
+}
+.btn.ghost.brand-gray {
+  color: #8f8e8c;
+  border-color: #8f8e8c;
+}
+.btn.ghost.brand-gray:hover {
+  color: #fff;
+  background-color: #8f8e8c;
+}
+.btn.ghost.brand-offwhite {
+  color: #efeeea;
+  border-color: #efeeea;
+}
+.btn.ghost.brand-offwhite:hover {
+  color: #8f8e8c;
+  background-color: #efeeea;
+}
+.btn.ghost.brand-white {
+  color: #fff;
+  border-color: #fff;
+}
+.btn.ghost.brand-white:hover {
+  color: #333;
+  background-color: #fff;
+}
+
+.brand-purple-bg .btn.brand-white-bg, .brand-purple-bg .btn.ghost.brand-white:hover {
+  color: #611171;
+}
+
+.brand-teal-bg .btn.brand-white-bg, .brand-teal-bg .btn.ghost.brand-white:hover {
+  color: #00abab;
+}
+
+.brand-orange-bg .btn.brand-white-bg, .brand-orange-bg .btn.ghost.brand-white:hover {
+  color: #f15b22;
+}
+
+.brand-teal-bg .btn.brand-white-bg, .brand-teal-bg .btn.ghost.brand-white:hover {
+  color: #00abab;
+}
+
+.brand-pink-bg .btn.brand-white-bg, .brand-pink-bg .btn.ghost.brand-white:hover {
+  color: #ed027e;
+}
+
+.brand-green-bg .btn.brand-white-bg, .brand-green-bg .btn.ghost.brand-white:hover {
+  color: #7bc557;
+}
+
+.brand-darkgray-bg .btn.brand-white-bg, .brand-darkgray-bg .btn.ghost.brand-white:hover {
+  color: #222;
+}
+
+.brand-gray-bg .btn.brand-white-bg, .brand-gray-bg .btn.ghost.brand-white:hover {
+  color: #8f8e8c;
+}
+
+.brand-offwhite-bg .btn.brand-white-bg, .brand-offwhite-bg .btn.ghost.brand-white:hover {
+  color: #8f8e8c;
 }
 
 .btn.inline + .btn.inline {

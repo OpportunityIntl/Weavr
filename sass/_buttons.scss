@@ -30,10 +30,25 @@ button.btn {
   border: none;
   outline: none;
   
+  &.brand-darkgray-bg {
+    box-shadow: inset 0 100px 0 0 $brand-darkgray;
+    &:hover{
+      box-shadow: 0 0 0 0 #333 inset;
+    }
+  }
+  
   &.brand-gray-bg {
     box-shadow: inset 0 100px 0 0 $brand-gray;
     &:hover{
       box-shadow: 0 0 0 0 #666 inset;
+    }
+  }
+  
+  &.brand-offwhite-bg {
+    color: $brand-gray;
+    box-shadow: inset 0 100px 0 0 $brand-offwhite;
+    &:hover{
+      box-shadow: 0 0 0 0 #ddd inset;
     }
   }
 
@@ -136,6 +151,114 @@ button.btn {
         color: #fff;
         background-color: $brand-green;
       }
+    }
+    
+    &.brand-darkgray {
+      color: $brand-darkgray;
+      border-color: $brand-darkgray;
+      &:hover {
+        color: #fff;
+        background-color: $brand-darkgray;
+      }
+    }
+    
+    &.brand-gray {
+      color: $brand-gray;
+      border-color: $brand-gray;
+      &:hover {
+        color: #fff;
+        background-color: $brand-gray;
+      }
+    }
+    
+    &.brand-offwhite {
+      color: $brand-offwhite;
+      border-color: $brand-offwhite;
+      &:hover {
+        color: $brand-gray;
+        background-color: $brand-offwhite;
+      }
+    }
+    
+    &.brand-white {
+      color: #fff;
+      border-color: #fff;
+      &:hover {
+        color: $text-color;
+        background-color: #fff;
+      }
+    }
+  }
+}
+
+.brand-purple-bg {
+  .btn {
+    &.brand-white-bg, &.ghost.brand-white:hover {
+      color: $brand-purple;
+    }
+  }
+}
+
+.brand-teal-bg {
+  .btn {
+    &.brand-white-bg, &.ghost.brand-white:hover {
+      color: $brand-teal;
+    }
+  }
+}
+
+.brand-orange-bg {
+  .btn {
+    &.brand-white-bg, &.ghost.brand-white:hover {
+      color: $brand-orange;
+    }
+  }
+}
+
+.brand-teal-bg {
+  .btn {
+    &.brand-white-bg, &.ghost.brand-white:hover {
+      color: $brand-teal;
+    }
+  }
+}
+
+.brand-pink-bg {
+  .btn {
+    &.brand-white-bg, &.ghost.brand-white:hover {
+      color: $brand-pink;
+    }
+  }
+}
+
+.brand-green-bg {
+  .btn {
+    &.brand-white-bg, &.ghost.brand-white:hover {
+      color: $brand-green;
+    }
+  }
+}
+
+.brand-darkgray-bg {
+  .btn {
+    &.brand-white-bg, &.ghost.brand-white:hover {
+      color: $brand-darkgray;
+    }
+  }
+}
+
+.brand-gray-bg {
+  .btn {
+    &.brand-white-bg, &.ghost.brand-white:hover {
+      color: $brand-gray;
+    }
+  }
+}
+
+.brand-offwhite-bg {
+  .btn {
+    &.brand-white-bg, &.ghost.brand-white:hover {
+      color: $brand-gray;
     }
   }
 }
