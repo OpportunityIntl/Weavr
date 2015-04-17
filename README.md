@@ -1,7 +1,7 @@
 Weavr
 =========
 
-Weavr is a frontend framework for Opportunity International. Documentation below.
+Weavr is a frontend framework for Opportunity International. Still in development. Documentation below.
 
 ##CSS
 
