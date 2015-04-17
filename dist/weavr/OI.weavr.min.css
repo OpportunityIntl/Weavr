@@ -423,24 +423,31 @@ button.btn { display: inline-block; width: auto; }
 .btn + .btn { margin-left: 20px; }
 .btn + .btn.block { margin-left: 0; }
 
-/************************************/
-/**** Popover and Tooltip styles ****/
-/************************************/
-.popover, .tooltip { position: relative; left: 0; width: 100%; }
-.popover div, .tooltip div { position: absolute; left: 0; width: 100%; color: #fff; font-size: 12px; padding: 10px; display: none; }
-.popover div:after, .tooltip div:after { font-family: 'oi-icons'; speak: none; font-style: normal; font-weight: normal; font-variant: normal; text-transform: none; line-height: 1; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; display: inline-block; text-align: center; position: absolute; width: 100%; left: 0; }
-.popover.bottom, .tooltip.bottom { top: 15px; }
-.popover.bottom div, .tooltip.bottom div { top: 15px; }
-.popover.bottom div:after, .tooltip.bottom div:after { content: "\e618"; top: -10px; }
-.popover.top, .tooltip.top { bottom: 0; }
-.popover.top div, .tooltip.top div { bottom: 15px; }
-.popover.top div:after, .tooltip.top div:after { content: "\e617"; bottom: -10px; }
-
-.popover div { background-color: #f15b22; }
-.popover div:after { color: #f15b22; }
-
-.tooltip div { background-color: #611171; }
-.tooltip div:after { color: #611171; }
+/******************/
+/**** Tooltips ****/
+/******************/
+.tooltip { display: none; z-index: 1; }
+.tooltip .tooltip-container { position: relative; left: -50%; width: 1000px; }
+.tooltip .tooltip-container.purple .tooltip-content { background-color: #611171; color: #fff; }
+.tooltip .tooltip-container.purple .tooltip-content:after { color: #611171; }
+.tooltip .tooltip-container.teal .tooltip-content { background-color: #00abab; color: #fff; }
+.tooltip .tooltip-container.teal .tooltip-content:after { color: #00abab; }
+.tooltip .tooltip-container.orange .tooltip-content { background-color: #f15b22; color: #fff; }
+.tooltip .tooltip-container.orange .tooltip-content:after { color: #f15b22; }
+.tooltip .tooltip-container.pink .tooltip-content { background-color: #ed027e; color: #fff; }
+.tooltip .tooltip-container.pink .tooltip-content:after { color: #ed027e; }
+.tooltip .tooltip-container.green .tooltip-content { background-color: #7bc557; color: #fff; }
+.tooltip .tooltip-container.green .tooltip-content:after { color: #7bc557; }
+.tooltip .tooltip-container.offwhite .tooltip-content { background-color: #efeeea; color: #333; }
+.tooltip .tooltip-container.offwhite .tooltip-content:after { color: #efeeea; }
+.tooltip.top .tooltip-container { bottom: 15px; }
+.tooltip.top .tooltip-content { bottom: 0; }
+.tooltip.top .tooltip-content:after { content: "\e617"; bottom: -10px; color: #efeeea; }
+.tooltip.bottom .tooltip-container { top: 15px; }
+.tooltip.bottom .tooltip-content { top: 0; }
+.tooltip.bottom .tooltip-content:after { content: "\e618"; top: -10px; color: #efeeea; }
+.tooltip .tooltip-content { position: absolute; padding: 10px; background-color: #efeeea; font-size: 12px; }
+.tooltip .tooltip-content:after { font-family: 'oi-icons'; speak: none; font-style: normal; font-weight: normal; font-variant: normal; text-transform: none; line-height: 1; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; display: inline-block; text-align: center; position: absolute; width: 100%; left: 0; }
 
 .full-width { width: 100%; }
 

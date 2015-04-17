@@ -1,20 +1,120 @@
-/************************************/
-/**** Popover and Tooltip styles ****/
-/************************************/
+/******************/
+/**** Tooltips ****/
+/******************/
 
-.popover, .tooltip {
-  position: relative;
-  left: 0;
-  width: 100%;
+.tooltip {
+  display: none;
+  z-index: 1;
   
-  div {
+  .tooltip-container {
+    position: relative;
+    left: -50%;
+    width: 1000px;
+    
+    &.purple {
+      .tooltip-content {
+        background-color: $brand-purple;
+        color: #fff;
+        
+        &:after {
+          color: $brand-purple;
+        }
+      }
+    }
+    
+    &.teal {
+      .tooltip-content {
+        background-color: $brand-teal;
+        color: #fff;
+        
+        &:after {
+          color: $brand-teal;
+        }
+      }
+    }
+    
+    &.orange {
+      .tooltip-content {
+        background-color: $brand-orange;
+        color: #fff;
+        
+        &:after {
+          color: $brand-orange;
+        }
+      }
+    }
+    
+    &.pink {
+      .tooltip-content {
+        background-color: $brand-pink;
+        color: #fff;
+        
+        &:after {
+          color: $brand-pink;
+        }
+      }
+    }
+    
+    &.green {
+      .tooltip-content {
+        background-color: $brand-green;
+        color: #fff;
+        
+        &:after {
+          color: $brand-green;
+        }
+      }
+    }
+    
+    &.offwhite {
+      .tooltip-content {
+        background-color: $brand-offwhite;
+        color: #333;
+        
+        &:after {
+          color: $brand-offwhite;
+        }
+      }
+    }
+  }
+  
+  &.top {
+    .tooltip-container {
+      bottom: 15px;
+    }
+    
+    .tooltip-content {
+      bottom: 0;
+      
+      &:after {
+        content: "\e617";
+        bottom: -10px;
+        color: $brand-offwhite;
+      }
+    }
+  }
+  
+  &.bottom {
+    .tooltip-container {
+      top: 15px;
+    }
+    
+    .tooltip-content {
+      top: 0;
+      
+      &:after {
+        content: "\e618";
+        top: -10px;
+        color: $brand-offwhite;
+      }
+    }
+  }
+  
+  .tooltip-content {
     position: absolute;
-    left: 0;
-    width: 100%;
-    color: #fff;
-    font-size: 12px;
     padding: 10px;
-    display: none;
+    background-color: $brand-offwhite;
+    font-size: 12px;
     
     &:after {
       font-family: 'oi-icons';
@@ -32,45 +132,5 @@
       width: 100%;
       left: 0;
     }
-  }
-  
-  &.bottom {
-    top: 15px;
-    
-    div {
-      top: 15px;
-      
-      &:after {
-        content: "\e618";
-        top: -10px;
-      }
-    }
-  }
-  
-  &.top {
-    bottom: 0;
-    
-    div {
-      bottom: 15px;
-      
-      &:after {
-        content: "\e617";
-        bottom: -10px;
-      }
-    }
-  }
-}
-
-.popover div {
-  background-color: $brand-orange;
-  &:after {
-    color: $brand-orange;
-  }
-}
-
-.tooltip div {
-  background-color: $brand-purple;
-  &:after {
-    color: $brand-purple;
-  }
+  } 
 }

@@ -1,20 +1,6 @@
 var OI = OI || {};
 
 OI.utils = {
-  tooltip : function (elem, pos, msg) {
-    var tip = $('<div class="tooltip ' + pos + '"><div>' + msg + '</div></div>');
-    if (pos == 'top') {
-      elem.before(tip);
-    } else if (pos == 'bottom') {
-      elem.after(tip);
-    }
-    
-    elem.hover(function(){
-      tip.children().stop(true,true).delay(250).fadeIn(500);
-    },function(){
-      tip.children().stop(true,true).delay(250).fadeOut(500);
-    });
-  },
   
   popover : function (elem, pos, msg) {
     var pop = $('<div class="popover ' + pos + '"><div>' + msg + '</div></div>');
@@ -147,9 +133,8 @@ $('.select select').each(function(){
 });
 
 // set up tooltips
-$('[data-tooltip]').each(function(){
-	var pos = $(this).data('tooltip-position') !== undefined ? $(this).data('tooltip-position') : 'top';
-	OI.utils.tooltip($(this), pos, $(this).data('tooltip'));
+$('[data-tooltip]').each(function() {
+  new Tooltip($(this));
 });
 
 // set up character restrictions on inputs (does not work on Android)
