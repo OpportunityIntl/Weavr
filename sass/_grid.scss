@@ -25,6 +25,7 @@
   &.no-gutter {
     margin-left: 0;
     margin-right: 0;
+    margin-bottom: 0;
     
     .col {
       padding-left: 0;
@@ -101,6 +102,18 @@
 @media (max-width: 960px) {
   .row {
     margin-bottom: 0;
+    
+    &:after {
+      clear: none;
+    }
+    
+    &.large-gutter {
+      margin-bottom: 0;
+      
+      .col {
+        margin-bottom: 2 * $gutter;
+      }
+    }
     
     .col {
       margin-bottom: $gutter;
