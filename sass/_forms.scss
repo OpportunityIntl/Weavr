@@ -114,9 +114,17 @@ input[type="checkbox"] {
     color: $text-color;
     
     &:before {
-      content: '✓';
-      color: $text-color;
-      border-color: $text-color;
+      content: '\e607';
+      font-family: "oi-icons";
+      color: $brand-pink;
+      border-color: $brand-pink;
+      font-size: 12px;
+      line-height: 12px;
+    }
+    
+    &.small:before {
+      font-size: 10px;
+      line-height: 12px;
     }
   }
 }

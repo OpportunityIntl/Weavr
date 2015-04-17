@@ -317,7 +317,8 @@ input[type="radio"]:checked + label.radio { color: #ed027e; }
 input[type="radio"]:checked + label.radio:before { background: #ed027e; border-color: #ed027e; }
 
 input[type="checkbox"]:checked + label.checkbox { color: #333; }
-input[type="checkbox"]:checked + label.checkbox:before { content: '✓'; color: #333; border-color: #333; }
+input[type="checkbox"]:checked + label.checkbox:before { content: '\e607'; font-family: "oi-icons"; color: #ed027e; border-color: #ed027e; font-size: 12px; line-height: 12px; }
+input[type="checkbox"]:checked + label.checkbox.small:before { font-size: 10px; line-height: 12px; }
 
 label.radio, label.checkbox { font-family: "proxima-nova", Arial, sans-serif; font-style: normal; position: relative; cursor: pointer; line-height: 16px; }
 label.radio:before, label.checkbox:before { content: ''; display: block; border: solid 1px #8f8e8c; width: 12px; height: 12px; text-align: center; line-height: 16px; position: absolute; left: 0; }

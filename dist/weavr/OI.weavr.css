@@ -828,9 +828,16 @@ input[type="checkbox"]:checked + label.checkbox {
   color: #333;
 }
 input[type="checkbox"]:checked + label.checkbox:before {
-  content: '✓';
-  color: #333;
-  border-color: #333;
+  content: '\e607';
+  font-family: "oi-icons";
+  color: #ed027e;
+  border-color: #ed027e;
+  font-size: 12px;
+  line-height: 12px;
+}
+input[type="checkbox"]:checked + label.checkbox.small:before {
+  font-size: 10px;
+  line-height: 12px;
 }
 
 label.radio, label.checkbox {
