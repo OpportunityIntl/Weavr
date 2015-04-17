@@ -139,6 +139,30 @@
           display: block;
         }
       }
+      
+      table.icons {
+        border-spacing: 0;
+        border-collapse: separate;
+      }
+      
+      .icons td, .icons th {
+        vertical-align: top;
+        padding: 10px;
+        text-align: left;
+        font-size: 16px;
+      }
+      
+      .icons td:first-child {
+        text-align: center;
+      }
+      
+      .icons th {
+        border-bottom: solid 2px #8f8e8c;
+      }
+      
+      .icons tr:nth-of-type(even) {
+        background-color: #efeeea;
+      }
     </style>
   </head>
   <body>
@@ -1036,6 +1060,424 @@
       <p>
         Check out <strong><span data-tooltip="Check out this tooltip! It has a lot more content. Lot's more!" data-tooltip-style="teal" data-tooltip-width="600">this teal tooltip</span></strong>
       </p>
+      
+      <hr>
+      
+      <h2>Icons</h2>
+      <table class="icons">
+        <tr>
+          <th>Symbol</th>
+          <th>Class</th>
+          <th>Description</th>
+          <th>Unicode</th>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon-menu"></div>
+          </td>
+          <td>
+            .icon-menu
+          </td>
+          <td>
+            <span class="desc">Menu Icon</span>
+          </td>
+          <td>
+            <code>\e616</code>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon-mail"></div>
+          </td>
+          <td>
+            .icon-mail
+          </td>
+          <td>
+            <span class="desc">Email Icon</span>
+          </td>
+          <td>
+            <code>\e615</code>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon-plus"></div>
+          </td>
+          <td>
+            .icon-plus
+          </td>
+          <td>
+            <span class="desc">Plus</span>
+          </td>
+          <td>
+            <code>\e613</code>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon-cross"></div>
+          </td>
+          <td>
+            .icon-cross
+          </td>
+          <td>
+            <span class="desc">Cross</span>
+          </td>
+          <td>
+            <code>\e608</code>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon-checkmark"></div>
+          </td>
+          <td>
+            .icon-checkmark
+          </td>
+          <td>
+            <span class="desc">Checkmark</span>
+          </td>
+          <td>
+            <code>\e607</code>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon-play"></div>
+          </td>
+          <td>
+            .icon-play
+          </td>
+          <td>
+            <span class="desc">Play Icon</span>
+          </td>
+          <td>
+            <code>\e60a</code>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon-user"></div>
+          </td>
+          <td>
+            .icon-user
+          </td>
+          <td>
+            <span class="desc">User Icon</span>
+          </td>
+          <td>
+            <code>\e609</code>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon-arrow-left"></div>
+          </td>
+          <td>
+            .icon-arrow-left
+          </td>
+          <td>
+            <span class="desc">Arrow Left</span>
+          </td>
+          <td>
+            <code>\e60d</code>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon-arrow-right"></div>
+          </td>
+          <td>
+            .icon-arrow-right
+          </td>
+          <td>
+            <span class="desc">Arrow Right</span>
+          </td>
+          <td>
+            <code>\e60c</code>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon-arrow-up"></div>
+          </td>
+          <td>
+            .icon-arrow-up
+          </td>
+          <td>
+            <span class="desc">Arrow Up</span>
+          </td>
+          <td>
+            <code>\e60b</code>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon-arrow-down"></div>
+          </td>
+          <td>
+            .icon-arrow-down
+          </td>
+          <td>
+            <span class="desc">Arrow Down</span>
+          </td>
+          <td>
+            <code>\e612</code>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon-arrow-left-small"></div>
+          </td>
+          <td>
+            .icon-arrow-left-small
+          </td>
+          <td>
+            <span class="desc">Arrow Left 2</span>
+          </td>
+          <td>
+            <code>\e60e</code>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon-arrow-right-small"></div>
+          </td>
+          <td>
+            .icon-arrow-right-small
+          </td>
+          <td>
+            <span class="desc">Arrow Right 2</span>
+          </td>
+          <td>
+            <code>\e612</code>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon-arrow-up-small"></div>
+          </td>
+          <td>
+            .icon-arrow-up-small
+          </td>
+          <td>
+            <span class="desc">Arrow Up 2</span>
+          </td>
+          <td>
+            <code>\e611</code>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon-arrow-down-small"></div>
+          </td>
+          <td>
+            .icon-arrow-down-small
+          </td>
+          <td>
+            <span class="desc">Arrow Down 2</span>
+          </td>
+          <td>
+            <code>\e610</code>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon-left"></div>
+          </td>
+          <td>
+            .icon-left
+          </td>
+          <td>
+            <span class="desc">Left</span>
+          </td>
+          <td>
+            <code>\e61a</code>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon-right"></div>
+          </td>
+          <td>
+            .icon-right
+          </td>
+          <td>
+            <span class="desc">Right</span>
+          </td>
+          <td>
+            <code>\e619</code>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon-up"></div>
+          </td>
+          <td>
+            .icon-up
+          </td>
+          <td>
+            <span class="desc">Up</span>
+          </td>
+          <td>
+            <code>\e618</code>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon-down"></div>
+          </td>
+          <td>
+            .icon-down
+          </td>
+          <td>
+            <span class="desc">Down</span>
+          </td>
+          <td>
+            <code>\e617</code>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon-nav-right"></div>
+          </td>
+          <td>
+            .icon-nav-right
+          </td>
+          <td>
+            <span class="desc">Nav Right</span>
+          </td>
+          <td>
+            <code>\e61b</code>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon-nav-up"></div>
+          </td>
+          <td>
+            .icon-nav-up
+          </td>
+          <td>
+            <span class="desc">Nav Up</span>
+          </td>
+          <td>
+            <code>\e61c</code>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon-facebook"></div>
+          </td>
+          <td>
+            .icon-facebook
+          </td>
+          <td>
+            <span class="desc">Facebook</span>
+          </td>
+          <td>
+            <code>\e601</code>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon-vimeo"></div>
+          </td>
+          <td>
+            .icon-vimeo
+          </td>
+          <td>
+            <span class="desc">Vimeo</span>
+          </td>
+          <td>
+            <code>\e606</code>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon-twitter"></div>
+          </td>
+          <td>
+            .icon-twitter
+          </td>
+          <td>
+            <span class="desc">Twitter</span>
+          </td>
+          <td>
+            <code>\e600</code>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon-pinterest"></div>
+          </td>
+          <td>
+            .icon-pinterest
+          </td>
+          <td>
+            <span class="desc">Pinterest</span>
+          </td>
+          <td>
+            <code>\e603</code>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon-addthis"></div>
+          </td>
+          <td>
+            .icon-addthis
+          </td>
+          <td>
+            <span class="desc">AddThis</span>
+          </td>
+          <td>
+            <code>\e614</code>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon-tumblr"></div>
+          </td>
+          <td>
+            .icon-tumblr
+          </td>
+          <td>
+            <span class="desc">Tumblr</span>
+          </td>
+          <td>
+            <code>\e604</code>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon-linkedin"></div>
+          </td>
+          <td>
+            .icon-linkedin
+          </td>
+          <td>
+            <span class="desc">LinkedIn</span>
+          </td>
+          <td>
+            <code>\e605</code>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icon-googleplus"></div>
+          </td>
+          <td>
+            .icon-googleplus
+          </td>
+          <td>
+            <span class="desc">Google+</span>
+          </td>
+          <td>
+            <code>\e602</code>
+          </td>
+        </tr>
+      </table>
     </div>
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
