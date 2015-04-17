@@ -13,8 +13,8 @@ module.exports = function(grunt) {
           style: 'expanded'
         },
         files: {
-          'css/OI.weavr.css' : 'sass/framework.scss',
-          'css/OI.weavr.grid.css' : 'sass/grid-only.scss'
+          'dist/weavr/OI.weavr.css' : 'sass/framework.scss',
+          'dist/weavr/OI.weavr.grid.css' : 'sass/grid-only.scss'
         }
       },
       production: {
@@ -24,8 +24,8 @@ module.exports = function(grunt) {
           banner: '<%= banner %>'
         },
         files: {
-          'css/OI.weavr.min.css' : 'sass/framework.scss',
-          'css/OI.weavr.grid.min.css' : 'sass/grid-only.scss'
+          'dist/weavr/OI.weavr.min.css' : 'sass/framework.scss',
+          'dist/weavr/OI.weavr.grid.min.css' : 'sass/grid-only.scss'
         }
       }
     },
@@ -36,19 +36,11 @@ module.exports = function(grunt) {
           banner: '<%= banner %>'
         },
         files: {
-          'js/OI.weavr.min.js': ['js/OI.weavr.js']
+          'dist/weavr/OI.weavr.min.js': ['js/OI.weavr.js']
         }
       }
     },
     
-    copy: {
-      production: {
-        files: [
-          {expand: true, src: ['css/*'], dest: 'dist/weavr/', flatten: true},
-          {expand: true, src: ['js/*'], dest: 'dist/weavr/', flatten: true}
-        ]
-      }
-    }
     
   });
 
@@ -59,6 +51,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-copy');
 
   // Default task(s).
-  grunt.registerTask('default', [ 'sass:dev', 'sass:production', 'uglify:production', 'copy:production' ] );
+  grunt.registerTask('default', [ 'sass:dev', 'sass:production', 'uglify:production' ] );
 
 };
