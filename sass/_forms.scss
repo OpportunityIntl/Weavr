@@ -62,6 +62,35 @@ label {
   margin-bottom: 0.5 * $gutter;
 }
 
+.input-group {
+  display: table;
+  
+  input {
+    display: table-cell;
+    
+    &:first-child {
+      border-right: none;
+    }
+    
+    &:last-child {
+      border-left: none;
+    }
+  }
+  
+  .prefix, .postfix {
+    display: table-cell;
+    width: 1%;
+    height: 46px;
+    background-color: $brand-offwhite;
+    line-height: 44px;
+    padding: 0 10px;
+    text-align: center;
+    border: solid 1px $brand-gray;
+    font-size: 12px;
+    color: $brand-gray;
+  }
+}
+
 /************************************/
 /**** Checkbox and Radio Buttons ****/
 /************************************/
