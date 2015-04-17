@@ -22,6 +22,7 @@
 .row.no-gutter {
   margin-left: 0;
   margin-right: 0;
+  margin-bottom: 0;
 }
 .row.no-gutter .col {
   padding-left: 0;
@@ -81,6 +82,15 @@
 @media (max-width: 960px) {
   .row {
     margin-bottom: 0;
+  }
+  .row:after {
+    clear: none;
+  }
+  .row.large-gutter {
+    margin-bottom: 0;
+  }
+  .row.large-gutter .col {
+    margin-bottom: 40px;
   }
   .row .col {
     margin-bottom: 20px;

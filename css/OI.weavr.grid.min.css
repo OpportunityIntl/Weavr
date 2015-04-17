@@ -1,5 +1,5 @@
 /* Weavr v0.9.1 
- * Compiled 04-14-2015
+ * Compiled 04-17-2015
  * Copyright (c) 2015 Opportunity International 
  */
 
@@ -11,7 +11,7 @@
 .row.large-gutter { margin-left: -20px; margin-right: -20px; margin-bottom: 40px; }
 .row.large-gutter .col { padding-left: 20px; padding-right: 20px; }
 .row:last-child { margin-bottom: 0; }
-.row.no-gutter { margin-left: 0; margin-right: 0; }
+.row.no-gutter { margin-left: 0; margin-right: 0; margin-bottom: 0; }
 .row.no-gutter .col { padding-left: 0; padding-right: 0; margin-bottom: 0; }
 .row:before, .row:after { content: " "; display: table; }
 .row:after { clear: both; }
@@ -31,6 +31,9 @@
 .col.col-1 { width: 8.33333%; }
 
 @media (max-width: 960px) { .row { margin-bottom: 0; }
+  .row:after { clear: none; }
+  .row.large-gutter { margin-bottom: 0; }
+  .row.large-gutter .col { margin-bottom: 40px; }
   .row .col { margin-bottom: 20px; }
   .row .col.n-col-12 { width: 100%; }
   .row .col.n-col-11 { width: 91.66667%; }
