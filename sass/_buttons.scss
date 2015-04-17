@@ -1,16 +1,16 @@
 a.btn {
+  display: inline-block;
   text-decoration: none;
   vertical-align: top;
   line-height: 46px;
 }
 
 button.btn {
-  display: block;
-  width: 100%;
+  display: inline-block;
+  width: auto;
 }
 
 .btn {
-  display: block;
   text-align: center;
   color: #fff;
   text-transform: uppercase;
@@ -94,10 +94,9 @@ button.btn {
     }
   }
   
-  &.inline {
-    display: inline-block;
-    line-height: 46px;
-    width: auto;
+  &.block {
+    display: block;
+    width: 100%;
   }
     
   &.ghost {
@@ -263,6 +262,10 @@ button.btn {
   }
 }
 
-.btn.inline + .btn.inline {
+.btn + .btn {
   margin-left: $gutter;
+  
+  &.block {
+    margin-left: 0;  
+  }
 }

@@ -764,8 +764,6 @@ textarea {
 }
 
 input[type='submit'], input[type="button"] {
-  display: block;
-  width: 100%;
   border: none;
   appearance: none;
   -webkit-appearance: none;
@@ -994,18 +992,18 @@ select.select-placeholder {
 }
 
 a.btn {
+  display: inline-block;
   text-decoration: none;
   vertical-align: top;
   line-height: 46px;
 }
 
 button.btn {
-  display: block;
-  width: 100%;
+  display: inline-block;
+  width: auto;
 }
 
 .btn {
-  display: block;
   text-align: center;
   color: #fff;
   text-transform: uppercase;
@@ -1080,10 +1078,9 @@ button.btn {
 .btn.brand-white-bg:hover {
   box-shadow: 0 0 0 0 #efeeea inset;
 }
-.btn.inline {
-  display: inline-block;
-  line-height: 46px;
-  width: auto;
+.btn.block {
+  display: block;
+  width: 100%;
 }
 .btn.ghost {
   background-color: transparent;
@@ -1202,8 +1199,11 @@ button.btn {
   color: #8f8e8c;
 }
 
-.btn.inline + .btn.inline {
+.btn + .btn {
   margin-left: 20px;
+}
+.btn + .btn.block {
+  margin-left: 0;
 }
 
 /************************************/
