@@ -36,7 +36,7 @@ module.exports = function(grunt) {
           banner: '<%= banner %>'
         },
         files: {
-          'dist/weavr/OI.weavr.min.js': ['js/OI.weavr.js']
+          'dist/weavr/OI.weavr.min.js': ['dist/weavr/OI.weavr.js']
         }
       }
     },
@@ -55,6 +55,16 @@ module.exports = function(grunt) {
       },
     },
     
+    concat: {
+      options: {
+        separator: ';',
+      },
+      default: {
+        src: ['js/OI.tooltip.js', 'js/OI.weavr.js'],
+        dest: 'dist/weavr/OI.weavr.js',
+      },
+    }
+    
   });
 
   // Load plugins
@@ -63,8 +73,9 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-contrib-concat');
 
   // Default task(s).
-  grunt.registerTask('default', [ 'sass:dev', 'sass:production', 'uglify:production' ] );
+  grunt.registerTask('default', [ 'sass:dev', 'sass:production', 'concat:default', 'uglify:production' ] );
 
 };
