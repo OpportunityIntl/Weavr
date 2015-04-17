@@ -41,6 +41,19 @@ module.exports = function(grunt) {
       }
     },
     
+    watch: {
+      default: {
+        files: ['sass/**/*.scss', 'js/**/*.js'],
+        tasks: ['default']
+      },
+      options: {
+        interrupt: false,
+        nospawn: true,
+        event: 'all',
+        interval: 1000,
+        debounceDelay: 1000
+      },
+    },
     
   });
 
@@ -49,6 +62,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-copy');
+  grunt.loadNpmTasks('grunt-contrib-watch');
 
   // Default task(s).
   grunt.registerTask('default', [ 'sass:dev', 'sass:production', 'uglify:production' ] );
