@@ -57,7 +57,7 @@
         color: #555;
         margin: 0;
         border-radius: 2px;
-        font-size: 14px;
+        font-size: .875em;
       }
       
       pre.inline {
@@ -624,10 +624,6 @@
         </ol>
       </div>
       
-      <hr>
-      
-      <h2>Lists</h2>
-      
       <h3>Unordered Lists</h3>
       <p>
         Basic <code>&lt;ul&gt;</code>
@@ -724,9 +720,34 @@
         <li>Unordered list item 3</li>
       </ol>
       
+      <h3>Paragraphs</h3>
+      <p class="large">
+        This is a large paragraph, using <code>.large</code>.
+      </p>
+      <p>
+        This is a normal paragraph.
+      </p>
+      <p class="small">
+        This is a small paragraph, using <code>.small</code>.
+      </p>
+      
+      <h3>Alignment</h3>
+      <p class="align-left">
+        This paragraph is left-aligned with <code>.align-left</code>. Paragraphs
+        are left-aligned by default, so the class is really only necessary when you
+        need to override the alignment inherited from a containing element.
+      </p>
+      <p class="align-center">
+        This paragraph is center-aligned with <code>.align-center</code>.
+      </p>
+      <p class="align-right">
+        This paragraph is right-aligned with <code>.align-right</code>.
+      </p>
+      
       <hr>
       
       <h2>Colors</h2>
+      <h3>Background color</h3>
       <div class="row">
         <div class="col col-3 n-col-3 t-col-4 m-col-6">
           <div class="color-swatch brand-purple-bg"></div>
@@ -760,17 +781,52 @@
         </div>
         <div class="col col-3 n-col-3 t-col-4 m-col-6">
           <div class="color-swatch brand-darkgray-bg"></div>
-          <pre class="inline">.brand-darkgray-bg</pre>
+          <code>.brand-darkgray-bg</code>
         </div>
       </div>
       <div class="row">
         <div class="col col-3 n-col-3 t-col-4 m-col-6">
           <div class="color-swatch brand-gray-bg"></div>
-          <pre class="inline">.brand-gray-bg</pre>
+          <code>.brand-gray-bg</code>
         </div>
         <div class="col col-3 n-col-3 t-col-4 m-col-6">
           <div class="color-swatch brand-offwhite-bg"></div>
-          <pre class="inline">.brand-offwhite-bg</pre>
+          <code>.brand-offwhite-bg</code>
+        </div>
+      </div>
+      <div class="clear"></div>
+      
+      <h3>Text color</h3>
+      <div class="row">
+        <div class="col col-3 n-col-3 t-col-4 m-col-6">
+          <strong class="brand-pink">Pink</strong><br>
+          <code>.brand-pink</code> 
+        </div>
+        <div class="col col-3 n-col-3 t-col-4 m-col-6">
+          <strong class="brand-purple">Purple</strong><br>
+          <code>.brand-purple</code>
+        </div>
+        <div class="col col-3 n-col-3 t-col-4 m-col-6">
+          <strong class="brand-teal">Teal</strong><br>
+          <code>.brand-teal</code>
+        </div>
+        <div class="col col-3 n-col-3 t-col-4 m-col-6">
+          <strong class="brand-orange">Orange</strong><br>
+          <code>.brand-orange</code>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col col-3 n-col-3 t-col-4 m-col-6">
+          <strong class="brand-green">Green</strong><br>
+          <code>.brand-green</code>
+        </div>
+        <div class="col col-3 n-col-3 t-col-4 m-col-6">
+          <strong class="brand-gray">Gray</strong><br>
+          <code>.brand-gray</code>
+        </div>
+        <div class="col col-3 n-col-3 t-col-4 m-col-6">
+          <strong class="brand-offwhite">Offwhite</strong><br>
+          <code>.brand-offwhite</code>
         </div>
       </div>
       <div class="clear"></div>
