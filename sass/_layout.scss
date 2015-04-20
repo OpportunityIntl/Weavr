@@ -18,12 +18,32 @@
   padding: 0 4 * $gutter;
 }
 
+.padding-1x-4x {
+  padding: $gutter 4 * $gutter;
+}
+
+.padding-1x-3x {
+  padding: $gutter 3 * $gutter;
+}
+
+.padding-1x-2x {
+  padding: $gutter 2 * $gutter;
+}
+
 .padding-1x {
   padding: $gutter;
 }
 
 .padding-1x-0 {
   padding: $gutter 0;
+}
+
+.padding-2x-4x {
+  padding: 2 * $gutter 4 * $gutter
+}
+
+.padding-2x-3x {
+  padding: 2 * $gutter 3 * $gutter
 }
 
 .padding-2x {
@@ -36,6 +56,10 @@
 
 .padding-2x-0 {
   padding: 2 * $gutter 0;
+}
+
+.padding-3x-4x {
+  padding: 3 * $gutter 4 * $gutter;
 }
 
 .padding-3x {

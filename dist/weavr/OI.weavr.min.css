@@ -457,15 +457,27 @@ button.btn { display: inline-block; width: auto; }
 
 .padding-0-4x { padding: 0 80px; }
 
+.padding-1x-4x { padding: 20px 80px; }
+
+.padding-1x-3x { padding: 20px 60px; }
+
+.padding-1x-2x { padding: 20px 40px; }
+
 .padding-1x { padding: 20px; }
 
 .padding-1x-0 { padding: 20px 0; }
+
+.padding-2x-4x { padding: 40px 80px; }
+
+.padding-2x-3x { padding: 40px 60px; }
 
 .padding-2x { padding: 40px; }
 
 .padding-2x-1x { padding: 40px 20px; }
 
 .padding-2x-0 { padding: 40px 0; }
+
+.padding-3x-4x { padding: 60px 80px; }
 
 .padding-3x { padding: 60px; }
 
