@@ -1,6 +1,11 @@
 <html>
   <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    
     <title>The Weavr Kitchen Sink</title>
+    
     <link rel="stylesheet" href="/weavr/OI.weavr.css">
     
     <script type="text/javascript" src="//use.typekit.net/eab4ncy.js"></script>
@@ -579,170 +584,188 @@
       
       <h2>Typography</h2>
       
-      <div class="bordered-box padding-2x contained-680">
+      <h3>Headings</h3>
+      <div class="brand-offwhite-bg padding-2x contained-680">
         <h1>This is an H1</h1>
         <h2>This is an H2</h2>
-        <p class="large">
-          This is a large paragraph. XOXO chia cardigan, Marfa disrupt lomo 8-bit distillery blog vegan Thundercats lo-fi cold-pressed.
-        </p>
         <h3>This is an H3</h3>
-        <p>
-          This is a normal-sized paragraph. It has <strong>bold text</strong>, some <em>italisized text</em>, and a <a href="#">hyperlink</a>. XOXO chia cardigan, Marfa disrupt lomo 8-bit distillery blog vegan Thundercats lo-fi cold-pressed. Trust fund whatever hoodie, pop-up meh salvia brunch Etsy American Apparel. Aesthetic migas butcher Etsy DIY tilde PBR&B. Farm-to-table Austin master cleanse, readymade banh mi umami cronut 90's beard Schlitz Odd Future small batch. Mustache ethical mixtape Godard, narwhal Banksy church-key VHS aesthetic. Food truck wolf pour-over yr Banksy butcher kogi Austin, American Apparel drinking vinegar. Plaid vegan authentic, aesthetic sustainable hashtag hoodie normcore meggings American Apparel seitan 90's before they sold out cred butcher.
+        <h4>This is an H4</h4>
+        <h5>This is an H5</h5>
+        <h6>This is an H6</h6>
+      </div>
+      
+      <h3>Paragraphs</h3>
+      <div class="contained-680">
+        <p class="large">
+          This is a large paragraph, using <code>.large</code>. Stumptown Thundercats before they sold out Tumblr, asymmetrical 3 wolf moon literally butcher farm-to-table wolf cronut. Roof party XOXO banjo letterpress, kale chips retro authentic meggings readymade raw denim whatever. 
         </p>
         <p>
-          This is another paragraph. Trust fund whatever hoodie, pop-up meh salvia brunch Etsy American Apparel. Aesthetic migas butcher Etsy DIY tilde PBR&B. Farm-to-table Austin master cleanse, readymade banh mi umami cronut 90's beard Schlitz Odd Future small batch. Mustache ethical mixtape Godard, narwhal Banksy church-key VHS aesthetic. Food truck wolf pour-over yr Banksy butcher kogi Austin, American Apparel drinking vinegar. Plaid vegan authentic, aesthetic sustainable hashtag hoodie normcore meggings American Apparel seitan 90's before they sold out cred butcher.
+          This is a normal paragraph. Neutra tofu pour-over put a bird on it cold-pressed. Dreamcatcher keffiyeh Neutra 90's, raw denim pour-over 8-bit cred shabby chic direct trade pork belly PBR&B. 
         </p>
-        <blockquote>
-          <p>
-            Of course, from a group of Libyan Nationalists. They wanted me to build them a bomb, so I took their plutonium and in turn gave them a shiny bomb case full of used pinball machine parts. Yet. Yeah, I guessed you're a sailor, aren't you, that's why you wear that life preserver. Hey, George, buddy, you weren't at school, what have you been doing all day? Oh, you make it sound so easy. I just, I wish I wasn't so scared.
-          </p>
-          <cite>deloreanipsum.com</cite>
-        </blockquote>
-        <h4>Let's check out some lists under this H4</h4>
+        <p class="small">
+          This is a small paragraph, using <code>.small</code>. Wolf vegan crucifix, fashion axe 3 wolf moon leggings Banksy hella authentic chia Echo Park kogi heirloom. Raw denim yr migas locavore pickled, retro Marfa cray disrupt 8-bit 90's four dollar toast. Truffaut chillwave ugh shabby chic migas, art party Marfa.
+        </p>
+      </div>
+      
+      <h3>Unordered Lists</h3>
+      <div class="contained-680">
+        <p>
+          Basic <code>&lt;ul&gt;</code>
+        </p>
         <ul>
-          <li>List item 1</li>
-          <li>List item 2</li>
+          <li>Unordered list item 1</li>
+          <li>Unordered list item 2</li>
+          <li>Unordered list item 3</li>
+        </ul>
+        <p>
+          Nested <code>&lt;ul&gt;</code>
+        </p>
+        <ul>
+          <li>Unordered list item 1</li>
+          <li>Unordered list item 2</li>
           <li>
-            <p>
-              This list item contains two paragraphs. Here's the first. Trust fund whatever hoodie, pop-up meh salvia brunch Etsy American Apparel. Aesthetic migas butcher Etsy DIY tilde PBR&B. Farm-to-table Austin master cleanse, readymade banh mi umami cronut 90's beard Schlitz Odd Future small batch.
-            </p>
-            <p>
-              Here's the second paragraph. Trust fund whatever hoodie, pop-up meh salvia brunch Etsy American Apparel. Aesthetic migas butcher Etsy DIY tilde PBR&B. Farm-to-table Austin master cleanse, readymade banh mi umami cronut 90's beard Schlitz Odd Future small batch.
-            </p>
+            Unordered list item 3
+            <ul>
+              <li>Nested list item 1</li>
+              <li>Nested list item 2</li>
+              <li>
+                Nested list item 3
+                <ul>
+                  <li>Very nested list item 1</li>
+                  <li>Very nested list item 2</li>
+                  <li>Very nested list item 3</li>
+                </ul>
+              </li>
+            </ul>
           </li>
         </ul>
+        <p>
+          <code>&lt;ul&gt;</code> with <code>.no-list-style</code>
+        </p>
+        <ul class="no-list-style">
+          <li>Unordered list item 1</li>
+          <li>Unordered list item 2</li>
+          <li>Unordered list item 3</li>
+        </ul>
+        <p>
+          <code>&lt;ul&gt;</code> with <code>.inline</code>
+        </p>
+        <ul class="inline">
+          <li>Unordered list item 1</li>
+          <li>Unordered list item 2</li>
+          <li>Unordered list item 3</li>
+        </ul>
+      </div>
+      
+      <h3>Ordered Lists</h3>
+      <div class="conatined-680">
+        <p>
+          Basic <code>&lt;ol&gt;</code>
+        </p>
+        <ol>
+          <li>Ordered list item 1</li>
+          <li>Ordered list item 2</li>
+          <li>Ordered list item 3</li>
+        </ol>
+        <p>
+          Nested <code>&lt;ol&gt;</code>
+        </p>
         <ol>
           <li>Ordered list item 1</li>
           <li>Ordered list item 2</li>
           <li>
             Ordered list item 3
             <ol>
-              <li>Nested ordered list item 1</li>
-              <li>Nested ordered list item 2</li>
+              <li>Nested list item 1</li>
+              <li>Nested list item 2</li>
+              <li>
+                Nested list item 3
+                <ol>
+                  <li>Very nested list item 1</li>
+                  <li>Very nested list item 2</li>
+                  <li>Very nested list item 3</li>
+                </ol>
+              </li>
             </ol>
           </li>
         </ol>
+        <p>
+          <code>&lt;ol&gt;</code> with <code>.no-list-style</code>
+        </p>
+        <ol class="no-list-style">
+          <li>Ordered list item 1</li>
+          <li>Ordered list item 2</li>
+          <li>Ordered list item 3</li>
+        </ol>
+        <p>
+          <code>&lt;ol&gt;</code> with <code>.inline</code>
+        </p>
+        <ol class="inline">
+          <li>Unordered list item 1</li>
+          <li>Unordered list item 2</li>
+          <li>Unordered list item 3</li>
+        </ol>
       </div>
       
-      <h3>Unordered Lists</h3>
-      <p>
-        Basic <code>&lt;ul&gt;</code>
-      </p>
-      <ul>
-        <li>Unordered list item 1</li>
-        <li>Unordered list item 2</li>
-        <li>Unordered list item 3</li>
-      </ul>
-      <p>
-        Nested <code>&lt;ul&gt;</code>
-      </p>
-      <ul>
-        <li>Unordered list item 1</li>
-        <li>Unordered list item 2</li>
-        <li>
-          Unordered list item 3
-          <ul>
-            <li>Nested list item 1</li>
-            <li>Nested list item 2</li>
-            <li>
-              Nested list item 3
-              <ul>
-                <li>Very nested list item 1</li>
-                <li>Very nested list item 2</li>
-                <li>Very nested list item 3</li>
-              </ul>
-            </li>
-          </ul>
-        </li>
-      </ul>
-      <p>
-        <code>&lt;ul&gt;</code> with <code>.no-list-style</code>
-      </p>
-      <ul class="no-list-style">
-        <li>Unordered list item 1</li>
-        <li>Unordered list item 2</li>
-        <li>Unordered list item 3</li>
-      </ul>
-      <p>
-        <code>&lt;ul&gt;</code> with <code>.inline</code>
-      </p>
-      <ul class="inline">
-        <li>Unordered list item 1</li>
-        <li>Unordered list item 2</li>
-        <li>Unordered list item 3</li>
-      </ul>
-      
-      <h3>Ordered Lists</h3>
-      <p>
-        Basic <code>&lt;ol&gt;</code>
-      </p>
-      <ol>
-        <li>Ordered list item 1</li>
-        <li>Ordered list item 2</li>
-        <li>Ordered list item 3</li>
-      </ol>
-      <p>
-        Nested <code>&lt;ol&gt;</code>
-      </p>
-      <ol>
-        <li>Ordered list item 1</li>
-        <li>Ordered list item 2</li>
-        <li>
-          Ordered list item 3
-          <ol>
-            <li>Nested list item 1</li>
-            <li>Nested list item 2</li>
-            <li>
-              Nested list item 3
-              <ol>
-                <li>Very nested list item 1</li>
-                <li>Very nested list item 2</li>
-                <li>Very nested list item 3</li>
-              </ol>
-            </li>
-          </ol>
-        </li>
-      </ol>
-      <p>
-        <code>&lt;ol&gt;</code> with <code>.no-list-style</code>
-      </p>
-      <ol class="no-list-style">
-        <li>Ordered list item 1</li>
-        <li>Ordered list item 2</li>
-        <li>Ordered list item 3</li>
-      </ol>
-      <p>
-        <code>&lt;ol&gt;</code> with <code>.inline</code>
-      </p>
-      <ol class="inline">
-        <li>Unordered list item 1</li>
-        <li>Unordered list item 2</li>
-        <li>Unordered list item 3</li>
-      </ol>
-      
-      <h3>Paragraphs</h3>
-      <p class="large">
-        This is a large paragraph, using <code>.large</code>.
-      </p>
-      <p>
-        This is a normal paragraph.
-      </p>
-      <p class="small">
-        This is a small paragraph, using <code>.small</code>.
-      </p>
-      
       <h3>Alignment</h3>
-      <p class="align-left">
-        This paragraph is left-aligned with <code>.align-left</code>. Paragraphs
-        are left-aligned by default, so the class is really only necessary when you
-        need to override the alignment inherited from a containing element.
-      </p>
-      <p class="align-center">
-        This paragraph is center-aligned with <code>.align-center</code>.
-      </p>
-      <p class="align-right">
-        This paragraph is right-aligned with <code>.align-right</code>.
-      </p>
+      <div class="contained-680">
+        <p class="align-left">
+          This paragraph is left-aligned with <code>.align-left</code>. Paragraphs
+          are left-aligned by default, so the class is really only necessary when you
+          need to override the alignment inherited from a containing element.
+        </p>
+        <p class="align-center">
+          This paragraph is center-aligned with <code>.align-center</code>.
+        </p>
+        <p class="align-right">
+          This paragraph is right-aligned with <code>.align-right</code>.
+        </p>
+      </div>
+      
+      <h3>Everything together</h3>
+      <div class="bordered-box padding-2x contained-680">
+        <h1 class="align-center">Opportunity International</h1>
+        <h2>About Us</h2>
+        <p class="large">
+          We provide access to financial solutions empowering people living in poverty to transform their lives, their children's futures and their communities.
+        </p>
+        <h3>Our History</h3>
+        <p>Opportunity International was founded in 1971 by two visionary leaders who were inspired to take action by their experiences with people living in extreme poverty.</p>
+        <p>Al Whittaker, former president of Bristol Myers International Corporation in the U.S., and Australian entrepreneur David Bussau sought a solution that would help people transform their lives and sustain their success.</p>
+        <p>Opportunity International was one of the first nonprofit organizations to recognize the benefits of microfinance &ndash; <a href="/flexible-touts/in-action/our-approach-to-microfinance">financial services for low-income people</a> &ndash; in developing countries.</p>
+        <blockquote>
+          <p>
+            It is a great privilege to partner with Opportunity International in our effort to alleviate hunger in Malawi and Mozambique. Opportunity's technology driven microfinance services help create a sustainable framework to increase food production and bring access to financing for thousands of hunger-afflicted people.
+          </p>
+          <cite><strong>Robert W. Lane</strong>, Retired CEO, Deere &amp; Company</cite>
+        </blockquote>
+        <h3>Mission, Vision &amp; Motivation</h3>
+        <h4>Mission</h4>
+        <p>
+          By providing financial solutions and training, we empower people living in poverty to transform their lives, their children’s futures and their communities.
+        </p>
+        <h4>Vision</h4>
+        <p>
+          Our vision is a world in which all people have the opportunity to achieve a life free from poverty, with dignity and purpose.
+        </p>
+        <h4>Motivation</h4>
+        <p>
+          We respond to Jesus Christ’s call to love and serve the poor. We seek to emulate the Good Samaritan, whose compassion crossed ethnic groups and religions. We serve all people regardless of race, faith, ethnicity and gender.
+        </p>
+        <h4>Values</h4>
+        <ul>
+          <li><strong>Commitment</strong> to our clients and their transformation.</li>
+          <li><strong>Humility</strong> a spirit of serving in all we do.</li>
+          <li><strong>Respect</strong> 360 degrees of consideration and teamwork.</li>
+          <li><strong>Integrity</strong> living our values with transparency and consistency.</li>
+          <li><strong>Stewardship</strong> accountability, innovation, and urgency.</li>
+          <li><strong>Transformation</strong> our ultimate goal in ourselves and others.</li>
+        </ul>
+        <hr>
+        <p class="small">
+          Opportunity International provides access to savings, small business loans, insurance and training to over 5 million people working their way out of poverty in the developing world. Clients in more than 20 countries use these financial services to start or expand a business, provide for their families, create jobs for their neighbors and build a safety net for the future. Opportunity International is a 501(c)(3) non-profit and serves all people regardless of race, religion, ethnicity or gender.
+        </p>
+      </div>
       
       <hr>
       
