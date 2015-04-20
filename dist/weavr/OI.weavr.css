@@ -150,6 +150,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: "proxima-nova", Arial, sans-serif;
+  font-size: 16px;
   color: #333;
 }
 
@@ -339,7 +340,7 @@ p.small {
 
 @media (max-width: 480px) {
   p.large {
-    font-size: 16px;
+    font-size: 18px;
   }
 }
 /******************/
