@@ -396,8 +396,7 @@ h5 {
 blockquote {
   font-style: italic;
   padding: 20px 20px 5px 50px;
-  margin-left: 0;
-  margin-right: 0;
+  margin: 20px 0;
   position: relative;
   border-top: solid 1px #efeeea;
   border-bottom: solid 1px #efeeea;
@@ -405,7 +404,7 @@ blockquote {
 blockquote p {
   font-family: "Time New Roman", serif;
   font-size: 18px;
-  line-height: 28px;
+  line-height: 1.5;
   color: #555;
 }
 blockquote cite {
@@ -429,6 +428,26 @@ blockquote:before {
   font-style: normal;
   line-height: 70px;
   color: #611171;
+}
+blockquote.no-border {
+  border-top: none;
+  border-bottom: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+blockquote.no-border:before {
+  top: -5px;
+}
+blockquote:first-child {
+  margin-top: 0;
+}
+
+blockquote + blockquote {
+  border-top: none;
+  padding-top: 0;
+}
+blockquote + blockquote:before {
+  top: -5px;
 }
 
 .brand-purple-bg blockquote:before {
