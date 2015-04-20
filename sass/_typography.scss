@@ -165,7 +165,7 @@ blockquote {
 
 ul, ol {
   padding: 0;
-  margin: 0;
+  margin: 0 0 $gutter 0;
   list-style: none;
   counter-reset: list;
   
@@ -174,6 +174,37 @@ ul, ol {
     padding-left: $gutter;
     line-height: 1.75em;
     counter-increment: list;
+    
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  
+  &.no-list-style {
+    li {
+      padding-left: 0;
+      
+      &:before {
+        display: none;
+      }
+    }
+  }
+  
+  &.inline {
+    display: inline-block;
+    margin-left: -0.5 * $gutter;
+    margin-right: -0.5 * $gutter;
+    padding: 0;
+    
+    li {
+      display: inline-block;
+      padding-left: 0.5 * $gutter;
+      padding-right: 0.5 * $gutter;
+      
+      &:before {
+        display: none;
+      }
+    }
   }
 }
 

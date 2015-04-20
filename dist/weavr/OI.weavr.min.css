@@ -1,5 +1,5 @@
 /* Weavr v0.9.1 
- * Compiled 04-18-2015
+ * Compiled 04-20-2015
  * Copyright (c) 2015 Opportunity International 
  */
 
@@ -183,8 +183,14 @@ blockquote:before { content: "\201c"; display: block; position: absolute; top: 1
 /***************/
 /**** Lists ****/
 /***************/
-ul, ol { padding: 0; margin: 0; list-style: none; counter-reset: list; }
+ul, ol { padding: 0; margin: 0 0 20px 0; list-style: none; counter-reset: list; }
 ul li, ol li { position: relative; padding-left: 20px; line-height: 1.75em; counter-increment: list; }
+ul li:last-child, ol li:last-child { margin-bottom: 0; }
+ul.no-list-style li, ol.no-list-style li { padding-left: 0; }
+ul.no-list-style li:before, ol.no-list-style li:before { display: none; }
+ul.inline, ol.inline { display: inline-block; margin-left: -10px; margin-right: -10px; padding: 0; }
+ul.inline li, ol.inline li { display: inline-block; padding-left: 10px; padding-right: 10px; }
+ul.inline li:before, ol.inline li:before { display: none; }
 
 ul li:before { content: ''; display: block; position: absolute; left: 0; top: 0; width: 7px; height: 7px; margin-top: 10px; border-radius: 100%; background-color: #555; }
 
@@ -272,19 +278,6 @@ ol li:before { content: counter(list) "."; display: block; position: absolute; l
   .row .col.m-col-3 { width: 25%; }
   .row .col.m-col-2 { width: 16.66667%; }
   .row .col.m-col-1 { width: 8.33333%; } }
-/***************/
-/**** Lists ****/
-/***************/
-ul.no-list-style, ol.no-list-style { list-style: none; padding: 0; margin: 0 0 1em 0; }
-
-ul:last-child { margin-bottom: 0; }
-
-li { margin-bottom: .5em; }
-
-ul.inline { margin-left: -10px; margin-right: -10px; padding: 0; list-style: none; }
-
-ul.inline li { display: inline-block; padding-left: 10px; padding-right: 10px; }
-
 /***************/
 /**** Forms ****/
 /***************/
