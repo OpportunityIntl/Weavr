@@ -49,7 +49,7 @@
 p {
   margin: 1em 0;
   font-size: 16px;
-  line-height: 28px;
+  line-height: 1.75;
   
   &:first-child {
     margin-top: 0;
@@ -82,6 +82,7 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
   margin: $gutter 0;
   letter-spacing: 1px;
+  line-height: 1;
   font-family: $font-primary;
   
   &:first-child {
@@ -94,15 +95,34 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 3.5em;
+  font-size: 32px;
+  margin: 1.5 * $gutter 0;
 }
 
 h2 {
-  font-size: 2em;
+  font-size: 24px;
 }
 
 h3 {
-  font-size: 1.5em;
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 16px;
+  text-transform: none;
+  margin-bottom: 0.5 * $gutter;
+  
+  & + p {
+    margin-top: 0;
+  }
+}
+
+h5 {
+  font-family: $font-secondary;
+  font-style: italic;
+  font-size: 16px;
+  color: $text-color-secondary;
+  text-transform: none;
 }
 
 /*********************/
