@@ -359,18 +359,36 @@ h1:first-child, h2:first-child, h3:first-child, h4:first-child, h5:first-child, 
 h1:last-child, h2:last-child, h3:last-child, h4:last-child, h5:last-child, h6:last-child {
   margin-bottom: 0;
 }
+h1 .subheading, h2 .subheading, h3 .subheading, h4 .subheading, h5 .subheading, h6 .subheading {
+  display: block;
+  text-transform: none;
+  letter-spacing: 0;
+  font-weight: normal;
+  font-family: "Times New Roman", Times, serif;
+  font-style: italic;
+  margin-top: 5px;
+}
 
 h1 {
   font-size: 32px;
   margin: 30px 0;
 }
+h1 .subheading {
+  font-size: 24px;
+}
 
 h2 {
   font-size: 24px;
 }
+h2 .subheading {
+  font-size: 18px;
+}
 
 h3 {
   font-size: 18px;
+}
+h3 .subheading {
+  font-size: 16px;
 }
 
 h4 {

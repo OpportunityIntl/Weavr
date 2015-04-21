@@ -92,19 +92,41 @@ h1, h2, h3, h4, h5, h6 {
   &:last-child {
     margin-bottom: 0;
   }
+  
+  .subheading {
+    display: block;
+    text-transform: none;
+    letter-spacing: 0;
+    font-weight: normal;
+    font-family: $font-secondary;
+    font-style: italic;
+    margin-top: 5px;
+  }
 }
 
 h1 {
   font-size: 32px;
   margin: 1.5 * $gutter 0;
+  
+  .subheading {
+    font-size: 24px;
+  }
 }
 
 h2 {
   font-size: 24px;
+  
+  .subheading {
+    font-size: 18px;
+  }
 }
 
 h3 {
   font-size: 18px;
+  
+  .subheading {
+    font-size: 16px;
+  }
 }
 
 h4 {
