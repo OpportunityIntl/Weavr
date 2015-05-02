@@ -48,7 +48,7 @@
 
 p {
   margin: 1em 0;
-  font-size: 16px;
+  font-size: 1em;
   line-height: 1.75;
   
   &:first-child {
@@ -61,16 +61,16 @@ p {
 }
 
 p.large {
-  font-size: 20px;
+  font-size: 1.25em;
 }
 
 p.small {
-  font-size: 12px;
+  font-size: .75em;
 }
 
 @media (max-width: 480px) {
   p.large {
-    font-size: 18px;
+    font-size: 1.125em;
   }
 }
 
@@ -105,32 +105,32 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 32px;
+  font-size: 2em;
   margin: 1.5 * $gutter 0;
   
   .subheading {
-    font-size: 24px;
+    font-size: .75em;
   }
 }
 
 h2 {
-  font-size: 24px;
+  font-size: 1.5em;
   
   .subheading {
-    font-size: 18px;
+    font-size: .75em;
   }
 }
 
 h3 {
-  font-size: 18px;
+  font-size: 1.125em;
   
   .subheading {
-    font-size: 16px;
+    font-size: .876em;
   }
 }
 
 h4 {
-  font-size: 16px;
+  font-size: 1em;
   text-transform: none;
   margin-bottom: 0.5 * $gutter;
   
@@ -142,7 +142,7 @@ h4 {
 h5 {
   font-family: $font-secondary;
   font-style: italic;
-  font-size: 16px;
+  font-size: 1em;
   color: $text-color-secondary;
   text-transform: none;
 }
@@ -161,7 +161,7 @@ blockquote {
   
   p {
     font-family: "Time New Roman", serif;
-    font-size: 18px;
+    font-size: 1.125em;
     line-height: 1.5;
     color: #555;
   }
