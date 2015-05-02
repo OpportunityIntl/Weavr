@@ -1,5 +1,5 @@
 /* Weavr v0.9.1 
- * Compiled 05-01-2015
+ * Compiled 05-02-2015
  * Copyright (c) 2015 Opportunity International 
  */
 
@@ -84,6 +84,8 @@ body { margin: 0; padding: 0; font-family: "proxima-nova", Arial, sans-serif; fo
 
 hr { display: block; height: 1px; background-color: #efeeea; border: none; margin: 20px 0; }
 
+.brand-offwhite-bg hr { background-color: #8f8e8c; }
+
 .brand-pink-bg { background: #ed027e; color: #fff; }
 
 .brand-orange-bg { background: #f15b22; color: #fff; }
@@ -153,7 +155,7 @@ p:last-child { margin-bottom: 0; }
 
 p.large { font-size: 1.25em; }
 
-p.small { font-size: .75em; }
+p.small { font-size: .875em; }
 
 @media (max-width: 480px) { p.large { font-size: 1.125em; } }
 /******************/
@@ -181,9 +183,9 @@ h5 { font-family: "Times New Roman", Times, serif; font-style: italic; font-size
 /*********************/
 /**** Blockquotes ****/
 /*********************/
-blockquote { font-style: italic; padding: 20px 20px 5px 50px; margin: 20px 0; position: relative; border-top: solid 1px #efeeea; border-bottom: solid 1px #efeeea; }
-blockquote p { font-family: "Time New Roman", serif; font-size: 1.125em; line-height: 1.5; color: #555; }
-blockquote cite { font-family: "Times New Roman", serif; text-align: right; display: block; margin-bottom: 15px; color: #555; }
+blockquote { font-style: italic; padding: 20px 20px 5px 50px; margin: 20px 0; position: relative; border-top: solid 1px #efeeea; border-bottom: solid 1px #efeeea; color: #555; }
+blockquote p { font-family: "Time New Roman", serif; font-size: 1.125em; line-height: 1.5; }
+blockquote cite { font-family: "Times New Roman", serif; text-align: right; display: block; margin-bottom: 15px; }
 blockquote cite:before { content: "– "; }
 blockquote:before { content: "\201c"; display: block; position: absolute; top: 15px; left: 0; font-size: 70px; font-weight: bold; font-style: normal; line-height: 70px; color: #611171; }
 blockquote.no-border { border-top: none; border-bottom: 0; padding-top: 0; padding-bottom: 0; }
@@ -193,9 +195,13 @@ blockquote:first-child { margin-top: 0; }
 blockquote + blockquote { border-top: none; padding-top: 0; }
 blockquote + blockquote:before { top: -5px; }
 
+.brand-purple-bg blockquote, .brand-light-purple-bg blockquote, .brand-pink-bg blockquote, .brand-teal-bg blockquote, .brand-light-teal-bg blockquote, .brand-orange-bg blockquote, .brand-green-bg blockquote, .brand-darkgray-bg blockquote, .brand-gray-bg blockquote { color: #fff; }
+
 .brand-purple-bg blockquote:before { color: #f15b22; }
 
 .brand-orange-bg blockquote:before { color: #611171; }
+
+.brand-offwhite-bg blockquote { border-color: #8f8e8c; }
 
 /***************/
 /**** Lists ****/

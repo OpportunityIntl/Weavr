@@ -184,6 +184,10 @@ hr {
   margin: 20px 0;
 }
 
+.brand-offwhite-bg hr {
+  background-color: #8f8e8c;
+}
+
 .brand-pink-bg {
   background: #ed027e;
   color: #fff;
@@ -339,7 +343,7 @@ p.large {
 }
 
 p.small {
-  font-size: .75em;
+  font-size: .875em;
 }
 
 @media (max-width: 480px) {
@@ -422,19 +426,18 @@ blockquote {
   position: relative;
   border-top: solid 1px #efeeea;
   border-bottom: solid 1px #efeeea;
+  color: #555;
 }
 blockquote p {
   font-family: "Time New Roman", serif;
   font-size: 1.125em;
   line-height: 1.5;
-  color: #555;
 }
 blockquote cite {
   font-family: "Times New Roman", serif;
   text-align: right;
   display: block;
   margin-bottom: 15px;
-  color: #555;
 }
 blockquote cite:before {
   content: "– ";
@@ -472,12 +475,28 @@ blockquote + blockquote:before {
   top: -5px;
 }
 
+.brand-purple-bg blockquote,
+.brand-light-purple-bg blockquote,
+.brand-pink-bg blockquote,
+.brand-teal-bg blockquote,
+.brand-light-teal-bg blockquote,
+.brand-orange-bg blockquote,
+.brand-green-bg blockquote,
+.brand-darkgray-bg blockquote,
+.brand-gray-bg blockquote {
+  color: #fff;
+}
+
 .brand-purple-bg blockquote:before {
   color: #f15b22;
 }
 
 .brand-orange-bg blockquote:before {
   color: #611171;
+}
+
+.brand-offwhite-bg blockquote {
+  border-color: #8f8e8c;
 }
 
 /***************/
