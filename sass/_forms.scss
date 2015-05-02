@@ -321,4 +321,12 @@ div.alert {
     background-color: #ee3300;
     color: #fff;
   }
+  
+  *:first-child {
+    margin-top: 0.5 * $gutter;
+  }
+  
+  *:last-child {
+    margin-bottom: 0.5 * $gutter;
+  }
 }

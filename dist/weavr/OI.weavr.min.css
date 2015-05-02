@@ -375,6 +375,8 @@ div.alert { padding: 10px 20px; font-size: .875em; margin-bottom: 20px; backgrou
 div.alert.success { background-color: #7bc557; color: #fff; }
 div.alert.warning { background-color: #f15b22; color: #fff; }
 div.alert.error { background-color: #ee3300; color: #fff; }
+div.alert *:first-child { margin-top: 10px; }
+div.alert *:last-child { margin-bottom: 10px; }
 
 a.btn { display: inline-block; text-decoration: none; vertical-align: top; }
 
