@@ -304,3 +304,30 @@ select {
     color: $brand-gray;
   }
 }
+
+/*********************/
+/**** Alert boxes ****/
+/*********************/
+
+div.alert {
+  padding: 0.5 * $gutter $gutter;
+  font-size: 14px;
+  margin-bottom: $gutter;
+  background-color: $brand-offwhite;
+  color: $text-color-secondary;
+  
+  &.success {
+    background-color: $brand-green;
+    color: #fff;
+  }
+  
+  &.warning {
+    background-color: $brand-orange;
+    color: #fff;
+  }
+  
+  &.error {
+    background-color: #ee3300;
+    color: #fff;
+  }
+}
