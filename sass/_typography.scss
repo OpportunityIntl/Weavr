@@ -158,12 +158,12 @@ blockquote {
   position: relative;
   border-top: solid 1px $brand-offwhite;
   border-bottom: solid 1px $brand-offwhite;
+  color: $text-color-secondary;
   
   p {
     font-family: "Time New Roman", serif;
     font-size: 1.125em;
     line-height: 1.5;
-    color: #555;
   }
   
   cite {
@@ -171,7 +171,6 @@ blockquote {
     text-align: right;
     display: block;
     margin-bottom: 15px;
-    color: #555;
     
     &:before {
       content: "– ";
@@ -216,12 +215,30 @@ blockquote + blockquote {
   }
 }
 
+.brand-purple-bg,
+.brand-light-purple-bg,
+.brand-pink-bg,
+.brand-teal-bg,
+.brand-light-teal-bg,
+.brand-orange-bg,
+.brand-green-bg,
+.brand-darkgray-bg,
+.brand-gray-bg {
+  blockquote {
+    color: #fff;
+  }
+}
+
 .brand-purple-bg blockquote:before {
   color: $brand-orange;
 }
 
 .brand-orange-bg blockquote:before {
   color: $brand-purple;
+}
+
+.brand-offwhite-bg blockquote {
+  border-color: $brand-gray;
 }
 
 /***************/
