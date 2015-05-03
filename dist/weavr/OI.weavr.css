@@ -20,44 +20,40 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-down:before {
+.icon-nub-down:before {
   content: "\e617";
 }
 
-.icon-nav-right:before {
-  content: "\e61b";
-}
-
-.icon-up:before {
+.icon-nub-up:before {
   content: "\e618";
 }
 
-.icon-right:before {
+.icon-nub-right:before {
   content: "\e619";
 }
 
-.icon-left:before {
+.icon-nub-left:before {
   content: "\e61a";
-}
-
-.icon-nav-up:before {
-  content: "\e61c";
 }
 
 .icon-addThis:before {
   content: "\e614";
 }
 
-.icon-mail:before {
-  content: "\e615";
-}
-
 .icon-menu:before {
   content: "\e616";
 }
 
+.icon-mail:before {
+  content: "\e615";
+}
+
 .icon-user:before {
   content: "\e609";
+}
+
+.icon-location:before {
+  content: "\e61b";
 }
 
 .icon-checkmark:before {
