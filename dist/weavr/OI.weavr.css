@@ -1444,6 +1444,9 @@ button.btn {
   width: 100%;
 }
 
+/*************************/
+/**** Padding classes ****/
+/*************************/
 .padding-0-1x {
   padding: 0 20px;
 }
@@ -1538,6 +1541,128 @@ button.btn {
 
 .padding-4x-0 {
   padding: 80px 0;
+}
+
+/************************/
+/**** Margin classes ****/
+/************************/
+.margin-bottom-4x {
+  margin-bottom: 80px;
+}
+
+.margin-bottom-3x {
+  margin-bottom: 60px;
+}
+
+.margin-bottom-2x {
+  margin-bottom: 40px;
+}
+
+.margin-bottom-1x {
+  margin-bottom: 20px;
+}
+
+.margin-top-4x {
+  margin-top: 80px;
+}
+
+.margin-top-3x {
+  margin-top: 60px;
+}
+
+.margin-top-2x {
+  margin-top: 40px;
+}
+
+.margin-top-1x {
+  margin-top: 20px;
+}
+
+/*************************/
+/**** Display classes ****/
+/*************************/
+.desktop-only {
+  display: block;
+}
+
+.netbook-only {
+  display: none;
+}
+
+.tablet-only {
+  display: none;
+}
+
+.mobile-only {
+  display: none;
+}
+
+.no-desktop {
+  display: none;
+}
+
+@media (max-width: 960px) {
+  .desktop-only {
+    display: none;
+  }
+
+  .netbook-only {
+    display: block;
+  }
+
+  .tablet-only {
+    display: none;
+  }
+
+  .mobile-only {
+    display: none;
+  }
+
+  .no-netbook {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .desktop-only {
+    display: none;
+  }
+
+  .netbook-only {
+    display: none;
+  }
+
+  .tablet-only {
+    display: block;
+  }
+
+  .mobile-only {
+    display: none;
+  }
+
+  .no-tablet {
+    display: none;
+  }
+}
+@media (max-width: 480px) {
+  .desktop-only {
+    display: none;
+  }
+
+  .netbook-only {
+    display: none;
+  }
+
+  .tablet-only {
+    display: none;
+  }
+
+  .mobile-only {
+    display: block;
+  }
+
+  .no-mobile {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=OI.weavr.css.map */
