@@ -177,6 +177,24 @@
   }
 }
 @media (max-width: 480px) {
+  .row {
+    margin-left: -7.5px;
+    margin-right: -7.5px;
+  }
+  .row.large-gutter {
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+  .row.large-gutter .col {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 30px;
+  }
+  .row .col {
+    padding-left: 7.5px;
+    padding-right: 7.5px;
+    margin-bottom: 15px;
+  }
   .row .col.m-col-12 {
     width: 100%;
   }
