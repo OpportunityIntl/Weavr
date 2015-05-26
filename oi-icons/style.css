@@ -1,10 +1,10 @@
 @font-face {
 	font-family: 'oi-icons';
-	src:url('fonts/oi-icons.eot?-2fths5');
-	src:url('fonts/oi-icons.eot?#iefix-2fths5') format('embedded-opentype'),
-		url('fonts/oi-icons.woff?-2fths5') format('woff'),
-		url('fonts/oi-icons.ttf?-2fths5') format('truetype'),
-		url('fonts/oi-icons.svg?-2fths5#oi-icons') format('svg');
+	src:url('fonts/oi-icons.eot?bpb8i0');
+	src:url('fonts/oi-icons.eot?#iefixbpb8i0') format('embedded-opentype'),
+		url('fonts/oi-icons.ttf?bpb8i0') format('truetype'),
+		url('fonts/oi-icons.woff?bpb8i0') format('woff'),
+		url('fonts/oi-icons.svg?bpb8i0#oi-icons') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -26,116 +26,90 @@
 .icon-nub-down:before {
 	content: "\e617";
 }
-
 .icon-nub-up:before {
 	content: "\e618";
 }
-
 .icon-nub-right:before {
 	content: "\e619";
 }
-
 .icon-nub-left:before {
 	content: "\e61a";
 }
-
+.icon-instagram:before {
+	content: "\e61c";
+}
 .icon-addThis:before {
 	content: "\e614";
 }
-
 .icon-menu:before {
 	content: "\e616";
 }
-
 .icon-mail:before {
 	content: "\e615";
 }
-
 .icon-user:before {
 	content: "\e609";
 }
-
 .icon-location:before {
 	content: "\e61b";
 }
-
 .icon-checkmark:before {
 	content: "\e607";
 }
-
 .icon-cross:before {
 	content: "\e608";
 }
-
 .icon-plus:before {
 	content: "\e613";
 }
-
 .icon-play:before {
 	content: "\e60a";
 }
-
 .icon-resize-enlarge:before {
 	content: "\e61d";
 }
-
 .icon-arrow-left-small:before {
 	content: "\e60e";
 }
-
 .icon-arrow-down-small:before {
 	content: "\e610";
 }
-
 .icon-arrow-up-small:before {
 	content: "\e611";
 }
-
 .icon-arrow-right-small:before {
 	content: "\e612";
 }
-
 .icon-arrow-left:before {
 	content: "\e60d";
 }
-
 .icon-arrow-down:before {
 	content: "\e60f";
 }
-
 .icon-arrow-up:before {
 	content: "\e60b";
 }
-
 .icon-arrow-right:before {
 	content: "\e60c";
 }
-
 .icon-vimeo:before {
 	content: "\e606";
 }
-
 .icon-twitter:before {
 	content: "\e600";
 }
-
 .icon-facebook:before {
 	content: "\e601";
 }
-
 .icon-googleplus:before {
 	content: "\e602";
 }
-
 .icon-pinterest:before {
 	content: "\e603";
 }
-
 .icon-tumblr:before {
 	content: "\e604";
 }
-
 .icon-linkedin:before {
 	content: "\e605";
 }
-

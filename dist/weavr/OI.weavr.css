@@ -136,6 +136,10 @@
   content: "\e605";
 }
 
+.icon-instagram:before {
+  content: "\e61c";
+}
+
 * {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
