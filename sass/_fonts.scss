@@ -1,144 +1,121 @@
 @font-face {
-  font-family: 'OI-icons';
-  src:url('fonts/OI-icons.eot?-478fm8');
-  src:url('fonts/OI-icons.eot?#iefix-478fm8') format('embedded-opentype'),
-    url('fonts/OI-icons.woff?-478fm8') format('woff'),
-    url('fonts/OI-icons.ttf?-478fm8') format('truetype'),
-    url('fonts/OI-icons.svg?-478fm8#OI-icons') format('svg');
-  font-weight: normal;
-  font-style: normal;
+	font-family: 'OI-icons';
+	src:url('fonts/OI-icons.eot?-yt7ydu');
+	src:url('fonts/OI-icons.eot?#iefix-yt7ydu') format('embedded-opentype'),
+		url('fonts/OI-icons.ttf?-yt7ydu') format('truetype'),
+		url('fonts/OI-icons.woff?-yt7ydu') format('woff'),
+		url('fonts/OI-icons.svg?-yt7ydu#oi-icons') format('svg');
+	font-weight: normal;
+	font-style: normal;
 }
 
 [class^="icon-"], [class*=" icon-"] {
-  font-family: 'OI-icons';
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
+	font-family: 'OI-icons';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
 
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-.icon-nub-down:before {
-	content: "\e617";
-}
-
-.icon-nub-up:before {
-	content: "\e618";
-}
-
-.icon-nub-right:before {
-	content: "\e619";
-}
-
-.icon-nub-left:before {
-	content: "\e61a";
-}
-
-.icon-addThis:before {
-	content: "\e614";
-}
-
-.icon-menu:before {
-	content: "\e616";
-}
-
-.icon-mail:before {
-	content: "\e615";
-}
-
-.icon-user:before {
-	content: "\e609";
-}
-
-.icon-location:before {
-	content: "\e61b";
-}
-
-.icon-checkmark:before {
-	content: "\e607";
-}
-
-.icon-cross:before {
-	content: "\e608";
-}
-
-.icon-plus:before {
-	content: "\e613";
-}
-
-.icon-play:before {
-	content: "\e60a";
-}
-
-.icon-resize-enlarge:before {
-	content: "\e61d";
-}
-
-.icon-arrow-left-small:before {
-	content: "\e60e";
-}
-
-.icon-arrow-down-small:before {
-	content: "\e610";
-}
-
-.icon-arrow-up-small:before {
-	content: "\e611";
-}
-
-.icon-arrow-right-small:before {
-	content: "\e612";
-}
-
-.icon-arrow-left:before {
-	content: "\e60d";
-}
-
-.icon-arrow-down:before {
-	content: "\e60f";
-}
-
-.icon-arrow-up:before {
-	content: "\e60b";
-}
-
-.icon-arrow-right:before {
-	content: "\e60c";
-}
-
-.icon-vimeo:before {
-	content: "\e606";
-}
-
-.icon-twitter:before {
-	content: "\e600";
-}
-
-.icon-facebook:before {
-	content: "\e601";
-}
-
-.icon-googleplus:before {
-	content: "\e602";
-}
-
-.icon-pinterest:before {
-	content: "\e603";
-}
-
-.icon-tumblr:before {
-	content: "\e604";
-}
-
-.icon-linkedin:before {
-	content: "\e605";
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 .icon-instagram:before {
 	content: "\e61c";
+}
+.icon-youtube:before {
+	content: "\e61e";
+}
+.icon-nub-down:before {
+	content: "\e617";
+}
+.icon-nub-up:before {
+	content: "\e618";
+}
+.icon-nub-right:before {
+	content: "\e619";
+}
+.icon-nub-left:before {
+	content: "\e61a";
+}
+.icon-addThis:before {
+	content: "\e614";
+}
+.icon-menu:before {
+	content: "\e616";
+}
+.icon-mail:before {
+	content: "\e615";
+}
+.icon-user:before {
+	content: "\e609";
+}
+.icon-location:before {
+	content: "\e61b";
+}
+.icon-search:before {
+	content: "\e61f";
+}
+.icon-checkmark:before {
+	content: "\e607";
+}
+.icon-cross:before {
+	content: "\e608";
+}
+.icon-plus:before {
+	content: "\e613";
+}
+.icon-play:before {
+	content: "\e60a";
+}
+.icon-resize-enlarge:before {
+	content: "\e61d";
+}
+.icon-arrow-left-small:before {
+	content: "\e60e";
+}
+.icon-arrow-down-small:before {
+	content: "\e610";
+}
+.icon-arrow-up-small:before {
+	content: "\e611";
+}
+.icon-arrow-right-small:before {
+	content: "\e612";
+}
+.icon-arrow-left:before {
+	content: "\e60d";
+}
+.icon-arrow-down:before {
+	content: "\e60f";
+}
+.icon-arrow-up:before {
+	content: "\e60b";
+}
+.icon-arrow-right:before {
+	content: "\e60c";
+}
+.icon-vimeo:before {
+	content: "\e606";
+}
+.icon-twitter:before {
+	content: "\e600";
+}
+.icon-facebook:before {
+	content: "\e601";
+}
+.icon-googleplus:before {
+	content: "\e602";
+}
+.icon-pinterest:before {
+	content: "\e603";
+}
+.icon-tumblr:before {
+	content: "\e604";
+}
+.icon-linkedin:before {
+	content: "\e605";
 }

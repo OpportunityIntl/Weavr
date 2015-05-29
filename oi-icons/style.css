@@ -1,10 +1,10 @@
 @font-face {
 	font-family: 'oi-icons';
-	src:url('fonts/oi-icons.eot?bpb8i0');
-	src:url('fonts/oi-icons.eot?#iefixbpb8i0') format('embedded-opentype'),
-		url('fonts/oi-icons.ttf?bpb8i0') format('truetype'),
-		url('fonts/oi-icons.woff?bpb8i0') format('woff'),
-		url('fonts/oi-icons.svg?bpb8i0#oi-icons') format('svg');
+	src:url('fonts/oi-icons.eot?-yt7ydu');
+	src:url('fonts/oi-icons.eot?#iefix-yt7ydu') format('embedded-opentype'),
+		url('fonts/oi-icons.ttf?-yt7ydu') format('truetype'),
+		url('fonts/oi-icons.woff?-yt7ydu') format('woff'),
+		url('fonts/oi-icons.svg?-yt7ydu#oi-icons') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -23,6 +23,12 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
+.icon-instagram:before {
+	content: "\e61c";
+}
+.icon-youtube:before {
+	content: "\e61e";
+}
 .icon-nub-down:before {
 	content: "\e617";
 }
@@ -34,9 +40,6 @@
 }
 .icon-nub-left:before {
 	content: "\e61a";
-}
-.icon-instagram:before {
-	content: "\e61c";
 }
 .icon-addThis:before {
 	content: "\e614";
@@ -52,6 +55,9 @@
 }
 .icon-location:before {
 	content: "\e61b";
+}
+.icon-search:before {
+	content: "\e61f";
 }
 .icon-checkmark:before {
 	content: "\e607";
