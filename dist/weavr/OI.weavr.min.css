@@ -228,6 +228,7 @@ ul.no-list-style li:before, ol.no-list-style li:before { display: none; }
 ul.inline, ol.inline { display: inline-block; margin-left: -10px; margin-right: -10px; padding: 0; }
 ul.inline li, ol.inline li { display: inline-block; padding-left: 10px; padding-right: 10px; }
 ul.inline li:before, ol.inline li:before { display: none; }
+ul:last-child, ol:last-child { margin-bottom: 0; }
 
 ul li:before { content: '●'; display: block; position: absolute; left: 0; top: 0; }
 

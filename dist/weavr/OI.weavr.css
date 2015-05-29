@@ -575,6 +575,9 @@ ul.inline li, ol.inline li {
 ul.inline li:before, ol.inline li:before {
   display: none;
 }
+ul:last-child, ol:last-child {
+  margin-bottom: 0;
+}
 
 ul li:before {
   content: '●';
