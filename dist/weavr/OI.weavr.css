@@ -348,9 +348,9 @@ hr {
   text-align: left;
 }
 
-/*******************/
-/**** Font size ****/
-/*******************/
+/********************/
+/**** Paragraphs ****/
+/********************/
 p {
   margin: 1em 0;
   font-size: 1em;
@@ -382,11 +382,14 @@ p.small {
 a {
   text-decoration: none;
   color: #7bc557;
-  border-bottom: dotted 1px transparent;
   transition: border-color .3s;
   -moz-transition: border-color .3s;
 }
-a:hover {
+
+p a {
+  border-bottom: dotted 1px transparent;
+}
+p a:hover {
   border-bottom: dotted 1px #7bc557;
 }
 

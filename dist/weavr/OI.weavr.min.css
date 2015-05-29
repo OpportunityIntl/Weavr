@@ -154,9 +154,9 @@ hr { display: block; height: 1px; background-color: #efeeea; border: none; margi
 
 .align-left { text-align: left; }
 
-/*******************/
-/**** Font size ****/
-/*******************/
+/********************/
+/**** Paragraphs ****/
+/********************/
 p { margin: 1em 0; font-size: 1em; line-height: 1.75; }
 p:first-child { margin-top: 0; }
 p:last-child { margin-bottom: 0; }
@@ -169,8 +169,10 @@ p.small { font-size: .875em; }
 /***************/
 /**** Links ****/
 /***************/
-a { text-decoration: none; color: #7bc557; border-bottom: dotted 1px transparent; transition: border-color .3s; -moz-transition: border-color .3s; }
-a:hover { border-bottom: dotted 1px #7bc557; }
+a { text-decoration: none; color: #7bc557; transition: border-color .3s; -moz-transition: border-color .3s; }
+
+p a { border-bottom: dotted 1px transparent; }
+p a:hover { border-bottom: dotted 1px #7bc557; }
 
 /******************/
 /**** Headings ****/

@@ -42,9 +42,9 @@
   text-align: left;
 }
 
-/*******************/
-/**** Font size ****/
-/*******************/
+/********************/
+/**** Paragraphs ****/
+/********************/
 
 p {
   margin: 1em 0;
@@ -81,9 +81,12 @@ p.small {
 a {
   text-decoration: none;
   color: $brand-green;
-  border-bottom: dotted 1px transparent;
   transition: border-color .3s;
   -moz-transition: border-color .3s;
+}
+
+p a {
+  border-bottom: dotted 1px transparent;
   
   &:hover {
     border-bottom: dotted 1px $brand-green;
