@@ -376,6 +376,20 @@ p.small {
     font-size: 1.125em;
   }
 }
+/***************/
+/**** Links ****/
+/***************/
+a {
+  text-decoration: none;
+  color: #7bc557;
+  border-bottom: dotted 1px transparent;
+  transition: border-color .3s;
+  -moz-transition: border-color .3s;
+}
+a:hover {
+  border-bottom: dotted 1px #7bc557;
+}
+
 /******************/
 /**** Headings ****/
 /******************/
