@@ -387,10 +387,10 @@ a {
 }
 
 p a {
-  border-bottom: dotted 1px transparent;
+  border-bottom: solid 1px transparent;
 }
 p a:hover {
-  border-bottom: dotted 1px #7bc557;
+  border-bottom: solid 1px #7bc557;
 }
 
 /******************/
@@ -1593,9 +1593,6 @@ button.btn {
 }
 
 @media (max-width: 480px) {
-  /*************************/
-  /**** Padding classes ****/
-  /*************************/
   .padding-0-1x {
     padding: 0 15px;
   }

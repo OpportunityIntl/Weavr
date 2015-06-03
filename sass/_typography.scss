@@ -86,10 +86,10 @@ a {
 }
 
 p a {
-  border-bottom: dotted 1px transparent;
+  border-bottom: solid 1px transparent;
   
   &:hover {
-    border-bottom: dotted 1px $brand-green;
+    border-bottom: solid 1px $brand-green;
   }
 }
 
