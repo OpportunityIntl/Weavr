@@ -177,7 +177,7 @@ p a:hover { border-bottom: solid 1px #7bc557; }
 /******************/
 /**** Headings ****/
 /******************/
-h1, h2, h3, h4, h5, h6 { text-transform: uppercase; margin: 1em 0; letter-spacing: 1px; line-height: 1; font-family: "proxima-nova", Arial, sans-serif; }
+h1, h2, h3, h4, h5, h6 { text-transform: uppercase; margin: 1.5em 0 1em 0; letter-spacing: 1px; line-height: 1; font-family: "proxima-nova", Arial, sans-serif; }
 h1:first-child, h2:first-child, h3:first-child, h4:first-child, h5:first-child, h6:first-child { margin-top: 0; }
 h1:last-child, h2:last-child, h3:last-child, h4:last-child, h5:last-child, h6:last-child { margin-bottom: 0; }
 h1 .subheading, h2 .subheading, h3 .subheading, h4 .subheading, h5 .subheading, h6 .subheading { display: block; text-transform: none; letter-spacing: 0; font-weight: normal; font-family: "Times New Roman", Times, serif; font-style: italic; margin-top: 5px; }
@@ -199,14 +199,16 @@ h5 { font-family: "Times New Roman", Times, serif; font-style: italic; font-size
 /*********************/
 /**** Blockquotes ****/
 /*********************/
-blockquote { font-style: italic; padding: 20px 20px 5px 50px; margin: 20px 0; position: relative; border-top: solid 1px #efeeea; border-bottom: solid 1px #efeeea; color: #555; }
+blockquote { font-style: italic; padding: 1.25em 1.25em 1.25em 3.125em; margin: 1.25em 0; position: relative; border-top: solid 1px #efeeea; border-bottom: solid 1px #efeeea; color: #555; }
 blockquote p { font-family: "Time New Roman", serif; font-size: 1.125em; line-height: 1.5; }
-blockquote cite { font-family: "Times New Roman", serif; text-align: right; display: block; margin-bottom: 15px; }
+blockquote cite { text-align: right; display: block; font-style: normal; font-size: .875em; }
 blockquote cite:before { content: "– "; }
-blockquote:before { content: "\201c"; display: block; position: absolute; top: 15px; left: 0; font-size: 70px; font-weight: bold; font-style: normal; line-height: 70px; color: #611171; }
+blockquote:before { content: "\201c"; display: block; position: absolute; top: 15px; left: 0; font-size: 4.375em; font-weight: bold; font-style: normal; line-height: 1em; color: #611171; }
 blockquote.no-border { border-top: none; border-bottom: 0; padding-top: 0; padding-bottom: 0; }
 blockquote.no-border:before { top: -5px; }
 blockquote:first-child { margin-top: 0; }
+blockquote:last-child { margin-bottom: 0; }
+blockquote.large { font-size: 1.25em; }
 
 blockquote + blockquote { border-top: none; padding-top: 0; }
 blockquote + blockquote:before { top: -5px; }

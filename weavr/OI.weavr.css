@@ -398,7 +398,7 @@ p a:hover {
 /******************/
 h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
-  margin: 1em 0;
+  margin: 1.5em 0 1em 0;
   letter-spacing: 1px;
   line-height: 1;
   font-family: "proxima-nova", Arial, sans-serif;
@@ -462,8 +462,8 @@ h5 {
 /*********************/
 blockquote {
   font-style: italic;
-  padding: 20px 20px 5px 50px;
-  margin: 20px 0;
+  padding: 1.25em 1.25em 1.25em 3.125em;
+  margin: 1.25em 0;
   position: relative;
   border-top: solid 1px #efeeea;
   border-bottom: solid 1px #efeeea;
@@ -475,10 +475,10 @@ blockquote p {
   line-height: 1.5;
 }
 blockquote cite {
-  font-family: "Times New Roman", serif;
   text-align: right;
   display: block;
-  margin-bottom: 15px;
+  font-style: normal;
+  font-size: .875em;
 }
 blockquote cite:before {
   content: "– ";
@@ -489,10 +489,10 @@ blockquote:before {
   position: absolute;
   top: 15px;
   left: 0;
-  font-size: 70px;
+  font-size: 4.375em;
   font-weight: bold;
   font-style: normal;
-  line-height: 70px;
+  line-height: 1em;
   color: #611171;
 }
 blockquote.no-border {
@@ -506,6 +506,12 @@ blockquote.no-border:before {
 }
 blockquote:first-child {
   margin-top: 0;
+}
+blockquote:last-child {
+  margin-bottom: 0;
+}
+blockquote.large {
+  font-size: 1.25em;
 }
 
 blockquote + blockquote {
