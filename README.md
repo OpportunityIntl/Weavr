@@ -1,7 +1,7 @@
 Weavr
 =========
 
-Weavr is a frontend framework for Opportunity International. Still in development. Documentation below.
+Weavr is a frontend framework for Opportunity International. Still in development. You can see a demonstration [here](http://opportunityintl.github.io/Weavr). Incomplete documentation below.
 
 ##CSS
 
@@ -44,9 +44,9 @@ Establishes a column. Does not set width of column. For that we add one of the f
 
 `.col-1`, `.col-2`, `.col-3`, `.col-4`, `.col-5`, `.col-7`, `.col-8`, `.col-9`, `.col-10`, `.col-11`, `.col-12`, where the number indicates the number of columns the element should span.
 
-You can specify different column widths for tablet and mobile devices, as well:
+You can specify different column widths for tablet, "netbook", and mobile screen sizes, as well:
 
-`.t-col-1`, `.t-col-2`, `.t-col-3`, `.t-col-4`, `.t-col-5`, `.t-col-7`, `.t-col-8`, `.t-col-9`, `.t-col-10`, `.t-col-11`, `.t-col-12` for tablet, `.m-col-1`, `.m-col-2`, `.m-col-3`, `.m-col-4`, `.m-col-5`, `.m-col-7`, `.m-col-8`, `m-col-9`, `.m-col-10`, `.m-col-11`, `.m-col-12` for mobile devices.
+`.t-col-1`, `.t-col-2`, `.t-col-3`, `.t-col-4`, `.t-col-5`, `.t-col-7`, `.t-col-8`, `.t-col-9`, `.t-col-10`, `.t-col-11`, `.t-col-12` for tablet, `.n-col-1`, `.n-col-2`, `.n-col-3`, `.n-col-4`, `.n-col-5`, `.n-col-7`, `.n-col-8`, `.n-col-9`, `.n-col-10`, `.n-col-11`, `.n-col-12` for "netbook", `.m-col-1`, `.m-col-2`, `.m-col-3`, `.m-col-4`, `.m-col-5`, `.m-col-7`, `.m-col-8`, `m-col-9`, `.m-col-10`, `.m-col-11`, `.m-col-12` for mobile devices.
 
 ###Radio buttons and checkboxes
 
@@ -61,8 +61,6 @@ Label will be styled for a radio element or checkbox, respectively.
 `label.small`
 Label and radio button / checkbox will be small.
 
-`label.v-center`
-Label and radio button / checkbox will be vertically centered in wrapping container.
 
 ###Select boxes
 
@@ -99,7 +97,7 @@ Display list items as inline-block, with no list style and 10px padding.
 
 ###Icon fonts
 
-Weavr uses a custom icon fontset largely comprised of select icons from the [Entypo library](http://www.entypo.com/) plus some custom icons. You can [view the full set here](http://opportunityintl.github.io/Weavr/icons).
+Weavr uses a custom icon fontset largely comprised of select icons from the [Entypo library](http://www.entypo.com/) plus some custom icons. You can [view the full set](http://opportunityintl.github.io/Weavr) on the Weavr Kitchen Sink.
 
 ###Buttons
 
@@ -112,21 +110,5 @@ Style an element like a ghost button. A color class (e.g. `.brand-pink`) should 
 `.btn.large`
 Make a large button.
 
-`.btn.inline`
-Display button inline block. Buttons display as `block` by default.
-
-##Javascript
-
-###Utility functions
-
-`OI.utils.tooltip(element, position, message)`
-Generate a tooltip, which will appear on mouseover. The _element_ argument should be a jQuery object. Position can be 'top' or 'bottom.' Tooltip is colored purple by default.
-
-`OI.utils.popover(element, position, message)`
-Similar to a tooltip, but not tied to the mouseover event. Popover appears when the function is called, and fades out after 4 seconds. Popover is colored orange by default.
-
-`OI.utils.limitToRegex(input, regex)`
-Limit the characters allowed in an input. The _input_ argument should be a jQuery object. The _regex_ argument should be a regex expression (e.g. `/[0-9]/`). This function uses a keypress event handler to test the key against the regex, returning true or false. Note that Android browsers do not provide a keypress event, so this function does not work for Android users.
-
-`OI.utils.validateEmail(email)`
-Tests an email address against a regex pattern to determine if it is in a valid format. The email address must contain 4 parts: the username, an @ symbol, a domain, and a domain extension (e.g. username@domain.extension). The extension must contain two or more letters. Note that the _email_ argument should be the actual email address as a string, not an input element.
+`.btn.block`
+Display button as block element (100% width). Buttons display as `inline-block` by default.
