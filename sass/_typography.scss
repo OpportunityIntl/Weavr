@@ -224,6 +224,10 @@ blockquote {
     margin-top: 0;
   }
   
+  &:last-child {
+    margin-bottom: 0;
+  }
+  
   &.large {
     font-size: 1.25em;
   }

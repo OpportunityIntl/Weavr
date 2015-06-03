@@ -475,9 +475,10 @@ blockquote p {
   line-height: 1.5;
 }
 blockquote cite {
-  font-family: "Times New Roman", serif;
   text-align: right;
   display: block;
+  font-style: normal;
+  font-size: .875em;
 }
 blockquote cite:before {
   content: "– ";
@@ -505,6 +506,9 @@ blockquote.no-border:before {
 }
 blockquote:first-child {
   margin-top: 0;
+}
+blockquote:last-child {
+  margin-bottom: 0;
 }
 blockquote.large {
   font-size: 1.25em;
