@@ -186,9 +186,10 @@ blockquote {
   }
   
   cite {
-    font-family: "Times New Roman", serif;
     text-align: right;
     display: block;
+    font-style: normal;
+    font-size: .875em;
     
     &:before {
       content: "– ";
