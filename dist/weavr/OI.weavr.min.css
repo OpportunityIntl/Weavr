@@ -174,6 +174,9 @@ a { text-decoration: none; color: #7bc557; transition: border-color .3s; -moz-tr
 p a { border-bottom: solid 1px transparent; }
 p a:hover { border-bottom: solid 1px #7bc557; }
 
+.brand-green-bg a, .brand-purple-bg a, .brand-orange-bg a, .brand-teal-bg a, .brand-pink-bg a { color: #fff; border-color: #fff; }
+.brand-green-bg a:hover, .brand-purple-bg a:hover, .brand-orange-bg a:hover, .brand-teal-bg a:hover, .brand-pink-bg a:hover { border-color: #fff; }
+
 /******************/
 /**** Headings ****/
 /******************/
@@ -352,6 +355,8 @@ label { display: block; font-family: "Times New Roman", Times, serif; font-style
 .inline-form .select { width: auto; display: inline-block; vertical-align: middle; margin-right: 20px; }
 .inline-form .select select { padding-right: 1.875em; }
 
+.brand-green-bg input[type='text'], .brand-green-bg input[type='number'], .brand-green-bg input[type='email'], .brand-green-bg input[type='password'], .brand-green-bg input[type='phone'], .brand-green-bg textarea, .brand-purple-bg input[type='text'], .brand-purple-bg input[type='number'], .brand-purple-bg input[type='email'], .brand-purple-bg input[type='password'], .brand-purple-bg input[type='phone'], .brand-purple-bg textarea, .brand-orange-bg input[type='text'], .brand-orange-bg input[type='number'], .brand-orange-bg input[type='email'], .brand-orange-bg input[type='password'], .brand-orange-bg input[type='phone'], .brand-orange-bg textarea, .brand-teal-bg input[type='text'], .brand-teal-bg input[type='number'], .brand-teal-bg input[type='email'], .brand-teal-bg input[type='password'], .brand-teal-bg input[type='phone'], .brand-teal-bg textarea, .brand-pink-bg input[type='text'], .brand-pink-bg input[type='number'], .brand-pink-bg input[type='email'], .brand-pink-bg input[type='password'], .brand-pink-bg input[type='phone'], .brand-pink-bg textarea, .brand-darkgray-bg input[type='text'], .brand-darkgray-bg input[type='number'], .brand-darkgray-bg input[type='email'], .brand-darkgray-bg input[type='password'], .brand-darkgray-bg input[type='phone'], .brand-darkgray-bg textarea { border: none; }
+
 /************************************/
 /**** Checkbox and Radio Buttons ****/
 /************************************/
@@ -412,7 +417,8 @@ div.alert.error { background-color: #ee3300; color: #fff; }
 div.alert *:first-child { margin-top: 10px; }
 div.alert *:last-child { margin-bottom: 10px; }
 
-a.btn { display: inline-block; text-decoration: none; vertical-align: top; }
+a.btn { display: inline-block; text-decoration: none; vertical-align: top; border: none; }
+a.btn:not(.ghost):hover { border: none; }
 
 button.btn { display: inline-block; width: auto; }
 
