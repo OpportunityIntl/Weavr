@@ -93,6 +93,21 @@ p a {
   }
 }
 
+.brand-green-bg,
+.brand-purple-bg,
+.brand-orange-bg,
+.brand-teal-bg,
+.brand-pink-bg {
+  a {
+    color: #fff;
+    border-color: #fff;
+    
+    &:hover {
+      border-color: #fff;
+    }
+  }
+}
+
 
 /******************/
 /**** Headings ****/
