@@ -112,6 +112,17 @@ label {
   }
 }
 
+.brand-green-bg,
+.brand-purple-bg,
+.brand-orange-bg,
+.brand-teal-bg,
+.brand-pink-bg,
+.brand-darkgray-bg {
+  input[type='text'], input[type='number'], input[type='email'], input[type='password'], input[type='phone'], textarea {
+    border: none;
+  }
+}
+
 /************************************/
 /**** Checkbox and Radio Buttons ****/
 /************************************/
