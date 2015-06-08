@@ -2,6 +2,12 @@ a.btn {
   display: inline-block;
   text-decoration: none;
   vertical-align: top;
+  border: none;
+  
+  &:not(.ghost):hover {
+    border: none;
+    
+  }
 }
 
 button.btn {
