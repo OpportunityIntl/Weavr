@@ -142,6 +142,14 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
   font-size: 2em;
   
+  &.large {
+    font-size: 2.5em;
+  }
+  
+  &.small {
+    font-size: 1.5em;
+  }
+  
   .subheading {
     font-size: .75em;
   }
@@ -150,6 +158,14 @@ h1 {
 h2 {
   font-size: 1.5em;
   
+  &.large {
+    font-size: 2em;
+  }
+  
+  &.small {
+    font-size: 1.125em;
+  }
+  
   .subheading {
     font-size: .75em;
   }
@@ -157,6 +173,14 @@ h2 {
 
 h3 {
   font-size: 1.125em;
+  
+  &.large {
+    font-size: 1.5em;
+  }
+  
+  &.small {
+    font-size: 1em;
+  }
   
   .subheading {
     font-size: .876em;
@@ -167,6 +191,10 @@ h4 {
   font-size: 1em;
   text-transform: none;
   margin-bottom: 0.5 * $gutter;
+  
+  &.large {
+    font-size: 1.125em;
+  }
   
   & + p {
     margin-top: 0;
@@ -179,6 +207,10 @@ h5 {
   font-size: 1em;
   color: $text-color-secondary;
   text-transform: none;
+  
+  &.large {
+    font-size: 1.125em;
+  }
 }
 
 /*********************/

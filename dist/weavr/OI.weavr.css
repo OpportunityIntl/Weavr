@@ -438,6 +438,12 @@ h1 .subheading, h2 .subheading, h3 .subheading, h4 .subheading, h5 .subheading, 
 h1 {
   font-size: 2em;
 }
+h1.large {
+  font-size: 2.5em;
+}
+h1.small {
+  font-size: 1.5em;
+}
 h1 .subheading {
   font-size: .75em;
 }
@@ -445,12 +451,24 @@ h1 .subheading {
 h2 {
   font-size: 1.5em;
 }
+h2.large {
+  font-size: 2em;
+}
+h2.small {
+  font-size: 1.125em;
+}
 h2 .subheading {
   font-size: .75em;
 }
 
 h3 {
   font-size: 1.125em;
+}
+h3.large {
+  font-size: 1.5em;
+}
+h3.small {
+  font-size: 1em;
 }
 h3 .subheading {
   font-size: .876em;
@@ -460,6 +478,9 @@ h4 {
   font-size: 1em;
   text-transform: none;
   margin-bottom: 10px;
+}
+h4.large {
+  font-size: 1.125em;
 }
 h4 + p {
   margin-top: 0;
@@ -471,6 +492,9 @@ h5 {
   font-size: 1em;
   color: #555;
   text-transform: none;
+}
+h5.large {
+  font-size: 1.125em;
 }
 
 /*********************/
