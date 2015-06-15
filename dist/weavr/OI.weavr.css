@@ -1694,6 +1694,34 @@ button.btn {
   padding: 80px 0;
 }
 
+.padding-6x {
+  padding: 120px;
+}
+
+.padding-6x-0 {
+  padding: 120px 0;
+}
+
+.padding-6x-1x {
+  padding: 120px 20px;
+}
+
+.padding-6x-2x {
+  padding: 120px 40px;
+}
+
+.padding-6x-3x {
+  padding: 120px 60px;
+}
+
+.padding-6x-4x {
+  padding: 120px 80px;
+}
+
+.padding-6x-5x {
+  padding: 120px 100px;
+}
+
 @media (max-width: 480px) {
   .padding-0-1x {
     padding: 0 15px;

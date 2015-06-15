@@ -102,6 +102,34 @@
   padding: 4 * $gutter 0;
 }
 
+.padding-6x {
+  padding: 6 * $gutter;
+}
+
+.padding-6x-0 {
+  padding: 6 * $gutter 0;
+}
+
+.padding-6x-1x {
+  padding: 6 * $gutter $gutter;
+}
+
+.padding-6x-2x {
+  padding: 6 * $gutter 2 * $gutter;
+}
+
+.padding-6x-3x {
+  padding: 6 * $gutter 3 * $gutter;
+}
+
+.padding-6x-4x {
+  padding: 6 * $gutter 4 * $gutter;
+}
+
+.padding-6x-5x {
+  padding: 6 * $gutter 5 * $gutter;
+}
+
 @media (max-width: 480px) {
 
   .padding-0-1x {
