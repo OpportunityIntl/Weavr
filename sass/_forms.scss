@@ -10,7 +10,7 @@ form {
 input[type='text'], input[type='number'], input[type='email'], input[type='password'], input[type='phone'], textarea {
   display: block;
   width: 100%;
-  height: 3.2857em;
+  height: 3.21428571em;
   border: solid 1px $brand-gray;
   padding: .71425em;
   font-size: .875em;
@@ -78,9 +78,10 @@ label {
   .prefix, .postfix {
     display: table-cell;
     width: 1%;
-    height: 3.8333333em;
+    height: 3.58333em; 
+    height: calc(3.75em - 2px);
     background-color: $brand-offwhite;
-    line-height: 3.6666666em;
+    line-height: 3.5em;
     padding: 0 10px;
     text-align: center;
     border: solid 1px $brand-gray;
@@ -94,6 +95,7 @@ label {
     display: inline-block;
     margin-right: $gutter;
     width: auto;
+    vertical-align: middle;
     
     &:last-child {
       margin-right: 0;
@@ -286,7 +288,7 @@ label.checkbox {
   border: solid 1px $brand-gray;
   padding: .625em;
   line-height: 1.5em;
-  height: 2.875em;
+  height: 2.8125em;
   background: #fff url('images/oi-select-arrow.png') no-repeat right center;
   overflow: hidden;
   width: 100%;
