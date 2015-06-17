@@ -1817,6 +1817,34 @@ button.btn {
   .padding-4x-0 {
     padding: 60px 0;
   }
+
+  .padding-6x {
+    padding: 90px;
+  }
+
+  .padding-6x-0 {
+    padding: 90px 0;
+  }
+
+  .padding-6x-1x {
+    padding: 90px 15px;
+  }
+
+  .padding-6x-2x {
+    padding: 90px 30px;
+  }
+
+  .padding-6x-3x {
+    padding: 90px 45px;
+  }
+
+  .padding-6x-4x {
+    padding: 90px 60px;
+  }
+
+  .padding-6x-5x {
+    padding: 90px 75px;
+  }
 }
 /************************/
 /**** Margin classes ****/

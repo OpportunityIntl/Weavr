@@ -227,6 +227,34 @@
   .padding-4x-0 {
     padding: 4 * $mobile-gutter 0;
   }
+  
+  .padding-6x {
+    padding: 6 * $mobile-gutter;
+  }
+
+  .padding-6x-0 {
+    padding: 6 * $mobile-gutter 0;
+  }
+
+  .padding-6x-1x {
+    padding: 6 * $mobile-gutter $mobile-gutter;
+  }
+
+  .padding-6x-2x {
+    padding: 6 * $mobile-gutter 2 * $mobile-gutter;
+  }
+
+  .padding-6x-3x {
+    padding: 6 * $mobile-gutter 3 * $mobile-gutter;
+  }
+
+  .padding-6x-4x {
+    padding: 6 * $mobile-gutter 4 * $mobile-gutter;
+  }
+
+  .padding-6x-5x {
+    padding: 6 * $mobile-gutter 5 * $mobile-gutter;
+  }
 }
 
 
