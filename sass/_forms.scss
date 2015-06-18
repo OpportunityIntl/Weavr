@@ -90,6 +90,29 @@ label {
   }
 }
 
+.input-icon {
+  position: relative;
+  
+  input {
+    padding-left: 2.125em;
+    &:focus + i {
+      color: $text-color;
+    }
+  }
+  
+  i {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: .71245em;
+    height: 3.21428571em;
+    width: 1em;
+    font-size: .875em;
+    line-height: 3.21428571em;
+    color: $brand-gray;
+  }
+}
+
 .inline-form {
   input {
     display: inline-block;

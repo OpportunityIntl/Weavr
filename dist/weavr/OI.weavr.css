@@ -985,6 +985,27 @@ label {
   color: #8f8e8c;
 }
 
+.input-icon {
+  position: relative;
+}
+.input-icon input {
+  padding-left: 2.125em;
+}
+.input-icon input:focus + i {
+  color: #333;
+}
+.input-icon i {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: .71245em;
+  height: 3.21428571em;
+  width: 1em;
+  font-size: .875em;
+  line-height: 3.21428571em;
+  color: #8f8e8c;
+}
+
 .inline-form input {
   display: inline-block;
   margin-right: 20px;

@@ -1,5 +1,5 @@
 /* Weavr v0.9.1 
- * Compiled 06-17-2015
+ * Compiled 06-18-2015
  * Copyright (c) 2015 Opportunity International 
  */
 
@@ -357,6 +357,11 @@ label { display: block; font-family: "Times New Roman", Times, serif; font-style
 .input-group input:first-child { border-right: none; }
 .input-group input:last-child { border-left: none; }
 .input-group .prefix, .input-group .postfix { display: table-cell; width: 1%; height: 3.58333em; height: calc(3.75em - 2px); background-color: #efeeea; line-height: 3.5em; padding: 0 10px; text-align: center; border: solid 1px #8f8e8c; font-size: .75em; color: #8f8e8c; }
+
+.input-icon { position: relative; }
+.input-icon input { padding-left: 2.125em; }
+.input-icon input:focus + i { color: #333; }
+.input-icon i { position: absolute; display: block; top: 0; left: .71245em; height: 3.21428571em; width: 1em; font-size: .875em; line-height: 3.21428571em; color: #8f8e8c; }
 
 .inline-form input { display: inline-block; margin-right: 20px; width: auto; vertical-align: middle; }
 .inline-form input:last-child { margin-right: 0; }
