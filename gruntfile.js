@@ -36,7 +36,8 @@ module.exports = function(grunt) {
           banner: '<%= banner %>'
         },
         files: {
-          'dist/weavr/OI.weavr.min.js': ['dist/weavr/OI.weavr.js']
+          'dist/weavr/OI.weavr.min.js': ['dist/weavr/OI.weavr.js'],
+          'dist/weavr/OI.placeholder.min.js': ['js/OI.placeholder.js']
         }
       }
     },

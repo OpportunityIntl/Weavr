@@ -13,34 +13,16 @@
     
     <style>
       .contained {
-        width: 1260px;
+        max-width: 1260px;
         margin: 0 auto;
       }
       
       .contained-960 {
-        width: 960px;
+        max-width: 960px;
       }
       
       .contained-680 {
-        width: 680px;
-      }
-      
-      @media (max-width: 1340px) {
-        .contained {
-          width: 100%;
-        }
-      }
-      
-      @media (max-width: 1040px) {
-        .contained-960 {
-          width: 100%;
-        }
-      }
-      
-      @media (max-width: 740px) {
-        .contained-680 {
-          width: 100%;
-        }
+        max-width: 680px;
       }
       
       .color-swatch {
@@ -567,6 +549,7 @@
             </div>
           </div>
         </div>
+        <div class="clear"></div>
         
         <h3>Paragraphs</h3>
         <div class="contained-680">
@@ -643,6 +626,7 @@
               </div>
             </div>
           </div>
+          <div class="clear"></div>
         </div>
         
         <h3>Unordered Lists</h3>
@@ -838,6 +822,7 @@
             </div>
           </div>
         </div>
+        <div class="clear"></div>
         
         <h3>Alignment</h3>
         <div class="contained-680">
@@ -1291,13 +1276,17 @@
               </ul>
             </div>
             <div class="row">
-              <div class="col col-6 t-col-6 m-col-12">
+              <div class="col col-4 t-col-6 m-col-12">
                 <label for="text-input">Text input</label>
                 <input type="text" id="text-input" name="text" placeholder="Text input">
               </div>
-              <div class="col col-6 t-col-6 m-col-12">
+              <div class="col col-4 t-col-6 m-col-12">
                 <label for="phone-input">Phone input</label>
                 <input type="phone" id="phone-input" name="phone" placeholder="Phone input">
+              </div>
+              <div class="col col-4 t-col-12 m-col-12">
+                <label for="password-input">Password input</label>
+                <input type="password" id="password-input" name="password" placeholder="Password input">
               </div>
             </div>
             <div class="row">
@@ -1455,6 +1444,7 @@
                 <label for="checkbox-3" class="checkbox">Option 3</label>
               </div>
             </div>
+            <input type="submit" value="Submit" class="btn brand-pink-bg block">
             <div class="clear"></div>
           </form>
         </div>
@@ -1853,5 +1843,15 @@
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script type="text/javascript" src="weavr/OI.weavr.min.js"></script>
+    
+    <!--[if lte IE 9]>
+      <script type="text/javascript" src="weavr/OI.placeholder.min.js"></script>
+    <![endif]-->
+    
+    <script type="text/javascript">
+      $('form').submit(function() {
+        return false;
+      });
+    </script>
   </body>
 </html>
