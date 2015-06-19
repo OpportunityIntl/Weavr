@@ -213,6 +213,10 @@ hr {
   height: 100%;
 }
 
+.bordered {
+  border: solid 1px;
+}
+
 .brand-pink-bg {
   background: #ed027e;
   color: #fff;
@@ -433,6 +437,10 @@ h1 .subheading, h2 .subheading, h3 .subheading, h4 .subheading, h5 .subheading, 
   font-family: "Times New Roman", Times, serif;
   font-style: italic;
   margin-top: 5px;
+}
+h1.bordered, h2.bordered, h3.bordered, h4.bordered, h5.bordered, h6.bordered {
+  display: inline-block;
+  padding: 1em 1.125em;
 }
 
 h1 {
