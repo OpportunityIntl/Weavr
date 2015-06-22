@@ -1,5 +1,5 @@
 /* Weavr v0.9.1 
- * Compiled 06-16-2015
+ * Compiled 06-22-2015
  * Copyright (c) 2015 Opportunity International 
  */
 
@@ -31,7 +31,6 @@
 .col.col-1 { width: 8.33333%; }
 
 @media (max-width: 960px) { .row { margin-bottom: 0; }
-  .row:after { clear: none; }
   .row.large-gutter { margin-bottom: 0; }
   .row.large-gutter .col { margin-bottom: 40px; }
   .row .col { margin-bottom: 20px; }

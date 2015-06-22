@@ -1,5 +1,5 @@
 /* Weavr v0.9.1 
- * Compiled 06-18-2015
+ * Compiled 06-22-2015
  * Copyright (c) 2015 Opportunity International 
  */
 
@@ -94,6 +94,8 @@ hr { display: block; height: 1px; background-color: #efeeea; border: none; margi
 
 .flex-video iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
 
+.bordered { border: solid 1px; }
+
 .brand-pink-bg { background: #ed027e; color: #fff; }
 
 .brand-orange-bg { background: #f15b22; color: #fff; }
@@ -184,6 +186,7 @@ h1, h2, h3, h4, h5, h6 { text-transform: uppercase; margin: 1.5em 0 1em 0; lette
 h1:first-child, h2:first-child, h3:first-child, h4:first-child, h5:first-child, h6:first-child { margin-top: 0; }
 h1:last-child, h2:last-child, h3:last-child, h4:last-child, h5:last-child, h6:last-child { margin-bottom: 0; }
 h1 .subheading, h2 .subheading, h3 .subheading, h4 .subheading, h5 .subheading, h6 .subheading { display: block; text-transform: none; letter-spacing: 0; font-weight: normal; font-family: "Times New Roman", Times, serif; font-style: italic; margin-top: 5px; }
+h1.bordered, h2.bordered, h3.bordered, h4.bordered, h5.bordered, h6.bordered { display: inline-block; padding: 1em 1.125em; }
 
 h1 { font-size: 2em; }
 h1.large { font-size: 2.5em; }
@@ -289,7 +292,6 @@ ol li:before { content: counter(list) "."; display: block; position: absolute; l
 .col.col-1 { width: 8.33333%; }
 
 @media (max-width: 960px) { .row { margin-bottom: 0; }
-  .row:after { clear: none; }
   .row.large-gutter { margin-bottom: 0; }
   .row.large-gutter .col { margin-bottom: 40px; }
   .row .col { margin-bottom: 20px; }

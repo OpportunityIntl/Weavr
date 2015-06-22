@@ -759,9 +759,6 @@ ol li:before {
   .row {
     margin-bottom: 0;
   }
-  .row:after {
-    clear: none;
-  }
   .row.large-gutter {
     margin-bottom: 0;
   }
