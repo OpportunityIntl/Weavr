@@ -12,35 +12,64 @@
     <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
     
     <style>
+      #sidebar {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 340px;
+        height: 100%;
+        overflow: auto;
+      }
+      
+      #sidebar ul.level-1 > li {
+        margin-bottom: 20px;
+      }
+      
+      #sidebar ul.level-1 > li > ul {
+        margin-left: 10px;
+      }
+      
+      [data-href]:hover {
+        cursor: pointer;
+        color: #00abab;
+      }
+      
+      #content {
+        margin-left: 340px;
+      }
+      
+      @media (max-width: 1280px) {
+        #sidebar {
+          width: 280px;
+          font-size: 14px;
+        }
+        
+        #content {
+          margin-left: 280px;
+        }
+      }
+      
+      @media (max-width: 960px) {
+        #sidebar {
+          display: none;
+        }
+        
+        #content {
+          margin-left: 0;
+        }
+      }
+    
       .contained {
-        width: 1260px;
+        max-width: 1260px;
         margin: 0 auto;
       }
       
       .contained-960 {
-        width: 960px;
+        max-width: 960px;
       }
       
       .contained-680 {
-        width: 680px;
-      }
-      
-      @media (max-width: 1340px) {
-        .contained {
-          width: 100%;
-        }
-      }
-      
-      @media (max-width: 1040px) {
-        .contained-960 {
-          width: 100%;
-        }
-      }
-      
-      @media (max-width: 740px) {
-        .contained-680 {
-          width: 100%;
-        }
+        max-width: 680px;
       }
       
       .color-swatch {
@@ -50,10 +79,6 @@
       
       .color-swatch:last-child {
         margin-bottom: 0;
-      }
-      
-      .bordered-box {
-        border: solid 1px #8f8e8c;
       }
       
       pre, code {
@@ -75,8 +100,83 @@
     </style>
   </head>
   <body>
-    <section class="brand-offwhite-bg">
-      <div class="contained padding-4x-2x">
+    <aside id="sidebar" class="brand-offwhite-bg">
+      <div class="contained padding-2x">
+        <h1 class="small">Weavr</h1>
+        <ul class="no-list-style level-1">
+          <li>
+            <strong data-href="grid-system">Grid System</strong>
+            <ul>
+              <li data-href="standard-gutter">Standard gutter</li>
+              <li data-href="large-gutter">Large gutter</li>
+              <li data-href="no-gutter">No gutter</li>
+            </ul>
+          </li>
+          <li>
+            <strong data-href="typography">Typography</strong>
+            <ul>
+              <li data-href="headings">Headings</li>
+              <li data-href="subheadings">Subheadings</li>
+              <li data-href="headings-large-and-small">Headings large and small</li>
+              <li data-href="bordered-headings">Bordered headings</li>
+              <li data-href="paragraphs">Paragraphs</li>
+              <li data-href="links">Links</li>
+              <li data-href="unordered-lists">Unordered Lists</li>
+              <li data-href="ordered-lists">Ordered lists</li>
+              <li data-href="blockquotes">Blockquotes</li>
+              <li data-href="alignment">Alignment</li>
+              <li data-href="everything-together">Everything together</li>
+            </ul>
+          </li>
+          <li>
+            <strong data-href="images-and-video">Images and Video</strong>
+            <ul>
+              <li data-href="responsive-videos">Responsive videos</li>
+            </ul>
+          </li>
+          <li>
+            <strong data-href="colors">Colors</strong>
+            <ul>
+              <li data-href="background-color">Background color</li>
+              <li data-href="text-color">Text color</li>
+            </ul>
+          </li>
+          <li>
+            <strong data-href="buttons">Buttons</strong>
+            <ul>
+              <li data-href="button-colors">Colors</li>
+              <li data-href="inline-buttons">Inline buttons</li>
+              <li data-href="block-buttons">Block buttons</li>
+              <li data-href="ghost-buttons">Ghost buttons</li>
+              <li data-href="button-sizes">Button sizes</li>
+            </ul>
+          </li>
+          <li>
+            <strong data-href="forms">Forms</strong>
+            <ul>
+              <li data-href="alert-boxes">Alert boxes</li>
+              <li data-href="inputs">Inputs</li>
+              <li data-href="input-groups">Input groups</li>
+              <li data-href="icon-inputs">Icon inputs</li>
+              <li data-href="radio-buttons">Radio buttons</li>
+              <li data-href="checkboxes">Checkboxes</li>
+              <li data-href="inline-form">Inline form</li>
+            </ul>
+          </li>
+          <li><strong data-href="tooltips">Tooltips</strong></li>
+          <li>
+            <strong data-href="icons">Icons</strong>
+            <ul>
+              <li data-href="symbols">Symbols</li>
+              <li data-href="arrows">Arrows</li>
+              <li data-href="social-media">Social Media</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </aside>
+    <section id="content">
+      <div class="contained padding-2x">
         <h1 class="align-center">The <span class="brand-purple">Weavr</span> Kitchen Sink</h1>
         <p class="large">
           This page is a demonstration all the styles and components of Weavr,
@@ -88,13 +188,12 @@
           * Please note that the framework is still in development, so components
           may still change, or may be missing altogether.
         </p>
-      </div>
-    </section>
-    <section>
-      <div class="contained padding-2x">
-        <h2 class="brand-teal">Grid System</h2>
         
-        <h3>Standard gutter</h3>
+        <hr>
+        
+        <h2 class="brand-teal" id="grid-system">Grid System</h2>
+        
+        <h3 id="standard-gutter">Standard gutter</h3>
         
         <div class="row">
           <div class="col col-12 n-col-12 t-col-12 m-col-12">
@@ -151,17 +250,17 @@
         </div>
         
         <div class="row">
-          <div class="col col-8 n-col-6 t-col-8 m-col-8">
+          <div class="col col-8 n-col-6 t-col-4 m-col-5">
             <pre class="desktop-only">.col-8</pre>
             <pre class="netbook-only">.n-col-6</pre>
-            <pre class="tablet-only">.t-col-8</pre>
-            <pre class="mobile-only">.m-col-8</pre>
+            <pre class="tablet-only">.t-col-4</pre>
+            <pre class="mobile-only">.m-col-5</pre>
           </div>
-          <div class="col col-4 n-col-6 t-col-4 m-col-4">
+          <div class="col col-4 n-col-6 t-col-8 m-col-7">
             <pre class="desktop-only">.col-4</pre>
             <pre class="netbook-only">.n-col-6</pre>
-            <pre class="tablet-only">.t-col-4</pre>
-            <pre class="mobile-only">.m-col-4</pre>
+            <pre class="tablet-only">.t-col-8</pre>
+            <pre class="mobile-only">.m-col-7</pre>
           </div>
         </div>
         
@@ -238,29 +337,29 @@
         </div>
         
         <div class="row">
-          <div class="col col-3 n-col-4 t-col-4 m-col-4">
+          <div class="col col-3 n-col-4 t-col-6 m-col-7">
             <pre class="desktop-only">.col-3</pre>
             <pre class="netbook-only">.n-col-4</pre>
-            <pre class="tablet-only">.t-col-4</pre>
-            <pre class="mobile-only">.m-col-4</pre>
+            <pre class="tablet-only">.t-col-6</pre>
+            <pre class="mobile-only">.m-col-7</pre>
           </div>
-          <div class="col col-3 n-col-3 t-col-4 m-col-4">
+          <div class="col col-3 n-col-3 t-col-6 m-col-5">
             <pre class="desktop-only">.col-3</pre>
             <pre class="netbook-only">.n-col-3</pre>
-            <pre class="tablet-only">.t-col-4</pre>
-            <pre class="mobile-only">.m-col-4</pre>
+            <pre class="tablet-only">.t-col-6</pre>
+            <pre class="mobile-only">.m-col-5</pre>
           </div>
-          <div class="col col-3 n-col-3 t-col-4 m-col-4">
+          <div class="col col-3 n-col-3 t-col-6 m-col-5">
             <pre class="desktop-only">.col-3</pre>
             <pre class="netbook-only">.n-col-3</pre>
-            <pre class="tablet-only">.t-col-4</pre>
-            <pre class="mobile-only">.m-col-4</pre>
+            <pre class="tablet-only">.t-col-6</pre>
+            <pre class="mobile-only">.m-col-5</pre>
           </div>
-          <div class="col col-3 n-col-2 t-col-12 m-col-12">
+          <div class="col col-3 n-col-2 t-col-6 m-col-7">
             <pre class="desktop-only">.col-3</pre>
             <pre class="netbook-only">.n-col-2</pre>
-            <pre class="tablet-only">.t-col-12</pre>
-            <pre class="mobile-only">.m-col-12</pre>
+            <pre class="tablet-only">.t-col-6</pre>
+            <pre class="mobile-only">.m-col-7</pre>
           </div>
         </div>
         
@@ -378,131 +477,129 @@
           </div>
         </div>
         
-        <h3>Large gutter</h3>
+        <h3 id="large-gutter">Large gutter</h3>
         
         <div class="row large-gutter">
-          <div class="col col-12 n-col-12 t-col-8 m-col-6">
+          <div class="col col-12 n-col-12 t-col-12 m-col-12">
             <pre class="desktop-only">.col-12</pre>
-            <pre class="netbook-only">.n-col-8</pre>
-            <pre class="tablet-only">.t-col-8</pre>
-            <pre class="mobile-only">.m-col-6</pre>
+            <pre class="netbook-only">.n-col-12</pre>
+            <pre class="tablet-only">.t-col-12</pre>
+            <pre class="mobile-only">.m-col-12</pre>
           </div>
         </div>
         <div class="row large-gutter">
-          <div class="col col-8 n-col-8 t-col-4 m-col-6">
+          <div class="col col-8 n-col-8 t-col-9 m-col-12">
             <pre class="desktop-only">.col-8</pre>
             <pre class="netbook-only">.n-col-8</pre>
-            <pre class="tablet-only">.t-col-4</pre>
-            <pre class="mobile-only">.m-col-6</pre>
+            <pre class="tablet-only">.t-col-9</pre>
+            <pre class="mobile-only">.m-col-12</pre>
           </div>
-          <div class="col col-4 n-col-4 t-col-6 m-col-4">
+          <div class="col col-4 n-col-4 t-col-3 m-col-12">
             <pre class="desktop-only">.col-4</pre>
             <pre class="netbook-only">.n-col-4</pre>
-            <pre class="tablet-only">.t-col-6</pre>
-            <pre class="mobile-only">.m-col-4</pre>
+            <pre class="tablet-only">.t-col-3</pre>
+            <pre class="mobile-only">.m-col-12</pre>
           </div>
         </div>
         <div class="row large-gutter">
+          <div class="col col-6 n-col-6 t-col-6 m-col-6">
+            <pre class="desktop-only">.col-6</pre>
+            <pre class="netbook-only">.n-col-6</pre>
+            <pre class="tablet-only">.t-col-6</pre>
+            <pre class="mobile-only">.m-col-6</pre>
+          </div>
+          <div class="col col-6 n-col-6 t-col-6 m-col-6">
+            <pre class="desktop-only">.col-6</pre>
+            <pre class="netbook-only">.n-col-3</pre>
+            <pre class="tablet-only">.t-col-6</pre>
+            <pre class="mobile-only">.m-col-6</pre>
+          </div>
+        </div>
+        <div class="row large-gutter">
+          <div class="col col-4 n-col-5 t-col-6 m-col-12">
+            <pre class="desktop-only">.col-4</pre>
+            <pre class="netbook-only">.n-col-5</pre>
+            <pre class="tablet-only">.t-col-6</pre>
+            <pre class="mobile-only">.m-col-12</pre>
+          </div>
+          <div class="col col-4 n-col-5 t-col-3 m-col-6">
+            <pre class="desktop-only">.col-4</pre>
+            <pre class="netbook-only">.n-col-5</pre>
+            <pre class="tablet-only">.t-col-3</pre>
+            <pre class="mobile-only">.m-col-6</pre>
+          </div>
+          <div class="col col-4 n-col-2 t-col-3 m-col-6">
+            <pre class="desktop-only">.col-4</pre>
+            <pre class="netbook-only">.n-col-2</pre>
+            <pre class="tablet-only">.t-col-3</pre>
+            <pre class="mobile-only">.m-col-6</pre>
+          </div>
+        </div>
+        
+        <h3 id="no-gutter">No gutter</h3>
+        
+        <div class="row no-gutter">
+          <div class="col col-12 n-col-12 t-col-12 m-col-12">
+            <pre class="desktop-only">.col-12</pre>
+            <pre class="netbook-only">.n-col-12</pre>
+            <pre class="tablet-only">.t-col-12</pre>
+            <pre class="mobile-only">.m-col-12</pre>
+          </div>
+        </div>
+        <div class="row no-gutter">
+          <div class="col col-8 n-col-8 t-col-9 m-col-12">
+            <pre class="desktop-only">.col-8</pre>
+            <pre class="netbook-only">.n-col-8</pre>
+            <pre class="tablet-only">.t-col-9</pre>
+            <pre class="mobile-only">.m-col-12</pre>
+          </div>
+          <div class="col col-4 n-col-4 t-col-3 m-col-12">
+            <pre class="desktop-only">.col-4</pre>
+            <pre class="netbook-only">.n-col-4</pre>
+            <pre class="tablet-only">.t-col-3</pre>
+            <pre class="mobile-only">.m-col-12</pre>
+          </div>
+        </div>
+        <div class="row no-gutter">
+          <div class="col col-6 n-col-6 t-col-6 m-col-8">
+            <pre class="desktop-only">.col-6</pre>
+            <pre class="netbook-only">.n-col-6</pre>
+            <pre class="tablet-only">.t-col-6</pre>
+            <pre class="mobile-only">.m-col-8</pre>
+          </div>
           <div class="col col-6 n-col-6 t-col-6 m-col-4">
             <pre class="desktop-only">.col-6</pre>
             <pre class="netbook-only">.n-col-6</pre>
             <pre class="tablet-only">.t-col-6</pre>
             <pre class="mobile-only">.m-col-4</pre>
           </div>
-          <div class="col col-6 n-col-3 t-col-6 m-col-4">
-            <pre class="desktop-only">.col-6</pre>
-            <pre class="netbook-only">.n-col-3</pre>
-            <pre class="tablet-only">.t-col-6</pre>
-            <pre class="mobile-only">.m-col-4</pre>
-          </div>
         </div>
-        <div class="row large-gutter">
-          <div class="col col-4 n-col-3 t-col-6 m-col-12">
-            <pre class="desktop-only">.col-4</pre>
-            <pre class="netbook-only">.n-col-3</pre>
-            <pre class="tablet-only">.t-col-6</pre>
-            <pre class="mobile-only">.m-col-12</pre>
-          </div>
-          <div class="col col-4 n-col-6 t-col-3 m-col-6">
+        <div class="row no-gutter">
+          <div class="col col-4 n-col-6 t-col-8 m-col-12">
             <pre class="desktop-only">.col-4</pre>
             <pre class="netbook-only">.n-col-6</pre>
-            <pre class="tablet-only">.t-col-3</pre>
-            <pre class="mobile-only">.m-col-6</pre>
-          </div>
-          <div class="col col-4 n-col-4 t-col-3 m-col-6">
-            <pre class="desktop-only">.col-4</pre>
-            <pre class="netbook-only">.n-col-4</pre>
-            <pre class="tablet-only">.t-col-3</pre>
-            <pre class="mobile-only">.m-col-6</pre>
-          </div>
-        </div>
-        <div class="clear"></div>
-        
-        <h3>No gutter</h3>
-        
-        <div class="row no-gutter">
-          <div class="col col-12 n-col-12 t-col-8 m-col-6">
-            <pre class="desktop-only">.col-12</pre>
-            <pre class="netbook-only">.n-col-8</pre>
             <pre class="tablet-only">.t-col-8</pre>
-            <pre class="mobile-only">.m-col-6</pre>
+            <pre class="mobile-only">.m-col-12</pre>
           </div>
-        </div>
-        <div class="row no-gutter">
-          <div class="col col-8 n-col-8 t-col-4 m-col-6">
-            <pre class="desktop-only">.col-8</pre>
-            <pre class="netbook-only">.n-col-8</pre>
+          <div class="col col-4 n-col-6 t-col-4 m-col-6">
+            <pre class="desktop-only">.col-4</pre>
+            <pre class="netbook-only">.n-col-6</pre>
             <pre class="tablet-only">.t-col-4</pre>
             <pre class="mobile-only">.m-col-6</pre>
           </div>
-          <div class="col col-4 n-col-4 t-col-6 m-col-4">
+          <div class="col col-4 n-col-12 t-col-12 m-col-6">
             <pre class="desktop-only">.col-4</pre>
-            <pre class="netbook-only">.n-col-4</pre>
-            <pre class="tablet-only">.t-col-6</pre>
-            <pre class="mobile-only">.m-col-4</pre>
-          </div>
-        </div>
-        <div class="row no-gutter">
-          <div class="col col-6 n-col-6 t-col-6 m-col-4">
-            <pre class="desktop-only">.col-6</pre>
-            <pre class="netbook-only">.n-col-6</pre>
-            <pre class="tablet-only">.t-col-6</pre>
-            <pre class="mobile-only">.m-col-4</pre>
-          </div>
-          <div class="col col-6 n-col-3 t-col-6 m-col-4">
-            <pre class="desktop-only">.col-6</pre>
-            <pre class="netbook-only">.n-col-3</pre>
-            <pre class="tablet-only">.t-col-6</pre>
-            <pre class="mobile-only">.m-col-4</pre>
-          </div>
-        </div>
-        <div class="row no-gutter">
-          <div class="col col-4 n-col-3 t-col-6 m-col-12">
-            <pre class="desktop-only">.col-4</pre>
-            <pre class="netbook-only">.n-col-3</pre>
-            <pre class="tablet-only">.t-col-6</pre>
-            <pre class="mobile-only">.m-col-12</pre>
-          </div>
-          <div class="col col-4 n-col-6 t-col-3 m-col-6">
-            <pre class="desktop-only">.col-4</pre>
-            <pre class="netbook-only">.n-col-6</pre>
-            <pre class="tablet-only">.t-col-3</pre>
-            <pre class="mobile-only">.m-col-6</pre>
-          </div>
-          <div class="col col-4 n-col-6 t-col-3 m-col-6">
-            <pre class="desktop-only">.col-4</pre>
-            <pre class="netbook-only">.n-col-6</pre>
-            <pre class="tablet-only">.t-col-3</pre>
+            <pre class="netbook-only">.n-col-12</pre>
+            <pre class="tablet-only">.t-col-12</pre>
             <pre class="mobile-only">.m-col-6</pre>
           </div>
         </div>
-        <div class="clear"></div>
         
         <hr>
         
-        <h2 class="brand-teal">Typography</h2>
+        <h2 id="typography" class="brand-teal">Typography</h2>
         
-        <h3>Headings</h3>
+        <h3 id="headings">Headings</h3>
         <div class="brand-offwhite-bg padding-2x contained-680">
           <h1>This is an H1</h1>
           <h2>This is an H2</h2>
@@ -512,32 +609,140 @@
           <h6>This is an H6</h6>
         </div>
         
-        <h3>Subheadings</h3>
+        <h3 id="subheadings">Subheadings</h3>
         <div class="brand-offwhite-bg padding-2x contained-680">
           <h1>
             This is an H1
-            <span class="subheading">This is it's subheading</span>
+            <span class="subheading">This is its subheading</span>
           </h1>
           <p>
             This is a normal paragraph. Neutra tofu pour-over put a bird on it cold-pressed. Dreamcatcher keffiyeh Neutra 90's, raw denim pour-over 8-bit cred shabby chic direct trade pork belly PBR&B. 
           </p>
           <h2>
             This is an H2
-            <span class="subheading">This is it's subheading</span>
+            <span class="subheading">This is its subheading</span>
           </h2>
           <p>
             This is a normal paragraph. Neutra tofu pour-over put a bird on it cold-pressed. Dreamcatcher keffiyeh Neutra 90's, raw denim pour-over 8-bit cred shabby chic direct trade pork belly PBR&B. 
           </p>
           <h3>
             This is an H3
-            <span class="subheading">This is it's subheading</span>
+            <span class="subheading">This is its subheading</span>
           </h3>
           <p>
             This is a normal paragraph. Neutra tofu pour-over put a bird on it cold-pressed. Dreamcatcher keffiyeh Neutra 90's, raw denim pour-over 8-bit cred shabby chic direct trade pork belly PBR&B. 
           </p>
         </div>
         
-        <h3>Paragraphs</h3>
+        <h3 id="headings-large-and-small">Headings large and small</h3>
+        <p>
+          Some heading tags (<code>&lt;h1&gt;</code>, <code>&lt;h2&gt;</code>,
+          <code>&lt;h3&gt;</code>) can be modified with <code>.large</code> and
+          <code>.small</code>. They can be used to preserve heirarchy while
+          modifying font size for visual impact.
+        </p>
+        <div class="row">
+          <div class="col col-4 t-col-4 m-col-12">
+            <div class="brand-offwhite-bg padding-2x">
+              <h1 class="large">This is a large H1<span class="subheading">This is its subheading</span></h1>
+              <h1>This is a normal H1<span class="subheading">This is its subheading</span></h1>
+              <h1 class="small">This is a small H1<span class="subheading">This is its subheading</span></h1>
+            </div>
+          </div>
+          <div class="col col-4 t-col-4 m-col-12">
+            <div class="brand-offwhite-bg padding-2x">
+              <h2 class="large">This is a large H2<span class="subheading">This is its subheading</span></h2>
+              <h2>This is a normal H2<span class="subheading">This is its subheading</span></h2>
+              <h2 class="small">This is a small H2<span class="subheading">This is its subheading</span></h2>
+            </div>
+          </div>
+          <div class="col col-4 t-col-4 m-col-12">
+            <div class="brand-offwhite-bg padding-2x">
+              <h3 class="large">This is a large H3<span class="subheading">This is its subheading</span></h3>
+              <h3>This is a normal H3<span class="subheading">This is its subheading</span></h3>
+              <h3 class="small">This is a small H3<span class="subheading">This is its subheading</span></h3>
+            </div>
+          </div>
+        </div>
+        <h3 id="bordered-headings">Bordered headings</h3>
+        <p>
+          Add <code>.bordered</code> to heading tags to add a border. The heading
+          is also set to <code>display: inline-block</code>.
+        </p>
+        <div class="row align-center">
+          <div class="col col-3 n-col-6 t-col-6 m-col-12">
+            <h3 class="bordered brand-purple">Heading</h3>
+          </div>
+          <div class="col col-3 n-col-6 t-col-6 m-col-12">
+            <h3 class="bordered brand-teal">Heading</h3>
+          </div>
+          <div class="col col-3 n-col-6 t-col-6 m-col-12">
+            <h3 class="bordered brand-orange">Heading</h3>
+          </div>
+          <div class="col col-3 n-col-6 t-col-6 m-col-12">
+            <h3 class="bordered brand-pink">Heading</h3>
+          </div>
+        </div>
+        <div class="row align-center">
+          <div class="col col-3 n-col-6 t-col-6 m-col-12">
+            <h3 class="bordered brand-green">Heading</h3>
+          </div>
+          <div class="col col-3 n-col-6 t-col-6 m-col-12">
+            <h3 class="bordered">Heading</h3>
+          </div>
+          <div class="col col-3 n-col-6 t-col-6 m-col-12">
+            <h3 class="bordered brand-gray">Heading</h3>
+          </div>
+          <div class="col col-3 n-col-6 t-col-6 m-col-12">
+            <h3 class="bordered brand-offwhite">Heading</h3>
+          </div>
+        </div>
+        <div class="row align-center">
+          <div class="col col-3 n-col-6 t-col-6 m-col-12">
+            <div class="brand-purple-bg padding-2x">
+              <h3 class="bordered">Heading</h3>
+            </div>
+          </div>
+          <div class="col col-3 n-col-6 t-col-6 m-col-12">
+            <div class="brand-teal-bg padding-2x">
+              <h3 class="bordered">Heading</h3>
+            </div>
+          </div>
+          <div class="col col-3 n-col-6 t-col-6 m-col-12">
+            <div class="brand-orange-bg padding-2x">
+              <h3 class="bordered">Heading</h3>
+            </div>
+          </div>
+          <div class="col col-3 n-col-6 t-col-6 m-col-12">
+            <div class="brand-pink-bg padding-2x">
+              <h3 class="bordered">Heading</h3>
+            </div>
+          </div>
+        </div>
+        <div class="row align-center">
+          <div class="col col-3 n-col-6 t-col-6 m-col-12">
+            <div class="brand-green-bg padding-2x">
+              <h3 class="bordered">Heading</h3>
+            </div>
+          </div>
+          <div class="col col-3 n-col-6 t-col-6 m-col-12">
+            <div class="brand-darkgray-bg padding-2x">
+              <h3 class="bordered">Heading</h3>
+            </div>
+          </div>
+          <div class="col col-3 n-col-6 t-col-6 m-col-12">
+            <div class="brand-gray-bg padding-2x">
+              <h3 class="bordered">Heading</h3>
+            </div>
+          </div>
+          <div class="col col-3 n-col-6 t-col-6 m-col-12">
+            <div class="brand-offwhite-bg padding-2x">
+              <h3 class="bordered">Heading</h3>
+            </div>
+          </div>
+        </div>
+        
+        <h3 id="paragraphs">Paragraphs</h3>
         <div class="contained-680">
           <p class="large">
             This is a large paragraph, using <code>.large</code>. Stumptown Thundercats before they sold out Tumblr, asymmetrical 3 wolf moon literally butcher farm-to-table wolf cronut. Roof party XOXO banjo letterpress, kale chips retro authentic meggings readymade raw denim whatever. 
@@ -550,7 +755,71 @@
           </p>
         </div>
         
-        <h3>Unordered Lists</h3>
+        <h3 id="links">Links</h3>
+        <div class="contained-680">
+          <p>
+            This paragraph contains <a href="#">a link</a>.
+          </p>
+          <div class="row">
+            <div class="col col-6 t-col-6 m-col-12">
+              <div class="brand-darkgray-bg padding-1x">
+                <p>
+                  Here's <a href="#">a link</a> on a dark gray background.
+                </p>
+              </div>
+            </div>
+            <div class="col col-6 t-col-6 m-col-12">
+              <div class="brand-offwhite-bg padding-1x">
+                <p>
+                  Here's <a href="#">a link</a> on a light gray background.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col col-6 t-col-6 m-col-12">
+              <div class="brand-purple-bg padding-1x">
+                <p>
+                  Here's <a href="#">a link</a> on a purple background.
+                </p>
+              </div>
+            </div>
+            <div class="col col-6 t-col-6 m-col-12">
+              <div class="brand-teal-bg padding-1x">
+                <p>
+                  Here's <a href="#">a link</a> on a teal background.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col col-6 t-col-6 m-col-12">
+              <div class="brand-orange-bg padding-1x">
+                <p>
+                  Here's <a href="#">a link</a> on an orange background.
+                </p>
+              </div>
+            </div>
+            <div class="col col-6 t-col-6 m-col-12">
+              <div class="brand-pink-bg padding-1x">
+                <p>
+                  Here's <a href="#">a link</a> on a pink background.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col col-6 t-col-6 m-col-12">
+              <div class="brand-green-bg padding-1x">
+                <p>
+                  Here's <a href="#">a link</a> on a green background.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <h3 id="unordered-lists">Unordered Lists</h3>
         <div class="contained-680">
           <p>
             Basic <code>&lt;ul&gt;</code>
@@ -600,7 +869,7 @@
           </ul>
         </div>
         
-        <h3>Ordered Lists</h3>
+        <h3 id="ordered-lists">Ordered Lists</h3>
         <div class="conatined-680">
           <p>
             Basic <code>&lt;ol&gt;</code>
@@ -650,7 +919,7 @@
           </ol>
         </div>
         
-        <h3>Blockquotes</h3>
+        <h3 id="blockquotes">Blockquotes</h3>
         <div class="contained-680">
           <blockquote>
             <p>
@@ -744,7 +1013,7 @@
           </div>
         </div>
         
-        <h3>Alignment</h3>
+        <h3 id="alignment">Alignment</h3>
         <div class="contained-680">
           <p class="align-left">
             This paragraph is left-aligned with <code>.align-left</code>. Paragraphs
@@ -759,8 +1028,8 @@
           </p>
         </div>
         
-        <h3>Everything together</h3>
-        <div class="bordered-box padding-2x contained-680">
+        <h3 id="everything-together">Everything together</h3>
+        <div class="bordered padding-2x contained-680">
           <h1 class="align-center">Opportunity International</h1>
           <h2>About Us</h2>
           <p class="large">
@@ -806,8 +1075,8 @@
         
         <hr>
         
-        <h2 class="brand-teal">Images and Video</h2>
-        <h3>Responsive videos</h3>
+        <h2 id="images-and-video" class="brand-teal">Images and Video</h2>
+        <h3 id="responsive-videos">Responsive videos</h3>
         <p>
           Wrap an <code>iframe</code> video embed with <code>.flex-video</code> to make it responsive.
         </p>
@@ -817,8 +1086,8 @@
         
         <hr>
         
-        <h2 class="brand-teal">Colors</h2>
-        <h3>Background color</h3>
+        <h2 id="colors" class="brand-teal">Colors</h2>
+        <h3 id="background-color">Background color</h3>
         <div class="row">
           <div class="col col-3 n-col-3 t-col-4 m-col-6">
             <div class="color-swatch brand-purple-bg"></div>
@@ -865,9 +1134,8 @@
             <code>.brand-offwhite-bg</code>
           </div>
         </div>
-        <div class="clear"></div>
         
-        <h3>Text color</h3>
+        <h3 id="text-color">Text color</h3>
         <div class="row">
           <div class="col col-3 n-col-3 t-col-4 m-col-6">
             <strong class="brand-pink">Pink</strong><br>
@@ -900,13 +1168,12 @@
             <code>.brand-offwhite</code>
           </div>
         </div>
-        <div class="clear"></div>
         
         <hr>
         
-        <h2 class="brand-teal">Buttons</h2>
+        <h2 id="buttons" class="brand-teal">Buttons</h2>
         
-        <h3>
+        <h3 id="button-colors">
           Colors
         </h3>
         <div class="row">
@@ -939,7 +1206,6 @@
             <a href="" class="btn block brand-offwhite-bg">Offwhite</a>
           </div>
         </div>
-        <div class="clear"></div>
         <div class="row no-gutter">
           <div class="col col-4 t-col-6 m-col-12">
             <div class="brand-pink-bg padding-1x">
@@ -986,9 +1252,8 @@
             </div>
           </div>
         </div>
-        <div class="clear"></div>
         
-        <h3>Inline buttons</h3>
+        <h3 id="inline-buttons">Inline buttons</h3>
         <p>
           Inline buttons. One of each tag (<code class="inline">&lt;a&gt;</code>, <code class="inline">&lt;input type="submit"&gt;</code>, <code class="inline">&lt;input type="button"&gt;</code>, <code class="inline">&lt;button&gt;</code>)
         </p>
@@ -998,7 +1263,8 @@
           <input type="button" value="Teal inline button" class="btn brand-teal-bg">
           <button class="btn brand-orange-bg">Orange inline button</button>
         </p>
-        <h3>Block buttons</h3>
+        
+        <h3 id="block-buttons">Block buttons</h3>
         <p>
           Block buttons. One of each tag (<code class="inline">&lt;a&gt;</code>, <code class="inline">&lt;input type="submit"&gt;</code>, <code class="inline">&lt;input type="button"&gt;</code>, <code class="inline">&lt;button&gt;</code>)
         </p>
@@ -1015,7 +1281,7 @@
           <button class="btn block brand-orange-bg ">Orange block button</button>
         </p>
         
-        <h3>Ghost buttons</h3>
+        <h3 id="ghost-buttons">Ghost buttons</h3>
         <p>
           All the color variations
         </p>
@@ -1049,7 +1315,6 @@
             <a href="" class="ghost btn block brand-offwhite">Offwhite</a>
           </div>
         </div>
-        <div class="clear"></div>
         <div class="row no-gutter">
           <div class="col col-4 t-col-6 m-col-12">
             <div class="brand-pink-bg padding-1x">
@@ -1096,7 +1361,6 @@
             </div>
           </div>
         </div>
-        <div class="clear"></div>
         <p>
           Inline ghost buttons. One of each tag (<code class="inline">&lt;a&gt;</code>, <code class="inline">&lt;input type="submit"&gt;</code>, <code class="inline">&lt;input type="button"&gt;</code>, <code class="inline">&lt;button&gt;</code>)
         </p>
@@ -1122,7 +1386,7 @@
           <button class="btn ghost block brand-orange">Orange block ghost button</button>
         </p>
         
-        <h3>Button sizes</h3>
+        <h3 id="button-sizes">Button sizes</h3>
         <p>
           Large buttons. One of each tag (<code class="inline">&lt;a&gt;</code>, <code class="inline">&lt;input type="submit"&gt;</code>, <code class="inline">&lt;input type="button"&gt;</code>, <code class="inline">&lt;button&gt;</code>)
         </p>
@@ -1173,9 +1437,10 @@
         
         <hr>
         
-        <h2 class="brand-teal">Forms</h2>
-        <div class="bordered-box padding-2x contained-680">
+        <h2 id="forms" class="brand-teal">Forms</h2>
+        <div class="bordered padding-2x contained-680">
           <form novalidate>
+            <h3 id="alert-boxes">Alert boxes</h3>
             <div class="alert">
               This is a generic alert box.
             </div>
@@ -1195,14 +1460,20 @@
                 <li>inside it.</li>
               </ul>
             </div>
+            
+            <h3 id="inputs">Inputs</h3>
             <div class="row">
-              <div class="col col-6 t-col-6 m-col-12">
+              <div class="col col-4 t-col-6 m-col-12">
                 <label for="text-input">Text input</label>
                 <input type="text" id="text-input" name="text" placeholder="Text input">
               </div>
-              <div class="col col-6 t-col-6 m-col-12">
+              <div class="col col-4 t-col-6 m-col-12">
                 <label for="phone-input">Phone input</label>
                 <input type="phone" id="phone-input" name="phone" placeholder="Phone input">
+              </div>
+              <div class="col col-4 t-col-12 m-col-12">
+                <label for="password-input">Password input</label>
+                <input type="password" id="password-input" name="password" placeholder="Password input">
               </div>
             </div>
             <div class="row">
@@ -1232,6 +1503,8 @@
                 <textarea id="textarea"></textarea>
               </div>
             </div>
+            
+            <h3 id="input-groups">Input groups</h3>
             <div class="row">
               <div class="col col-6 t-col-6 m-col-12">
                 <label for="input-group-1">Input group 1</label>
@@ -1252,6 +1525,33 @@
                 </div>
               </div>
             </div>
+            
+            <h3 id="icon-inputs">Icon inputs</h3>
+            <div class="row">
+              <div class="col col-4 t-col-12 m-col-12">
+                <label for="icon-input-1">Icon input 1</label>
+                <div class="input-icon">
+                  <input type="email" id="icon-input-1" placeholder="Email">
+                  <i class="icon-mail"></i>
+                </div>
+              </div>
+              <div class="col col-4 t-col-12 m-col-12">
+                <label for="icon-input-2">Icon input 2</label>
+                <div class="input-icon">
+                  <input type="text" id="icon-input-2" placeholder="First name">
+                  <i class="icon-user"></i>
+                </div>
+              </div>
+              <div class="col col-4 t-col-12 m-col-12">
+                <label for="icon-input-3">Icon input 3</label>
+                <div class="input-icon">
+                  <input type="text" id="icon-input-3" placeholder="Twitter handle">
+                  <i class="icon-twitter"></i>
+                </div>
+              </div>
+            </div>
+            
+            <h3 id="radio-buttons">Radio buttons</h3>
             <div class="row">
               <div class="col col-12 t-col-12 m-col-12">
                 <label>Inline radio buttons</label>
@@ -1295,6 +1595,7 @@
               </div>
             </div>
             
+            <h3 id="checkboxes">Checkboxes</h3>
             <div class="row">
               <div class="col col-12 t-col-12 m-col-12">
                 <label>Inline checkboxes</label>
@@ -1337,13 +1638,30 @@
                 <label for="checkbox-3" class="checkbox">Option 3</label>
               </div>
             </div>
-            <div class="clear"></div>
+            <input type="submit" value="Submit" class="btn brand-pink-bg block">
+          </form>
+        </div>
+        
+        <h3 id="inline-form">Inline form</h3>
+        <div class="padding-2x brand-offwhite-bg align-center">
+          <form class="inline-form">
+            <input type="text" name="name" value="" placeholder="First Name">
+            <input type="text" name="name" value="" placeholder="Email Address">
+            <div class="select">
+              <select name="select" id="select-box">
+                <option value="">Choose one</option>
+                <option value="1">Option 1</option>
+                <option value="2">Option 2</option>
+                <option value="3">Option 3</option>
+              </select>
+            </div>
+            <input type="submit" value="Submit" class="brand-green-bg btn">
           </form>
         </div>
         
         <hr>
         
-        <h2 class="brand-teal">Tooltips</h2>
+        <h2 id="tooltips" class="brand-teal">Tooltips</h2>
         <p> 
           Hover <strong><span data-tooltip="Check out this tooltip.">here</span></strong> for the default tooltip.
         </p>
@@ -1353,15 +1671,15 @@
         <p>
           Check out <strong><span data-tooltip="Check out this tooltip! It has a lot more content. Lot's more!" data-tooltip-style="teal" data-tooltip-width="600">this teal tooltip</span></strong>
         </p>
-        <div class="bordered-box padding-1x" data-tooltip="This tooltip's max-width should be set to 100% of its trigger element." data-tooltip-width="100%" data-tooltip-style="green" style="width: 450px;">
+        <div class="bordered padding-1x" data-tooltip="This tooltip's max-width should be set to 100% of its trigger element." data-tooltip-width="100%" data-tooltip-style="green" style="width: 450px;">
           This element triggers a tooltip that is 100% of its width.
         </div>
         
         <hr>
         
-        <h2 class="brand-teal">Icons</h2>
+        <h2 id="icons" class="brand-teal">Icons</h2>
         
-        <h3>Symbols</h3>
+        <h3 id="symbols">Symbols</h3>
         <div class="row">
           <div class="col col-3 t-col-4 m-col-6 align-center">
             <p>
@@ -1468,9 +1786,8 @@
             </p>
           </div>
         </div>
-        <div class="clear"></div>
         
-        <h3>Arrows</h3>
+        <h3 id="arrows">Arrows</h3>
         <div class="row">
           <div class="col col-3 t-col-4 m-col-6 align-center">
             <p>
@@ -1597,9 +1914,8 @@
             </p>
           </div>
         </div>
-        <div class="clear"></div>
         
-        <h3>Social Media</h3>
+        <h3 id="social-media">Social Media</h3>
         <div class="row">
           <div class="col col-3 t-col-4 m-col-6 align-center">
             <p>
@@ -1706,18 +2022,34 @@
             </p>
           </div>
         </div>
-        <div class="clear"></div>
       </div>
+      <footer class="brand-darkgray-bg">
+        <div class="contained padding-2x">
+          <p class="small align-center brand-gray">
+            &copy;2015 <a href="http://opportunity.org" class="brand-white">Opportunity International</a>, a 501(c)3 non-profit. <a href="https://github.com/OpportunityIntl/Weavr" class="brand-white">View source on GitHub</a>.
+          </p>
+        </div>
+      </footer>
     </section>
-    <footer class="brand-darkgray-bg">
-      <div class="contained padding-2x">
-        <p class="small align-center brand-gray">
-          &copy;2015 <a href="http://opportunity.org" class="brand-white">Opportunity International</a>, a 501(c)3 non-profit. <a href="https://github.com/OpportunityIntl/Weavr" class="brand-white">View source on GitHub</a>.
-        </p>
-      </div>
-    </footer>
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script type="text/javascript" src="weavr/OI.weavr.min.js"></script>
+    
+    <!--[if lte IE 9]>
+      <script type="text/javascript" src="weavr/OI.placeholder.min.js"></script>
+    <![endif]-->
+    
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.0/jquery.scrollTo.min.js"></script>
+    
+    <script type="text/javascript">
+      $('form').submit(function() {
+        return false;
+      });
+      
+      $('[data-href]').click(function() {
+        console.log($(this).data('href'));
+        $(window).scrollTo('#' + $(this).data('href'), 500, {offset: -20});
+      });
+    </script>
   </body>
 </html>
