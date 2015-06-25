@@ -16,6 +16,15 @@
   padding-left: 20px;
   padding-right: 20px;
 }
+.row.small-gutter {
+  margin-left: -5px;
+  margin-right: -5px;
+  margin-bottom: 10px;
+}
+.row.small-gutter .col {
+  padding-left: 5px;
+  padding-right: 5px;
+}
 .row:last-child {
   margin-bottom: 0;
 }

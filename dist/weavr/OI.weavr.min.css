@@ -1,5 +1,5 @@
 /* Weavr v0.9.1 
- * Compiled 06-22-2015
+ * Compiled 06-25-2015
  * Copyright (c) 2015 Opportunity International 
  */
 
@@ -271,6 +271,8 @@ ol li:before { content: counter(list) "."; display: block; position: absolute; l
 .row { margin-left: -10px; margin-right: -10px; margin-bottom: 20px; }
 .row.large-gutter { margin-left: -20px; margin-right: -20px; margin-bottom: 40px; }
 .row.large-gutter .col { padding-left: 20px; padding-right: 20px; }
+.row.small-gutter { margin-left: -5px; margin-right: -5px; margin-bottom: 10px; }
+.row.small-gutter .col { padding-left: 5px; padding-right: 5px; }
 .row:last-child { margin-bottom: 0; }
 .row.no-gutter { margin-left: 0; margin-right: 0; margin-bottom: 0; }
 .row.no-gutter .col { padding-left: 0; padding-right: 0; margin-bottom: 0; }

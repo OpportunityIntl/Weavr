@@ -18,6 +18,17 @@
     }
   }
   
+  &.small-gutter {
+    margin-left: -0.25 * $gutter;
+    margin-right: -0.25 * $gutter;
+    margin-bottom: 0.5 * $gutter;
+    
+    .col {
+      padding-left: .25 * $gutter;
+      padding-right: .25 * $gutter;
+    }
+  }
+  
   &:last-child {
     margin-bottom: 0;
   }
