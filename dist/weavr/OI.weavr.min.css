@@ -380,6 +380,8 @@ label { display: block; font-family: "Times New Roman", Times, serif; font-style
 
 .brand-green-bg input[type='text'], .brand-green-bg input[type='number'], .brand-green-bg input[type='email'], .brand-green-bg input[type='password'], .brand-green-bg input[type='phone'], .brand-green-bg textarea, .brand-purple-bg input[type='text'], .brand-purple-bg input[type='number'], .brand-purple-bg input[type='email'], .brand-purple-bg input[type='password'], .brand-purple-bg input[type='phone'], .brand-purple-bg textarea, .brand-orange-bg input[type='text'], .brand-orange-bg input[type='number'], .brand-orange-bg input[type='email'], .brand-orange-bg input[type='password'], .brand-orange-bg input[type='phone'], .brand-orange-bg textarea, .brand-teal-bg input[type='text'], .brand-teal-bg input[type='number'], .brand-teal-bg input[type='email'], .brand-teal-bg input[type='password'], .brand-teal-bg input[type='phone'], .brand-teal-bg textarea, .brand-pink-bg input[type='text'], .brand-pink-bg input[type='number'], .brand-pink-bg input[type='email'], .brand-pink-bg input[type='password'], .brand-pink-bg input[type='phone'], .brand-pink-bg textarea, .brand-darkgray-bg input[type='text'], .brand-darkgray-bg input[type='number'], .brand-darkgray-bg input[type='email'], .brand-darkgray-bg input[type='password'], .brand-darkgray-bg input[type='phone'], .brand-darkgray-bg textarea { border: none; }
 
+.ie-placeholder { /* for IE8 and 9 placeholder fix */ font-family: "Times New Roman", Times, serif !important; font-style: italic !important; color: #8f8e8c !important; }
+
 /************************************/
 /**** Checkbox and Radio Buttons ****/
 /************************************/
@@ -407,7 +409,13 @@ label.checkbox { padding-left: 1.375em; }
 label.checkbox:hover { color: #333; }
 label.checkbox:hover:before { border-color: #333; }
 
-.ie-placeholder { /* for IE8 and 9 placeholder fix */ font-family: "Times New Roman", Times, serif !important; font-style: italic !important; color: #8f8e8c !important; }
+/*****************************************/
+/**** Radio buttons styled as buttons ****/
+/*****************************************/
+input[type="radio"] + label.btn { color: #fff; background-color: #8f8e8c; font-family: "proxima-nova", Arial, sans-serif; font-style: normal; margin-bottom: 0; }
+input[type="radio"] + label.btn:hover { background-color: #ed027e; }
+
+input[type="radio"]:checked + label.btn { background-color: #ed027e; }
 
 @-webkit-keyframes button-error { 0% { transform: translate(0px); -webkit-transform: translate(0px); }
   25% { transform: translate(5px); -webkit-transform: translate(5px); }

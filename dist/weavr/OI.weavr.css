@@ -1124,6 +1124,13 @@ label {
   border: none;
 }
 
+.ie-placeholder {
+  /* for IE8 and 9 placeholder fix */
+  font-family: "Times New Roman", Times, serif !important;
+  font-style: italic !important;
+  color: #8f8e8c !important;
+}
+
 /************************************/
 /**** Checkbox and Radio Buttons ****/
 /************************************/
@@ -1207,11 +1214,22 @@ label.checkbox:hover:before {
   border-color: #333;
 }
 
-.ie-placeholder {
-  /* for IE8 and 9 placeholder fix */
-  font-family: "Times New Roman", Times, serif !important;
-  font-style: italic !important;
-  color: #8f8e8c !important;
+/*****************************************/
+/**** Radio buttons styled as buttons ****/
+/*****************************************/
+input[type="radio"] + label.btn {
+  color: #fff;
+  background-color: #8f8e8c;
+  font-family: "proxima-nova", Arial, sans-serif;
+  font-style: normal;
+  margin-bottom: 0;
+}
+input[type="radio"] + label.btn:hover {
+  background-color: #ed027e;
+}
+
+input[type="radio"]:checked + label.btn {
+  background-color: #ed027e;
 }
 
 @-webkit-keyframes button-error {
