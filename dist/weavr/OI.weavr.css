@@ -1570,11 +1570,15 @@ button.btn {
   color: #8f8e8c;
 }
 
-.btn + .btn {
-  margin-left: 20px;
+.inline-buttons {
+  margin-bottom: -1em;
 }
-.btn + .btn.block {
-  margin-left: 0;
+.inline-buttons .btn {
+  margin-right: 20px;
+  margin-bottom: 1em;
+}
+.inline-buttons .btn:last-child {
+  margin-right: 0;
 }
 
 /******************/

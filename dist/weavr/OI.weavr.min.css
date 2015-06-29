@@ -3,6 +3,11 @@
  * Copyright (c) 2015 Opportunity International 
  */
 
+/* Weavr v0.9.3 
+ * Compiled 06-29-2015
+ * Copyright (c) 2015 Opportunity International 
+ */
+
 @charset "UTF-8";
 /* Colors */
 @font-face { font-family: 'OI-icons'; src: url("fonts/OI-icons.eot?-yt7ydu"); src: url("fonts/OI-icons.eot?#iefix-yt7ydu") format("embedded-opentype"), url("fonts/OI-icons.ttf?-yt7ydu") format("truetype"), url("fonts/OI-icons.woff?-yt7ydu") format("woff"), url("fonts/OI-icons.svg?-yt7ydu#oi-icons") format("svg"); font-weight: normal; font-style: normal; }
@@ -507,8 +512,9 @@ button.btn { display: inline-block; width: auto; }
 
 .brand-offwhite-bg .btn.brand-white-bg, .brand-offwhite-bg .btn.ghost.brand-white:hover { color: #8f8e8c; }
 
-.btn + .btn { margin-left: 20px; }
-.btn + .btn.block { margin-left: 0; }
+.inline-buttons { margin-bottom: -1em; }
+.inline-buttons .btn { margin-right: 20px; margin-bottom: 1em; }
+.inline-buttons .btn:last-child { margin-right: 0; }
 
 /******************/
 /**** Tooltips ****/
