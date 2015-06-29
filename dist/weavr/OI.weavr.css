@@ -360,6 +360,11 @@ p {
   font-size: 1em;
   line-height: 1.75;
 }
+@media (max-width: 480px) {
+  p {
+    line-height: 1.5;
+  }
+}
 p:first-child {
   margin-top: 0;
 }
@@ -370,16 +375,16 @@ p:last-child {
 p.large {
   font-size: 1.25em;
 }
-
-p.small {
-  font-size: .875em;
-}
-
 @media (max-width: 480px) {
   p.large {
     font-size: 1.125em;
   }
 }
+
+p.small {
+  font-size: .875em;
+}
+
 /***************/
 /**** Links ****/
 /***************/
@@ -422,6 +427,11 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: 1px;
   line-height: 1;
   font-family: "proxima-nova", Arial, sans-serif;
+}
+@media (max-width: 480px) {
+  h1, h2, h3, h4, h5, h6 {
+    margin: 1.25em 0 .75em 0;
+  }
 }
 h1:first-child, h2:first-child, h3:first-child, h4:first-child, h5:first-child, h6:first-child {
   margin-top: 0;
@@ -522,6 +532,11 @@ blockquote p {
   font-size: 1.125em;
   line-height: 1.5;
 }
+@media (max-width: 480px) {
+  blockquote p {
+    line-height: 1.25;
+  }
+}
 blockquote cite {
   text-align: right;
   display: block;
@@ -608,6 +623,11 @@ ul li, ol li {
   padding-left: 1.25em;
   line-height: 1.75em;
   counter-increment: list;
+}
+@media (max-width: 480px) {
+  ul li, ol li {
+    line-height: 1.5em;
+  }
 }
 ul li:last-child, ol li:last-child {
   margin-bottom: 0;

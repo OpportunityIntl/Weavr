@@ -51,6 +51,10 @@ p {
   font-size: 1em;
   line-height: 1.75;
   
+  @media (max-width: 480px) {
+    line-height: 1.5;
+  }
+  
   &:first-child {
     margin-top: 0;
   }
@@ -62,16 +66,14 @@ p {
 
 p.large {
   font-size: 1.25em;
+  
+  @media (max-width: 480px) {
+    font-size: 1.125em;
+  }
 }
 
 p.small {
   font-size: .875em;
-}
-
-@media (max-width: 480px) {
-  p.large {
-    font-size: 1.125em;
-  }
 }
 
 /***************/
@@ -119,6 +121,10 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: 1px;
   line-height: 1;
   font-family: $font-primary;
+  
+  @media (max-width: 480px) {
+    margin: 1.25em 0 .75em 0;
+  }
   
   &:first-child {
     margin-top: 0;
@@ -235,6 +241,10 @@ blockquote {
     font-family: "Time New Roman", serif;
     font-size: 1.125em;
     line-height: 1.5;
+    
+    @media (max-width: 480px) {
+      line-height: 1.25;
+    }
   }
   
   cite {
@@ -335,6 +345,10 @@ ul, ol {
     padding-left: 1.25em;
     line-height: 1.75em;
     counter-increment: list;
+    
+    @media (max-width: 480px) {
+      line-height: 1.5em;
+    }
     
     &:last-child {
       margin-bottom: 0;
