@@ -216,11 +216,13 @@ h5.large { font-size: 1.125em; }
 /**** Blockquotes ****/
 /*********************/
 blockquote { font-style: italic; padding: 1.25em 1.25em 1.25em 3.125em; margin: 1.25em 0; position: relative; border-top: solid 1px #efeeea; border-bottom: solid 1px #efeeea; color: #555; }
+@media (max-width: 480px) { blockquote { padding: 1em 1em 1em 2em; } }
 blockquote p { font-family: "Time New Roman", serif; font-size: 1.125em; line-height: 1.5; }
 @media (max-width: 480px) { blockquote p { line-height: 1.25; } }
 blockquote cite { text-align: right; display: block; font-style: normal; font-size: .875em; }
 blockquote cite:before { content: "– "; }
 blockquote:before { content: "\201c"; display: block; position: absolute; top: 15px; left: 0; font-size: 4.375em; font-weight: bold; font-style: normal; line-height: 1em; color: #611171; }
+@media (max-width: 480px) { blockquote:before { font-size: 3.25em; top: .25em; } }
 blockquote.no-border { border-top: none; border-bottom: 0; padding-top: 0; padding-bottom: 0; }
 blockquote.no-border:before { top: -5px; }
 blockquote:first-child { margin-top: 0; }

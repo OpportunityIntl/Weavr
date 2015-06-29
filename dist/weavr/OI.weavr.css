@@ -527,6 +527,11 @@ blockquote {
   border-bottom: solid 1px #efeeea;
   color: #555;
 }
+@media (max-width: 480px) {
+  blockquote {
+    padding: 1em 1em 1em 2em;
+  }
+}
 blockquote p {
   font-family: "Time New Roman", serif;
   font-size: 1.125em;
@@ -557,6 +562,12 @@ blockquote:before {
   font-style: normal;
   line-height: 1em;
   color: #611171;
+}
+@media (max-width: 480px) {
+  blockquote:before {
+    font-size: 3.25em;
+    top: .25em;
+  }
 }
 blockquote.no-border {
   border-top: none;

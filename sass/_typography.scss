@@ -237,6 +237,10 @@ blockquote {
   border-bottom: solid 1px $brand-offwhite;
   color: $text-color-secondary;
   
+  @media (max-width: 480px) {
+    padding: 1em 1em 1em 2em;
+  }
+  
   p {
     font-family: "Time New Roman", serif;
     font-size: 1.125em;
@@ -269,6 +273,11 @@ blockquote {
     font-style: normal;
     line-height: 1em;
     color: $brand-purple;
+    
+    @media (max-width: 480px) {
+      font-size: 3.25em;
+      top: .25em;
+    }
   }
   
   &.no-border {
