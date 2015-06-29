@@ -2,6 +2,31 @@
   width: 100%;
 }
 
+/**************************/
+/*** Container classes ****/
+/**************************/
+
+.contained-1260 {
+  max-width: 1260px;
+}
+
+.contained-960 {
+  max-width: 960px;
+}
+
+.contained-680 {
+  max-width: 680px;
+}
+
+.contained-480 {
+  max-width: 480px;
+}
+
+.centered {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /*************************/
 /**** Padding classes ****/
 /*************************/
