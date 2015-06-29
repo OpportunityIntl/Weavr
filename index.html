@@ -120,6 +120,7 @@
             <strong data-href="images-and-video">Images and Video</strong>
             <ul>
               <li data-href="responsive-videos">Responsive videos</li>
+              <li data-href="background-images-and-overlays">Background images and overlays</li>
             </ul>
           </li>
           <li>
@@ -1131,6 +1132,45 @@
           <iframe width="560" height="315" src="https://www.youtube.com/embed/ZIdqa1lsfzU?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
         </div>
         
+        <h3 id="background-images-and-overlays">Background Images and Overlays</h3>
+        <p>
+          To add a background image to a <code>&lt;div&gt;</code>, add <code>.bg-image</code> and the background-image declaration in an inline style attribute.
+        </p>
+        <div class="contained-1260 bg-image viewport-half-height" style="background-image: url('demo/sample-bg-image.jpg');"></div>
+        <p>
+          You can add a color overlay by adding <code>.overlay</code> and a background color class (e.g. <code>.brand-purple-bg</code>).
+        </p>
+        <div class="contained-1260 bg-image viewport-half-height overlay brand-purple-bg" style="background-image: url('demo/sample-bg-image.jpg');"></div>
+        <p>
+          To add content over the image, nest a <code>&lt;div&gt;</code> with <code>.content-overlay</code>. Add one or a combination of the following modifiers
+          to position the overlaid content: <code>.top</code>, <code>.middle</code>, <code>.bottom</code>, <code>.left</code>, <code>.right</code>.
+        </p>
+        <div class="contained-1260 bg-image viewport-half-height overlay brand-darkgray-bg" style="background-image: url('demo/sample-bg-image.jpg');">
+          <div class="content-overlay middle">
+            <div class="padding-2x contained-680 centered">
+              <blockquote class="large no-border">
+                <p>
+                  Quinoa street art master cleanse, pickled deep v mlkshk fingerstache asymmetrical. 
+                </p>
+                <cite>Hipster Ipsum</cite>
+              </blockquote>
+            </div>
+          </div>
+        </div>
+        <p>
+          You can also make the background overlay a gradient by adding <code>.gradient</code> to <code>&lt;div class="overlay"&gt;</code>.
+        </p>
+        <div class="contained-1260 bg-image viewport-half-height overlay gradient brand-darkgray-bg" style="background-image: url('demo/sample-bg-image.jpg');">
+          <div class="content-overlay bottom">
+            <div class="padding-2x contained-680 centered">
+              <h2 class="align-center">This heading is over an image<span class="subheading">and it has a subheading</span></h2>
+              <p class="inline-buttons align-center">
+                <a class="btn brand-purple-bg">CTA button 1</a>
+                <a class="btn brand-teal-bg">CTA button 2</a>
+              </p>
+            </div>
+          </div>
+        </div>
         <hr>
         
         <h2 id="colors" class="brand-teal">Colors</h2>
