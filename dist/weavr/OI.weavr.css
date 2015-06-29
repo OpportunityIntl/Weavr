@@ -533,7 +533,7 @@ blockquote {
   }
 }
 blockquote p {
-  font-family: "Time New Roman", serif;
+  font-family: "Times New Roman", Times, serif;
   font-size: 1.125em;
   line-height: 1.5;
 }
