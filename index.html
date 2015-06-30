@@ -58,19 +58,6 @@
           margin-left: 0;
         }
       }
-    
-      .contained {
-        max-width: 1260px;
-        margin: 0 auto;
-      }
-      
-      .contained-960 {
-        max-width: 960px;
-      }
-      
-      .contained-680 {
-        max-width: 680px;
-      }
       
       .color-swatch {
         height: 20%;
@@ -101,7 +88,7 @@
   </head>
   <body>
     <aside id="sidebar" class="brand-offwhite-bg">
-      <div class="contained padding-2x">
+      <div class="contained-1260 centered padding-2x">
         <h1 class="small">Weavr</h1>
         <ul class="no-list-style level-1">
           <li>
@@ -109,7 +96,17 @@
             <ul>
               <li data-href="standard-gutter">Standard gutter</li>
               <li data-href="large-gutter">Large gutter</li>
+              <li data-href="small-gutter">Small gutter</li>
               <li data-href="no-gutter">No gutter</li>
+            </ul>
+          </li>
+          <li>
+            <strong data-href="containers">Containers</strong>
+            <ul>
+              <li data-href="container-classes">Container Classes</li>
+              <li data-href="centering-containers">Centering Containers</li>
+              <li data-href="padding-classes">Padding Classes</li>
+              <li data-href="margin-classes">Margin Classes</li>
             </ul>
           </li>
           <li>
@@ -132,6 +129,7 @@
             <strong data-href="images-and-video">Images and Video</strong>
             <ul>
               <li data-href="responsive-videos">Responsive videos</li>
+              <li data-href="background-images-and-overlays">Background images and overlays</li>
             </ul>
           </li>
           <li>
@@ -176,7 +174,7 @@
       </div>
     </aside>
     <section id="content">
-      <div class="contained padding-2x">
+      <div class="contained-1260 centered padding-2x">
         <h1 class="align-center">The <span class="brand-purple">Weavr</span> Kitchen Sink</h1>
         <p class="large">
           This page is a demonstration all the styles and components of Weavr,
@@ -536,6 +534,65 @@
           </div>
         </div>
         
+        <h3 id="small-gutter">Small gutter</h3>
+        
+        <div class="row small-gutter">
+          <div class="col col-12 n-col-12 t-col-12 m-col-12">
+            <pre class="desktop-only">.col-12</pre>
+            <pre class="netbook-only">.n-col-12</pre>
+            <pre class="tablet-only">.t-col-12</pre>
+            <pre class="mobile-only">.m-col-12</pre>
+          </div>
+        </div>
+        <div class="row small-gutter">
+          <div class="col col-8 n-col-8 t-col-9 m-col-12">
+            <pre class="desktop-only">.col-8</pre>
+            <pre class="netbook-only">.n-col-8</pre>
+            <pre class="tablet-only">.t-col-9</pre>
+            <pre class="mobile-only">.m-col-12</pre>
+          </div>
+          <div class="col col-4 n-col-4 t-col-3 m-col-12">
+            <pre class="desktop-only">.col-4</pre>
+            <pre class="netbook-only">.n-col-4</pre>
+            <pre class="tablet-only">.t-col-3</pre>
+            <pre class="mobile-only">.m-col-12</pre>
+          </div>
+        </div>
+        <div class="row small-gutter">
+          <div class="col col-6 n-col-6 t-col-6 m-col-6">
+            <pre class="desktop-only">.col-6</pre>
+            <pre class="netbook-only">.n-col-6</pre>
+            <pre class="tablet-only">.t-col-6</pre>
+            <pre class="mobile-only">.m-col-6</pre>
+          </div>
+          <div class="col col-6 n-col-6 t-col-6 m-col-6">
+            <pre class="desktop-only">.col-6</pre>
+            <pre class="netbook-only">.n-col-3</pre>
+            <pre class="tablet-only">.t-col-6</pre>
+            <pre class="mobile-only">.m-col-6</pre>
+          </div>
+        </div>
+        <div class="row small-gutter">
+          <div class="col col-4 n-col-5 t-col-6 m-col-12">
+            <pre class="desktop-only">.col-4</pre>
+            <pre class="netbook-only">.n-col-5</pre>
+            <pre class="tablet-only">.t-col-6</pre>
+            <pre class="mobile-only">.m-col-12</pre>
+          </div>
+          <div class="col col-4 n-col-5 t-col-3 m-col-6">
+            <pre class="desktop-only">.col-4</pre>
+            <pre class="netbook-only">.n-col-5</pre>
+            <pre class="tablet-only">.t-col-3</pre>
+            <pre class="mobile-only">.m-col-6</pre>
+          </div>
+          <div class="col col-4 n-col-2 t-col-3 m-col-6">
+            <pre class="desktop-only">.col-4</pre>
+            <pre class="netbook-only">.n-col-2</pre>
+            <pre class="tablet-only">.t-col-3</pre>
+            <pre class="mobile-only">.m-col-6</pre>
+          </div>
+        </div>
+        
         <h3 id="no-gutter">No gutter</h3>
         
         <div class="row no-gutter">
@@ -595,6 +652,106 @@
           </div>
         </div>
         
+        <hr>
+        
+        <h2 id="containers" class="brand-teal">Containers</h2>
+        <h3 id="container-classes">Container classes</h3>
+        <p>
+          Constrain the width of a container with <code>.contained-1260</code>,
+          <code>.contained-960</code>, <code>.contained-680</code>, or
+          <code>.contained-480</code>. Container classes set the max-width property.
+        </p>
+        <p>
+          <code>.contained-1260</code>
+        </p>
+        <div class="contained-1260 brand-purple-bg padding-2x"></div>
+        
+        <p>
+          <code>.contained-960</code>
+        </p>
+        <div class="contained-960 brand-teal-bg padding-2x"></div>
+        
+        <p>
+          <code>.contained-680</code>
+        </p>
+        <div class="contained-680 brand-orange-bg padding-2x"></div>
+        
+        <p>
+          <code>.contained-480</code>
+        </p>
+        <div class="contained-480 brand-pink-bg padding-2x"></div>
+        
+        <h3 id="centering-containers">Centering containers</h3>
+        
+        <p>
+          Center the container with <code>.centered</code>. Sets the <code>margin-left</code>
+          and <code>margin-right</code> properties to <code>auto</code>, so it only
+          works on block elements with a defined width. This is not to be confused
+          with <code>.align-center</code>, which sets the <code>text-align</code> property.
+        </p>
+        <div class="contained-1260 centered brand-purple-bg padding-2x margin-bottom-2x"></div>
+        <div class="contained-960 centered brand-teal-bg padding-2x margin-bottom-2x"></div>
+        <div class="contained-680 centered brand-orange-bg padding-2x margin-bottom-2x"></div>
+        <div class="contained-480 centered brand-pink-bg padding-2x"></div>
+        
+        <h3 id="padding-classes">Padding classes</h3>
+        <p>
+          You can quickly define the padding of a container with the following padding classes.
+          Classes are named with multipliers of Weavr's gutter size (20px on desktop, 15px on mobile).
+        </p>
+        <p>
+          <code>.padding-1x-4x</code>
+          <code>.padding-1x-3x</code>
+          <code>.padding-1x-2x</code>
+          <code>.padding-1x</code>
+          <code>.padding-1x-0</code>
+        </p>
+        <p>
+          <code>.padding-2x-4x</code>
+          <code>.padding-2x-3x</code>
+          <code>.padding-2x</code>
+          <code>.padding-2x-1x</code>
+          <code>.padding-2x-0</code>
+        </p>
+        <p>
+          <code>.padding-3x-4x</code>
+          <code>.padding-3x</code>
+          <code>.padding-3x-2x</code>
+          <code>.padding-3x-1x</code>
+          <code>.padding-3x-0</code>
+        </p>
+        <p>
+          <code>.padding-4x</code>
+          <code>.padding-4x-3x</code>
+          <code>.padding-4x-2x</code>
+          <code>.padding-4x-1x</code>
+          <code>.padding-4x-0</code>
+        </p>
+        <p>
+          <code>.padding-6x</code>
+          <code>.padding-6x-5x</code>
+          <code>.padding-6x-4x</code>
+          <code>.padding-6x-3x</code>
+          <code>.padding-6x-2x</code>
+          <code>.padding-6x-1x</code>
+          <code>.padding-6x-0</code>
+        </p>
+        
+        <h3 id="margin-classes">Margin classes</h3>
+        <p>
+          You can also quickly set the <code>margin-top</code> and <code>margin-bottom</code>
+          properties of an element with the following classes:
+        </p>
+        <p>
+          <code>.margin-top-4x</code>, <code>.margin-top-3x</code>,
+          <code>.margin-top-2x</code>, <code>.margin-top-1x</code>,
+          <code>.margin-top-0</code>
+        </p>
+        <p>
+          <code>.margin-bottom-4x</code>, <code>.margin-bottom-3x</code>,
+          <code>.margin-bottom-2x</code>, <code>.margin-bottom-1x</code>,
+          <code>.margin-bottom-0</code>
+        </p>
         <hr>
         
         <h2 id="typography" class="brand-teal">Typography</h2>
@@ -1084,6 +1241,45 @@
           <iframe width="560" height="315" src="https://www.youtube.com/embed/ZIdqa1lsfzU?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
         </div>
         
+        <h3 id="background-images-and-overlays">Background Images and Overlays</h3>
+        <p>
+          To add a background image to a <code>&lt;div&gt;</code>, add <code>.bg-image</code> and the background-image declaration in an inline style attribute.
+        </p>
+        <div class="contained-1260 bg-image viewport-half-height" style="background-image: url('demo/sample-bg-image.jpg');"></div>
+        <p>
+          You can add a color overlay by adding <code>.overlay</code> and a background color class (e.g. <code>.brand-purple-bg</code>).
+        </p>
+        <div class="contained-1260 bg-image viewport-half-height overlay brand-purple-bg" style="background-image: url('demo/sample-bg-image.jpg');"></div>
+        <p>
+          To add content over the image, nest a <code>&lt;div&gt;</code> with <code>.content-overlay</code>. Add one or a combination of the following modifiers
+          to position the overlaid content: <code>.top</code>, <code>.middle</code>, <code>.bottom</code>, <code>.left</code>, <code>.right</code>.
+        </p>
+        <div class="contained-1260 bg-image viewport-half-height overlay brand-darkgray-bg" style="background-image: url('demo/sample-bg-image.jpg');">
+          <div class="content-overlay middle">
+            <div class="padding-2x contained-680 centered">
+              <blockquote class="large no-border">
+                <p>
+                  Quinoa street art master cleanse, pickled deep v mlkshk fingerstache asymmetrical. 
+                </p>
+                <cite>Hipster Ipsum</cite>
+              </blockquote>
+            </div>
+          </div>
+        </div>
+        <p>
+          You can also make the background overlay a gradient by adding <code>.gradient</code> to <code>&lt;div class="overlay"&gt;</code>.
+        </p>
+        <div class="contained-1260 bg-image viewport-half-height overlay gradient brand-darkgray-bg" style="background-image: url('demo/sample-bg-image.jpg');">
+          <div class="content-overlay bottom">
+            <div class="padding-2x contained-680 centered">
+              <h2 class="align-center">This heading is over an image<span class="subheading">and it has a subheading</span></h2>
+              <p class="inline-buttons align-center">
+                <a class="btn brand-purple-bg">CTA button 1</a>
+                <a class="btn brand-teal-bg">CTA button 2</a>
+              </p>
+            </div>
+          </div>
+        </div>
         <hr>
         
         <h2 id="colors" class="brand-teal">Colors</h2>
@@ -1257,7 +1453,7 @@
         <p>
           Inline buttons. One of each tag (<code class="inline">&lt;a&gt;</code>, <code class="inline">&lt;input type="submit"&gt;</code>, <code class="inline">&lt;input type="button"&gt;</code>, <code class="inline">&lt;button&gt;</code>)
         </p>
-        <p>
+        <p class="inline-buttons">
           <a href="" class="btn brand-pink-bg">Pink inline button</a>
           <input type="submit" value="Purple inline button" class="btn brand-purple-bg">
           <input type="button" value="Teal inline button" class="btn brand-teal-bg">
@@ -1364,7 +1560,7 @@
         <p>
           Inline ghost buttons. One of each tag (<code class="inline">&lt;a&gt;</code>, <code class="inline">&lt;input type="submit"&gt;</code>, <code class="inline">&lt;input type="button"&gt;</code>, <code class="inline">&lt;button&gt;</code>)
         </p>
-        <p>
+        <p class="inline-buttons">
           <a href="" class="btn ghost brand-pink">Pink inline ghost button</a>
           <input type="submit" class="btn ghost brand-purple" value="Purple inline ghost button">
           <input type="button" class="btn ghost brand-teal" value="Teal inline ghost button">
@@ -1390,13 +1586,13 @@
         <p>
           Large buttons. One of each tag (<code class="inline">&lt;a&gt;</code>, <code class="inline">&lt;input type="submit"&gt;</code>, <code class="inline">&lt;input type="button"&gt;</code>, <code class="inline">&lt;button&gt;</code>)
         </p>
-        <p>
+        <p class="inline-buttons">
           <a href="" class="btn brand-pink-bg large">Large button</a>
           <input type="submit" class="btn brand-purple-bg large" value="Large button">
           <input type="button" class="btn brand-teal-bg large" value="Large button">
           <button class="btn brand-orange-bg large">Large button</button>
         </p>
-        <p>
+        <p class="inline-buttons">
           <a href="" class="btn ghost brand-pink large">Large button</a>
           <input type="submit" class="btn ghost brand-purple large" value="Large button">
           <input type="button" class="btn ghost brand-teal large" value="Large button">
@@ -1406,13 +1602,13 @@
         <p>
           Normal buttons. One of each tag (<code class="inline">&lt;a&gt;</code>, <code class="inline">&lt;input type="submit"&gt;</code>, <code class="inline">&lt;input type="button"&gt;</code>, <code class="inline">&lt;button&gt;</code>)
         </p>
-        <p>
+        <p class="inline-buttons">
           <a href="" class="btn brand-pink-bg">Normal button</a>
           <input type="submit" class="btn brand-purple-bg" value="Normal button">
           <input type="button" class="btn brand-teal-bg" value="Normal button">
           <button class="btn brand-orange-bg">Normal button</button>
         </p>
-        <p>
+        <p class="inline-buttons">
           <a href="" class="btn ghost brand-pink">Normal button</a>
           <input type="submit" class="btn ghost brand-purple" value="Normal button">
           <input type="button" class="btn ghost brand-teal" value="Normal button">
@@ -1422,13 +1618,13 @@
         <p>
           Small buttons. One of each tag (<code class="inline">&lt;a&gt;</code>, <code class="inline">&lt;input type="submit"&gt;</code>, <code class="inline">&lt;input type="button"&gt;</code>, <code class="inline">&lt;button&gt;</code>)
         </p>
-        <p>
+        <p class="inline-buttons">
           <a href="" class="btn brand-pink-bg small">Small button</a>
           <input type="submit" class="btn brand-purple-bg small" value="Small button">
           <input type="button" class="btn brand-teal-bg small" value="Small button">
           <button class="btn brand-orange-bg small">Small button</button>
         </p>
-        <p>
+        <p class="inline-buttons">
           <a href="" class="btn ghost brand-pink small">Small button</a>
           <input type="submit" class="btn ghost brand-purple small" value="Small button">
           <input type="button" class="btn ghost brand-teal small" value="Small button">
@@ -1594,6 +1790,25 @@
                 <label for="radio-group-3" class="radio">Option 3</label>
               </div>
             </div>
+            <label>Radio buttons styled as buttons</label>
+            <div class="row">
+              <div class="col col-3 t-col-6 m-col-6">
+                <input type="radio" id="button-radio-1" name="button-radio" value="20">
+                <label class="btn" for="button-radio-1">$20</label>
+              </div>
+              <div class="col col-3 t-col-6 m-col-6">
+                <input type="radio" id="button-radio-2" name="button-radio" value="50">
+                <label class="btn" for="button-radio-2">$50</label>
+              </div>
+              <div class="col col-3 t-col-6 m-col-6">
+                <input type="radio" id="button-radio-3" name="button-radio" value="100">
+                <label class="btn" for="button-radio-3">$100</label>
+              </div>
+              <div class="col col-3 t-col-6 m-col-6">
+                <input type="radio" id="button-radio-4" name="button-radio" value="150">
+                <label class="btn" for="button-radio-4">$150</label>
+              </div>
+            </div>
             
             <h3 id="checkboxes">Checkboxes</h3>
             <div class="row">
@@ -1671,7 +1886,7 @@
         <p>
           Check out <strong><span data-tooltip="Check out this tooltip! It has a lot more content. Lot's more!" data-tooltip-style="teal" data-tooltip-width="600">this teal tooltip</span></strong>
         </p>
-        <div class="bordered padding-1x" data-tooltip="This tooltip's max-width should be set to 100% of its trigger element." data-tooltip-width="100%" data-tooltip-style="green" style="width: 450px;">
+        <div class="bordered padding-1x contained-480" data-tooltip="This tooltip's max-width should be set to 100% of its trigger element." data-tooltip-width="100%" data-tooltip-style="green">
           This element triggers a tooltip that is 100% of its width.
         </div>
         
@@ -2024,7 +2239,7 @@
         </div>
       </div>
       <footer class="brand-darkgray-bg">
-        <div class="contained padding-2x">
+        <div class="contained-1260 centered padding-2x">
           <p class="small align-center brand-gray">
             &copy;2015 <a href="http://opportunity.org" class="brand-white">Opportunity International</a>, a 501(c)3 non-profit. <a href="https://github.com/OpportunityIntl/Weavr" class="brand-white">View source on GitHub</a>.
           </p>
