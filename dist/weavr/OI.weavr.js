@@ -162,77 +162,7 @@ OI.utils = {
   validateEmail : function(email) {
 		var re = /^[0-9a-zA-Z][-.+_a-zA-Z0-9]*@([0-9a-zA-Z][-._0-9a-zA-Z]*\.)+[a-zA-Z]{2,6}$/;
 		return re.test(email);
-	},
-  
-  valign: function(selector, children) {
-    
-    selector = typeof selector !== 'undefined' ?  selector : $('body');
-    children = typeof children !== 'undefined' ? children : true;
-    
-    if (typeof OI.utils.isDesktop === 'undefined') OI.utils.detectScreenSize();
-    
-    var obj;
-    
-    if (OI.utils.isDesktop || OI.utils.isNetbook) obj = children ? $('.valign', selector) : selector;
-    if (OI.utils.isTablet) obj = children ? $('.t-valign', selector) : selector;
-    if (OI.utils.isMobile) obj = children ? $('.m-valign', selector) : selector;
-    
-    obj.each(function(){
-      $(this).imagesLoaded(function(){
-        if (Modernizr.csstransforms) {
-          $(this).css({
-            'transform': 'translateY(-' + $(this).height() / 2 + 'px)',
-            '-webkit-transform': 'translateY(-' + $(this).height() / 2 + 'px)',
-            '-moz-transform': 'translateY(-' + $(this).height() / 2 + 'px)',
-            '-ms-transform': 'translateY(-' + $(this).height() / 2 + 'px)',
-            'opacity': 1
-          });
-        } else {
-          $('section').css('overflow', 'hidden');
-          $(this).css({
-            'margin-top': -$(this).height() / 2
-          });
-        }
-      });
-    });
-  },
-  
-  detectScreenSize: function() {
-    OI.utils.isDesktop = false;
-    OI.utils.isTablet = false;
-    OI.utils.isMobile = false;
-    var windowWidth = $(window).width();
-    if (windowWidth >= 1024) {
-      OI.utils.isDesktop = true;
-      //console.log('Is desktop');
-    } else if (windowWidth < 1024 && windowWidth >= 960) {
-      OI.utils.isNetbook = true;
-      //console.log('Is netbook');
-    } else if (windowWidth < 960 && windowWidth > 480) {
-      OI.utils.isTablet = true;
-      //console.log('Is tablet');
-    } else if (windowWidth <= 480) {
-      OI.utils.isMobile = true;
-      //console.log('Is mobile');
-    }
-  },
-  
-  handleWideScreens: function(element, ratio, className) {
-    className = (typeof className != 'undefined') ? className : 'widescreen';
-    OI.utils.determineWindowRatio(element, ratio, className);
-    $(window).resize(function(){
-      OI.utils.determineWindowRatio(element, ratio, className);
-    });
-  },
-  
-  determineWindowRatio: function(element, ratio, className) {
-    var windowRatio = $(window).width() / $(window).height();
-    if (windowRatio > ratio) {
-      element.addClass(className);
-    } else {
-      element.removeClass(className);
-    }
-  },
+	}
 };
 
 // set up select input placeholder styling
