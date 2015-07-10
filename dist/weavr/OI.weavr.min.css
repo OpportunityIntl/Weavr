@@ -1,5 +1,5 @@
 /* Weavr v0.9.3 
- * Compiled 06-30-2015
+ * Compiled 07-10-2015
  * Copyright (c) 2015 Opportunity International 
  */
 
@@ -509,6 +509,8 @@ button.btn { display: inline-block; width: auto; }
 .btn.ghost.brand-offwhite:hover { color: #8f8e8c; background-color: #efeeea; }
 .btn.ghost.brand-white { color: #fff; border-color: #fff; }
 .btn.ghost.brand-white:hover { color: #333; background-color: #fff; }
+.btn:disabled, .btn.disabled { background-color: #8f8e8c; box-shadow: inset 0 100px 0 0 #8f8e8c; color: #fff; cursor: default; }
+.btn:disabled:hover, .btn.disabled:hover { box-shadow: inset 0 100px 0 0 #8f8e8c; }
 
 .brand-purple-bg .btn.brand-white-bg, .brand-purple-bg .btn.ghost.brand-white:hover { color: #611171; }
 

@@ -1665,6 +1665,15 @@ button.btn {
   color: #333;
   background-color: #fff;
 }
+.btn:disabled, .btn.disabled {
+  background-color: #8f8e8c;
+  box-shadow: inset 0 100px 0 0 #8f8e8c;
+  color: #fff;
+  cursor: default;
+}
+.btn:disabled:hover, .btn.disabled:hover {
+  box-shadow: inset 0 100px 0 0 #8f8e8c;
+}
 
 .brand-purple-bg .btn.brand-white-bg, .brand-purple-bg .btn.ghost.brand-white:hover {
   color: #611171;

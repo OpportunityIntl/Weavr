@@ -67,6 +67,11 @@ $('[data-tooltip]').each(function() {
   new Tooltip($(this));
 });
 
+// disable links styled as buttons with .disabled class
+$('body').on('click.disabledButton', 'a.btn.disabled', function() {
+  return false;
+});
+
 // set up character restrictions on inputs (does not work on Android)
 $('[data-pattern]').each(function(){
 	var pattern = $(this).data('pattern');

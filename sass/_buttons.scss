@@ -218,6 +218,17 @@ button.btn {
       }
     }
   }
+  
+  &:disabled, &.disabled {
+    background-color: $brand-gray;
+    box-shadow: inset 0 100px 0 0 $brand-gray;
+    color: #fff;
+    cursor: default;
+    
+    &:hover {
+      box-shadow: inset 0 100px 0 0 $brand-gray;
+    }
+  }
 }
 
 .brand-purple-bg {
