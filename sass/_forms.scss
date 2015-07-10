@@ -143,8 +143,65 @@ label {
 .brand-teal-bg,
 .brand-pink-bg,
 .brand-darkgray-bg {
+  label {
+    color: #fff;
+    opacity: .7;
+  }
+  
   input[type='text'], input[type='number'], input[type='email'], input[type='password'], input[type='phone'], textarea {
     border: none;
+  }
+  
+  label.radio, label.checkbox {
+    color: #fff;
+    opacity: .7;
+    
+    &:before {
+      border-color: #fff;
+    }
+    
+    &:hover {
+      color: #fff;
+      opacity: 1;
+      
+      &:before {
+        border-color: #fff;
+      }
+    }
+  }
+  
+  input[type="radio"] {
+    &:checked + label.radio {
+      color: #fff;
+      opacity: 1;
+      
+      &:before {
+        background: #fff;
+        border-color: #fff;
+      }
+    }
+  }
+
+  input[type="checkbox"] {
+    &:checked + label.checkbox {
+      color: #fff;
+      opacity: 1;
+      
+      &:before {
+        color: #fff;
+        border-color: #fff;
+      }
+    }
+  }
+  
+  .select {
+    border-color: #fff;
+  }
+}
+
+.brand-white-bg {
+  input[type='text'], input[type='number'], input[type='email'], input[type='password'], input[type='phone'], textarea {
+    border: solid 1px #8f8e8c;
   }
 }
 

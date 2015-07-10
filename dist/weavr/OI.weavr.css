@@ -1093,6 +1093,15 @@ label {
   padding-right: 1.875em;
 }
 
+.brand-green-bg label,
+.brand-purple-bg label,
+.brand-orange-bg label,
+.brand-teal-bg label,
+.brand-pink-bg label,
+.brand-darkgray-bg label {
+  color: #fff;
+  opacity: 0.7;
+}
 .brand-green-bg input[type='text'], .brand-green-bg input[type='number'], .brand-green-bg input[type='email'], .brand-green-bg input[type='password'], .brand-green-bg input[type='phone'], .brand-green-bg textarea,
 .brand-purple-bg input[type='text'],
 .brand-purple-bg input[type='number'],
@@ -1125,6 +1134,108 @@ label {
 .brand-darkgray-bg input[type='phone'],
 .brand-darkgray-bg textarea {
   border: none;
+}
+.brand-green-bg label.radio, .brand-green-bg label.checkbox,
+.brand-purple-bg label.radio,
+.brand-purple-bg label.checkbox,
+.brand-orange-bg label.radio,
+.brand-orange-bg label.checkbox,
+.brand-teal-bg label.radio,
+.brand-teal-bg label.checkbox,
+.brand-pink-bg label.radio,
+.brand-pink-bg label.checkbox,
+.brand-darkgray-bg label.radio,
+.brand-darkgray-bg label.checkbox {
+  color: #fff;
+  opacity: .7;
+}
+.brand-green-bg label.radio:before, .brand-green-bg label.checkbox:before,
+.brand-purple-bg label.radio:before,
+.brand-purple-bg label.checkbox:before,
+.brand-orange-bg label.radio:before,
+.brand-orange-bg label.checkbox:before,
+.brand-teal-bg label.radio:before,
+.brand-teal-bg label.checkbox:before,
+.brand-pink-bg label.radio:before,
+.brand-pink-bg label.checkbox:before,
+.brand-darkgray-bg label.radio:before,
+.brand-darkgray-bg label.checkbox:before {
+  border-color: #fff;
+}
+.brand-green-bg label.radio:hover, .brand-green-bg label.checkbox:hover,
+.brand-purple-bg label.radio:hover,
+.brand-purple-bg label.checkbox:hover,
+.brand-orange-bg label.radio:hover,
+.brand-orange-bg label.checkbox:hover,
+.brand-teal-bg label.radio:hover,
+.brand-teal-bg label.checkbox:hover,
+.brand-pink-bg label.radio:hover,
+.brand-pink-bg label.checkbox:hover,
+.brand-darkgray-bg label.radio:hover,
+.brand-darkgray-bg label.checkbox:hover {
+  color: #fff;
+  opacity: 1;
+}
+.brand-green-bg label.radio:hover:before, .brand-green-bg label.checkbox:hover:before,
+.brand-purple-bg label.radio:hover:before,
+.brand-purple-bg label.checkbox:hover:before,
+.brand-orange-bg label.radio:hover:before,
+.brand-orange-bg label.checkbox:hover:before,
+.brand-teal-bg label.radio:hover:before,
+.brand-teal-bg label.checkbox:hover:before,
+.brand-pink-bg label.radio:hover:before,
+.brand-pink-bg label.checkbox:hover:before,
+.brand-darkgray-bg label.radio:hover:before,
+.brand-darkgray-bg label.checkbox:hover:before {
+  border-color: #fff;
+}
+.brand-green-bg input[type="radio"]:checked + label.radio,
+.brand-purple-bg input[type="radio"]:checked + label.radio,
+.brand-orange-bg input[type="radio"]:checked + label.radio,
+.brand-teal-bg input[type="radio"]:checked + label.radio,
+.brand-pink-bg input[type="radio"]:checked + label.radio,
+.brand-darkgray-bg input[type="radio"]:checked + label.radio {
+  color: #fff;
+  opacity: 1;
+}
+.brand-green-bg input[type="radio"]:checked + label.radio:before,
+.brand-purple-bg input[type="radio"]:checked + label.radio:before,
+.brand-orange-bg input[type="radio"]:checked + label.radio:before,
+.brand-teal-bg input[type="radio"]:checked + label.radio:before,
+.brand-pink-bg input[type="radio"]:checked + label.radio:before,
+.brand-darkgray-bg input[type="radio"]:checked + label.radio:before {
+  background: #fff;
+  border-color: #fff;
+}
+.brand-green-bg input[type="checkbox"]:checked + label.checkbox,
+.brand-purple-bg input[type="checkbox"]:checked + label.checkbox,
+.brand-orange-bg input[type="checkbox"]:checked + label.checkbox,
+.brand-teal-bg input[type="checkbox"]:checked + label.checkbox,
+.brand-pink-bg input[type="checkbox"]:checked + label.checkbox,
+.brand-darkgray-bg input[type="checkbox"]:checked + label.checkbox {
+  color: #fff;
+  opacity: 1;
+}
+.brand-green-bg input[type="checkbox"]:checked + label.checkbox:before,
+.brand-purple-bg input[type="checkbox"]:checked + label.checkbox:before,
+.brand-orange-bg input[type="checkbox"]:checked + label.checkbox:before,
+.brand-teal-bg input[type="checkbox"]:checked + label.checkbox:before,
+.brand-pink-bg input[type="checkbox"]:checked + label.checkbox:before,
+.brand-darkgray-bg input[type="checkbox"]:checked + label.checkbox:before {
+  color: #fff;
+  border-color: #fff;
+}
+.brand-green-bg .select,
+.brand-purple-bg .select,
+.brand-orange-bg .select,
+.brand-teal-bg .select,
+.brand-pink-bg .select,
+.brand-darkgray-bg .select {
+  border-color: #fff;
+}
+
+.brand-white-bg input[type='text'], .brand-white-bg input[type='number'], .brand-white-bg input[type='email'], .brand-white-bg input[type='password'], .brand-white-bg input[type='phone'], .brand-white-bg textarea {
+  border: solid 1px #8f8e8c;
 }
 
 .ie-placeholder {
