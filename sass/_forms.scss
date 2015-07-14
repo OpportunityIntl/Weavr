@@ -144,64 +144,113 @@ label {
 .brand-pink-bg,
 .brand-darkgray-bg {
   label {
-    color: #fff;
+    color: inherit;
     opacity: .7;
   }
   
   input[type='text'], input[type='number'], input[type='email'], input[type='password'], input[type='phone'], textarea {
-    border: none;
+    border-color: inherit;
   }
   
   label.radio, label.checkbox {
-    color: #fff;
+    color: inherit;
     opacity: .7;
     
     &:before {
-      border-color: #fff;
+      border-color: inherit;
     }
     
     &:hover {
-      color: #fff;
+      color: inherit;
       opacity: 1;
       
       &:before {
-        border-color: #fff;
+        border-color: inherit;
       }
     }
   }
   
   input[type="radio"] {
     &:checked + label.radio {
-      color: #fff;
+      color: inherit;
       opacity: 1;
       
       &:before {
-        background: #fff;
-        border-color: #fff;
+        background: inherit;
+        border-color: inherit;
       }
     }
   }
 
   input[type="checkbox"] {
     &:checked + label.checkbox {
-      color: #fff;
+      color: inherit;
       opacity: 1;
       
       &:before {
-        color: #fff;
-        border-color: #fff;
+        color: inherit;
+        border-color: inherit;
       }
     }
   }
   
   .select {
-    border-color: #fff;
+    border-color: inherit;
   }
-}
+  
+  .brand-white-bg {
+    input[type='text'], input[type='number'], input[type='email'], input[type='password'], input[type='phone'], textarea {
+      border-color: $brand-gray;
+      
+      &:focus {
+        border-color: #555;
+      }
+    }
+    
+    .select {
+      border-color: $brand-gray;
+      
+      &.focus {
+        border-color: #555;
+      }
+    }
+    
+    label.radio, label.checkbox {
+      color: $brand-gray;
+      opacity: 1;
+      
+      &:before {
+        border-color: $brand-gray;
+      }
+      
+      &:hover {
+        color: inherit;
+      }
+    }
+    
+    input[type="radio"] {
+      &:checked + label.radio {
+        color: inherit;
+        
+        &:before {
+          background: $brand-pink;
+          border-color: $brand-pink;
+        }
+      }
+    }
 
-.brand-white-bg {
-  input[type='text'], input[type='number'], input[type='email'], input[type='password'], input[type='phone'], textarea {
-    border: solid 1px #8f8e8c;
+    input[type="checkbox"] {
+      &:checked + label.checkbox {
+        color: inherit;
+        opacity: 1;
+        
+        &:before {
+          color: $brand-pink;
+          border-color: $brand-pink;
+        }
+      }
+    }
+    
   }
 }
 
