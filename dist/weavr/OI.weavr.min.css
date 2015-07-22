@@ -98,6 +98,8 @@ hr { display: block; height: 1px; background-color: #efeeea; border: none; margi
 
 .circle { border-radius: 100%; }
 
+button.reset { padding: 0; background: none; border: none; outline: none; cursor: pointer; }
+
 .brand-pink-bg { background: #ed027e; color: #fff; }
 
 .brand-orange-bg { background: #f15b22; color: #fff; }
