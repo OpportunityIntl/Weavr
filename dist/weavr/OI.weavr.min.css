@@ -1,5 +1,5 @@
 /* Weavr v0.9.3 
- * Compiled 07-23-2015
+ * Compiled 07-24-2015
  * Copyright (c) 2015 Opportunity International 
  */
 
@@ -543,9 +543,8 @@ button.btn { display: inline-block; width: auto; }
 
 .brand-offwhite-bg .btn.brand-white-bg, .brand-offwhite-bg .btn.ghost.brand-white:hover { color: #8f8e8c; }
 
-.inline-buttons { margin-bottom: -1em; }
-.inline-buttons .btn { margin-right: 20px; margin-bottom: 1em; }
-.inline-buttons .btn:last-child { margin-right: 0; }
+.inline-buttons { margin-bottom: -1em; margin-right: -10px; margin-left: -10px; }
+.inline-buttons .btn { margin-right: 10px; margin-left: 10px; margin-bottom: 1em; }
 
 /******************/
 /**** Tooltips ****/

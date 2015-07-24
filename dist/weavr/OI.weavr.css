@@ -1878,13 +1878,13 @@ button.btn {
 
 .inline-buttons {
   margin-bottom: -1em;
+  margin-right: -10px;
+  margin-left: -10px;
 }
 .inline-buttons .btn {
-  margin-right: 20px;
+  margin-right: 10px;
+  margin-left: 10px;
   margin-bottom: 1em;
-}
-.inline-buttons .btn:last-child {
-  margin-right: 0;
 }
 
 /******************/

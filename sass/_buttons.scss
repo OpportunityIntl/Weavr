@@ -305,13 +305,12 @@ button.btn {
 
 .inline-buttons {
   margin-bottom: -1em;
+  margin-right: -.5 * $gutter;
+  margin-left: -.5 * $gutter;
   
   .btn {
-    margin-right: 20px;
+    margin-right: .5 * $gutter;
+    margin-left: .5 * $gutter;
     margin-bottom: 1em;
-    
-    &:last-child {
-      margin-right: 0;
-    }
   }
 }
