@@ -1,5 +1,5 @@
 /* Weavr v0.9.3 
- * Compiled 07-24-2015
+ * Compiled 07-30-2015
  * Copyright (c) 2015 Opportunity International 
  */
 
@@ -769,9 +769,9 @@ section { position: relative; }
 .content-overlay { z-index: 1; position: relative; }
 .content-overlay.bottom { position: absolute; bottom: 0; width: 100%; }
 .content-overlay.top { position: absolute; top: 0; width: 100%; }
-.content-overlay.middle { position: absolute; width: 100%; top: 50%; transform: translateY(-50%); -webkit-transform: translateY(-50%); -moz-transform: translateY(-50%); -ms-transform: translateY(-50%); }
-.content-overlay.right { position: absolute; width: auto; right: 0; }
-.content-overlay.left { position: absolute; width: auto; left: 0; }
+.content-overlay.middle { position: absolute; width: 100%; top: 50%; left: 0; transform: translateY(-50%); -webkit-transform: translateY(-50%); -moz-transform: translateY(-50%); -ms-transform: translateY(-50%); }
+.content-overlay.right { position: absolute; width: auto; right: 0; left: auto; }
+.content-overlay.left { position: absolute; width: auto; left: 0; right: auto; }
 
 /**********************************/
 /**** Viewport-relative Height ****/

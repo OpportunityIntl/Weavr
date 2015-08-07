@@ -624,6 +624,7 @@ section {
     position: absolute;
     width: 100%;
     top: 50%;
+    left: 0;
     transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
     -moz-transform: translateY(-50%);
@@ -634,12 +635,14 @@ section {
     position: absolute;
     width: auto;
     right: 0;
+    left: auto;
   }
   
   &.left {
     position: absolute;
     width: auto;
     left: 0;
+    right: auto;
   }
 }
 
