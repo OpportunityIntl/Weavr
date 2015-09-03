@@ -238,8 +238,18 @@ button.reset {
   color: #fff;
 }
 
+.brand-light-pink-bg {
+  background: #ea69a7;
+  color: #fff;
+}
+
 .brand-orange-bg {
   background: #f15b22;
+  color: #fff;
+}
+
+.brand-light-orange-bg {
+  background: #f37d50;
   color: #fff;
 }
 
