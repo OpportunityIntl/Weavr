@@ -229,6 +229,7 @@ h5 {
 /*********************/
 
 blockquote {
+  font-family: $font-secondary;
   font-style: italic;
   padding: 1.25em 1.25em 1.25em 3.125em;
   margin: 1.25em 0;
@@ -254,6 +255,7 @@ blockquote {
   cite {
     text-align: right;
     display: block;
+    font-family: $font-primary;
     font-style: normal;
     font-size: .875em;
     
@@ -337,6 +339,56 @@ blockquote + blockquote {
 
 .brand-offwhite-bg blockquote {
   border-color: $brand-gray;
+}
+
+/********************/
+/**** Pullquotes ****/
+/********************/
+
+aside.pullquote {
+  position: relative;
+  float: left;
+  width: 33.33%;
+  margin-left: 0;
+  margin-right: 2 * $gutter;
+  margin-bottom: $gutter;
+  margin-top: .5em;
+  padding-top: $gutter;
+  border-top: solid 5px $brand-offwhite;
+  
+  &.right {
+    float: right;
+    margin-left: 2 * $gutter;
+    margin-right: 0;
+  }
+}
+
+.contained-1260,
+.contained-960 {
+  aside.pullquote {
+    width: 33.33%;
+  }
+}
+
+.contained-680,
+.contained-480 {
+  aside.pullquote {
+    width: 50%;
+  }
+}
+
+@media (max-width: 600px) {
+  .contained-1260,
+  .contained-960,
+  .contained-680,
+  .contained-480 {
+    aside.pullquote {
+      width: 100%;
+      margin-left: 0;
+      margin-right: 0;
+      margin-top: 0;
+    }
+  }
 }
 
 /***************/
