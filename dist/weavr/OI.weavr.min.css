@@ -1,5 +1,4 @@
 /* Weavr v0.9.3 
- * Compiled 09-03-2015
  * Copyright (c) 2015 Opportunity International 
  */
 
@@ -104,7 +103,11 @@ button.reset { padding: 0; background: none; border: none; outline: none; cursor
 
 .brand-pink-bg { background: #ed027e; color: #fff; }
 
+.brand-light-pink-bg { background: #ea69a7; color: #fff; }
+
 .brand-orange-bg { background: #f15b22; color: #fff; }
+
+.brand-light-orange-bg { background: #f37d50; color: #fff; }
 
 .brand-teal-bg { background: #00abab; color: #fff; }
 
