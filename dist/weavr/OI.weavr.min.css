@@ -262,6 +262,14 @@ aside blockquote:before { top: -5px; }
 .contained-680 aside, .contained-480 aside { max-width: 220px; width: 50%; }
 
 @media (max-width: 480px) { .contained-1260 aside, .contained-960 aside, .contained-680 aside, .contained-480 aside { width: 100%; max-width: none; } }
+/*****************/
+/**** Figures ****/
+/*****************/
+figure { margin: 0 0 1em 0; }
+figure img { display: block; width: 100%; }
+
+figcaption { margin-top: .625em; color: #8f8e8c; font-family: "Times New Roman", Times, serif; font-style: italic; }
+
 /***************/
 /**** Lists ****/
 /***************/

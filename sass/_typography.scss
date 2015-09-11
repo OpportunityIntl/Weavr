@@ -401,6 +401,26 @@ aside {
   }
 }
 
+/*****************/
+/**** Figures ****/
+/*****************/
+
+figure {
+  margin: 0 0 1em 0;
+  
+  img {
+    display: block;
+    width: 100%;
+  }
+}
+
+figcaption {
+  margin-top: .625em;
+  color: $brand-gray;
+  font-family: $font-secondary;
+  font-style: italic;
+}
+
 /***************/
 /**** Lists ****/
 /***************/
