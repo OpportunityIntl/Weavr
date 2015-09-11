@@ -679,3 +679,61 @@ section {
   height: 265px;
   height: 33.33vh;
 }
+
+/***************************/
+/**** Body Copy layouts ****/
+/***************************/
+
+.body-copy {
+  &.contained-1260 {
+    > p,
+    > ul,
+    > ol,
+    > blockquote,
+    > h1,
+    > h2,
+    > h3,
+    > h4,
+    > h5,
+    > h6 {
+      max-width: 960px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    
+  }
+  
+  &.contained-960 {
+    > p,
+    > ul,
+    > ol,
+    > blockquote,
+    > h1,
+    > h2,
+    > h3,
+    > h4,
+    > h5,
+    > h6 {
+      max-width: 680px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  
+  &.contained-680 {
+    > p,
+    > ul,
+    > ol,
+    > blockquote,
+    > h1,
+    > h2,
+    > h3,
+    > h4,
+    > h5,
+    > h6 {
+      max-width: 480px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}

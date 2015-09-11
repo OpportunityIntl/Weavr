@@ -373,7 +373,13 @@ aside {
   }
 }
 
-.contained-1260,
+.contained-1260 {
+  aside {
+    max-width: 480px;
+    width: 50%;
+  }
+}
+
 .contained-960 {
   aside {
     max-width: 340px;

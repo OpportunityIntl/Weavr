@@ -676,7 +676,11 @@ aside blockquote:before {
   top: -5px;
 }
 
-.contained-1260 aside,
+.contained-1260 aside {
+  max-width: 480px;
+  width: 50%;
+}
+
 .contained-960 aside {
   max-width: 340px;
   width: 50%;
@@ -2740,6 +2744,52 @@ section {
 .viewport-one-third-height {
   height: 265px;
   height: 33.33vh;
+}
+
+/***************************/
+/**** Body Copy layouts ****/
+/***************************/
+.body-copy.contained-1260 > p,
+.body-copy.contained-1260 > ul,
+.body-copy.contained-1260 > ol,
+.body-copy.contained-1260 > blockquote,
+.body-copy.contained-1260 > h1,
+.body-copy.contained-1260 > h2,
+.body-copy.contained-1260 > h3,
+.body-copy.contained-1260 > h4,
+.body-copy.contained-1260 > h5,
+.body-copy.contained-1260 > h6 {
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.body-copy.contained-960 > p,
+.body-copy.contained-960 > ul,
+.body-copy.contained-960 > ol,
+.body-copy.contained-960 > blockquote,
+.body-copy.contained-960 > h1,
+.body-copy.contained-960 > h2,
+.body-copy.contained-960 > h3,
+.body-copy.contained-960 > h4,
+.body-copy.contained-960 > h5,
+.body-copy.contained-960 > h6 {
+  max-width: 680px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.body-copy.contained-680 > p,
+.body-copy.contained-680 > ul,
+.body-copy.contained-680 > ol,
+.body-copy.contained-680 > blockquote,
+.body-copy.contained-680 > h1,
+.body-copy.contained-680 > h2,
+.body-copy.contained-680 > h3,
+.body-copy.contained-680 > h4,
+.body-copy.contained-680 > h5,
+.body-copy.contained-680 > h6 {
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /*# sourceMappingURL=OI.weavr.css.map */
