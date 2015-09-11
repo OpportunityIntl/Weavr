@@ -249,17 +249,19 @@ blockquote + blockquote:before { top: -5px; }
 
 .brand-offwhite-bg blockquote { border-color: #8f8e8c; }
 
-/********************/
-/**** Pullquotes ****/
-/********************/
-aside.pullquote { position: relative; float: left; margin-left: 0; margin-right: 40px; margin-bottom: 20px; margin-top: .5em; padding-top: 20px; border-top: solid 5px #efeeea; }
-aside.pullquote.right { float: right; margin-left: 40px; margin-right: 0; }
+/****************/
+/**** Asides ****/
+/****************/
+aside { position: relative; float: left; margin-left: 0; margin-right: 40px; margin-bottom: 20px; margin-top: .5em; padding-top: 20px; border-top: solid 5px #efeeea; }
+aside.right { float: right; margin-left: 40px; margin-right: 0; }
+aside blockquote { border-top: none; border-bottom: 0; padding-top: 0; padding-bottom: 0; }
+aside blockquote:before { top: -5px; }
 
-.contained-1260 aside.pullquote, .contained-960 aside.pullquote { max-width: 340px; width: 50%; }
+.contained-1260 aside, .contained-960 aside { max-width: 340px; width: 50%; }
 
-.contained-680 aside.pullquote, .contained-480 aside.pullquote { max-width: 220px; width: 50%; }
+.contained-680 aside, .contained-480 aside { max-width: 220px; width: 50%; }
 
-@media (max-width: 480px) { .contained-1260 aside.pullquote, .contained-960 aside.pullquote, .contained-680 aside.pullquote, .contained-480 aside.pullquote { width: 100%; max-width: none; } }
+@media (max-width: 480px) { .contained-1260 aside, .contained-960 aside, .contained-680 aside, .contained-480 aside { width: 100%; max-width: none; } }
 /***************/
 /**** Lists ****/
 /***************/

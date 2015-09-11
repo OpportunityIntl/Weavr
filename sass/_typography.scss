@@ -341,11 +341,11 @@ blockquote + blockquote {
   border-color: $brand-gray;
 }
 
-/********************/
-/**** Pullquotes ****/
-/********************/
+/****************/
+/**** Asides ****/
+/****************/
 
-aside.pullquote {
+aside {
   position: relative;
   float: left;
   margin-left: 0;
@@ -360,11 +360,22 @@ aside.pullquote {
     margin-left: 2 * $gutter;
     margin-right: 0;
   }
+  
+  blockquote {
+    border-top: none;
+    border-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    
+    &:before {
+      top: -5px;
+    }
+  }
 }
 
 .contained-1260,
 .contained-960 {
-  aside.pullquote {
+  aside {
     max-width: 340px;
     width: 50%;
   }
@@ -372,7 +383,7 @@ aside.pullquote {
 
 .contained-680,
 .contained-480 {
-  aside.pullquote {
+  aside {
     max-width: 220px;
     width: 50%;
   }
@@ -383,7 +394,7 @@ aside.pullquote {
   .contained-960,
   .contained-680,
   .contained-480 {
-    aside.pullquote {
+    aside {
       width: 100%;
       max-width: none;
     }
