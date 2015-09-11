@@ -654,7 +654,6 @@ blockquote + blockquote:before {
 aside.pullquote {
   position: relative;
   float: left;
-  width: 33.33%;
   margin-left: 0;
   margin-right: 40px;
   margin-bottom: 20px;
@@ -670,23 +669,23 @@ aside.pullquote.right {
 
 .contained-1260 aside.pullquote,
 .contained-960 aside.pullquote {
-  width: 33.33%;
+  max-width: 340px;
+  width: 50%;
 }
 
 .contained-680 aside.pullquote,
 .contained-480 aside.pullquote {
+  max-width: 220px;
   width: 50%;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 480px) {
   .contained-1260 aside.pullquote,
   .contained-960 aside.pullquote,
   .contained-680 aside.pullquote,
   .contained-480 aside.pullquote {
     width: 100%;
-    margin-left: 0;
-    margin-right: 0;
-    margin-top: 0;
+    max-width: none;
   }
 }
 /***************/
