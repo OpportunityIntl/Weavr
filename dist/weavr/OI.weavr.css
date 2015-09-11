@@ -264,12 +264,12 @@ button.reset {
 }
 
 .brand-purple-bg {
-  background: #611171;
+  background: #4a0059;
   color: #fff;
 }
 
 .brand-light-purple-bg {
-  background: #7c378a;
+  background: #611171;
   color: #fff;
 }
 
@@ -315,7 +315,7 @@ button.reset {
 }
 
 .brand-purple {
-  color: #611171;
+  color: #4a0059;
 }
 
 .brand-green {
@@ -589,7 +589,7 @@ blockquote:before {
   font-weight: bold;
   font-style: normal;
   line-height: 1em;
-  color: #611171;
+  color: #4a0059;
 }
 @media (max-width: 480px) {
   blockquote:before {
@@ -641,7 +641,7 @@ blockquote + blockquote:before {
 }
 
 .brand-orange-bg blockquote:before {
-  color: #611171;
+  color: #4a0059;
 }
 
 .brand-offwhite-bg blockquote {
@@ -1763,7 +1763,7 @@ button.btn {
   box-shadow: 0 0px 0 0 #ca066d inset;
 }
 .btn.brand-purple-bg {
-  box-shadow: inset 0 100px 0 0 #611171;
+  box-shadow: inset 0 100px 0 0 #4a0059;
 }
 .btn.brand-purple-bg:hover {
   box-shadow: 0 0 0 0 #703386 inset;
@@ -1836,12 +1836,12 @@ button.btn {
   background-color: #00abab;
 }
 .btn.ghost.brand-purple {
-  color: #611171;
-  border-color: #611171;
+  color: #4a0059;
+  border-color: #4a0059;
 }
 .btn.ghost.brand-purple:hover {
   color: #fff;
-  background-color: #611171;
+  background-color: #4a0059;
 }
 .btn.ghost.brand-green {
   color: #7bc557;
@@ -1894,7 +1894,7 @@ button.btn {
 }
 
 .brand-purple-bg .btn.brand-white-bg, .brand-purple-bg .btn.ghost.brand-white:hover {
-  color: #611171;
+  color: #4a0059;
 }
 
 .brand-teal-bg .btn.brand-white-bg, .brand-teal-bg .btn.ghost.brand-white:hover {
@@ -1953,11 +1953,11 @@ button.btn {
   width: 1000px;
 }
 .tooltip .tooltip-container.purple .tooltip-content {
-  background-color: #611171;
+  background-color: #4a0059;
   color: #fff;
 }
 .tooltip .tooltip-container.purple .tooltip-content:after {
-  color: #611171;
+  color: #4a0059;
 }
 .tooltip .tooltip-container.teal .tooltip-content {
   background-color: #00abab;
