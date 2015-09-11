@@ -341,14 +341,13 @@ blockquote + blockquote {
   border-color: $brand-gray;
 }
 
-/********************/
-/**** Pullquotes ****/
-/********************/
+/****************/
+/**** Asides ****/
+/****************/
 
-aside.pullquote {
+aside {
   position: relative;
   float: left;
-  width: 33.33%;
   margin-left: 0;
   margin-right: 2 * $gutter;
   margin-bottom: $gutter;
@@ -361,34 +360,71 @@ aside.pullquote {
     margin-left: 2 * $gutter;
     margin-right: 0;
   }
+  
+  blockquote {
+    border-top: none;
+    border-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    
+    &:before {
+      top: -5px;
+    }
+  }
 }
 
-.contained-1260,
+.contained-1260 {
+  aside {
+    max-width: 480px;
+    width: 50%;
+  }
+}
+
 .contained-960 {
-  aside.pullquote {
-    width: 33.33%;
+  aside {
+    max-width: 340px;
+    width: 50%;
   }
 }
 
 .contained-680,
 .contained-480 {
-  aside.pullquote {
+  aside {
+    max-width: 220px;
     width: 50%;
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 480px) {
   .contained-1260,
   .contained-960,
   .contained-680,
   .contained-480 {
-    aside.pullquote {
+    aside {
       width: 100%;
-      margin-left: 0;
-      margin-right: 0;
-      margin-top: 0;
+      max-width: none;
     }
   }
+}
+
+/*****************/
+/**** Figures ****/
+/*****************/
+
+figure {
+  margin: 0 0 1em 0;
+  
+  img {
+    display: block;
+    width: 100%;
+  }
+}
+
+figcaption {
+  margin-top: .625em;
+  color: $brand-gray;
+  font-family: $font-secondary;
+  font-style: italic;
 }
 
 /***************/
