@@ -1110,10 +1110,6 @@ input[type='submit'], input[type="button"] {
   -moz-appearance: none;
   border-radius: 0;
 }
-input[type='submit'] .error-animate, input[type="button"] .error-animate {
-  -webkit-animation: button-error .2s;
-  animation: button-error .2s;
-}
 
 label {
   display: block;
@@ -1595,50 +1591,6 @@ input[type="radio"]:checked + label.btn {
   background-color: #ed027e;
 }
 
-@-webkit-keyframes button-error {
-  0% {
-    transform: translate(0px);
-    -webkit-transform: translate(0px);
-  }
-  25% {
-    transform: translate(5px);
-    -webkit-transform: translate(5px);
-  }
-  50% {
-    transform: translate(0px);
-    -webkit-transform: translate(0px);
-  }
-  75% {
-    transform: translate(-5px);
-    -webkit-transform: translate(-5px);
-  }
-  100% {
-    transform: translate(0px);
-    -webkit-transform: translate(0px);
-  }
-}
-@keyframes button-error {
-  0% {
-    transform: translate(0px);
-    -webkit-transform: translate(0px);
-  }
-  12.5% {
-    transform: translate(5px);
-    -webkit-transform: translate(5px);
-  }
-  25% {
-    transform: translate(0px);
-    -webkit-transform: translate(0px);
-  }
-  37.5% {
-    transform: translate(-5px);
-    -webkit-transform: translate(-5px);
-  }
-  50% {
-    transform: translate(0px);
-    -webkit-transform: translate(0px);
-  }
-}
 /**********************/
 /**** Select boxes ****/
 /**********************/
@@ -1714,6 +1666,25 @@ div.alert *:first-child {
 }
 div.alert *:last-child {
   margin-bottom: 10px;
+}
+
+/*********************/
+/**** Form errors ****/
+/*********************/
+input.error,
+.select.error {
+  border-color: #f15b22;
+}
+input + div.error,
+.select + div.error {
+  background-color: #f15b22;
+  color: #fff;
+  padding: 5px 10px;
+  font-size: .75em;
+}
+
+label.error {
+  color: #f15b22;
 }
 
 a.btn {

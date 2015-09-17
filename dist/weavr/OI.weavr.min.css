@@ -389,7 +389,6 @@ input.inline { display: inline-block; }
 textarea { height: 7em; max-width: 100%; }
 
 input[type='submit'], input[type="button"] { border: none; appearance: none; -webkit-appearance: none; -moz-appearance: none; border-radius: 0; }
-input[type='submit'] .error-animate, input[type="button"] .error-animate { -webkit-animation: button-error .2s; animation: button-error .2s; }
 
 label { display: block; font-family: "Times New Roman", Times, serif; font-style: italic; color: #8f8e8c; margin-bottom: 10px; }
 
@@ -469,16 +468,6 @@ input[type="radio"] + label.btn:hover { background-color: #ed027e; }
 
 input[type="radio"]:checked + label.btn { background-color: #ed027e; }
 
-@-webkit-keyframes button-error { 0% { transform: translate(0px); -webkit-transform: translate(0px); }
-  25% { transform: translate(5px); -webkit-transform: translate(5px); }
-  50% { transform: translate(0px); -webkit-transform: translate(0px); }
-  75% { transform: translate(-5px); -webkit-transform: translate(-5px); }
-  100% { transform: translate(0px); -webkit-transform: translate(0px); } }
-@keyframes button-error { 0% { transform: translate(0px); -webkit-transform: translate(0px); }
-  12.5% { transform: translate(5px); -webkit-transform: translate(5px); }
-  25% { transform: translate(0px); -webkit-transform: translate(0px); }
-  37.5% { transform: translate(-5px); -webkit-transform: translate(-5px); }
-  50% { transform: translate(0px); -webkit-transform: translate(0px); } }
 /**********************/
 /**** Select boxes ****/
 /**********************/
@@ -499,6 +488,14 @@ div.alert.warning { background-color: #f15b22; color: #fff; }
 div.alert.error { background-color: #ee3300; color: #fff; }
 div.alert *:first-child { margin-top: 10px; }
 div.alert *:last-child { margin-bottom: 10px; }
+
+/*********************/
+/**** Form errors ****/
+/*********************/
+input.error, .select.error { border-color: #f15b22; }
+input + div.error, .select + div.error { background-color: #f15b22; color: #fff; padding: 5px 10px; font-size: .75em; }
+
+label.error { color: #f15b22; }
 
 a.btn { display: inline-block; text-decoration: none; vertical-align: top; border: none; }
 a.btn:not(.ghost):hover { border: none; }

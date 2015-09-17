@@ -45,11 +45,6 @@ input[type='submit'], input[type="button"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   border-radius: 0;
-  
-  .error-animate {
-    -webkit-animation: button-error .2s;
-    animation: button-error .2s;
-  }
 }
 
 label {
@@ -380,52 +375,6 @@ input[type="radio"]:checked + label.btn {
   background-color: $brand-pink;
 }
 
-@-webkit-keyframes button-error {
-  0% {
-    transform: translate(0px);
-    -webkit-transform: translate(0px);
-  }
-  25% {
-    transform: translate(5px);
-    -webkit-transform: translate(5px);
-  }
-  50% {
-    transform: translate(0px);
-    -webkit-transform: translate(0px);
-  }
-  75% {
-    transform: translate(-5px);
-    -webkit-transform: translate(-5px);
-  }
-  100% {
-    transform: translate(0px);
-    -webkit-transform: translate(0px);
-  }
-}
-
-@keyframes button-error {
-  0% {
-    transform: translate(0px);
-    -webkit-transform: translate(0px);
-  }
-  12.5% {
-    transform: translate(5px);
-    -webkit-transform: translate(5px);
-  }
-  25% {
-    transform: translate(0px);
-    -webkit-transform: translate(0px);
-  }
-  37.5% {
-    transform: translate(-5px);
-    -webkit-transform: translate(-5px);
-  }
-  50% {
-    transform: translate(0px);
-    -webkit-transform: translate(0px);
-  }
-}
-
 /**********************/
 /**** Select boxes ****/
 /**********************/
@@ -512,4 +461,26 @@ div.alert {
   *:last-child {
     margin-bottom: 0.5 * $gutter;
   }
+}
+
+/*********************/
+/**** Form errors ****/
+/*********************/
+
+input,
+.select {
+  &.error {
+    border-color: $brand-orange;
+  }
+  
+  + div.error {
+    background-color: $brand-orange;
+    color: #fff;
+    padding: 0.25 * $gutter 0.5 * $gutter;
+    font-size: .75em;
+  }
+}
+
+label.error {
+  color: $brand-orange;
 }
