@@ -392,6 +392,8 @@ input[type='submit'], input[type="button"] { border: none; appearance: none; -we
 
 label { display: block; font-family: "Times New Roman", Times, serif; font-style: italic; color: #8f8e8c; margin-bottom: 10px; }
 
+fieldset { border: none; padding: initial; margin: initial; }
+
 .input-group { display: table; }
 .input-group input { display: table-cell; }
 .input-group input:first-child { border-right: none; }

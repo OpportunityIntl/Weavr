@@ -55,6 +55,12 @@ label {
   margin-bottom: 0.5 * $gutter;
 }
 
+fieldset {
+  border: none;
+  padding: initial;
+  margin: initial;
+}
+
 .input-group {
   display: table;
   

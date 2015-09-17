@@ -1119,6 +1119,12 @@ label {
   margin-bottom: 10px;
 }
 
+fieldset {
+  border: none;
+  padding: initial;
+  margin: initial;
+}
+
 .input-group {
   display: table;
 }
