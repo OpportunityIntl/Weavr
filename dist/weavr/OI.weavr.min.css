@@ -494,10 +494,13 @@ div.alert *:last-child { margin-bottom: 10px; }
 /*********************/
 /**** Form errors ****/
 /*********************/
-input.error, .select.error { border-color: #f15b22; }
-input + div.error, .select + div.error { background-color: #f15b22; color: #fff; padding: 5px 10px; font-size: .75em; }
+input.error, textarea.error, .select.error { border-color: #ee3300; }
+input + div.error, textarea + div.error, .select + div.error { background-color: #ee3300; color: #fff; padding: 5px 10px; font-size: .75em; }
 
-label.error { color: #f15b22; }
+label.error { color: #ee3300; }
+
+.radio-group.error label.radio { color: #ee3300; }
+.radio-group.error label.radio:before { border-color: #ee3300; }
 
 a.btn { display: inline-block; text-decoration: none; vertical-align: top; border: none; }
 a.btn:not(.ghost):hover { border: none; }

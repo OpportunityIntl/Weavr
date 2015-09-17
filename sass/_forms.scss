@@ -456,7 +456,7 @@ div.alert {
   }
   
   &.error {
-    background-color: #ee3300;
+    background-color: $error-color;
     color: #fff;
   }
   
@@ -474,13 +474,14 @@ div.alert {
 /*********************/
 
 input,
+textarea,
 .select {
   &.error {
-    border-color: $brand-orange;
+    border-color: $error-color;
   }
   
   + div.error {
-    background-color: $brand-orange;
+    background-color: $error-color;
     color: #fff;
     padding: 0.25 * $gutter 0.5 * $gutter;
     font-size: .75em;
@@ -488,5 +489,15 @@ input,
 }
 
 label.error {
-  color: $brand-orange;
+  color: $error-color;
+}
+
+.radio-group.error {
+  label.radio {
+    color: $error-color;
+    
+    &:before {
+      border-color: $error-color;
+    }
+  }
 }

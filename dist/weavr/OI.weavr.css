@@ -1678,19 +1678,28 @@ div.alert *:last-child {
 /**** Form errors ****/
 /*********************/
 input.error,
+textarea.error,
 .select.error {
-  border-color: #f15b22;
+  border-color: #ee3300;
 }
 input + div.error,
+textarea + div.error,
 .select + div.error {
-  background-color: #f15b22;
+  background-color: #ee3300;
   color: #fff;
   padding: 5px 10px;
   font-size: .75em;
 }
 
 label.error {
-  color: #f15b22;
+  color: #ee3300;
+}
+
+.radio-group.error label.radio {
+  color: #ee3300;
+}
+.radio-group.error label.radio:before {
+  border-color: #ee3300;
 }
 
 a.btn {
