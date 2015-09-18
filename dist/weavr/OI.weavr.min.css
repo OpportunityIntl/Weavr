@@ -498,7 +498,8 @@ span.question { background-color: #8f8e8c; display: inline-block; width: .875em;
 span.question:before { content: '?'; font-size: .625em; font-family: "proxima-nova", Arial, sans-serif; font-style: normal; }
 
 input.error, textarea.error, .select.error { border-color: #ce1500; }
-input + div.error, textarea + div.error, .select + div.error { background-color: #ce1500; color: #fff; padding: 5px 10px; font-size: .75em; }
+
+.error-message { background-color: #ce1500; color: #fff; padding: 5px 10px; font-size: .75em; }
 
 label.error { color: #ce1500; }
 

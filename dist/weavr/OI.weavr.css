@@ -1700,9 +1700,8 @@ textarea.error,
 .select.error {
   border-color: #ce1500;
 }
-input + div.error,
-textarea + div.error,
-.select + div.error {
+
+.error-message {
   background-color: #ce1500;
   color: #fff;
   padding: 5px 10px;

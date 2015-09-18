@@ -498,13 +498,13 @@ textarea,
   &.error {
     border-color: $error-color;
   }
-  
-  + div.error {
-    background-color: $error-color;
-    color: #fff;
-    padding: 0.25 * $gutter 0.5 * $gutter;
-    font-size: .75em;
-  }
+}
+
+.error-message {
+  background-color: $error-color;
+  color: #fff;
+  padding: 0.25 * $gutter 0.5 * $gutter;
+  font-size: .75em;
 }
 
 label.error {
