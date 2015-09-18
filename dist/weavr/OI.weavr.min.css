@@ -487,20 +487,23 @@ select.select-placeholder { font-family: "Times New Roman", Times, serif; font-s
 div.alert { padding: 10px 20px; font-size: .875em; margin-bottom: 20px; background-color: #efeeea; color: #555; }
 div.alert.success { background-color: #7bc557; color: #fff; }
 div.alert.warning { background-color: #f15b22; color: #fff; }
-div.alert.error { background-color: #ee3300; color: #fff; }
+div.alert.error { background-color: #ce1500; color: #fff; }
 div.alert *:first-child { margin-top: 10px; }
 div.alert *:last-child { margin-bottom: 10px; }
 
 /*********************/
 /**** Form errors ****/
 /*********************/
-input.error, textarea.error, .select.error { border-color: #ee3300; }
-input + div.error, textarea + div.error, .select + div.error { background-color: #ee3300; color: #fff; padding: 5px 10px; font-size: .75em; }
+span.question { background-color: #8f8e8c; display: inline-block; width: .875em; height: .875em; color: #fff; line-height: .875em; text-align: center; border-radius: 100%; vertical-align: middle; }
+span.question:before { content: '?'; font-size: .625em; font-family: "proxima-nova", Arial, sans-serif; font-style: normal; }
 
-label.error { color: #ee3300; }
+input.error, textarea.error, .select.error { border-color: #ce1500; }
+input + div.error, textarea + div.error, .select + div.error { background-color: #ce1500; color: #fff; padding: 5px 10px; font-size: .75em; }
 
-.radio-group.error label.radio { color: #ee3300; }
-.radio-group.error label.radio:before { border-color: #ee3300; }
+label.error { color: #ce1500; }
+
+.radio-group.error label.radio { color: #ce1500; }
+.radio-group.error label.radio:before { border-color: #ce1500; }
 
 a.btn { display: inline-block; text-decoration: none; vertical-align: top; border: none; }
 a.btn:not(.ghost):hover { border: none; }

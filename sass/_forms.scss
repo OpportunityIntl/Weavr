@@ -473,6 +473,25 @@ div.alert {
 /**** Form errors ****/
 /*********************/
 
+span.question {
+  background-color: $brand-gray;
+  display: inline-block;
+  width: .875em;
+  height: .875em;
+  color: #fff;
+  line-height: .875em;
+  text-align: center;
+  border-radius: 100%;
+  vertical-align: middle;
+  
+  &:before {
+    content: '?';
+    font-size: .625em;
+    font-family: $font-primary;
+    font-style: normal;
+  }
+}
+
 input,
 textarea,
 .select {

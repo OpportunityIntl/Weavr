@@ -1664,7 +1664,7 @@ div.alert.warning {
   color: #fff;
 }
 div.alert.error {
-  background-color: #ee3300;
+  background-color: #ce1500;
   color: #fff;
 }
 div.alert *:first-child {
@@ -1677,29 +1677,47 @@ div.alert *:last-child {
 /*********************/
 /**** Form errors ****/
 /*********************/
+span.question {
+  background-color: #8f8e8c;
+  display: inline-block;
+  width: .875em;
+  height: .875em;
+  color: #fff;
+  line-height: .875em;
+  text-align: center;
+  border-radius: 100%;
+  vertical-align: middle;
+}
+span.question:before {
+  content: '?';
+  font-size: .625em;
+  font-family: "proxima-nova", Arial, sans-serif;
+  font-style: normal;
+}
+
 input.error,
 textarea.error,
 .select.error {
-  border-color: #ee3300;
+  border-color: #ce1500;
 }
 input + div.error,
 textarea + div.error,
 .select + div.error {
-  background-color: #ee3300;
+  background-color: #ce1500;
   color: #fff;
   padding: 5px 10px;
   font-size: .75em;
 }
 
 label.error {
-  color: #ee3300;
+  color: #ce1500;
 }
 
 .radio-group.error label.radio {
-  color: #ee3300;
+  color: #ce1500;
 }
 .radio-group.error label.radio:before {
-  border-color: #ee3300;
+  border-color: #ce1500;
 }
 
 a.btn {
