@@ -45,11 +45,6 @@ input[type='submit'], input[type="button"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   border-radius: 0;
-  
-  .error-animate {
-    -webkit-animation: button-error .2s;
-    animation: button-error .2s;
-  }
 }
 
 label {
@@ -58,6 +53,12 @@ label {
   font-style: italic;
   color: $brand-gray;
   margin-bottom: 0.5 * $gutter;
+}
+
+fieldset {
+  border: none;
+  padding: initial;
+  margin: initial;
 }
 
 .input-group {
@@ -380,52 +381,6 @@ input[type="radio"]:checked + label.btn {
   background-color: $brand-pink;
 }
 
-@-webkit-keyframes button-error {
-  0% {
-    transform: translate(0px);
-    -webkit-transform: translate(0px);
-  }
-  25% {
-    transform: translate(5px);
-    -webkit-transform: translate(5px);
-  }
-  50% {
-    transform: translate(0px);
-    -webkit-transform: translate(0px);
-  }
-  75% {
-    transform: translate(-5px);
-    -webkit-transform: translate(-5px);
-  }
-  100% {
-    transform: translate(0px);
-    -webkit-transform: translate(0px);
-  }
-}
-
-@keyframes button-error {
-  0% {
-    transform: translate(0px);
-    -webkit-transform: translate(0px);
-  }
-  12.5% {
-    transform: translate(5px);
-    -webkit-transform: translate(5px);
-  }
-  25% {
-    transform: translate(0px);
-    -webkit-transform: translate(0px);
-  }
-  37.5% {
-    transform: translate(-5px);
-    -webkit-transform: translate(-5px);
-  }
-  50% {
-    transform: translate(0px);
-    -webkit-transform: translate(0px);
-  }
-}
-
 /**********************/
 /**** Select boxes ****/
 /**********************/
@@ -501,7 +456,7 @@ div.alert {
   }
   
   &.error {
-    background-color: #ee3300;
+    background-color: $error-color;
     color: #fff;
   }
   
@@ -511,5 +466,61 @@ div.alert {
   
   *:last-child {
     margin-bottom: 0.5 * $gutter;
+  }
+}
+
+/*********************/
+/**** Form errors ****/
+/*********************/
+
+span.question {
+  background-color: $brand-gray;
+  display: inline-block;
+  width: .875em;
+  height: .875em;
+  color: #fff;
+  line-height: .875em;
+  text-align: center;
+  border-radius: 100%;
+  vertical-align: middle;
+  
+  &:before {
+    content: '?';
+    font-size: .625em;
+    font-family: $font-primary;
+    font-style: normal;
+  }
+}
+
+input,
+textarea,
+.select {
+  &.error {
+    border-color: $error-color;
+  }
+}
+
+.error-message {
+  color: $error-color;
+  padding-top: 0.25 * $gutter;
+  padding-bottom: 0.25 * $gutter;
+  font-size: .75em;
+  
+  + .error-message {
+    padding-top: 0;
+  }
+}
+
+label.error {
+  color: $error-color;
+}
+
+.radio-group.error {
+  label.radio {
+    color: $error-color;
+    
+    &:before {
+      border-color: $error-color;
+    }
   }
 }

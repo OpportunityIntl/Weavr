@@ -1110,10 +1110,6 @@ input[type='submit'], input[type="button"] {
   -moz-appearance: none;
   border-radius: 0;
 }
-input[type='submit'] .error-animate, input[type="button"] .error-animate {
-  -webkit-animation: button-error .2s;
-  animation: button-error .2s;
-}
 
 label {
   display: block;
@@ -1121,6 +1117,12 @@ label {
   font-style: italic;
   color: #8f8e8c;
   margin-bottom: 10px;
+}
+
+fieldset {
+  border: none;
+  padding: initial;
+  margin: initial;
 }
 
 .input-group {
@@ -1595,50 +1597,6 @@ input[type="radio"]:checked + label.btn {
   background-color: #ed027e;
 }
 
-@-webkit-keyframes button-error {
-  0% {
-    transform: translate(0px);
-    -webkit-transform: translate(0px);
-  }
-  25% {
-    transform: translate(5px);
-    -webkit-transform: translate(5px);
-  }
-  50% {
-    transform: translate(0px);
-    -webkit-transform: translate(0px);
-  }
-  75% {
-    transform: translate(-5px);
-    -webkit-transform: translate(-5px);
-  }
-  100% {
-    transform: translate(0px);
-    -webkit-transform: translate(0px);
-  }
-}
-@keyframes button-error {
-  0% {
-    transform: translate(0px);
-    -webkit-transform: translate(0px);
-  }
-  12.5% {
-    transform: translate(5px);
-    -webkit-transform: translate(5px);
-  }
-  25% {
-    transform: translate(0px);
-    -webkit-transform: translate(0px);
-  }
-  37.5% {
-    transform: translate(-5px);
-    -webkit-transform: translate(-5px);
-  }
-  50% {
-    transform: translate(0px);
-    -webkit-transform: translate(0px);
-  }
-}
 /**********************/
 /**** Select boxes ****/
 /**********************/
@@ -1706,7 +1664,7 @@ div.alert.warning {
   color: #fff;
 }
 div.alert.error {
-  background-color: #ee3300;
+  background-color: #ce1500;
   color: #fff;
 }
 div.alert *:first-child {
@@ -1714,6 +1672,54 @@ div.alert *:first-child {
 }
 div.alert *:last-child {
   margin-bottom: 10px;
+}
+
+/*********************/
+/**** Form errors ****/
+/*********************/
+span.question {
+  background-color: #8f8e8c;
+  display: inline-block;
+  width: .875em;
+  height: .875em;
+  color: #fff;
+  line-height: .875em;
+  text-align: center;
+  border-radius: 100%;
+  vertical-align: middle;
+}
+span.question:before {
+  content: '?';
+  font-size: .625em;
+  font-family: "proxima-nova", Arial, sans-serif;
+  font-style: normal;
+}
+
+input.error,
+textarea.error,
+.select.error {
+  border-color: #ce1500;
+}
+
+.error-message {
+  color: #ce1500;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: .75em;
+}
+.error-message + .error-message {
+  padding-top: 0;
+}
+
+label.error {
+  color: #ce1500;
+}
+
+.radio-group.error label.radio {
+  color: #ce1500;
+}
+.radio-group.error label.radio:before {
+  border-color: #ce1500;
 }
 
 a.btn {
