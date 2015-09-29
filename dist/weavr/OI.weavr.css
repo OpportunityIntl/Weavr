@@ -1704,7 +1704,11 @@ textarea.error,
 .error-message {
   color: #ce1500;
   padding-top: 5px;
+  padding-bottom: 5px;
   font-size: .75em;
+}
+.error-message + .error-message {
+  padding-top: 0;
 }
 
 label.error {

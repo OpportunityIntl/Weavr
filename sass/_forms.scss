@@ -503,7 +503,12 @@ textarea,
 .error-message {
   color: $error-color;
   padding-top: 0.25 * $gutter;
+  padding-bottom: 0.25 * $gutter;
   font-size: .75em;
+  
+  + .error-message {
+    padding-top: 0;
+  }
 }
 
 label.error {
