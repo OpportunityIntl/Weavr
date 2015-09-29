@@ -1702,9 +1702,8 @@ textarea.error,
 }
 
 .error-message {
-  background-color: #ce1500;
-  color: #fff;
-  padding: 5px 10px;
+  color: #ce1500;
+  padding-top: 5px;
   font-size: .75em;
 }
 

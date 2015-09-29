@@ -499,7 +499,7 @@ span.question:before { content: '?'; font-size: .625em; font-family: "proxima-no
 
 input.error, textarea.error, .select.error { border-color: #ce1500; }
 
-.error-message { background-color: #ce1500; color: #fff; padding: 5px 10px; font-size: .75em; }
+.error-message { color: #ce1500; padding-top: 5px; font-size: .75em; }
 
 label.error { color: #ce1500; }
 

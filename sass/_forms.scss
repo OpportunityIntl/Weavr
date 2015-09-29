@@ -501,9 +501,8 @@ textarea,
 }
 
 .error-message {
-  background-color: $error-color;
-  color: #fff;
-  padding: 0.25 * $gutter 0.5 * $gutter;
+  color: $error-color;
+  padding-top: 0.25 * $gutter;
   font-size: .75em;
 }
 
