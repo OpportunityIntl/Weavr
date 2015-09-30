@@ -87,7 +87,7 @@
     </style>
   </head>
   <body>
-    <aside id="sidebar" class="brand-offwhite-bg">
+    <div id="sidebar" class="brand-offwhite-bg">
       <div class="contained-1260 centered padding-2x">
         <h1 class="small">Weavr</h1>
         <ul class="no-list-style level-1">
@@ -122,6 +122,7 @@
               <li data-href="unordered-lists">Unordered Lists</li>
               <li data-href="ordered-lists">Ordered lists</li>
               <li data-href="blockquotes">Blockquotes</li>
+              <li data-href="body-copy-and-asides">Body Copy and Asides</li>
               <li data-href="alignment">Alignment</li>
               <li data-href="everything-together">Everything together</li>
             </ul>
@@ -175,7 +176,7 @@
           </li>
         </ul>
       </div>
-    </aside>
+    </div>
     <section id="content">
       <div class="contained-1260 centered padding-2x">
         <h1 class="align-center">The <span class="brand-purple">Weavr</span> Kitchen Sink</h1>
@@ -1210,6 +1211,28 @@
           </div>
         </div>
         
+        <h3 id="body-copy-and-asides">Body copy and Asides</h3>
+        <div class="contained-960 centered body-copy">
+          <p>
+            Vegan aesthetic quinoa McSweeney's, gentrify photo booth Blue Bottle Tumblr meh iPhone hoodie. Banjo salvia semiotics messenger bag small batch literally. Retro pickled distillery normcore, gastropub letterpress Portland swag. Put a bird on it mlkshk chia selfies health goth, listicle Vice ugh asymmetrical literally fashion axe photo booth cardigan. Put a bird on it four loko irony lomo farm-to-table mixtape church-key, gentrify McSweeney's flexitarian +1 pug Carles aesthetic Williamsburg. Deep v Williamsburg actually slow-carb you probably haven't heard of them, DIY seitan irony Echo Park. 8-bit swag cardigan sartorial, tilde slow-carb food truck.
+          </p>
+          <aside>
+            <blockquote>
+              <p>Blue Bottle deep v Pinterest, street art sriracha master cleanse Brooklyn bicycle rights locavore you probably haven't heard of them semiotics cold-pressed. Lumbersexual High Life Etsy DIY single-origin coffee Marfa, tofu jean shorts Thundercats cliche slow-carb retro. Sustainable kale chips brunch, squid distillery vegan meggings street art 8-bit.</p>
+              <cite>hipsum.co</cite>
+            </blockquote>
+          </aside>
+          <p>
+            Biodiesel ethical craft beer Bushwick DIY. Banksy cray American Apparel jean shorts, church-key stumptown leggings keytar VHS banjo. Vice pop-up locavore, chillwave ugh whatever normcore next level tilde leggings. YOLO VHS taxidermy fap letterpress kitsch tattooed occupy, wayfarers pork belly Portland pour-over cray drinking vinegar. Occupy direct trade yr Truffaut seitan. Church-key master cleanse mustache vegan VHS. Banksy chambray retro, roof party banh mi actually sartorial tote bag irony readymade chia.
+          </p>
+          <p>
+            Pinterest banh mi normcore Truffaut, aesthetic stumptown asymmetrical High Life hashtag trust fund iPhone lomo mustache. Bicycle rights fanny pack brunch letterpress Neutra. Odd Future wolf chia flannel. You probably haven't heard of them distillery tilde, four loko YOLO Intelligentsia meditation High Life semiotics Kickstarter cred gluten-free. Echo Park meggings meh, fixie DIY health goth cliche Pinterest lumbersexual pour-over. Bicycle rights plaid biodiesel street art, irony semiotics shabby chic Echo Park you probably haven't heard of them PBR. Synth hella blog, mustache hashtag selfies Austin shabby chic brunch Tumblr fap health goth Vice vinyl.
+          </p>
+          <p>
+            <a href="demo/body-copy.html" class="btn brand-purple-bg">View more examples of body copy layout</a>
+          </p>
+        </div>
+        
         <h3 id="alignment">Alignment</h3>
         <div class="contained-680">
           <p class="align-left">
@@ -1357,9 +1380,19 @@
             <pre class="inline">.brand-orange-bg</pre>
           </div>
           <div class="col col-3 n-col-3 t-col-4 m-col-6">
+            <div class="color-swatch brand-light-orange-bg"></div>
+            <pre class="inline">.brand-light-orange-bg</pre>
+          </div>
+          <div class="col col-3 n-col-3 t-col-4 m-col-6">
             <div class="color-swatch brand-pink-bg"></div>
             <pre class="inline">.brand-pink-bg</pre>
           </div>
+          <div class="col col-3 n-col-3 t-col-4 m-col-6">
+            <div class="color-swatch brand-light-pink-bg"></div>
+            <pre class="inline">.brand-light-pink-bg</pre>
+          </div>
+        </div>
+        <div class="row">
           <div class="col col-3 n-col-3 t-col-4 m-col-6">
             <div class="color-swatch brand-green-bg"></div>
             <pre class="inline">.brand-green-bg</pre>
@@ -1368,8 +1401,6 @@
             <div class="color-swatch brand-darkgray-bg"></div>
             <code>.brand-darkgray-bg</code>
           </div>
-        </div>
-        <div class="row">
           <div class="col col-3 n-col-3 t-col-4 m-col-6">
             <div class="color-swatch brand-gray-bg"></div>
             <code>.brand-gray-bg</code>
@@ -1908,6 +1939,44 @@
                 
                 <input type="checkbox" id="checkbox-3" value="3">
                 <label for="checkbox-3" class="checkbox">Option 3</label>
+              </div>
+            </div>
+            <h3 id="errors">Errors</h3>
+            <div class="row">
+              <div class="col col-6 t-col-6 m-col-12">
+                <label for="error-input">Label</label>
+                <input type="text" id="error-input" name="error-input" class="error" placeholder="Placeholder" value="">
+                <div class="error-message">
+                  This field has an error
+                </div>
+              </div>
+              <div class="col col-6 t-col-6 m-col-12">
+                <label for="error-select">Label</label>
+                <div class="select error">
+                  <select name="error-select">
+                    <option value="">Select one</option>
+                    <option value="Option 1">Option 1</option>
+                    <option value="Option 2">Option 2</option>
+                    <option value="Option 3">Option 3</option>
+                  </select>
+                </div>
+                <div class="error-message">
+                  This field has an error
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col col-12 t-col-12 m-col-12">
+                <label>Radio input errors</label>
+                <input type="radio" name="radio-error" id="radio-error-1" value="">
+                <label for="radio-error-1" class="radio inline error">Option 1</label>
+                <input type="radio" name="radio-error" id="radio-error-2" value="">
+                <label for="radio-error-2" class="radio inline error">Option 2</label>
+                <input type="radio" name="radio-error" id="radio-error-3" value="">
+                <label for="radio-error-3" class="radio inline error">Option 3</label>
+                <div class="error-message">
+                  This field has an error
+                </div>
               </div>
             </div>
             <input type="submit" value="Submit" class="btn brand-pink-bg block">

@@ -156,6 +156,7 @@
 
 html {
   font-size: 16px;
+  -webkit-text-size-adjust: 100%;
 }
 
 body {
@@ -234,62 +235,72 @@ button.reset {
 }
 
 .brand-pink-bg {
-  background: #ed027e;
+  background-color: #ed027e;
+  color: #fff;
+}
+
+.brand-light-pink-bg {
+  background-color: #ea69a7;
   color: #fff;
 }
 
 .brand-orange-bg {
-  background: #f15b22;
+  background-color: #f15b22;
+  color: #fff;
+}
+
+.brand-light-orange-bg {
+  background-color: #f37d50;
   color: #fff;
 }
 
 .brand-teal-bg {
-  background: #00abab;
+  background-color: #00abab;
   color: #fff;
 }
 
 .brand-light-teal-bg {
-  background: #6cc9c8;
+  background-color: #6cc9c8;
   color: #fff;
 }
 
 .brand-purple-bg {
-  background: #611171;
+  background-color: #611171;
   color: #fff;
 }
 
 .brand-light-purple-bg {
-  background: #7c378a;
+  background-color: #7c378a;
   color: #fff;
 }
 
 .brand-green-bg {
-  background: #7bc557;
+  background-color: #7bc557;
   color: #fff;
 }
 
 .brand-gray-bg {
-  background: #8f8e8c;
+  background-color: #8f8e8c;
   color: #fff;
 }
 
 .brand-darkgray-bg {
-  background: #222;
+  background-color: #222;
   color: #fff;
 }
 
 .brand-offwhite-bg {
-  background: #efeeea;
+  background-color: #efeeea;
   color: #333;
 }
 
 .brand-white-bg {
-  background: #fff;
+  background-color: #fff;
   color: #333;
 }
 
 .transparent-bg {
-  background: transparent;
+  background-color: transparent;
 }
 
 .brand-pink {
@@ -535,6 +546,7 @@ h5.large {
 /**** Blockquotes ****/
 /*********************/
 blockquote {
+  font-family: "Times New Roman", Times, serif;
   font-style: italic;
   padding: 1.25em 1.25em 1.25em 3.125em;
   margin: 1.25em 0;
@@ -561,6 +573,7 @@ blockquote p {
 blockquote cite {
   text-align: right;
   display: block;
+  font-family: "proxima-nova", Arial, sans-serif;
   font-style: normal;
   font-size: .875em;
 }
@@ -634,6 +647,77 @@ blockquote + blockquote:before {
 
 .brand-offwhite-bg blockquote {
   border-color: #8f8e8c;
+}
+
+/****************/
+/**** Asides ****/
+/****************/
+aside {
+  position: relative;
+  float: left;
+  margin-left: 0;
+  margin-right: 40px;
+  margin-bottom: 20px;
+  margin-top: .5em;
+  padding-top: 20px;
+  border-top: solid 5px #efeeea;
+}
+aside.right {
+  float: right;
+  margin-left: 40px;
+  margin-right: 0;
+}
+aside blockquote {
+  border-top: none;
+  border-bottom: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+aside blockquote:before {
+  top: -5px;
+}
+
+.contained-1260 aside {
+  max-width: 480px;
+  width: 50%;
+}
+
+.contained-960 aside {
+  max-width: 340px;
+  width: 50%;
+}
+
+.contained-680 aside,
+.contained-480 aside {
+  max-width: 220px;
+  width: 50%;
+}
+
+@media (max-width: 480px) {
+  .contained-1260 aside,
+  .contained-960 aside,
+  .contained-680 aside,
+  .contained-480 aside {
+    width: 100%;
+    max-width: none;
+  }
+}
+/*****************/
+/**** Figures ****/
+/*****************/
+figure {
+  margin: 0 0 1em 0;
+}
+figure img {
+  display: block;
+  width: 100%;
+}
+
+figcaption {
+  margin-top: .625em;
+  color: #8f8e8c;
+  font-family: "Times New Roman", Times, serif;
+  font-style: italic;
 }
 
 /***************/
@@ -1026,10 +1110,6 @@ input[type='submit'], input[type="button"] {
   -moz-appearance: none;
   border-radius: 0;
 }
-input[type='submit'] .error-animate, input[type="button"] .error-animate {
-  -webkit-animation: button-error .2s;
-  animation: button-error .2s;
-}
 
 label {
   display: block;
@@ -1037,6 +1117,12 @@ label {
   font-style: italic;
   color: #8f8e8c;
   margin-bottom: 10px;
+}
+
+fieldset {
+  border: none;
+  padding: initial;
+  margin: initial;
 }
 
 .input-group {
@@ -1511,50 +1597,6 @@ input[type="radio"]:checked + label.btn {
   background-color: #ed027e;
 }
 
-@-webkit-keyframes button-error {
-  0% {
-    transform: translate(0px);
-    -webkit-transform: translate(0px);
-  }
-  25% {
-    transform: translate(5px);
-    -webkit-transform: translate(5px);
-  }
-  50% {
-    transform: translate(0px);
-    -webkit-transform: translate(0px);
-  }
-  75% {
-    transform: translate(-5px);
-    -webkit-transform: translate(-5px);
-  }
-  100% {
-    transform: translate(0px);
-    -webkit-transform: translate(0px);
-  }
-}
-@keyframes button-error {
-  0% {
-    transform: translate(0px);
-    -webkit-transform: translate(0px);
-  }
-  12.5% {
-    transform: translate(5px);
-    -webkit-transform: translate(5px);
-  }
-  25% {
-    transform: translate(0px);
-    -webkit-transform: translate(0px);
-  }
-  37.5% {
-    transform: translate(-5px);
-    -webkit-transform: translate(-5px);
-  }
-  50% {
-    transform: translate(0px);
-    -webkit-transform: translate(0px);
-  }
-}
 /**********************/
 /**** Select boxes ****/
 /**********************/
@@ -1622,7 +1664,7 @@ div.alert.warning {
   color: #fff;
 }
 div.alert.error {
-  background-color: #ee3300;
+  background-color: #ce1500;
   color: #fff;
 }
 div.alert *:first-child {
@@ -1630,6 +1672,54 @@ div.alert *:first-child {
 }
 div.alert *:last-child {
   margin-bottom: 10px;
+}
+
+/*********************/
+/**** Form errors ****/
+/*********************/
+span.question {
+  background-color: #8f8e8c;
+  display: inline-block;
+  width: .875em;
+  height: .875em;
+  color: #fff;
+  line-height: .875em;
+  text-align: center;
+  border-radius: 100%;
+  vertical-align: middle;
+}
+span.question:before {
+  content: '?';
+  font-size: .625em;
+  font-family: "proxima-nova", Arial, sans-serif;
+  font-style: normal;
+}
+
+input.error,
+textarea.error,
+.select.error {
+  border-color: #ce1500;
+}
+
+.error-message {
+  color: #ce1500;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: .75em;
+}
+.error-message + .error-message {
+  padding-top: 0;
+}
+
+label.error {
+  color: #ce1500;
+}
+
+.radio-group.error label.radio {
+  color: #ce1500;
+}
+.radio-group.error label.radio:before {
+  border-color: #ce1500;
 }
 
 a.btn {
@@ -2661,6 +2751,52 @@ section {
 .viewport-one-third-height {
   height: 265px;
   height: 33.33vh;
+}
+
+/***************************/
+/**** Body Copy layouts ****/
+/***************************/
+.body-copy.contained-1260 > p,
+.body-copy.contained-1260 > ul,
+.body-copy.contained-1260 > ol,
+.body-copy.contained-1260 > blockquote,
+.body-copy.contained-1260 > h1,
+.body-copy.contained-1260 > h2,
+.body-copy.contained-1260 > h3,
+.body-copy.contained-1260 > h4,
+.body-copy.contained-1260 > h5,
+.body-copy.contained-1260 > h6 {
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.body-copy.contained-960 > p,
+.body-copy.contained-960 > ul,
+.body-copy.contained-960 > ol,
+.body-copy.contained-960 > blockquote,
+.body-copy.contained-960 > h1,
+.body-copy.contained-960 > h2,
+.body-copy.contained-960 > h3,
+.body-copy.contained-960 > h4,
+.body-copy.contained-960 > h5,
+.body-copy.contained-960 > h6 {
+  max-width: 680px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.body-copy.contained-680 > p,
+.body-copy.contained-680 > ul,
+.body-copy.contained-680 > ol,
+.body-copy.contained-680 > blockquote,
+.body-copy.contained-680 > h1,
+.body-copy.contained-680 > h2,
+.body-copy.contained-680 > h3,
+.body-copy.contained-680 > h4,
+.body-copy.contained-680 > h5,
+.body-copy.contained-680 > h6 {
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /*# sourceMappingURL=OI.weavr.css.map */
