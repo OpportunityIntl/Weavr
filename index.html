@@ -1941,6 +1941,44 @@
                 <label for="checkbox-3" class="checkbox">Option 3</label>
               </div>
             </div>
+            <h3 id="errors">Errors</h3>
+            <div class="row">
+              <div class="col col-6 t-col-6 m-col-12">
+                <label for="error-input">Label</label>
+                <input type="text" id="error-input" name="error-input" class="error" placeholder="Placeholder" value="">
+                <div class="error-message">
+                  This field has an error
+                </div>
+              </div>
+              <div class="col col-6 t-col-6 m-col-12">
+                <label for="error-select">Label</label>
+                <div class="select error">
+                  <select name="error-select">
+                    <option value="">Select one</option>
+                    <option value="Option 1">Option 1</option>
+                    <option value="Option 2">Option 2</option>
+                    <option value="Option 3">Option 3</option>
+                  </select>
+                </div>
+                <div class="error-message">
+                  This field has an error
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col col-12 t-col-12 m-col-12">
+                <label>Radio input errors</label>
+                <input type="radio" name="radio-error" id="radio-error-1" value="">
+                <label for="radio-error-1" class="radio inline error">Option 1</label>
+                <input type="radio" name="radio-error" id="radio-error-2" value="">
+                <label for="radio-error-2" class="radio inline error">Option 2</label>
+                <input type="radio" name="radio-error" id="radio-error-3" value="">
+                <label for="radio-error-3" class="radio inline error">Option 3</label>
+                <div class="error-message">
+                  This field has an error
+                </div>
+              </div>
+            </div>
             <input type="submit" value="Submit" class="btn brand-pink-bg block">
           </form>
         </div>
