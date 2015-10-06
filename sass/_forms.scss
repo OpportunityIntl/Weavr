@@ -16,12 +16,8 @@ input[type='text'], input[type='number'], input[type='email'], input[type='passw
   font-size: .875em;
   outline: none;
   transition: border-color .2s;
-  -webkit-transition: border-color .2s;
-  -moz-transition: border-color .2s;
   font-family: "proxima-nova", Arial, sans-serif;
   appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
   border-radius: 0;
   box-shadow: none;
   
@@ -42,8 +38,6 @@ textarea {
 input[type='submit'], input[type="button"] {
   border: none;
   appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
   border-radius: 0;
 }
 
@@ -396,8 +390,6 @@ input[type="radio"]:checked + label.btn {
   width: 100%;
   text-align: left;
   transition: border-color .2s;
-  -webkit-transition: border-color .2s;
-  -moz-transition: border-color .2s;
   
   &.focus {
     border-color: #555;
@@ -410,10 +402,7 @@ input[type="radio"]:checked + label.btn {
     color: $text-color;
     font-size: .875em;
     height: 1.625em;
-    -moz-border-radius: 0;
-    -webkit-border-radius: 0;
-    -webkit-appearance: none;
-    -moz-appearance: none;
+    appearance: none;
     cursor: pointer;
     width: 150%;
     outline: none;
