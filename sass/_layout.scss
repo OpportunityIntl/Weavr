@@ -10,20 +10,20 @@ section {
 /*** Container classes ****/
 /**************************/
 
+@include containers(12);
+
+/* Deprecated container classes */
 .contained-1260 {
   max-width: 1260px;
 }
-
 .contained-960 {
-  max-width: 960px;
+  max-width: 945px;
 }
-
 .contained-680 {
-  max-width: 680px;
+  max-width: 630px;
 }
-
 .contained-480 {
-  max-width: 480px;
+  max-width: 420px;
 }
 
 .centered {
@@ -685,7 +685,8 @@ section {
 /***************************/
 
 .body-copy {
-  &.contained-1260 {
+  &.contained-1260,
+  &.contained-12 {
     > p,
     > ul,
     > ol,
@@ -696,14 +697,15 @@ section {
     > h4,
     > h5,
     > h6 {
-      max-width: 960px;
+      max-width: 945px;
       margin-left: auto;
       margin-right: auto;
     }
     
   }
   
-  &.contained-960 {
+  &.contained-960,
+  &.contained-9 {
     > p,
     > ul,
     > ol,
@@ -714,13 +716,14 @@ section {
     > h4,
     > h5,
     > h6 {
-      max-width: 680px;
+      max-width: 630px;
       margin-left: auto;
       margin-right: auto;
     }
   }
   
-  &.contained-680 {
+  &.contained-680,
+  &.contained-6 {
     > p,
     > ul,
     > ol,
@@ -731,7 +734,7 @@ section {
     > h4,
     > h5,
     > h6 {
-      max-width: 480px;
+      max-width: 420px;
       margin-left: auto;
       margin-right: auto;
     }

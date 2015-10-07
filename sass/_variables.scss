@@ -22,3 +22,11 @@ $mobile-gutter: 15px;
 
 $font-primary: "proxima-nova", Arial, sans-serif;
 $font-secondary: "Times New Roman", Times, serif;
+
+@mixin containers($cols) {
+  @for $i from 1 through $cols {
+    .contained-#{$i} {
+      max-width: (1260 / $cols) * $i * 1px;
+    }
+  }
+}

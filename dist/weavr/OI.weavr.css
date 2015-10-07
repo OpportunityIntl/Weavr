@@ -1865,20 +1865,69 @@ section {
 /**************************/
 /*** Container classes ****/
 /**************************/
+.contained-1 {
+  max-width: 105px;
+}
+
+.contained-2 {
+  max-width: 210px;
+}
+
+.contained-3 {
+  max-width: 315px;
+}
+
+.contained-4 {
+  max-width: 420px;
+}
+
+.contained-5 {
+  max-width: 525px;
+}
+
+.contained-6 {
+  max-width: 630px;
+}
+
+.contained-7 {
+  max-width: 735px;
+}
+
+.contained-8 {
+  max-width: 840px;
+}
+
+.contained-9 {
+  max-width: 945px;
+}
+
+.contained-10 {
+  max-width: 1050px;
+}
+
+.contained-11 {
+  max-width: 1155px;
+}
+
+.contained-12 {
+  max-width: 1260px;
+}
+
+/* Deprecated container classes */
 .contained-1260 {
   max-width: 1260px;
 }
 
 .contained-960 {
-  max-width: 960px;
+  max-width: 945px;
 }
 
 .contained-680 {
-  max-width: 680px;
+  max-width: 630px;
 }
 
 .contained-480 {
-  max-width: 480px;
+  max-width: 420px;
 }
 
 .centered {
@@ -2329,8 +2378,17 @@ section {
 .body-copy.contained-1260 > h3,
 .body-copy.contained-1260 > h4,
 .body-copy.contained-1260 > h5,
-.body-copy.contained-1260 > h6 {
-  max-width: 960px;
+.body-copy.contained-1260 > h6, .body-copy.contained-12 > p,
+.body-copy.contained-12 > ul,
+.body-copy.contained-12 > ol,
+.body-copy.contained-12 > blockquote,
+.body-copy.contained-12 > h1,
+.body-copy.contained-12 > h2,
+.body-copy.contained-12 > h3,
+.body-copy.contained-12 > h4,
+.body-copy.contained-12 > h5,
+.body-copy.contained-12 > h6 {
+  max-width: 945px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -2343,8 +2401,17 @@ section {
 .body-copy.contained-960 > h3,
 .body-copy.contained-960 > h4,
 .body-copy.contained-960 > h5,
-.body-copy.contained-960 > h6 {
-  max-width: 680px;
+.body-copy.contained-960 > h6, .body-copy.contained-9 > p,
+.body-copy.contained-9 > ul,
+.body-copy.contained-9 > ol,
+.body-copy.contained-9 > blockquote,
+.body-copy.contained-9 > h1,
+.body-copy.contained-9 > h2,
+.body-copy.contained-9 > h3,
+.body-copy.contained-9 > h4,
+.body-copy.contained-9 > h5,
+.body-copy.contained-9 > h6 {
+  max-width: 630px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -2357,8 +2424,17 @@ section {
 .body-copy.contained-680 > h3,
 .body-copy.contained-680 > h4,
 .body-copy.contained-680 > h5,
-.body-copy.contained-680 > h6 {
-  max-width: 480px;
+.body-copy.contained-680 > h6, .body-copy.contained-6 > p,
+.body-copy.contained-6 > ul,
+.body-copy.contained-6 > ol,
+.body-copy.contained-6 > blockquote,
+.body-copy.contained-6 > h1,
+.body-copy.contained-6 > h2,
+.body-copy.contained-6 > h3,
+.body-copy.contained-6 > h4,
+.body-copy.contained-6 > h5,
+.body-copy.contained-6 > h6 {
+  max-width: 420px;
   margin-left: auto;
   margin-right: auto;
 }
