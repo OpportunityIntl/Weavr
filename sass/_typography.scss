@@ -373,22 +373,22 @@ aside {
   }
 }
 
-.contained-1260 {
+.contained-12 {
   aside {
     max-width: 480px;
     width: 50%;
   }
 }
 
-.contained-960 {
+.contained-9 {
   aside {
     max-width: 340px;
     width: 50%;
   }
 }
 
-.contained-680,
-.contained-480 {
+.contained-6,
+.contained-4 {
   aside {
     max-width: 220px;
     width: 50%;
@@ -396,10 +396,10 @@ aside {
 }
 
 @media (max-width: 480px) {
-  .contained-1260,
-  .contained-960,
-  .contained-680,
-  .contained-480 {
+  .contained-12,
+  .contained-9,
+  .contained-6,
+  .contained-4 {
     aside {
       width: 100%;
       max-width: none;

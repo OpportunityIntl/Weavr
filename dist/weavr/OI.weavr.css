@@ -645,18 +645,18 @@ aside blockquote:before {
   top: -5px;
 }
 
-.contained-1260 aside {
+.contained-12 aside {
   max-width: 480px;
   width: 50%;
 }
 
-.contained-960 aside {
+.contained-9 aside {
   max-width: 340px;
   width: 50%;
 }
 
-.contained-680 aside,
-.contained-480 aside {
+.contained-6 aside,
+.contained-4 aside {
   max-width: 220px;
   width: 50%;
 }
@@ -2463,10 +2463,10 @@ section {
     font-size: 3.25em;
     top: .25em;
   }
-  .contained-1260 aside,
-  .contained-960 aside,
-  .contained-680 aside,
-  .contained-480 aside {
+  .contained-12 aside,
+  .contained-9 aside,
+  .contained-6 aside,
+  .contained-4 aside {
     width: 100%;
     max-width: none;
   }

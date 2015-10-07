@@ -251,11 +251,11 @@ aside.right { float: right; margin-left: 40px; margin-right: 0; }
 aside blockquote { border-top: none; border-bottom: 0; padding-top: 0; padding-bottom: 0; }
 aside blockquote:before { top: -5px; }
 
-.contained-1260 aside { max-width: 480px; width: 50%; }
+.contained-12 aside { max-width: 480px; width: 50%; }
 
-.contained-960 aside { max-width: 340px; width: 50%; }
+.contained-9 aside { max-width: 340px; width: 50%; }
 
-.contained-680 aside, .contained-480 aside { max-width: 220px; width: 50%; }
+.contained-6 aside, .contained-4 aside { max-width: 220px; width: 50%; }
 /*****************/
 /**** Figures ****/
 /*****************/
@@ -749,7 +749,7 @@ section { position: relative; }
 .body-copy.contained-1260 > p, .body-copy.contained-1260 > ul, .body-copy.contained-1260 > ol, .body-copy.contained-1260 > blockquote, .body-copy.contained-1260 > h1, .body-copy.contained-1260 > h2, .body-copy.contained-1260 > h3, .body-copy.contained-1260 > h4, .body-copy.contained-1260 > h5, .body-copy.contained-1260 > h6, .body-copy.contained-12 > p, .body-copy.contained-12 > ul, .body-copy.contained-12 > ol, .body-copy.contained-12 > blockquote, .body-copy.contained-12 > h1, .body-copy.contained-12 > h2, .body-copy.contained-12 > h3, .body-copy.contained-12 > h4, .body-copy.contained-12 > h5, .body-copy.contained-12 > h6 { max-width: 945px; margin-left: auto; margin-right: auto; }
 .body-copy.contained-960 > p, .body-copy.contained-960 > ul, .body-copy.contained-960 > ol, .body-copy.contained-960 > blockquote, .body-copy.contained-960 > h1, .body-copy.contained-960 > h2, .body-copy.contained-960 > h3, .body-copy.contained-960 > h4, .body-copy.contained-960 > h5, .body-copy.contained-960 > h6, .body-copy.contained-9 > p, .body-copy.contained-9 > ul, .body-copy.contained-9 > ol, .body-copy.contained-9 > blockquote, .body-copy.contained-9 > h1, .body-copy.contained-9 > h2, .body-copy.contained-9 > h3, .body-copy.contained-9 > h4, .body-copy.contained-9 > h5, .body-copy.contained-9 > h6 { max-width: 630px; margin-left: auto; margin-right: auto; }
 .body-copy.contained-680 > p, .body-copy.contained-680 > ul, .body-copy.contained-680 > ol, .body-copy.contained-680 > blockquote, .body-copy.contained-680 > h1, .body-copy.contained-680 > h2, .body-copy.contained-680 > h3, .body-copy.contained-680 > h4, .body-copy.contained-680 > h5, .body-copy.contained-680 > h6, .body-copy.contained-6 > p, .body-copy.contained-6 > ul, .body-copy.contained-6 > ol, .body-copy.contained-6 > blockquote, .body-copy.contained-6 > h1, .body-copy.contained-6 > h2, .body-copy.contained-6 > h3, .body-copy.contained-6 > h4, .body-copy.contained-6 > h5, .body-copy.contained-6 > h6 { max-width: 420px; margin-left: auto; margin-right: auto; }
-@media (max-width: 480px) { p { line-height: 1.5; } p.large { font-size: 1.125em; } h1, h2, h3, h4, h5, h6 { margin: 1.25em 0 .75em 0; } blockquote { padding: 1em 1em 1em 2em; } blockquote p { line-height: 1.25; } blockquote:before { font-size: 3.25em; top: .25em; } .contained-1260 aside, .contained-960 aside, .contained-680 aside, .contained-480 aside { width: 100%; max-width: none; } ul li, ol li { line-height: 1.5em; } .row { margin-left: -7.5px; margin-right: -7.5px; } .row.large-gutter { margin-left: -15px; margin-right: -15px; } .row.large-gutter > .col { padding-left: 15px; padding-right: 15px; margin-bottom: 30px; } .row > .col { padding-left: 7.5px; padding-right: 7.5px; margin-bottom: 15px; } .row > .col.m-col-12 { width: 100%; }
+@media (max-width: 480px) { p { line-height: 1.5; } p.large { font-size: 1.125em; } h1, h2, h3, h4, h5, h6 { margin: 1.25em 0 .75em 0; } blockquote { padding: 1em 1em 1em 2em; } blockquote p { line-height: 1.25; } blockquote:before { font-size: 3.25em; top: .25em; } .contained-12 aside, .contained-9 aside, .contained-6 aside, .contained-4 aside { width: 100%; max-width: none; } ul li, ol li { line-height: 1.5em; } .row { margin-left: -7.5px; margin-right: -7.5px; } .row.large-gutter { margin-left: -15px; margin-right: -15px; } .row.large-gutter > .col { padding-left: 15px; padding-right: 15px; margin-bottom: 30px; } .row > .col { padding-left: 7.5px; padding-right: 7.5px; margin-bottom: 15px; } .row > .col.m-col-12 { width: 100%; }
   .row > .col.m-col-11 { width: 91.66667%; }
   .row > .col.m-col-10 { width: 83.33333%; }
   .row > .col.m-col-9 { width: 75%; }
