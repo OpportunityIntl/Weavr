@@ -954,20 +954,27 @@ fieldset {
   color: #8f8e8c;
 }
 
+.inline-form {
+  margin-left: -10px;
+  margin-right: -10px;
+  margin-bottom: -20px;
+}
 .inline-form input {
   display: inline-block;
-  margin-right: 20px;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-bottom: 20px;
   width: auto;
   vertical-align: middle;
-}
-.inline-form input:last-child {
-  margin-right: 0;
 }
 .inline-form .select {
   width: auto;
   display: inline-block;
   vertical-align: middle;
   margin-right: 20px;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-bottom: 20px;
 }
 .inline-form .select select {
   padding-right: 1.875em;

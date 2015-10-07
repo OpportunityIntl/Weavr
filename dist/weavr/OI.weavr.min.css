@@ -350,9 +350,9 @@ fieldset { border: none; padding: initial; margin: initial; }
 .input-icon input:focus + i { color: #333; }
 .input-icon i { position: absolute; display: block; top: 0; left: .71245em; height: 3.21428571em; width: 1em; font-size: .875em; line-height: 3.21428571em; color: #8f8e8c; }
 
-.inline-form input { display: inline-block; margin-right: 20px; width: auto; vertical-align: middle; }
-.inline-form input:last-child { margin-right: 0; }
-.inline-form .select { width: auto; display: inline-block; vertical-align: middle; margin-right: 20px; }
+.inline-form { margin-left: -10px; margin-right: -10px; margin-bottom: -20px; }
+.inline-form input { display: inline-block; margin-right: 10px; margin-left: 10px; margin-bottom: 20px; width: auto; vertical-align: middle; }
+.inline-form .select { width: auto; display: inline-block; vertical-align: middle; margin-right: 20px; margin-right: 10px; margin-left: 10px; margin-bottom: 20px; }
 .inline-form .select select { padding-right: 1.875em; }
 
 .brand-green-bg label, .brand-purple-bg label, .brand-orange-bg label, .brand-teal-bg label, .brand-pink-bg label, .brand-darkgray-bg label { color: inherit; opacity: .7; }
