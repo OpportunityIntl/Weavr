@@ -24,9 +24,6 @@ button.btn {
   font-weight: bold;
   font-family: $font-primary;
   box-shadow: none;
-  -moz-transition: -moz-box-shadow 0.6s ease-out 0s;
-   -webkit-transition: -webkit-box-shadow 0.6s ease-out 0s;
-  -o-transition:  -o-box-shadow 0.6s ease-out 0s;
   transition: box-shadow 0.6s ease-out 0s;
   line-height: 1.5;
   cursor: pointer;

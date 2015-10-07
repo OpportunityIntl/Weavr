@@ -41,6 +41,31 @@ module.exports = function(grunt) {
       }
     },
     
+    css_mqpacker: {
+      production: {
+        options: {
+          map: false
+        },
+
+        expand: true,
+        cwd: 'dist/weavr/',
+        src: '*.css',
+        dest: 'dist/weavr/'
+      }
+    },
+    
+    postcss: {
+      options: {
+        map: false,
+        processors: [
+          require('autoprefixer'),
+        ]
+      },
+      production: {
+        src: 'dist/weavr/*.css'
+      }
+    },
+    
     watch: {
       default: {
         files: ['sass/**/*.scss', 'js/**/*.js'],
@@ -74,8 +99,10 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-concat');
+  grunt.loadNpmTasks('grunt-postcss');
+  grunt.loadNpmTasks('grunt-css-mqpacker');
 
   // Default task(s).
-  grunt.registerTask('default', [ 'sass:dev', 'sass:production', 'concat:default', 'uglify:production' ] );
+  grunt.registerTask('default', [ 'sass:dev', 'sass:production', 'concat:default', 'postcss:production', 'css_mqpacker:production', 'uglify:production' ] );
 
 };
