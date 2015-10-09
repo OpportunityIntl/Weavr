@@ -29,7 +29,7 @@
 .row > .col.m-col-3 { width: 25%; }
 .row > .col.m-col-2 { width: 16.66667%; }
 .row > .col.m-col-1 { width: 8.33333%; }
-@media (min-width: 480px) { /* phone */ .row { margin-left: -10px; margin-right: -10px; } .row.large-gutter { margin-left: -20px; margin-right: -20px; } .row.large-gutter > .col { padding-left: 20px; padding-right: 20px; margin-bottom: 40px; } .row > .col { padding-left: 10px; padding-right: 10px; margin-bottom: 20px; } .row > .col.t-col-12 { width: 100%; }
+@media (min-width: 480px) { /* tablet */ .row { margin-left: -10px; margin-right: -10px; } .row.large-gutter { margin-left: -20px; margin-right: -20px; } .row.large-gutter > .col { padding-left: 20px; padding-right: 20px; margin-bottom: 40px; } .row > .col { padding-left: 10px; padding-right: 10px; margin-bottom: 20px; } .row > .col.t-col-12 { width: 100%; }
   .row > .col.t-col-11 { width: 91.66667%; }
   .row > .col.t-col-10 { width: 83.33333%; }
   .row > .col.t-col-9 { width: 75%; }
@@ -41,7 +41,7 @@
   .row > .col.t-col-3 { width: 25%; }
   .row > .col.t-col-2 { width: 16.66667%; }
   .row > .col.t-col-1 { width: 8.33333%; } }
-@media (min-width: 768px) { /* tablet */ .row > .col.n-col-12 { width: 100%; }
+@media (min-width: 800px) { /* netbook */ .row > .col.n-col-12 { width: 100%; }
   .row > .col.n-col-11 { width: 91.66667%; }
   .row > .col.n-col-10 { width: 83.33333%; }
   .row > .col.n-col-9 { width: 75%; }
@@ -53,7 +53,7 @@
   .row > .col.n-col-3 { width: 25%; }
   .row > .col.n-col-2 { width: 16.66667%; }
   .row > .col.n-col-1 { width: 8.33333%; } }
-@media (min-width: 960px) { /* netbook */ .row { margin-bottom: 20px; } .row.large-gutter { margin-bottom: 40px; } .row.large-gutter > .col { margin-bottom: 0; } .row.small-gutter { margin-bottom: 10px; } .row.small-gutter > .col { margin-bottom: 0; } .row > .col { margin-bottom: 0; } .row > .col.col-12 { width: 100%; }
+@media (min-width: 1024px) { /* laptop */ .row { margin-bottom: 20px; } .row.large-gutter { margin-bottom: 40px; } .row.large-gutter > .col { margin-bottom: 0; } .row.small-gutter { margin-bottom: 10px; } .row.small-gutter > .col { margin-bottom: 0; } .row > .col { margin-bottom: 0; } .row > .col.col-12 { width: 100%; }
   .row > .col.col-11 { width: 91.66667%; }
   .row > .col.col-10 { width: 83.33333%; }
   .row > .col.col-9 { width: 75%; }

@@ -12,7 +12,7 @@
     margin-right: -0.5 * $gutter;  
   }
   
-  @media (min-width: 960px) {
+  @media (min-width: 1024px) {
     margin-bottom: $gutter;
   }
   
@@ -26,7 +26,7 @@
       margin-right: -$gutter;
     }
     
-    @media (min-width: 960px) {
+    @media (min-width: 1024px) {
       margin-bottom: 2 * $gutter;
     }
     
@@ -41,7 +41,7 @@
         margin-bottom: 2 * $gutter;
       }
       
-      @media (min-width: 960px) {
+      @media (min-width: 1024px) {
         margin-bottom: 0;
       }
     }
@@ -52,7 +52,7 @@
     margin-right: -0.25 * $gutter;
     margin-bottom: 0;
     
-    @media (min-width: 960px) {
+    @media (min-width: 1024px) {
       margin-bottom: 0.5 * $gutter;
     }
     
@@ -61,7 +61,7 @@
       padding-right: .25 * $gutter;
       margin-bottom: 0.5 * $gutter;
       
-      @media (min-width: 960px) {
+      @media (min-width: 1024px) {
         margin-bottom: 0;
       }
     }
@@ -105,7 +105,7 @@
       margin-bottom: $gutter;
     }
     
-    @media (min-width: 960px) {
+    @media (min-width: 1024px) {
       margin-bottom: 0;
     }
     
@@ -207,7 +207,7 @@
       }
     }
     
-    @media (min-width: 768px) {
+    @media (min-width: 800px) {
       &.n-col-12 {
         width: 12/12 * 100%;
       }
@@ -257,7 +257,7 @@
       }
     }
     
-    @media (min-width: 960px) {
+    @media (min-width: 1024px) {
       &.col-12 {
         width: 12/12 * 100%;
       }

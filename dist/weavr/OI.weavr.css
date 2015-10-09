@@ -2439,7 +2439,7 @@ section {
   margin-right: auto;
 }
 @media (min-width: 480px) {
-  /* phone */
+  /* tablet */
   p {
     line-height: 1.75;
   }
@@ -2674,8 +2674,8 @@ section {
     display: none;
   }
 }
-@media (min-width: 768px) {
-  /* tablet */
+@media (min-width: 800px) {
+  /* netbook */
   .row > .col.n-col-12 {
     width: 100%;
   }
@@ -2732,8 +2732,8 @@ section {
     display: none;
   }
 }
-@media (min-width: 960px) {
-  /* netbook */
+@media (min-width: 1024px) {
+  /* laptop */
   .row {
     margin-bottom: 20px;
   }

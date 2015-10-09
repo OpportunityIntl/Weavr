@@ -33,7 +33,7 @@ $font-secondary: "Times New Roman", Times, serif;
 
 // Hack to get css_mqpack to keep media queries in correct order.
 // Processor outputs consolidated media queries in the order it first finds them.
-@media (min-width: 480px) { /* phone */ }
-@media (min-width: 768px) { /* tablet */ }
-@media (min-width: 960px) { /* netbook */ }
+@media (min-width: 480px) { /* tablet */ }
+@media (min-width: 800px) { /* netbook */ }
+@media (min-width: 1024px) { /* laptop */ }
 @media (min-width: 1260px) { /* desktop */ }
