@@ -9,7 +9,8 @@ module.exports = function(grunt) {
     sass: {
       dev: {
         options: {
-          style: 'expanded'
+          style: 'expanded',
+          banner: '<%= banner %>'
         },
         files: {
           'dist/weavr/OI.weavr.css' : 'sass/framework.scss',
