@@ -1,4 +1,16 @@
 /* Colors */
+@media (max-width: 1260px) {
+  /* desktop */
+}
+@media (max-width: 960px) {
+  /* netbook */
+}
+@media (max-width: 768px) {
+  /* tablet */
+}
+@media (max-width: 480px) {
+  /* phone */
+}
 /************************/
 /**** Grid 12 system ****/
 /************************/
@@ -7,23 +19,67 @@
   margin-right: -10px;
   margin-bottom: 20px;
 }
+@media (max-width: 960px) {
+  .row {
+    margin-bottom: 0;
+  }
+}
+@media (max-width: 480px) {
+  .row {
+    margin-left: -7.5px;
+    margin-right: -7.5px;
+  }
+}
 .row.large-gutter {
   margin-left: -20px;
   margin-right: -20px;
   margin-bottom: 40px;
 }
+@media (max-width: 960px) {
+  .row.large-gutter {
+    margin-bottom: 0;
+  }
+}
+@media (max-width: 480px) {
+  .row.large-gutter {
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+}
 .row.large-gutter > .col {
   padding-left: 20px;
   padding-right: 20px;
+}
+@media (max-width: 960px) {
+  .row.large-gutter > .col {
+    margin-bottom: 40px;
+  }
+}
+@media (max-width: 480px) {
+  .row.large-gutter > .col {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 30px;
+  }
 }
 .row.small-gutter {
   margin-left: -5px;
   margin-right: -5px;
   margin-bottom: 10px;
 }
+@media (max-width: 960px) {
+  .row.small-gutter {
+    margin-bottom: 0;
+  }
+}
 .row.small-gutter > .col {
   padding-left: 5px;
   padding-right: 5px;
+}
+@media (max-width: 960px) {
+  .row.small-gutter > .col {
+    margin-bottom: 10px;
+  }
 }
 .row:last-child {
   margin-bottom: 0;
@@ -49,6 +105,18 @@
   padding-left: 10px;
   padding-right: 10px;
   float: left;
+}
+@media (max-width: 960px) {
+  .row > .col {
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 480px) {
+  .row > .col {
+    padding-left: 7.5px;
+    padding-right: 7.5px;
+    margin-bottom: 15px;
+  }
 }
 .row > .col.col-12 {
   width: 100%;
@@ -87,24 +155,6 @@
   width: 8.33333%;
 }
 @media (max-width: 960px) {
-  .row {
-    margin-bottom: 0;
-  }
-  .row.large-gutter {
-    margin-bottom: 0;
-  }
-  .row.large-gutter > .col {
-    margin-bottom: 40px;
-  }
-  .row.small-gutter {
-    margin-bottom: 0;
-  }
-  .row.small-gutter > .col {
-    margin-bottom: 10px;
-  }
-  .row > .col {
-    margin-bottom: 20px;
-  }
   .row > .col.n-col-12 {
     width: 100%;
   }
@@ -139,62 +189,6 @@
     width: 16.66667%;
   }
   .row > .col.n-col-1 {
-    width: 8.33333%;
-  }
-}
-@media (max-width: 480px) {
-  .row {
-    margin-left: -7.5px;
-    margin-right: -7.5px;
-  }
-  .row.large-gutter {
-    margin-left: -15px;
-    margin-right: -15px;
-  }
-  .row.large-gutter > .col {
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-bottom: 30px;
-  }
-  .row > .col {
-    padding-left: 7.5px;
-    padding-right: 7.5px;
-    margin-bottom: 15px;
-  }
-  .row > .col.m-col-12 {
-    width: 100%;
-  }
-  .row > .col.m-col-11 {
-    width: 91.66667%;
-  }
-  .row > .col.m-col-10 {
-    width: 83.33333%;
-  }
-  .row > .col.m-col-9 {
-    width: 75%;
-  }
-  .row > .col.m-col-8 {
-    width: 66.66667%;
-  }
-  .row > .col.m-col-7 {
-    width: 58.33333%;
-  }
-  .row > .col.m-col-6 {
-    width: 50%;
-  }
-  .row > .col.m-col-5 {
-    width: 41.66667%;
-  }
-  .row > .col.m-col-4 {
-    width: 33.33333%;
-  }
-  .row > .col.m-col-3 {
-    width: 25%;
-  }
-  .row > .col.m-col-2 {
-    width: 16.66667%;
-  }
-  .row > .col.m-col-1 {
     width: 8.33333%;
   }
 }
@@ -236,3 +230,43 @@
     width: 8.33333%;
   }
 }
+@media (max-width: 480px) {
+  .row > .col.m-col-12 {
+    width: 100%;
+  }
+  .row > .col.m-col-11 {
+    width: 91.66667%;
+  }
+  .row > .col.m-col-10 {
+    width: 83.33333%;
+  }
+  .row > .col.m-col-9 {
+    width: 75%;
+  }
+  .row > .col.m-col-8 {
+    width: 66.66667%;
+  }
+  .row > .col.m-col-7 {
+    width: 58.33333%;
+  }
+  .row > .col.m-col-6 {
+    width: 50%;
+  }
+  .row > .col.m-col-5 {
+    width: 41.66667%;
+  }
+  .row > .col.m-col-4 {
+    width: 33.33333%;
+  }
+  .row > .col.m-col-3 {
+    width: 25%;
+  }
+  .row > .col.m-col-2 {
+    width: 16.66667%;
+  }
+  .row > .col.m-col-1 {
+    width: 8.33333%;
+  }
+}
+
+/*# sourceMappingURL=OI.weavr.grid.css.map */

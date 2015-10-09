@@ -30,3 +30,10 @@ $font-secondary: "Times New Roman", Times, serif;
     }
   }
 }
+
+// Hack to get css_mqpack to keep media queries in correct order.
+// Processor outputs consolidated media queries in the order it first finds them.
+@media (max-width: 1260px) { /* desktop */ }
+@media (max-width: 960px) { /* netbook */ }
+@media (max-width: 768px) { /* tablet */ }
+@media (max-width: 480px) { /* phone */ }
