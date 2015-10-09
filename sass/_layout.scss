@@ -36,253 +36,252 @@ section {
 /*************************/
 
 .padding-0-1x {
-  padding: 0 $gutter;
+  padding: 0 $mobile-gutter;
 }
 
 .padding-0-2x {
-  padding: 0 2 * $gutter;
+  padding: 0 2 * $mobile-gutter;
 }
 
 .padding-0-3x {
-  padding: 0 3 * $gutter;
+  padding: 0 3 * $mobile-gutter;
 }
 
 .padding-0-4x {
-  padding: 0 4 * $gutter;
+  padding: 0 4 * $mobile-gutter;
 }
 
 .padding-1x-4x {
-  padding: $gutter 4 * $gutter;
+  padding: $mobile-gutter 4 * $mobile-gutter;
 }
 
 .padding-1x-3x {
-  padding: $gutter 3 * $gutter;
+  padding: $mobile-gutter 3 * $mobile-gutter;
 }
 
 .padding-1x-2x {
-  padding: $gutter 2 * $gutter;
+  padding: $mobile-gutter 2 * $mobile-gutter;
 }
 
 .padding-1x {
-  padding: $gutter;
+  padding: $mobile-gutter;
 }
 
 .padding-1x-0 {
-  padding: $gutter 0;
+  padding: $mobile-gutter 0;
 }
 
 .padding-2x-4x {
-  padding: 2 * $gutter 4 * $gutter
+  padding: 2 * $mobile-gutter 4 * $mobile-gutter
 }
 
 .padding-2x-3x {
-  padding: 2 * $gutter 3 * $gutter
+  padding: 2 * $mobile-gutter 3 * $mobile-gutter
 }
 
 .padding-2x {
-  padding: 2 * $gutter;
+  padding: 2 * $mobile-gutter;
 }
 
 .padding-2x-1x {
-  padding: 2 * $gutter $gutter
+  padding: 2 * $mobile-gutter $mobile-gutter
 }
 
 .padding-2x-0 {
-  padding: 2 * $gutter 0;
+  padding: 2 * $mobile-gutter 0;
 }
 
 .padding-3x-4x {
-  padding: 3 * $gutter 4 * $gutter;
+  padding: 3 * $mobile-gutter 4 * $mobile-gutter;
 }
 
 .padding-3x {
-  padding: 3 * $gutter;
+  padding: 3 * $mobile-gutter;
 }
 
 .padding-3x-2x {
-  padding: 3 * $gutter 2 * $gutter;
+  padding: 3 * $mobile-gutter 2 * $mobile-gutter;
 }
 
 .padding-3x-1x {
-  padding: 3 * $gutter $gutter;
+  padding: 3 * $mobile-gutter $mobile-gutter;
 }
 
 .padding-3x-0 {
-  padding: 3 * $gutter 0;
+  padding: 3 * $mobile-gutter 0;
 }
 
 .padding-4x {
-  padding: 4 * $gutter;
+  padding: 4 * $mobile-gutter;
 }
 
 .padding-4x-3x {
-  padding: 4 * $gutter 3 * $gutter;
+  padding: 4 * $mobile-gutter 3 * $mobile-gutter;
 }
 
 .padding-4x-2x {
-  padding: 4 * $gutter 2 * $gutter;
+  padding: 4 * $mobile-gutter 2 * $mobile-gutter;
 }
 
 .padding-4x-1x {
-  padding: 4 * $gutter $gutter;
+  padding: 4 * $mobile-gutter $mobile-gutter;
 }
 
 .padding-4x-0 {
-  padding: 4 * $gutter 0;
+  padding: 4 * $mobile-gutter 0;
 }
 
 .padding-6x {
-  padding: 6 * $gutter;
+  padding: 6 * $mobile-gutter;
 }
 
 .padding-6x-0 {
-  padding: 6 * $gutter 0;
+  padding: 6 * $mobile-gutter 0;
 }
 
 .padding-6x-1x {
-  padding: 6 * $gutter $gutter;
+  padding: 6 * $mobile-gutter $mobile-gutter;
 }
 
 .padding-6x-2x {
-  padding: 6 * $gutter 2 * $gutter;
+  padding: 6 * $mobile-gutter 2 * $mobile-gutter;
 }
 
 .padding-6x-3x {
-  padding: 6 * $gutter 3 * $gutter;
+  padding: 6 * $mobile-gutter 3 * $mobile-gutter;
 }
 
 .padding-6x-4x {
-  padding: 6 * $gutter 4 * $gutter;
+  padding: 6 * $mobile-gutter 4 * $mobile-gutter;
 }
 
 .padding-6x-5x {
-  padding: 6 * $gutter 5 * $gutter;
+  padding: 6 * $mobile-gutter 5 * $mobile-gutter;
 }
 
-@media (max-width: 480px) {
-
+@media (min-width: 480px) {
   .padding-0-1x {
-    padding: 0 $mobile-gutter;
+    padding: 0 $gutter;
   }
 
   .padding-0-2x {
-    padding: 0 2 * $mobile-gutter;
+    padding: 0 2 * $gutter;
   }
 
   .padding-0-3x {
-    padding: 0 3 * $mobile-gutter;
+    padding: 0 3 * $gutter;
   }
 
   .padding-0-4x {
-    padding: 0 4 * $mobile-gutter;
+    padding: 0 4 * $gutter;
   }
 
   .padding-1x-4x {
-    padding: $mobile-gutter 4 * $mobile-gutter;
+    padding: $gutter 4 * $gutter;
   }
 
   .padding-1x-3x {
-    padding: $mobile-gutter 3 * $mobile-gutter;
+    padding: $gutter 3 * $gutter;
   }
 
   .padding-1x-2x {
-    padding: $mobile-gutter 2 * $mobile-gutter;
+    padding: $gutter 2 * $gutter;
   }
 
   .padding-1x {
-    padding: $mobile-gutter;
+    padding: $gutter;
   }
 
   .padding-1x-0 {
-    padding: $mobile-gutter 0;
+    padding: $gutter 0;
   }
 
   .padding-2x-4x {
-    padding: 2 * $mobile-gutter 4 * $mobile-gutter
+    padding: 2 * $gutter 4 * $gutter
   }
 
   .padding-2x-3x {
-    padding: 2 * $mobile-gutter 3 * $mobile-gutter
+    padding: 2 * $gutter 3 * $gutter
   }
 
   .padding-2x {
-    padding: 2 * $mobile-gutter;
+    padding: 2 * $gutter;
   }
 
   .padding-2x-1x {
-    padding: 2 * $mobile-gutter $mobile-gutter
+    padding: 2 * $gutter $gutter
   }
 
   .padding-2x-0 {
-    padding: 2 * $mobile-gutter 0;
+    padding: 2 * $gutter 0;
   }
 
   .padding-3x-4x {
-    padding: 3 * $mobile-gutter 4 * $mobile-gutter;
+    padding: 3 * $gutter 4 * $gutter;
   }
 
   .padding-3x {
-    padding: 3 * $mobile-gutter;
+    padding: 3 * $gutter;
   }
 
   .padding-3x-2x {
-    padding: 3 * $mobile-gutter 2 * $mobile-gutter;
+    padding: 3 * $gutter 2 * $gutter;
   }
 
   .padding-3x-1x {
-    padding: 3 * $mobile-gutter $mobile-gutter;
+    padding: 3 * $gutter $gutter;
   }
 
   .padding-3x-0 {
-    padding: 3 * $mobile-gutter 0;
+    padding: 3 * $gutter 0;
   }
 
   .padding-4x {
-    padding: 4 * $mobile-gutter;
+    padding: 4 * $gutter;
   }
 
   .padding-4x-3x {
-    padding: 4 * $mobile-gutter 3 * $mobile-gutter;
+    padding: 4 * $gutter 3 * $gutter;
   }
 
   .padding-4x-2x {
-    padding: 4 * $mobile-gutter 2 * $mobile-gutter;
+    padding: 4 * $gutter 2 * $gutter;
   }
 
   .padding-4x-1x {
-    padding: 4 * $mobile-gutter $mobile-gutter;
+    padding: 4 * $gutter $gutter;
   }
 
   .padding-4x-0 {
-    padding: 4 * $mobile-gutter 0;
+    padding: 4 * $gutter 0;
   }
-  
+
   .padding-6x {
-    padding: 6 * $mobile-gutter;
+    padding: 6 * $gutter;
   }
 
   .padding-6x-0 {
-    padding: 6 * $mobile-gutter 0;
+    padding: 6 * $gutter 0;
   }
 
   .padding-6x-1x {
-    padding: 6 * $mobile-gutter $mobile-gutter;
+    padding: 6 * $gutter $gutter;
   }
 
   .padding-6x-2x {
-    padding: 6 * $mobile-gutter 2 * $mobile-gutter;
+    padding: 6 * $gutter 2 * $gutter;
   }
 
   .padding-6x-3x {
-    padding: 6 * $mobile-gutter 3 * $mobile-gutter;
+    padding: 6 * $gutter 3 * $gutter;
   }
 
   .padding-6x-4x {
-    padding: 6 * $mobile-gutter 4 * $mobile-gutter;
+    padding: 6 * $gutter 4 * $gutter;
   }
 
   .padding-6x-5x {
-    padding: 6 * $mobile-gutter 5 * $mobile-gutter;
+    padding: 6 * $gutter 5 * $gutter;
   }
 }
 
@@ -334,9 +333,8 @@ section {
 /*************************/
 /**** Display classes ****/
 /*************************/
-
 .desktop-only {
-  display: block;
+  display: none;
 }
 
 .netbook-only {
@@ -348,36 +346,14 @@ section {
 }
 
 .mobile-only {
+  display: block;
+}
+
+.no-mobile {
   display: none;
 }
 
-.no-desktop {
-  display: none;
-}
-
-@media (max-width: 960px) {
-  .desktop-only {
-    display: none;
-  }
-  
-  .netbook-only {
-    display: block;
-  }
-  
-  .tablet-only {
-    display: none;
-  }
-  
-  .mobile-only {
-    display: none;
-  }
-  
-  .no-netbook {
-    display: none;
-  }
-}
-
-@media (max-width: 768px) {
+@media (min-width: 480px) {
   .desktop-only {
     display: none;
   }
@@ -399,13 +375,13 @@ section {
   }
 }
 
-@media (max-width: 480px) {
+@media (min-width: 768px) {
   .desktop-only {
     display: none;
   }
   
   .netbook-only {
-    display: none;
+    display: block;
   }
   
   .tablet-only {
@@ -413,10 +389,32 @@ section {
   }
   
   .mobile-only {
-    display: block;
+    display: none;
   }
   
-  .no-mobile {
+  .no-netbook {
+    display: none;
+  }
+}
+
+@media (min-width: 960px) {
+  .desktop-only {
+    display: block;
+  }
+
+  .netbook-only {
+    display: none;
+  }
+
+  .tablet-only {
+    display: none;
+  }
+
+  .mobile-only {
+    display: none;
+  }
+
+  .no-desktop {
     display: none;
   }
 }

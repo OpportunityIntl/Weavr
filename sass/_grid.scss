@@ -3,45 +3,46 @@
 /************************/
 
 .row {
-  margin-left: -0.5 * $gutter;
-  margin-right: -0.5 * $gutter;
-  margin-bottom: $gutter;
+  margin-left: -0.5 * $mobile-gutter;
+  margin-right: -0.5 * $mobile-gutter;
+  margin-bottom: 0;
   
-  @media (max-width: 960px) {
-    margin-bottom: 0;
+  @media (min-width: 480px) {
+    margin-left: -0.5 * $gutter;
+    margin-right: -0.5 * $gutter;  
   }
   
-  @media (max-width: 480px) {
-    margin-left: -0.5 * $mobile-gutter;
-    margin-right: -0.5 * $mobile-gutter;
+  @media (min-width: 960px) {
+    margin-bottom: $gutter;
   }
   
   &.large-gutter {
-    margin-left: -$gutter;
-    margin-right: -$gutter;
-    margin-bottom: 2 * $gutter;
+    margin-left: -$mobile-gutter;
+    margin-right: -$mobile-gutter;
+    margin-bottom: 0;
     
-    @media (max-width: 960px) {
-      margin-bottom: 0;
+    @media (min-width: 480px) {
+      margin-left: -$gutter;
+      margin-right: -$gutter;
     }
     
-    @media (max-width: 480px) {
-      margin-left: -$mobile-gutter;
-      margin-right: -$mobile-gutter;
+    @media (min-width: 960px) {
+      margin-bottom: 2 * $gutter;
     }
     
     > .col {
-      padding-left: $gutter;
-      padding-right: $gutter;
+      padding-left: $mobile-gutter;
+      padding-right: $mobile-gutter;
+      margin-bottom: 2 * $mobile-gutter;
       
-      @media (max-width: 960px) {
+      @media (min-width: 480px) {
+        padding-left: $gutter;
+        padding-right: $gutter;
         margin-bottom: 2 * $gutter;
       }
       
-      @media (max-width: 480px) {
-        padding-left: $mobile-gutter;
-        padding-right: $mobile-gutter;
-        margin-bottom: 2 * $mobile-gutter;
+      @media (min-width: 960px) {
+        margin-bottom: 0;
       }
     }
   }
@@ -49,18 +50,19 @@
   &.small-gutter {
     margin-left: -0.25 * $gutter;
     margin-right: -0.25 * $gutter;
-    margin-bottom: 0.5 * $gutter;
+    margin-bottom: 0;
     
-    @media (max-width: 960px) {
-      margin-bottom: 0;
+    @media (min-width: 960px) {
+      margin-bottom: 0.5 * $gutter;
     }
     
     > .col {
       padding-left: .25 * $gutter;
       padding-right: .25 * $gutter;
+      margin-bottom: 0.5 * $gutter;
       
-      @media (max-width: 960px) {
-        margin-bottom: 0.5 * $gutter;
+      @media (min-width: 960px) {
+        margin-bottom: 0;
       }
     }
   }
@@ -92,119 +94,70 @@
   }
   
   > .col {
-    padding-left: 0.5 * $gutter;
-    padding-right: 0.5 * $gutter;
+    padding-left: 0.5 * $mobile-gutter;
+    padding-right: 0.5 * $mobile-gutter;
+    margin-bottom: $mobile-gutter;
     float: left;
     
-    @media (max-width: 960px) {
+    @media (min-width: 480px) {
+      padding-left: 0.5 * $gutter;
+      padding-right: 0.5 * $gutter;
       margin-bottom: $gutter;
     }
     
-    @media (max-width: 480px) {
-      padding-left: 0.5 * $mobile-gutter;
-      padding-right: 0.5 * $mobile-gutter;
-      margin-bottom: $mobile-gutter;
+    @media (min-width: 960px) {
+      margin-bottom: 0;
     }
     
-    &.col-12 {
+    &.m-col-12 {
       width: 12/12 * 100%;
     }
     
-    &.col-11 {
+    &.m-col-11 {
       width: 11/12 * 100%;
     }
     
-    &.col-10 {
+    &.m-col-10 {
       width: 10/12 * 100%;
     }
     
-    &.col-9 {
+    &.m-col-9 {
       width: 9/12 * 100%;
     }
     
-    &.col-8 {
+    &.m-col-8 {
       width: 8/12 * 100%;
     }
     
-    &.col-7 {
+    &.m-col-7 {
       width: 7/12 * 100%;
     }
     
-    &.col-6 {
+    &.m-col-6 {
       width: 6/12 * 100%;
     }
     
-    &.col-5 {
+    &.m-col-5 {
       width: 5/12 * 100%;
     }
     
-    &.col-4 {
+    &.m-col-4 {
       width: 4/12 * 100%;
     }
     
-    &.col-3 {
+    &.m-col-3 {
       width: 3/12 * 100%;
     }
     
-    &.col-2 {
+    &.m-col-2 {
       width: 2/12 * 100%;
     }
     
-    &.col-1 {
+    &.m-col-1 {
       width: 1/12 * 100%;
     }
     
-    @media (max-width: 960px) {
-      &.n-col-12 {
-        width: 12/12 * 100%;
-      }
-      
-      &.n-col-11 {
-        width: 11/12 * 100%;
-      }
-      
-      &.n-col-10 {
-        width: 10/12 * 100%;
-      }
-      
-      &.n-col-9 {
-        width: 9/12 * 100%;
-      }
-      
-      &.n-col-8 {
-        width: 8/12 * 100%;
-      }
-      
-      &.n-col-7 {
-        width: 7/12 * 100%;
-      }
-      
-      &.n-col-6 {
-        width: 6/12 * 100%;
-      }
-      
-      &.n-col-5 {
-        width: 5/12 * 100%;
-      }
-      
-      &.n-col-4 {
-        width: 4/12 * 100%;
-      }
-      
-      &.n-col-3 {
-        width: 3/12 * 100%;
-      }
-      
-      &.n-col-2 {
-        width: 2/12 * 100%;
-      }
-      
-      &.n-col-1 {
-        width: 1/12 * 100%;
-      }
-    }
-    
-    @media (max-width: 768px) {
+    @media (min-width: 480px) {
       &.t-col-12 {
         width: 12/12 * 100%;
       }
@@ -254,52 +207,102 @@
       }
     }
     
-    @media (max-width: 480px) {
-      &.m-col-12 {
+    @media (min-width: 768px) {
+      &.n-col-12 {
         width: 12/12 * 100%;
       }
       
-      &.m-col-11 {
+      &.n-col-11 {
         width: 11/12 * 100%;
       }
       
-      &.m-col-10 {
+      &.n-col-10 {
         width: 10/12 * 100%;
       }
       
-      &.m-col-9 {
+      &.n-col-9 {
         width: 9/12 * 100%;
       }
       
-      &.m-col-8 {
+      &.n-col-8 {
         width: 8/12 * 100%;
       }
       
-      &.m-col-7 {
+      &.n-col-7 {
         width: 7/12 * 100%;
       }
       
-      &.m-col-6 {
+      &.n-col-6 {
         width: 6/12 * 100%;
       }
       
-      &.m-col-5 {
+      &.n-col-5 {
         width: 5/12 * 100%;
       }
       
-      &.m-col-4 {
+      &.n-col-4 {
         width: 4/12 * 100%;
       }
       
-      &.m-col-3 {
+      &.n-col-3 {
         width: 3/12 * 100%;
       }
       
-      &.m-col-2 {
+      &.n-col-2 {
         width: 2/12 * 100%;
       }
       
-      &.m-col-1 {
+      &.n-col-1 {
+        width: 1/12 * 100%;
+      }
+    }
+    
+    @media (min-width: 960px) {
+      &.col-12 {
+        width: 12/12 * 100%;
+      }
+      
+      &.col-11 {
+        width: 11/12 * 100%;
+      }
+      
+      &.col-10 {
+        width: 10/12 * 100%;
+      }
+      
+      &.col-9 {
+        width: 9/12 * 100%;
+      }
+      
+      &.col-8 {
+        width: 8/12 * 100%;
+      }
+      
+      &.col-7 {
+        width: 7/12 * 100%;
+      }
+      
+      &.col-6 {
+        width: 6/12 * 100%;
+      }
+      
+      &.col-5 {
+        width: 5/12 * 100%;
+      }
+      
+      &.col-4 {
+        width: 4/12 * 100%;
+      }
+      
+      &.col-3 {
+        width: 3/12 * 100%;
+      }
+      
+      &.col-2 {
+        width: 2/12 * 100%;
+      }
+      
+      &.col-1 {
         width: 1/12 * 100%;
       }
     }

@@ -49,10 +49,10 @@
 p {
   margin: 1em 0;
   font-size: 1em;
-  line-height: 1.75;
+  line-height: 1.5;
   
-  @media (max-width: 480px) {
-    line-height: 1.5;
+  @media (min-width: 480px) {
+    line-height: 1.75;
   }
   
   &:first-child {
@@ -65,10 +65,10 @@ p {
 }
 
 p.large {
-  font-size: 1.25em;
+  font-size: 1.125em;
   
-  @media (max-width: 480px) {
-    font-size: 1.125em;
+  @media (min-width: 480px) {
+    font-size: 1.25em;
   }
 }
 
@@ -117,13 +117,13 @@ p a {
 
 h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
-  margin: 1.5em 0 1em 0;
+  margin: 1.25em 0 .75em 0;
   letter-spacing: 1px;
   line-height: 1;
   font-family: $font-primary;
   
-  @media (max-width: 480px) {
-    margin: 1.25em 0 .75em 0;
+  @media (min-width: 480px) {
+    margin: 1.5em 0 1em 0;
   }
   
   &:first-child {
@@ -231,24 +231,24 @@ h5 {
 blockquote {
   font-family: $font-secondary;
   font-style: italic;
-  padding: 1.25em 1.25em 1.25em 3.125em;
+  padding: 1em 1em 1em 2em;
   margin: 1.25em 0;
   position: relative;
   border-top: solid 1px $brand-offwhite;
   border-bottom: solid 1px $brand-offwhite;
   color: $text-color-secondary;
   
-  @media (max-width: 480px) {
-    padding: 1em 1em 1em 2em;
+  @media (min-width: 480px) {
+    padding: 1.25em 1.25em 1.25em 3.125em;
   }
   
   p {
     font-family: $font-secondary;
     font-size: 1.125em;
-    line-height: 1.5;
+    line-height: 1.25;
     
-    @media (max-width: 480px) {
-      line-height: 1.25;
+    @media (min-width: 480px) {
+      line-height: 1.5;
     }
   }
   
@@ -268,17 +268,17 @@ blockquote {
     content: "\201c";
     display: block;
     position: absolute;
-    top: 15px;
     left: 0;
-    font-size: 4.375em;
+    font-size: 3.25em;
+    top: .25em;
     font-weight: bold;
     font-style: normal;
     line-height: 1em;
     color: $brand-purple;
     
-    @media (max-width: 480px) {
-      font-size: 3.25em;
-      top: .25em;
+    @media (min-width: 480px) {
+      font-size: 4.375em;
+      top: 15px;
     }
   }
   
@@ -373,36 +373,36 @@ aside {
   }
 }
 
-.contained-12 {
-  aside {
-    max-width: 480px;
-    width: 50%;
-  }
-}
-
-.contained-9 {
-  aside {
-    max-width: 340px;
-    width: 50%;
-  }
-}
-
+.contained-12,
+.contained-9,
 .contained-6,
 .contained-4 {
   aside {
-    max-width: 220px;
-    width: 50%;
+    width: 100%;
+    max-width: none;
   }
 }
 
-@media (max-width: 480px) {
-  .contained-12,
-  .contained-9,
+@media (min-width: 480px) {
+  .contained-12 {
+    aside {
+      max-width: 480px;
+      width: 50%;
+    }
+  }
+
+  .contained-9 {
+    aside {
+      max-width: 340px;
+      width: 50%;
+    }
+  }
+
   .contained-6,
   .contained-4 {
     aside {
-      width: 100%;
-      max-width: none;
+      max-width: 220px;
+      width: 50%;
     }
   }
 }
@@ -440,11 +440,11 @@ ul, ol {
   li {
     position: relative;
     padding-left: 1.25em;
-    line-height: 1.75em;
+    line-height: 1.5em;
     counter-increment: list;
     
-    @media (max-width: 480px) {
-      line-height: 1.5em;
+    @media (min-width: 480px) {
+      line-height: 1.75em;
     }
     
     &:last-child {
