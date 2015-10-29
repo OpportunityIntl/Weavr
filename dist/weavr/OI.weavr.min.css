@@ -1,4 +1,4 @@
-/* Weavr v0.10.1 
+/* Weavr v0.10.2 
  * Copyright (c) 2015 Opportunity International 
  */
 
@@ -233,12 +233,13 @@ blockquote { font-family: "Times New Roman", Times, serif; font-style: italic; p
 blockquote p { font-family: "Times New Roman", Times, serif; font-size: 1.125em; line-height: 1.25; }
 blockquote cite { text-align: right; display: block; font-family: "proxima-nova", Arial, sans-serif; font-style: normal; font-size: .875em; }
 blockquote cite:before { content: "– "; }
-blockquote:before { content: "\201c"; display: block; position: absolute; left: 0; font-size: 3.25em; top: .25em; font-weight: bold; font-style: normal; line-height: 1em; color: #611171; }
+blockquote:before { content: "\201c"; display: block; position: absolute; left: 0; font-size: 52px; top: .25em; font-weight: bold; font-style: normal; line-height: 1em; color: #611171; }
 blockquote.no-border { border-top: none; border-bottom: 0; padding-top: 0; padding-bottom: 0; }
 blockquote.no-border:before { top: -5px; }
 blockquote:first-child { margin-top: 0; }
 blockquote:last-child { margin-bottom: 0; }
 blockquote.large { font-size: 1.25em; }
+blockquote.large:before { font-size: 65px; }
 
 blockquote + blockquote { border-top: none; padding-top: 0; }
 blockquote + blockquote:before { top: -5px; }
@@ -753,7 +754,7 @@ section { position: relative; }
 .body-copy.contained-1260 > p, .body-copy.contained-1260 > ul, .body-copy.contained-1260 > ol, .body-copy.contained-1260 > blockquote, .body-copy.contained-1260 > h1, .body-copy.contained-1260 > h2, .body-copy.contained-1260 > h3, .body-copy.contained-1260 > h4, .body-copy.contained-1260 > h5, .body-copy.contained-1260 > h6, .body-copy.contained-12 > p, .body-copy.contained-12 > ul, .body-copy.contained-12 > ol, .body-copy.contained-12 > blockquote, .body-copy.contained-12 > h1, .body-copy.contained-12 > h2, .body-copy.contained-12 > h3, .body-copy.contained-12 > h4, .body-copy.contained-12 > h5, .body-copy.contained-12 > h6 { max-width: 945px; margin-left: auto; margin-right: auto; }
 .body-copy.contained-960 > p, .body-copy.contained-960 > ul, .body-copy.contained-960 > ol, .body-copy.contained-960 > blockquote, .body-copy.contained-960 > h1, .body-copy.contained-960 > h2, .body-copy.contained-960 > h3, .body-copy.contained-960 > h4, .body-copy.contained-960 > h5, .body-copy.contained-960 > h6, .body-copy.contained-9 > p, .body-copy.contained-9 > ul, .body-copy.contained-9 > ol, .body-copy.contained-9 > blockquote, .body-copy.contained-9 > h1, .body-copy.contained-9 > h2, .body-copy.contained-9 > h3, .body-copy.contained-9 > h4, .body-copy.contained-9 > h5, .body-copy.contained-9 > h6 { max-width: 630px; margin-left: auto; margin-right: auto; }
 .body-copy.contained-680 > p, .body-copy.contained-680 > ul, .body-copy.contained-680 > ol, .body-copy.contained-680 > blockquote, .body-copy.contained-680 > h1, .body-copy.contained-680 > h2, .body-copy.contained-680 > h3, .body-copy.contained-680 > h4, .body-copy.contained-680 > h5, .body-copy.contained-680 > h6, .body-copy.contained-6 > p, .body-copy.contained-6 > ul, .body-copy.contained-6 > ol, .body-copy.contained-6 > blockquote, .body-copy.contained-6 > h1, .body-copy.contained-6 > h2, .body-copy.contained-6 > h3, .body-copy.contained-6 > h4, .body-copy.contained-6 > h5, .body-copy.contained-6 > h6 { max-width: 420px; margin-left: auto; margin-right: auto; }
-@media (min-width: 480px) { /* tablet */ p { line-height: 1.75; } p.large { font-size: 1.25em; } h1, h2, h3, h4, h5, h6 { margin: 1.5em 0 1em 0; } blockquote { padding: 1.25em 1.25em 1.25em 3.125em; } blockquote p { line-height: 1.5; } blockquote:before { font-size: 4.375em; top: 15px; } .contained-12 aside { max-width: 480px; width: 50%; }
+@media (min-width: 480px) { /* tablet */ p { line-height: 1.75; } p.large { font-size: 1.25em; } h1, h2, h3, h4, h5, h6 { margin: 1.5em 0 1em 0; } blockquote { padding: 1.25em 1.25em 1.25em 3.125em; } blockquote p { line-height: 1.5; } blockquote:before { font-size: 70px; top: 15px; } blockquote.large:before { font-size: 87.5px; } .contained-12 aside { max-width: 480px; width: 50%; }
   .contained-9 aside { max-width: 340px; width: 50%; }
   .contained-6 aside, .contained-4 aside { max-width: 220px; width: 50%; } ul li, ol li { line-height: 1.75em; } .row { margin-left: -10px; margin-right: -10px; } .row.large-gutter { margin-left: -20px; margin-right: -20px; } .row.large-gutter > .col { padding-left: 20px; padding-right: 20px; margin-bottom: 40px; } .row > .col { padding-left: 10px; padding-right: 10px; margin-bottom: 20px; } .row > .col.t-col-12 { width: 100%; }
   .row > .col.t-col-11 { width: 91.66667%; }

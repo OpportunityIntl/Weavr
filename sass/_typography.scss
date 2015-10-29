@@ -269,7 +269,11 @@ blockquote {
     display: block;
     position: absolute;
     left: 0;
-    font-size: 3.25em;
+    // I want to use ems here, but IE9-11 have a bug that prohibits that.
+    // Keeping the em declaration for future reference, in case IE ever gets
+    // its act together.
+    // font-size: 3.25em;
+    font-size: 52px;
     top: .25em;
     font-weight: bold;
     font-style: normal;
@@ -277,7 +281,9 @@ blockquote {
     color: $brand-purple;
     
     @media (min-width: 480px) {
-      font-size: 4.375em;
+      // Again, I want to use ems here, but IE9-11 is a real party pooper.
+      // font-size: 4.375em;
+      font-size: 70px;
       top: 15px;
     }
   }
@@ -303,6 +309,17 @@ blockquote {
   
   &.large {
     font-size: 1.25em;
+    
+    // Declaring the :before font-sizes in pixels because of an
+    // IE9-11 bug (see comments above). If we could use ems safely in :before
+    // and :after pseudo elements, the following block would be unecessary.
+    &:before {
+      font-size: 65px;
+      
+      @media (min-width: 480px) {
+        font-size: 87.5px;
+      }
+    }
   }
 }
 

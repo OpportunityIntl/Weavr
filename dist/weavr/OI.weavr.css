@@ -1,4 +1,4 @@
-/* Weavr v0.10.1 
+/* Weavr v0.10.2 
  * Copyright (c) 2015 Opportunity International 
  */
 
@@ -579,7 +579,7 @@ blockquote:before {
   display: block;
   position: absolute;
   left: 0;
-  font-size: 3.25em;
+  font-size: 52px;
   top: .25em;
   font-weight: bold;
   font-style: normal;
@@ -603,6 +603,9 @@ blockquote:last-child {
 }
 blockquote.large {
   font-size: 1.25em;
+}
+blockquote.large:before {
+  font-size: 65px;
 }
 
 blockquote + blockquote {
@@ -2476,8 +2479,11 @@ section {
     line-height: 1.5;
   }
   blockquote:before {
-    font-size: 4.375em;
+    font-size: 70px;
     top: 15px;
+  }
+  blockquote.large:before {
+    font-size: 87.5px;
   }
   .contained-12 aside {
     max-width: 480px;
