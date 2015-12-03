@@ -1527,6 +1527,60 @@ label.error {
   border-color: #ce1500;
 }
 
+/******************************/
+/**** Choose Amount module ****/
+/******************************/
+.choose-amount-module .custom-amount {
+  text-align: center;
+  font-size: .75em;
+  letter-spacing: 1px;
+  font-weight: bold;
+  height: 3.75em;
+  -webkit-transition: none;
+          transition: none;
+}
+.choose-amount-module .custom-amount.btn {
+  text-transform: none;
+  background-color: #8f8e8c;
+}
+.choose-amount-module .custom-amount.btn::-webkit-input-placeholder {
+  color: #fff;
+}
+.choose-amount-module .custom-amount.btn:-moz-placeholder {
+  /* Firefox 18- */
+  color: #fff;
+}
+.choose-amount-module .custom-amount.btn::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #fff;
+}
+.choose-amount-module .custom-amount.btn:-ms-input-placeholder {
+  color: #fff !important;
+}
+.choose-amount-module .custom-amount.btn:hover {
+  background-color: #ed027e;
+  border-color: #ed027e;
+}
+.choose-amount-module .custom-amount.selected {
+  background-color: #ed027e;
+  color: #fff;
+  border-color: #ed027e;
+}
+.choose-amount-module .custom-amount.selected::-webkit-input-placeholder {
+  color: #fff;
+}
+.choose-amount-module .custom-amount.selected:-moz-placeholder {
+  /* Firefox 18- */
+  color: #fff;
+}
+.choose-amount-module .custom-amount.selected::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #fff;
+}
+.choose-amount-module .custom-amount.selected:-ms-input-placeholder {
+  color: #fff !important;
+}
+
 a.btn {
   display: inline-block;
   text-decoration: none;

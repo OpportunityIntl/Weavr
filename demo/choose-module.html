@@ -1,0 +1,69 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    
+    <title>Weavr Body Copy example</title>
+    
+    <link rel="stylesheet" href="../dist/weavr/OI.weavr.css">
+    
+    <script type="text/javascript" src="//use.typekit.net/owg8owx.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+    
+  </head>
+  <body>
+    <section class="padding-3x-2x">
+      <div class="contained-3 centered">
+        <div class="choose-amount-module">
+          <h3 class="align-center">Choose an amount:</h3>
+          <div class="row small-gutter">
+            <div class="col col-6">
+              <input type="radio" id="amount-1" name="amount" value="25">
+              <label for="amount-1" class="btn">$25</label>
+            </div>
+            <div class="col col-6">
+              <input type="radio" id="amount-2" name="amount" value="50">
+              <label for="amount-2" class="btn">$50</label>
+            </div>
+          </div>
+          <div class="row small-gutter">
+            <div class="col col-6">
+              <input type="radio" id="amount-3" name="amount" value="100">
+              <label for="amount-3" class="btn">$100</label>
+            </div>
+            <div class="col col-6">
+              <input type="radio" id="amount-4" name="amount" value="150">
+              <label for="amount-4" class="btn">$150</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col col-12">
+              <input type="text" name="custom_amount" class="custom-amount" placeholder="Custom amount" value="">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col col-12">
+              <form>
+                <input type="submit" class="btn brand-pink-bg block" value="Donate">
+                <input type="hidden" id="donation_amount" name="donation_amount" value="">
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script type="text/javascript" src="../dist/weavr/OI.weavr.min.js"></script>
+    
+    <!--[if lte IE 9]>
+      <script type="text/javascript" src="dist/weavr/OI.placeholder.min.js"></script>
+    <![endif]-->
+    
+    <script>
+      new ChooseAmountModule($('.choose-amount-module'), $('#donation_amount'));
+    </script>
+    
+  </body>
+</html>

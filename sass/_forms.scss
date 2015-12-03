@@ -518,3 +518,66 @@ label.error {
     }
   }
 }
+
+/******************************/
+/**** Choose Amount module ****/
+/******************************/
+
+.choose-amount-module {
+  .custom-amount {
+    text-align: center;
+    font-size: .75em;
+    letter-spacing: 1px;
+    font-weight: bold;
+    height: 3.75em;
+    transition: none;
+    
+    &.btn {
+      text-transform: none;
+      background-color: $brand-gray;
+      
+      &::-webkit-input-placeholder {
+         color: #fff;
+      }
+
+      &:-moz-placeholder { /* Firefox 18- */
+         color: #fff;
+      }
+
+      &::-moz-placeholder {  /* Firefox 19+ */
+         color: #fff;
+      }
+
+      &:-ms-input-placeholder {
+         color: #fff !important;
+      }
+      
+      &:hover {
+        background-color: $brand-pink;
+        border-color: $brand-pink;
+      }
+    }
+    
+    &.selected {
+      background-color: $brand-pink;
+      color: #fff;
+      border-color: $brand-pink;
+      
+      &::-webkit-input-placeholder {
+         color: #fff;
+      }
+
+      &:-moz-placeholder { /* Firefox 18- */
+         color: #fff;
+      }
+
+      &::-moz-placeholder {  /* Firefox 19+ */
+         color: #fff;
+      }
+
+      &:-ms-input-placeholder {
+         color: #fff !important;
+      }
+    }
+  }
+}

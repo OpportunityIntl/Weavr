@@ -86,7 +86,7 @@ module.exports = function(grunt) {
         separator: ';',
       },
       default: {
-        src: ['js/modernizr.custom.js', 'js/OI.tooltip.js', 'js/OI.weavr.js', 'js/OI.layout.js'],
+        src: ['js/modernizr.custom.js', 'js/OI.tooltip.js', 'js/OI.weavr.js', 'js/OI.layout.js', 'js/OI.chooseAmount.js'],
         dest: 'dist/weavr/OI.weavr.js',
       },
     }
