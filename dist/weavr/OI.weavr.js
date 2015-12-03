@@ -244,26 +244,26 @@ OI.layout.init();
     options.callback.call(_this, amount);
   }
   
-  function sanitizeNumber(value) {
+  this.sanitizeNumber = function(value) {
     return value.replace(/[^0-9\.]/g, '');
-  }
+  };
   
-  function formatNumber(value) {
+  this.formatNumber = function(value) {
     var re = '\\d(?=(\\d{3})+' + (options.decimals > 0 ? '\\.' : '$') + ')';
     return value.replace(new RegExp(re, 'g'), '$&,');
-  }
+  };
   
   customAmountInput.on('focus', function() {
     $(this).addClass('selected');
     radios.filter(':checked').prop('checked', false);
-    updateTarget(sanitizeNumber($(this).val()));
+    updateTarget(_this.sanitizeNumber($(this).val()));
   });
   
   customAmountInput.on('change', function() {
-    amount = Number(sanitizeNumber($(this).val())).toFixed(options.decimals);
+    amount = Number(_this.sanitizeNumber($(this).val())).toFixed(options.decimals);
     if (amount > 0) {
       updateTarget(amount);
-      $(this).val('$' + formatNumber(amount));
+      $(this).val('$' + _this.formatNumber(amount));
     } else {
       updateTarget(null);
       $(this).val('');
@@ -273,6 +273,6 @@ OI.layout.init();
   radios.on('click', function() {
     customAmountInput.removeClass('selected');
     amount = $(this).val();
-    updateTarget(sanitizeNumber($(this).val()));
+    updateTarget(_this.sanitizeNumber($(this).val()));
   });
 };

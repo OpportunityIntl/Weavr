@@ -51,6 +51,9 @@
             </div>
           </div>
         </div>
+        <p>
+          <strong>Amount due: </strong><span id="output"></span>
+        </p>
       </div>
     </section>
     
@@ -62,7 +65,11 @@
     <![endif]-->
     
     <script>
-      new ChooseAmountModule($('.choose-amount-module'), $('#donation_amount'));
+      new ChooseAmountModule($('.choose-amount-module'), $('#donation_amount'), {
+        callback: function(value) {
+          $('#output').html('$' + this.formatNumber(value));
+        }
+      });
     </script>
     
   </body>
