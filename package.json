@@ -1,6 +1,6 @@
 {
   "name": "Weavr",
-  "version": "0.10.2",
+  "version": "0.10.3",
   "author": "Opportunity International",
   "engines": {
     "node": ">= 0.8.0"
