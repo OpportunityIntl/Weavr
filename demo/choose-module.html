@@ -67,7 +67,7 @@
     <script>
       new ChooseAmountModule($('.choose-amount-module'), $('#donation_amount'), {
         callback: function(value) {
-          $('#output').html('$' + this.formatNumber(value));
+          $('#output').html('$' + this.formatNumber(value !== null ? value : 0));
         }
       });
     </script>
