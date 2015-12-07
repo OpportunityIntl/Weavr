@@ -245,7 +245,8 @@ OI.layout.init();
   }
   
   function getAmount(input) {
-    var amount = Number(_this.sanitizeNumber(input.val())).toFixed(options.decimals);
+    var value = Number(_this.sanitizeNumber(input.val()));
+    var amount = value.toFixed(value % 1 !== 0 ? options.decimals : 0);
     return amount > 0 ? amount : null;
   }
   
