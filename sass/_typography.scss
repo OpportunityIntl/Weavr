@@ -157,14 +157,26 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 2em;
+  font-size: 1.625em;
+  
+  @media (min-width: 480px) {
+    font-size: 2em;
+  }
   
   &.large {
-    font-size: 2.5em;
+    font-size: 1.875em;
+    
+    @media (min-width: 480px) {
+      font-size: 2.5em;
+    }
   }
   
   &.small {
-    font-size: 1.5em;
+    font-size: 1.375em;
+    
+    @media (min-width: 480px) {
+      font-size: 1.5em;
+    }
     
     .subheading,
     .superheading {
@@ -179,10 +191,18 @@ h1 {
 }
 
 h2 {
-  font-size: 1.5em;
+  font-size: 1.375em;
+  
+  @media (min-width: 480px) {
+    font-size: 1.5em;
+  }
   
   &.large {
-    font-size: 2em;
+    font-size: 1.625em;
+    
+    @media (min-width: 480px) {
+      font-size: 2em;
+    }
     
     .subheading,
     .superheading {

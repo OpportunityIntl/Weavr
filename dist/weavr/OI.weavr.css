@@ -501,13 +501,13 @@ h1.bordered, h2.bordered, h3.bordered, h4.bordered, h5.bordered, h6.bordered {
 }
 
 h1 {
-  font-size: 2em;
+  font-size: 1.625em;
 }
 h1.large {
-  font-size: 2.5em;
+  font-size: 1.875em;
 }
 h1.small {
-  font-size: 1.5em;
+  font-size: 1.375em;
 }
 h1.small .subheading,
 h1.small .superheading {
@@ -519,10 +519,10 @@ h1 .superheading {
 }
 
 h2 {
-  font-size: 1.5em;
+  font-size: 1.375em;
 }
 h2.large {
-  font-size: 2em;
+  font-size: 1.625em;
 }
 h2.large .subheading,
 h2.large .superheading {
@@ -2570,6 +2570,21 @@ button.btn {
   }
   h1, h2, h3, h4, h5, h6 {
     margin: 1.5em 0 1em 0;
+  }
+  h1 {
+    font-size: 2em;
+  }
+  h1.large {
+    font-size: 2.5em;
+  }
+  h1.small {
+    font-size: 1.5em;
+  }
+  h2 {
+    font-size: 1.5em;
+  }
+  h2.large {
+    font-size: 2em;
   }
   blockquote {
     padding: 1.25em 1.25em 1.25em 3.125em;
