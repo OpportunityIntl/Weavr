@@ -728,56 +728,40 @@
 .body-copy {
   &.contained-1260,
   &.contained-12 {
-    > p,
-    > ul,
-    > ol,
-    > blockquote,
-    > h1,
-    > h2,
-    > h3,
-    > h4,
-    > h5,
-    > h6 {
+    > :not(aside) {
       max-width: 945px;
       margin-left: auto;
       margin-right: auto;
     }
     
+    > .full-width {
+      max-width: none;
+    }
   }
   
   &.contained-960,
   &.contained-9 {
-    > p,
-    > ul,
-    > ol,
-    > blockquote,
-    > h1,
-    > h2,
-    > h3,
-    > h4,
-    > h5,
-    > h6 {
+    > :not(aside) {
       max-width: 630px;
       margin-left: auto;
       margin-right: auto;
+    }
+    
+    > .full-width {
+      max-width: none;
     }
   }
   
   &.contained-680,
   &.contained-6 {
-    > p,
-    > ul,
-    > ol,
-    > blockquote,
-    > h1,
-    > h2,
-    > h3,
-    > h4,
-    > h5,
-    > h6 {
+    > :not(aside) {
       max-width: 420px;
       margin-left: auto;
       margin-right: auto;
+    }
+    
+    > .full-width {
+      max-width: none;
     }
   }
 }
