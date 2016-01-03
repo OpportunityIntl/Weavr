@@ -15,30 +15,16 @@ body {
   color: $text-color;
 }
 
-.clearfix:before,
-.clearfix:after {
-    content: " ";
-    display: table;
-}
-
-.clearfix:after {
-    clear: both;
-}
-
-.clearfix {
-    *zoom: 1;
-}
-
-.clear {
-  clear: both;
-}
-
 hr {
   display: block;
   height: 1px;
   background-color: $brand-offwhite;
   border: none;
   margin: $gutter 0;
+}
+
+section {
+  position: relative;
 }
 
 .brand-offwhite-bg hr {
@@ -68,6 +54,10 @@ hr {
   border-radius: 100%;
 }
 
+.inline-block {
+  display: inline-block;
+}
+
 img.block {
   display: block;
   width: 100%;
@@ -79,4 +69,6 @@ button.reset {
   border: none;
   outline: none;
   cursor: pointer;
+  appearance: none;
+  font-size: 1em;
 }

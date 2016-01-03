@@ -131,3 +131,21 @@
 .icon-linkedin:before {
 	content: "\e605";
 }
+
+i {
+  &.x-large {
+    font-size: 6em;
+  }
+  &.large {
+    font-size: 3em;
+  }
+  
+  &.transparency {
+    opacity: .8;
+    transition: opacity .3s;
+    
+    &:hover {
+      opacity: 1;
+    }
+  }
+}

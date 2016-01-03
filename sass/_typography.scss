@@ -26,22 +26,6 @@
    font-style: italic !important;
 }
 
-/************************/
-/**** Text alignment ****/
-/************************/
-
-.align-center {
-  text-align: center;
-}
-
-.align-right {
-  text-align: right;
-}
-
-.align-left {
-  text-align: left;
-}
-
 /********************/
 /**** Paragraphs ****/
 /********************/
@@ -83,8 +67,17 @@ p.small {
 a {
   text-decoration: none;
   color: $brand-green;
-  transition: border-color .3s;
-  -moz-transition: border-color .3s;
+  cursor: pointer;
+  transition: border-color .3s, color .3s;
+  -moz-transition: border-color .3s, color .3s;
+  
+  img {
+    border: none;
+  }
+  
+  &.block {
+    display: block;
+  }
 }
 
 p a {
@@ -134,7 +127,12 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 0;
   }
   
-  .subheading {
+  a {
+    color: inherit;
+  }
+  
+  .subheading,
+  .superheading {
     display: block;
     text-transform: none;
     letter-spacing: 0;
@@ -142,6 +140,14 @@ h1, h2, h3, h4, h5, h6 {
     font-family: $font-secondary;
     font-style: italic;
     margin-top: 5px;
+  }
+  
+  .subheading {
+    margin-top: 5px;
+  }
+  
+  .superheading {
+    margin-bottom: 10px;
   }
   
   &.bordered {
@@ -159,10 +165,16 @@ h1 {
   
   &.small {
     font-size: 1.5em;
+    
+    .subheading,
+    .superheading {
+      font-size: .75em;
+    }
   }
   
-  .subheading {
-    font-size: .75em;
+  .subheading,
+  .superheading {
+    font-size: .625em;
   }
 }
 
@@ -171,13 +183,24 @@ h2 {
   
   &.large {
     font-size: 2em;
+    
+    .subheading,
+    .superheading {
+      font-size: .625em;
+    }
   }
   
   &.small {
     font-size: 1.125em;
+    
+    .subheading,
+    .superheading {
+      font-size: .875em;
+    }
   }
   
-  .subheading {
+  .subheading,
+  .superheading {
     font-size: .75em;
   }
 }
@@ -187,14 +210,20 @@ h3 {
   
   &.large {
     font-size: 1.5em;
+    
+    .subheading,
+    .superheading {
+      font-size: .75em;
+    }
   }
   
   &.small {
     font-size: 1em;
   }
   
-  .subheading {
-    font-size: .876em;
+  .subheading,
+  .superheading {
+    font-size: .875em;
   }
 }
 
@@ -378,6 +407,12 @@ aside {
     margin-right: 0;
   }
   
+  &.no-border {
+    border-top: 0;
+    margin-top: 0;
+    padding-top: 0;
+  }
+  
   blockquote {
     border-top: none;
     border-bottom: 0;
@@ -543,4 +578,5 @@ ol li {
 
 .transform-normal {
   text-transform: none;
+  letter-spacing: normal;
 }

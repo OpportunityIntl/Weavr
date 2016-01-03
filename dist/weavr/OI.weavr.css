@@ -1,5 +1,5 @@
 /* Weavr v0.10.3 
- * Copyright (c) 2015 Opportunity International 
+ * Copyright (c) 2016 Opportunity International 
  */
 
 @charset "UTF-8";
@@ -168,6 +168,21 @@
   content: "\e605";
 }
 
+i.x-large {
+  font-size: 6em;
+}
+i.large {
+  font-size: 3em;
+}
+i.transparency {
+  opacity: .8;
+  -webkit-transition: opacity .3s;
+          transition: opacity .3s;
+}
+i.transparency:hover {
+  opacity: 1;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -185,30 +200,16 @@ body {
   color: #333;
 }
 
-.clearfix:before,
-.clearfix:after {
-  content: " ";
-  display: table;
-}
-
-.clearfix:after {
-  clear: both;
-}
-
-.clearfix {
-  *zoom: 1;
-}
-
-.clear {
-  clear: both;
-}
-
 hr {
   display: block;
   height: 1px;
   background-color: #efeeea;
   border: none;
   margin: 20px 0;
+}
+
+section {
+  position: relative;
 }
 
 .brand-offwhite-bg hr {
@@ -239,6 +240,10 @@ hr {
   border-radius: 100%;
 }
 
+.inline-block {
+  display: inline-block;
+}
+
 img.block {
   display: block;
   width: 100%;
@@ -250,6 +255,10 @@ button.reset {
   border: none;
   outline: none;
   cursor: pointer;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  font-size: 1em;
 }
 
 .brand-pink-bg {
@@ -382,21 +391,6 @@ button.reset {
   font-style: italic !important;
 }
 
-/************************/
-/**** Text alignment ****/
-/************************/
-.align-center {
-  text-align: center;
-}
-
-.align-right {
-  text-align: right;
-}
-
-.align-left {
-  text-align: left;
-}
-
 /********************/
 /**** Paragraphs ****/
 /********************/
@@ -426,9 +420,16 @@ p.small {
 a {
   text-decoration: none;
   color: #7bc557;
-  -webkit-transition: border-color .3s;
-          transition: border-color .3s;
-  -moz-transition: border-color .3s;
+  cursor: pointer;
+  -webkit-transition: border-color .3s, color .3s;
+          transition: border-color .3s, color .3s;
+  -moz-transition: border-color .3s, color .3s;
+}
+a img {
+  border: none;
+}
+a.block {
+  display: block;
 }
 
 p a {
@@ -470,7 +471,16 @@ h1:first-child, h2:first-child, h3:first-child, h4:first-child, h5:first-child, 
 h1:last-child, h2:last-child, h3:last-child, h4:last-child, h5:last-child, h6:last-child {
   margin-bottom: 0;
 }
-h1 .subheading, h2 .subheading, h3 .subheading, h4 .subheading, h5 .subheading, h6 .subheading {
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+  color: inherit;
+}
+h1 .subheading,
+h1 .superheading, h2 .subheading,
+h2 .superheading, h3 .subheading,
+h3 .superheading, h4 .subheading,
+h4 .superheading, h5 .subheading,
+h5 .superheading, h6 .subheading,
+h6 .superheading {
   display: block;
   text-transform: none;
   letter-spacing: 0;
@@ -478,6 +488,12 @@ h1 .subheading, h2 .subheading, h3 .subheading, h4 .subheading, h5 .subheading, 
   font-family: "Times New Roman", Times, serif;
   font-style: italic;
   margin-top: 5px;
+}
+h1 .subheading, h2 .subheading, h3 .subheading, h4 .subheading, h5 .subheading, h6 .subheading {
+  margin-top: 5px;
+}
+h1 .superheading, h2 .superheading, h3 .superheading, h4 .superheading, h5 .superheading, h6 .superheading {
+  margin-bottom: 10px;
 }
 h1.bordered, h2.bordered, h3.bordered, h4.bordered, h5.bordered, h6.bordered {
   display: inline-block;
@@ -493,8 +509,13 @@ h1.large {
 h1.small {
   font-size: 1.5em;
 }
-h1 .subheading {
+h1.small .subheading,
+h1.small .superheading {
   font-size: .75em;
+}
+h1 .subheading,
+h1 .superheading {
+  font-size: .625em;
 }
 
 h2 {
@@ -503,10 +524,19 @@ h2 {
 h2.large {
   font-size: 2em;
 }
+h2.large .subheading,
+h2.large .superheading {
+  font-size: .625em;
+}
 h2.small {
   font-size: 1.125em;
 }
-h2 .subheading {
+h2.small .subheading,
+h2.small .superheading {
+  font-size: .875em;
+}
+h2 .subheading,
+h2 .superheading {
   font-size: .75em;
 }
 
@@ -516,11 +546,16 @@ h3 {
 h3.large {
   font-size: 1.5em;
 }
+h3.large .subheading,
+h3.large .superheading {
+  font-size: .75em;
+}
 h3.small {
   font-size: 1em;
 }
-h3 .subheading {
-  font-size: .876em;
+h3 .subheading,
+h3 .superheading {
+  font-size: .875em;
 }
 
 h4 {
@@ -658,6 +693,11 @@ aside.right {
   margin-left: 40px;
   margin-right: 0;
 }
+aside.no-border {
+  border-top: 0;
+  margin-top: 0;
+  padding-top: 0;
+}
 aside blockquote {
   border-top: none;
   border-bottom: 0;
@@ -772,6 +812,7 @@ ol li:before {
 
 .transform-normal {
   text-transform: none;
+  letter-spacing: normal;
 }
 
 /************************/
@@ -1613,6 +1654,11 @@ button.btn {
   border: none;
   outline: none;
 }
+.btn i {
+  position: relative;
+  font-size: 1.125em;
+  top: .125em;
+}
 .btn.brand-darkgray-bg {
   box-shadow: inset 0 100px 0 0 #222;
 }
@@ -1932,12 +1978,56 @@ button.btn {
   left: 0;
 }
 
-.full-width {
-  width: 100%;
+/****************/
+/**** Floats ****/
+/****************/
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
 }
 
-section {
-  position: relative;
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix {
+  *zoom: 1;
+}
+
+.clear {
+  clear: both;
+}
+
+.clear-left {
+  clear: left;
+}
+
+.clear-right {
+  clear: right;
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+/************************/
+/**** Text alignment ****/
+/************************/
+.align-center {
+  text-align: center;
+}
+
+.align-right {
+  text-align: right;
+}
+
+.align-left {
+  text-align: left;
 }
 
 /**************************/

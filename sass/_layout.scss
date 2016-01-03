@@ -1,9 +1,55 @@
-.full-width {
-  width: 100%;
+/****************/
+/**** Floats ****/
+/****************/
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
 }
 
-section {
-  position: relative;
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+.clear {
+  clear: both;
+}
+
+.clear-left {
+  clear: left;
+}
+
+.clear-right {
+  clear: right;
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+/************************/
+/**** Text alignment ****/
+/************************/
+
+.align-center {
+  text-align: center;
+}
+
+.align-right {
+  text-align: right;
+}
+
+.align-left {
+  text-align: left;
 }
 
 /**************************/
