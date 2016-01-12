@@ -261,6 +261,47 @@ button.reset {
   font-size: 1em;
 }
 
+.loading-indicator {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-image: url("images/loading-indicator.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 30px;
+  -webkit-animation: loading-spinner 1s steps(12, end) infinite;
+          animation: loading-spinner 1s steps(12, end) infinite;
+}
+.loading-indicator.white {
+  background-image: url("images/loading-indicator-white.png");
+}
+
+.brand-purple-bg.loading-indicator,
+.brand-purple-bg .loading-indicator,
+.brand-pink-bg.loading-indicator,
+.brand-pink-bg .loading-indicator,
+.brand-orange-bg.loading-indicator,
+.brand-orange-bg .loading-indicator,
+.brand-green-bg.loading-indicator,
+.brand-green-bg .loading-indicator,
+.brand-teal-bg.loading-indicator,
+.brand-teal-bg .loading-indicator {
+  background-image: url("images/loading-indicator-white.png");
+}
+
+@-webkit-keyframes loading-spinner {
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes loading-spinner {
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
 .brand-pink-bg {
   background-color: #ed027e;
   color: #fff;
@@ -2014,6 +2055,10 @@ button.btn {
   float: right;
 }
 
+.relative {
+  position: relative;
+}
+
 /************************/
 /**** Text alignment ****/
 /************************/
@@ -2949,4 +2994,24 @@ button.btn {
 }
 @media (min-width: 1260px) {
   /* desktop */
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .loading-indicator {
+    background-image: url("images/loading-indicator-2x.png");
+  }
+  .loading-indicator.white {
+    background-image: url("images/loading-indicator-white-2x.png");
+  }
+  .brand-purple-bg.loading-indicator,
+  .brand-purple-bg .loading-indicator,
+  .brand-pink-bg.loading-indicator,
+  .brand-pink-bg .loading-indicator,
+  .brand-orange-bg.loading-indicator,
+  .brand-orange-bg .loading-indicator,
+  .brand-green-bg.loading-indicator,
+  .brand-green-bg .loading-indicator,
+  .brand-teal-bg.loading-indicator,
+  .brand-teal-bg .loading-indicator {
+    background-image: url("images/loading-indicator-white-2x.png");
+  }
 }

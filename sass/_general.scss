@@ -72,3 +72,47 @@ button.reset {
   appearance: none;
   font-size: 1em;
 }
+
+.loading-indicator {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-image: url('images/loading-indicator.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 30px;
+  animation: loading-spinner 1s steps(12, end) infinite;
+  
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    background-image: url('images/loading-indicator-2x.png');
+  }
+  
+  &.white {
+    background-image: url('images/loading-indicator-white.png');
+    
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+      background-image: url('images/loading-indicator-white-2x.png');
+    }
+  }
+}
+
+.brand-purple-bg,
+.brand-pink-bg,
+.brand-orange-bg,
+.brand-green-bg,
+.brand-teal-bg {
+  &.loading-indicator,
+  .loading-indicator {
+    background-image: url('images/loading-indicator-white.png');
+    
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+      background-image: url('images/loading-indicator-white-2x.png');
+    }
+  }
+}
+
+@keyframes loading-spinner {
+  to {
+    transform: rotate(360deg);
+  }
+}
