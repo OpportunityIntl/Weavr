@@ -477,7 +477,7 @@ p a {
   border-bottom: solid 1px transparent;
 }
 p a:hover {
-  border-bottom: solid 1px #7bc557;
+  border-bottom: solid 1px;
 }
 
 .brand-green-bg a,

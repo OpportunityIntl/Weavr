@@ -192,7 +192,7 @@ a img { border: none; }
 a.block { display: block; }
 
 p a { border-bottom: solid 1px transparent; }
-p a:hover { border-bottom: solid 1px #7bc557; }
+p a:hover { border-bottom: solid 1px; }
 
 .brand-green-bg a, .brand-purple-bg a, .brand-orange-bg a, .brand-teal-bg a, .brand-pink-bg a { color: #fff; border-color: #fff; }
 .brand-green-bg a:hover, .brand-purple-bg a:hover, .brand-orange-bg a:hover, .brand-teal-bg a:hover, .brand-pink-bg a:hover { border-color: #fff; }
