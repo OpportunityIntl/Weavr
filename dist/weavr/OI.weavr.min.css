@@ -819,11 +819,11 @@ button.btn { display: inline-block; width: auto; }
 /***************************/
 /**** Body Copy layouts ****/
 /***************************/
-.body-copy.contained-1260 > :not(aside), .body-copy.contained-12 > :not(aside) { max-width: 945px; margin-left: auto; margin-right: auto; }
+.body-copy.contained-1260 > :not(aside):not(div), .body-copy.contained-12 > :not(aside):not(div) { max-width: 945px; margin-left: auto; margin-right: auto; }
 .body-copy.contained-1260 > .full-width, .body-copy.contained-12 > .full-width { max-width: none; }
-.body-copy.contained-960 > :not(aside), .body-copy.contained-9 > :not(aside) { max-width: 630px; margin-left: auto; margin-right: auto; }
+.body-copy.contained-960 > :not(aside):not(div), .body-copy.contained-9 > :not(aside):not(div) { max-width: 630px; margin-left: auto; margin-right: auto; }
 .body-copy.contained-960 > .full-width, .body-copy.contained-9 > .full-width { max-width: none; }
-.body-copy.contained-680 > :not(aside), .body-copy.contained-6 > :not(aside) { max-width: 420px; margin-left: auto; margin-right: auto; }
+.body-copy.contained-680 > :not(aside):not(div), .body-copy.contained-6 > :not(aside):not(div) { max-width: 420px; margin-left: auto; margin-right: auto; }
 .body-copy.contained-680 > .full-width, .body-copy.contained-6 > .full-width { max-width: none; }
 @media (min-width: 480px) { /* tablet */ p { line-height: 1.75; } p.large { font-size: 1.25em; } h1, h2, h3, h4, h5, h6 { margin: 1.5em 0 1em 0; } h1 { font-size: 2em; } h1.large { font-size: 2.5em; } h1.small { font-size: 1.5em; } h2 { font-size: 1.5em; } h2.large { font-size: 2em; } blockquote { padding: 1.25em 1.25em 1.25em 3.125em; } blockquote p { line-height: 1.5; } blockquote:before { font-size: 70px; top: 15px; } blockquote.large:before { font-size: 87.5px; } .contained-12 aside { max-width: 480px; width: 50%; }
   .contained-9 aside { max-width: 340px; width: 50%; }

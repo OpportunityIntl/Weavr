@@ -732,7 +732,7 @@
 .body-copy {
   &.contained-1260,
   &.contained-12 {
-    > :not(aside) {
+    > :not(aside):not(div) {
       max-width: 945px;
       margin-left: auto;
       margin-right: auto;
@@ -745,7 +745,7 @@
   
   &.contained-960,
   &.contained-9 {
-    > :not(aside) {
+    > :not(aside):not(div) {
       max-width: 630px;
       margin-left: auto;
       margin-right: auto;
@@ -758,7 +758,7 @@
   
   &.contained-680,
   &.contained-6 {
-    > :not(aside) {
+    > :not(aside):not(div) {
       max-width: 420px;
       margin-left: auto;
       margin-right: auto;

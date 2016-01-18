@@ -2628,7 +2628,7 @@ button.btn {
 /***************************/
 /**** Body Copy layouts ****/
 /***************************/
-.body-copy.contained-1260 > :not(aside), .body-copy.contained-12 > :not(aside) {
+.body-copy.contained-1260 > :not(aside):not(div), .body-copy.contained-12 > :not(aside):not(div) {
   max-width: 945px;
   margin-left: auto;
   margin-right: auto;
@@ -2636,7 +2636,7 @@ button.btn {
 .body-copy.contained-1260 > .full-width, .body-copy.contained-12 > .full-width {
   max-width: none;
 }
-.body-copy.contained-960 > :not(aside), .body-copy.contained-9 > :not(aside) {
+.body-copy.contained-960 > :not(aside):not(div), .body-copy.contained-9 > :not(aside):not(div) {
   max-width: 630px;
   margin-left: auto;
   margin-right: auto;
@@ -2644,7 +2644,7 @@ button.btn {
 .body-copy.contained-960 > .full-width, .body-copy.contained-9 > .full-width {
   max-width: none;
 }
-.body-copy.contained-680 > :not(aside), .body-copy.contained-6 > :not(aside) {
+.body-copy.contained-680 > :not(aside):not(div), .body-copy.contained-6 > :not(aside):not(div) {
   max-width: 420px;
   margin-left: auto;
   margin-right: auto;
