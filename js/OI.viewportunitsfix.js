@@ -1,4 +1,4 @@
-(function(document, window){
+var iOSSafariViewportUnitsFix = function(settings) {
   var userAgent = window.navigator.userAgent;
   var isBuggySafari = /(iPhone|iPod|iPad).+AppleWebKit/i.test(userAgent) && (function() {
     var iOSversion = userAgent.match(/OS (\d)/);
@@ -9,13 +9,39 @@
     var head = document.head || document.getElementsByTagName('head')[0];
     var style = document.createElement('style');
     var viewportHeight = window.innerHeight;
+    var viewportWidth = window.innerWidth;
+    var css = '';
     
-    var css = ".viewport-height {height: " + viewportHeight + "px;} ";
-    css    += ".viewport-three-quarter-height {height: " + (viewportHeight * 0.75) + "px;} ";
-    css    += ".viewport-half-height {height: " + (viewportHeight * 0.5) + "px} ";
-    css    += ".viewport-quarter-height {height: " + (viewportHeight * 0.25) + "px;} ";
-    css    += ".viewport-two-thirds-height {height: " + (viewportHeight * 0.66) + "px;} ";
-    css    += ".viewport-one-third-height {height: " + (viewportHeight * 0.33) + "px;} ";
+    for (i = 0, length = settings.length; i < length; i++) {
+      var unit = settings[i].value.match(/(vh|vw|vmin|vmax)/);
+      var amount = parseInt(settings[i].value);
+      var val;
+      
+      switch (unit[0]) {
+        case 'vh':
+          val = (amount / 100) * viewportHeight;
+          break;
+        case 'vw':
+          val = (amount / 100) * viewportWidth;
+          break;
+        case 'vmin':
+          val = (amount / 100) * (Math.min(viewportHeight, viewportWidth));
+          break;
+        case 'vmax':
+          val = (amount / 100) * (Math.max(viewportHeight, viewportWidth));
+          break;
+      }
+      
+      if (settings[i].query) {
+        css += '@media ' + settings[i].query + ' {';
+      }
+      
+      css += settings[i].selector + "{" + settings[i].property + ": " + val + "px;} ";
+      
+      if (settings[i].query) {
+        css += '} ';
+      }
+    }
 
     style.type = 'text/css';
     
@@ -27,5 +53,4 @@
 
     head.appendChild(style);
   }
-  
-})(document, window);
+};
