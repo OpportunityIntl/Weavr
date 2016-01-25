@@ -13,11 +13,12 @@ var iOSSafariViewportUnitsFix = function(settings) {
     var css = '';
     
     for (i = 0, length = settings.length; i < length; i++) {
-      var unit = settings[i].value.match(/(vh|vw|vmin|vmax)/);
-      var amount = parseInt(settings[i].value);
+      var match = settings[i].value.match(/(\d*)(vh|vw|vmin|vmax)/);
+      var unit = match[2];
+      var amount = parseInt(match[1]);
       var val;
       
-      switch (unit[0]) {
+      switch (unit) {
         case 'vh':
           val = (amount / 100) * viewportHeight;
           break;
@@ -36,7 +37,7 @@ var iOSSafariViewportUnitsFix = function(settings) {
         css += '@media ' + settings[i].query + ' {';
       }
       
-      css += settings[i].selector + "{" + settings[i].property + ": " + val + "px;} ";
+      css += settings[i].selector + "{" + settings[i].property + ": " + settings[i].value.replace(match[0], val + 'px') + ";} ";
       
       if (settings[i].query) {
         css += '} ';
