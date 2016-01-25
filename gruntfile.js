@@ -14,7 +14,8 @@ module.exports = function(grunt) {
         },
         files: {
           'dist/weavr/OI.weavr.css' : 'sass/framework.scss',
-          'dist/weavr/OI.weavr.grid.css' : 'sass/grid-only.scss'
+          'dist/weavr/OI.weavr.grid.css' : 'sass/grid-only.scss',
+          'dist/weavr/OI.redactor.css' : 'sass/redactor.scss'
         }
       },
       production: {
@@ -37,7 +38,8 @@ module.exports = function(grunt) {
         },
         files: {
           'dist/weavr/OI.weavr.min.js': ['dist/weavr/OI.weavr.js'],
-          'dist/weavr/OI.placeholder.min.js': ['js/OI.placeholder.js']
+          'dist/weavr/OI.placeholder.min.js': ['js/OI.placeholder.js'],
+          'dist/weavr/OI.viewportunitsfix.min.js': ['js/OI.viewportunitsfix.js']
         }
       }
     },
