@@ -90,7 +90,7 @@ button.btn {
   &.brand-purple-bg {
     box-shadow: inset 0 100px 0 0 $brand-purple;
     &:hover{
-      box-shadow: 0 0 0 0 #703386 inset;
+      box-shadow: 0 0 0 0 $brand-light-purple inset;
     }
   }
 

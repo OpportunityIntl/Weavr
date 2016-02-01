@@ -122,7 +122,7 @@ table { border: solid 1px #efeeea; border-collapse: collapse; width: 100%; }
 
 tr { border-bottom: solid 1px #efeeea; }
 tr:nth-child(odd) { background-color: #f9f8f5; }
-tr.brand-purple-bg td, tr.brand-purple-bg th { background-color: #611171; }
+tr.brand-purple-bg td, tr.brand-purple-bg th { background-color: #4a0059; }
 tr.brand-teal-bg td, tr.brand-teal-bg th { background-color: #00abab; }
 tr.brand-pink-bg td, tr.brand-pink-bg th { background-color: #ed027e; }
 tr.brand-orange-bg td, tr.brand-orange-bg th { background-color: #f15b22; }
@@ -145,9 +145,9 @@ th:last-child { border-right-color: #efeeea; }
 
 .brand-light-teal-bg { background-color: #6cc9c8; color: #fff; }
 
-.brand-purple-bg { background-color: #611171; color: #fff; }
+.brand-purple-bg { background-color: #4a0059; color: #fff; }
 
-.brand-light-purple-bg { background-color: #7c378a; color: #fff; }
+.brand-light-purple-bg { background-color: #611171; color: #fff; }
 
 .brand-green-bg { background-color: #7bc557; color: #fff; }
 
@@ -167,7 +167,7 @@ th:last-child { border-right-color: #efeeea; }
 
 .brand-teal { color: #00abab; }
 
-.brand-purple { color: #611171; }
+.brand-purple { color: #4a0059; }
 
 .brand-green { color: #7bc557; }
 
@@ -257,7 +257,7 @@ blockquote { font-family: "Times New Roman", Times, serif; font-style: italic; p
 blockquote p { font-family: "Times New Roman", Times, serif; font-size: 1.125em; line-height: 1.25; }
 blockquote cite { text-align: right; display: block; font-family: "proxima-nova", Arial, sans-serif; font-style: normal; font-size: .875em; }
 blockquote cite:before { content: "– "; }
-blockquote:before { content: "\201c"; display: block; position: absolute; left: 0; font-size: 52px; top: .25em; font-weight: bold; font-style: normal; line-height: 1em; color: #611171; }
+blockquote:before { content: "\201c"; display: block; position: absolute; left: 0; font-size: 52px; top: .25em; font-weight: bold; font-style: normal; line-height: 1em; color: #4a0059; }
 blockquote.no-border { border-top: none; border-bottom: 0; padding-top: 0; padding-bottom: 0; }
 blockquote.no-border:before { top: -5px; }
 blockquote:first-child { margin-top: 0; }
@@ -272,7 +272,7 @@ blockquote + blockquote:before { top: -5px; }
 
 .brand-purple-bg blockquote:before { color: #f15b22; }
 
-.brand-orange-bg blockquote:before { color: #611171; }
+.brand-orange-bg blockquote:before { color: #4a0059; }
 
 .brand-offwhite-bg blockquote { border-color: #8f8e8c; }
 
@@ -519,8 +519,8 @@ button.btn { display: inline-block; width: auto; }
 .btn.brand-teal-bg:hover { box-shadow: 0 0 0 0 #009090 inset; }
 .btn.brand-pink-bg { box-shadow: inset 0 100px 0 0 #ed027e; }
 .btn.brand-pink-bg:hover { box-shadow: 0 0px 0 0 #ca066d inset; }
-.btn.brand-purple-bg { box-shadow: inset 0 100px 0 0 #611171; }
-.btn.brand-purple-bg:hover { box-shadow: 0 0 0 0 #703386 inset; }
+.btn.brand-purple-bg { box-shadow: inset 0 100px 0 0 #4a0059; }
+.btn.brand-purple-bg:hover { box-shadow: 0 0 0 0 #611171 inset; }
 .btn.brand-white-bg { box-shadow: inset 0 100px 0 0 #fff; }
 .btn.brand-white-bg:hover { box-shadow: 0 0 0 0 #efeeea inset; }
 .btn.block { display: block; width: 100%; }
@@ -535,8 +535,8 @@ button.btn { display: inline-block; width: auto; }
 .btn.ghost.brand-orange:hover { color: #fff; background-color: #f15b22; }
 .btn.ghost.brand-teal { color: #00abab; border-color: #00abab; }
 .btn.ghost.brand-teal:hover { color: #fff; background-color: #00abab; }
-.btn.ghost.brand-purple { color: #611171; border-color: #611171; }
-.btn.ghost.brand-purple:hover { color: #fff; background-color: #611171; }
+.btn.ghost.brand-purple { color: #4a0059; border-color: #4a0059; }
+.btn.ghost.brand-purple:hover { color: #fff; background-color: #4a0059; }
 .btn.ghost.brand-green { color: #7bc557; border-color: #7bc557; }
 .btn.ghost.brand-green:hover { color: #fff; background-color: #7bc557; }
 .btn.ghost.brand-darkgray { color: #222; border-color: #222; }
@@ -550,7 +550,7 @@ button.btn { display: inline-block; width: auto; }
 .btn:disabled, .btn.disabled { background-color: #8f8e8c; box-shadow: inset 0 100px 0 0 #8f8e8c; color: #fff; cursor: default; }
 .btn:disabled:hover, .btn.disabled:hover { box-shadow: inset 0 100px 0 0 #8f8e8c; }
 
-.brand-purple-bg .btn.brand-white-bg, .brand-purple-bg .btn.ghost.brand-white:hover { color: #611171; }
+.brand-purple-bg .btn.brand-white-bg, .brand-purple-bg .btn.ghost.brand-white:hover { color: #4a0059; }
 
 .brand-teal-bg .btn.brand-white-bg, .brand-teal-bg .btn.ghost.brand-white:hover { color: #00abab; }
 
@@ -576,8 +576,8 @@ button.btn { display: inline-block; width: auto; }
 /******************/
 .tooltip { display: none; z-index: 1; }
 .tooltip .tooltip-container { position: relative; left: -50%; width: 1000px; }
-.tooltip .tooltip-container.purple .tooltip-content { background-color: #611171; color: #fff; }
-.tooltip .tooltip-container.purple .tooltip-content:after { color: #611171; }
+.tooltip .tooltip-container.purple .tooltip-content { background-color: #4a0059; color: #fff; }
+.tooltip .tooltip-container.purple .tooltip-content:after { color: #4a0059; }
 .tooltip .tooltip-container.teal .tooltip-content { background-color: #00abab; color: #fff; }
 .tooltip .tooltip-container.teal .tooltip-content:after { color: #00abab; }
 .tooltip .tooltip-container.orange .tooltip-content { background-color: #f15b22; color: #fff; }
@@ -777,8 +777,8 @@ button.btn { display: inline-block; width: auto; }
 .bg-image.top { background-position: center top; }
 .bg-image.bottom { background-position: center bottom; }
 .bg-image.overlay:before { content: ''; display: block; position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
-.bg-image.overlay.brand-purple-bg:before { background-color: rgba(97, 17, 113, 0.9); }
-.bg-image.overlay.brand-purple-bg.gradient:before { /* FF3.6+ */ background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(97, 17, 113, 0)), color-stop(25%, rgba(97, 17, 113, 0)), color-stop(75%, rgba(97, 17, 113, 0.75)), color-stop(100%, rgba(97, 17, 113, 0.75))); /* Chrome,Safari4+ */ background: -webkit-linear-gradient(top, rgba(97, 17, 113, 0) 0%, rgba(97, 17, 113, 0) 25%, rgba(97, 17, 113, 0.75) 75%, rgba(97, 17, 113, 0.75) 100%); /* Chrome10+,Safari5.1+ */ /* Opera 11.10+ */ /* IE10+ */ background: linear-gradient(to bottom, rgba(97, 17, 113, 0) 0%, rgba(97, 17, 113, 0) 25%, rgba(97, 17, 113, 0.75) 75%, rgba(97, 17, 113, 0.75) 100%); /* W3C */ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#000000',GradientType=0 ); /* IE6-9 */ }
+.bg-image.overlay.brand-purple-bg:before { background-color: rgba(74, 0, 89, 0.9); }
+.bg-image.overlay.brand-purple-bg.gradient:before { /* FF3.6+ */ background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(74, 0, 89, 0)), color-stop(25%, rgba(74, 0, 89, 0)), color-stop(75%, rgba(74, 0, 89, 0.75)), color-stop(100%, rgba(74, 0, 89, 0.75))); /* Chrome,Safari4+ */ background: -webkit-linear-gradient(top, rgba(74, 0, 89, 0) 0%, rgba(74, 0, 89, 0) 25%, rgba(74, 0, 89, 0.75) 75%, rgba(74, 0, 89, 0.75) 100%); /* Chrome10+,Safari5.1+ */ /* Opera 11.10+ */ /* IE10+ */ background: linear-gradient(to bottom, rgba(74, 0, 89, 0) 0%, rgba(74, 0, 89, 0) 25%, rgba(74, 0, 89, 0.75) 75%, rgba(74, 0, 89, 0.75) 100%); /* W3C */ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#000000',GradientType=0 ); /* IE6-9 */ }
 .bg-image.overlay.brand-pink-bg:before { background-color: rgba(236, 2, 126, 0.9); }
 .bg-image.overlay.brand-pink-bg.gradient:before { /* FF3.6+ */ background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(236, 2, 126, 0)), color-stop(25%, rgba(236, 2, 126, 0)), color-stop(75%, rgba(236, 2, 126, 0.75)), color-stop(100%, rgba(236, 2, 126, 0.75))); /* Chrome,Safari4+ */ background: -webkit-linear-gradient(top, rgba(236, 2, 126, 0) 0%, rgba(236, 2, 126, 0) 25%, rgba(236, 2, 126, 0.75) 75%, rgba(236, 2, 126, 0.75) 100%); /* Chrome10+,Safari5.1+ */ /* Opera 11.10+ */ /* IE10+ */ background: linear-gradient(to bottom, rgba(236, 2, 126, 0) 0%, rgba(236, 2, 126, 0) 25%, rgba(236, 2, 126, 0.75) 75%, rgba(236, 2, 126, 0.75) 100%); /* W3C */ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#000000',GradientType=0 ); /* IE6-9 */ }
 .bg-image.overlay.brand-teal-bg:before { background-color: rgba(0, 171, 171, 0.9); }

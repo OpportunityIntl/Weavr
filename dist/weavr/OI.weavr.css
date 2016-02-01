@@ -315,7 +315,7 @@ tr:nth-child(odd) {
   background-color: #f9f8f5;
 }
 tr.brand-purple-bg td, tr.brand-purple-bg th {
-  background-color: #611171;
+  background-color: #4a0059;
 }
 tr.brand-teal-bg td, tr.brand-teal-bg th {
   background-color: #00abab;
@@ -381,12 +381,12 @@ th:last-child {
 }
 
 .brand-purple-bg {
-  background-color: #611171;
+  background-color: #4a0059;
   color: #fff;
 }
 
 .brand-light-purple-bg {
-  background-color: #7c378a;
+  background-color: #611171;
   color: #fff;
 }
 
@@ -432,7 +432,7 @@ th:last-child {
 }
 
 .brand-purple {
-  color: #611171;
+  color: #4a0059;
 }
 
 .brand-green {
@@ -707,7 +707,7 @@ blockquote:before {
   font-weight: bold;
   font-style: normal;
   line-height: 1em;
-  color: #611171;
+  color: #4a0059;
 }
 blockquote.no-border {
   border-top: none;
@@ -756,7 +756,7 @@ blockquote + blockquote:before {
 }
 
 .brand-orange-bg blockquote:before {
-  color: #611171;
+  color: #4a0059;
 }
 
 .brand-offwhite-bg blockquote {
@@ -1791,10 +1791,10 @@ button.btn {
   box-shadow: 0 0px 0 0 #ca066d inset;
 }
 .btn.brand-purple-bg {
-  box-shadow: inset 0 100px 0 0 #611171;
+  box-shadow: inset 0 100px 0 0 #4a0059;
 }
 .btn.brand-purple-bg:hover {
-  box-shadow: 0 0 0 0 #703386 inset;
+  box-shadow: 0 0 0 0 #611171 inset;
 }
 .btn.brand-white-bg {
   box-shadow: inset 0 100px 0 0 #fff;
@@ -1863,12 +1863,12 @@ button.btn {
   background-color: #00abab;
 }
 .btn.ghost.brand-purple {
-  color: #611171;
-  border-color: #611171;
+  color: #4a0059;
+  border-color: #4a0059;
 }
 .btn.ghost.brand-purple:hover {
   color: #fff;
-  background-color: #611171;
+  background-color: #4a0059;
 }
 .btn.ghost.brand-green {
   color: #7bc557;
@@ -1921,7 +1921,7 @@ button.btn {
 }
 
 .brand-purple-bg .btn.brand-white-bg, .brand-purple-bg .btn.ghost.brand-white:hover {
-  color: #611171;
+  color: #4a0059;
 }
 
 .brand-teal-bg .btn.brand-white-bg, .brand-teal-bg .btn.ghost.brand-white:hover {
@@ -1980,11 +1980,11 @@ button.btn {
   width: 1000px;
 }
 .tooltip .tooltip-container.purple .tooltip-content {
-  background-color: #611171;
+  background-color: #4a0059;
   color: #fff;
 }
 .tooltip .tooltip-container.purple .tooltip-content:after {
-  color: #611171;
+  color: #4a0059;
 }
 .tooltip .tooltip-container.teal .tooltip-content {
   background-color: #00abab;
@@ -2428,17 +2428,17 @@ button.btn {
   height: 100%;
 }
 .bg-image.overlay.brand-purple-bg:before {
-  background-color: rgba(97, 17, 113, 0.9);
+  background-color: rgba(74, 0, 89, 0.9);
 }
 .bg-image.overlay.brand-purple-bg.gradient:before {
   /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(97, 17, 113, 0)), color-stop(25%, rgba(97, 17, 113, 0)), color-stop(75%, rgba(97, 17, 113, 0.75)), color-stop(100%, rgba(97, 17, 113, 0.75)));
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(74, 0, 89, 0)), color-stop(25%, rgba(74, 0, 89, 0)), color-stop(75%, rgba(74, 0, 89, 0.75)), color-stop(100%, rgba(74, 0, 89, 0.75)));
   /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top, rgba(97, 17, 113, 0) 0%, rgba(97, 17, 113, 0) 25%, rgba(97, 17, 113, 0.75) 75%, rgba(97, 17, 113, 0.75) 100%);
+  background: -webkit-linear-gradient(top, rgba(74, 0, 89, 0) 0%, rgba(74, 0, 89, 0) 25%, rgba(74, 0, 89, 0.75) 75%, rgba(74, 0, 89, 0.75) 100%);
   /* Chrome10+,Safari5.1+ */
   /* Opera 11.10+ */
   /* IE10+ */
-  background: linear-gradient(to bottom, rgba(97, 17, 113, 0) 0%, rgba(97, 17, 113, 0) 25%, rgba(97, 17, 113, 0.75) 75%, rgba(97, 17, 113, 0.75) 100%);
+  background: linear-gradient(to bottom, rgba(74, 0, 89, 0) 0%, rgba(74, 0, 89, 0) 25%, rgba(74, 0, 89, 0.75) 75%, rgba(74, 0, 89, 0.75) 100%);
   /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#000000',GradientType=0 );
   /* IE6-9 */
