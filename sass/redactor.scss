@@ -1,0 +1,19 @@
+@import 'variables';
+
+.redactor-editor {
+  &, ul, ol {
+    font-size: 16px;
+  }
+  
+  > :not(aside):not(div) {
+    max-width: 630px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  > .full-width {
+    max-width: none;
+  }
+  
+  @import 'framework.scss';
+}
