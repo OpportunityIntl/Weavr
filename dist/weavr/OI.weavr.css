@@ -390,6 +390,11 @@ th:last-child {
   color: #fff;
 }
 
+.brand-dark-purple-bg {
+  background-color: #2d0a3c;
+  color: #fff;
+}
+
 .brand-green-bg {
   background-color: #7bc557;
   color: #fff;
@@ -433,6 +438,14 @@ th:last-child {
 
 .brand-purple {
   color: #4a0059;
+}
+
+.brand-light-purple {
+  color: #611171;
+}
+
+.brand-dark-purple {
+  color: #2d0a3c;
 }
 
 .brand-green {
@@ -2428,7 +2441,8 @@ button.btn {
   height: 100%;
 }
 .bg-image.overlay.brand-purple-bg:before {
-  background-color: rgba(74, 0, 89, 0.9);
+  background-color: #4a0059;
+  opacity: .9;
 }
 .bg-image.overlay.brand-purple-bg.gradient:before {
   /* FF3.6+ */
@@ -2443,8 +2457,13 @@ button.btn {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#000000',GradientType=0 );
   /* IE6-9 */
 }
+.bg-image.overlay.brand-dark-purple-bg:before {
+  background-color: #2d0a3c;
+  opacity: .85;
+}
 .bg-image.overlay.brand-pink-bg:before {
-  background-color: rgba(236, 2, 126, 0.9);
+  background-color: #ed027e;
+  opacity: 0.9;
 }
 .bg-image.overlay.brand-pink-bg.gradient:before {
   /* FF3.6+ */
@@ -2460,7 +2479,8 @@ button.btn {
   /* IE6-9 */
 }
 .bg-image.overlay.brand-teal-bg:before {
-  background-color: rgba(0, 171, 171, 0.9);
+  background-color: #00abab;
+  opacity: .9;
 }
 .bg-image.overlay.brand-teal-bg.gradient:before {
   /* FF3.6+ */
@@ -2476,7 +2496,8 @@ button.btn {
   /* IE6-9 */
 }
 .bg-image.overlay.brand-orange-bg:before {
-  background-color: rgba(240, 92, 34, 0.9);
+  background-color: #f15b22;
+  opacity: .9;
 }
 .bg-image.overlay.brand-orange-bg.gradient:before {
   /* FF3.6+ */
@@ -2492,7 +2513,8 @@ button.btn {
   /* IE6-9 */
 }
 .bg-image.overlay.brand-green-bg:before {
-  background-color: rgba(123, 197, 87, 0.9);
+  background-color: #7bc557;
+  opacity: .9;
 }
 .bg-image.overlay.brand-green-bg.gradient:before {
   /* FF3.6+ */
@@ -2508,7 +2530,8 @@ button.btn {
   /* IE6-9 */
 }
 .bg-image.overlay.brand-white-bg:before {
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: #fff;
+  opacity: .9;
 }
 .bg-image.overlay.brand-white-bg.gradient:before {
   /* FF3.6+ */
@@ -2524,7 +2547,8 @@ button.btn {
   /* IE6-9 */
 }
 .bg-image.overlay.brand-offwhite-bg:before {
-  background-color: rgba(239, 238, 234, 0.9);
+  background-color: #efeeea;
+  opacity: .9;
 }
 .bg-image.overlay.brand-offwhite-bg.gradient:before {
   /* FF3.6+ */
@@ -2540,7 +2564,8 @@ button.btn {
   /* IE6-9 */
 }
 .bg-image.overlay.brand-darkgray-bg:before {
-  background-color: rgba(0, 0, 0, 0.75);
+  background-color: #000;
+  opacity: .75;
 }
 .bg-image.overlay.brand-darkgray-bg.gradient:before {
   /* FF3.6+ */
