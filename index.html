@@ -192,8 +192,10 @@
               <li data-href="icon-inputs">Icon inputs</li>
               <li data-href="radio-buttons">Radio buttons</li>
               <li data-href="checkboxes">Checkboxes</li>
-              <li data-href="inline-form">Inline form</li>
+              <li data-href="errors">Errors</li>
               <li data-href="inputs-background-colors">Inputs on Background Colors</li>
+              <li data-href="inline-form">Inline form</li>
+              <li data-href="choose-amount-module">Choose Amount Module</li>
             </ul>
           </li>
           <li><strong data-href="tooltips">Tooltips</strong></li>
@@ -2476,6 +2478,48 @@
               <input type="submit" value="Submit" class="brand-green-bg btn">
             </form>
           </div>
+          
+          <h3 id="choose-amount-module">Choose Amount module</h3>
+          <div class="contained-3">
+            <div class="choose-amount-module">
+              <div class="row small-gutter">
+                <div class="col col-6">
+                  <input type="radio" id="amount-1" name="amount" value="25">
+                  <label for="amount-1" class="btn">$25</label>
+                </div>
+                <div class="col col-6">
+                  <input type="radio" id="amount-2" name="amount" value="50">
+                  <label for="amount-2" class="btn">$50</label>
+                </div>
+              </div>
+              <div class="row small-gutter">
+                <div class="col col-6">
+                  <input type="radio" id="amount-3" name="amount" value="100">
+                  <label for="amount-3" class="btn">$100</label>
+                </div>
+                <div class="col col-6">
+                  <input type="radio" id="amount-4" name="amount" value="150">
+                  <label for="amount-4" class="btn">$150</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col col-12">
+                  <input type="text" name="custom_amount" class="custom-amount" placeholder="Custom amount" value="">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col col-12">
+                  <form>
+                    <input type="submit" class="btn brand-pink-bg block" value="Donate">
+                    <input type="hidden" id="donation_amount" name="donation_amount" value="">
+                  </form>
+                </div>
+              </div>
+            </div>
+            <p>
+              <strong>Amount due: </strong><span id="output"></span>
+            </p>
+          </div>
         </section>
         
         <section id="tooltips">
@@ -2838,6 +2882,12 @@
       $('[data-href]').click(function() {
         console.log($(this).data('href'));
         $(window).scrollTo('#' + $(this).data('href'), 500);
+      });
+      
+      new ChooseAmountModule($('.choose-amount-module'), $('#donation_amount'), {
+        callback: function(value) {
+          $('#output').html('$' + this.formatNumber(value !== null ? value : 0));
+        }
       });
     </script>
   </body>
