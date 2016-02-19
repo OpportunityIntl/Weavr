@@ -259,7 +259,7 @@ h5.large { font-size: 1.125em; }
 /*********************/
 /**** Blockquotes ****/
 /*********************/
-blockquote { font-family: "Times New Roman", Times, serif; font-style: italic; padding: 1em 1em 1em 2em; margin: 1.25em 0; position: relative; border-top: solid 1px #efeeea; border-bottom: solid 1px #efeeea; color: #555; }
+blockquote { font-family: "Times New Roman", Times, serif; font-style: italic; padding: 1em 1em 1em 2em; margin: 1.25em 0; position: relative; border-top: solid 2px #efeeea; border-bottom: solid 2px #efeeea; color: #555; }
 blockquote p { font-family: "Times New Roman", Times, serif; font-size: 1.125em; line-height: 1.25; }
 blockquote cite { text-align: right; display: block; font-family: "proxima-nova", Arial, sans-serif; font-style: normal; font-size: .875em; }
 blockquote cite:before { content: "– "; }

@@ -691,8 +691,8 @@ blockquote {
   padding: 1em 1em 1em 2em;
   margin: 1.25em 0;
   position: relative;
-  border-top: solid 1px #efeeea;
-  border-bottom: solid 1px #efeeea;
+  border-top: solid 2px #efeeea;
+  border-bottom: solid 2px #efeeea;
   color: #555;
 }
 blockquote p {

@@ -282,8 +282,8 @@ blockquote {
   padding: 1em 1em 1em 2em;
   margin: 1.25em 0;
   position: relative;
-  border-top: solid 1px $brand-offwhite;
-  border-bottom: solid 1px $brand-offwhite;
+  border-top: solid 2px $brand-offwhite;
+  border-bottom: solid 2px $brand-offwhite;
   color: $text-color-secondary;
   
   @media (min-width: 480px) {
