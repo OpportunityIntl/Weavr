@@ -1,0 +1,76 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    
+    <title>Weavr loading example</title>
+    
+    <link rel="stylesheet" href="../dist/weavr/OI.weavr.css">
+    
+    <script type="text/javascript" src="//use.typekit.net/owg8owx.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+    
+  </head>
+  <body>
+    <section class="viewport-one-third-height brand-pink-bg">
+      
+    </section>
+    <section class="viewport-quarter-height brand-teal-bg">
+      
+    </section>
+    <section class="viewport-height brand-offwhite-bg">
+      
+    </section>
+    <section class="viewport-half-height brand-purple-bg">
+      
+    </section>
+    <section class="viewport-three-quarter-height brand-orange-bg">
+      
+    </section>
+    <section class="viewport-two-thirds-height brand-green-bg">
+      
+    </section>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script type="text/javascript" src="../dist/weavr/OI.weavr.min.js"></script>
+    
+    <script type="text/javascript" src="../dist/weavr/OI.viewportunitsfix.min.js"></script>
+    <script type="text/javascript">
+      iOSSafariViewportUnitsFix([
+        {
+          selector: '.viewport-height',
+          property: 'height',
+          value: '100vh',
+          query: '(min-width: 480px)'
+        },
+        {
+          selector: '.viewport-half-height',
+          property: 'height',
+          value: 'calc(50vh - 50px)'
+        },
+        {
+          selector: '.viewport-quarter-height',
+          property: 'height',
+          value: '25vh'
+        },
+        {
+          selector: '.viewport-three-quarter-height',
+          property: 'height',
+          value: '75vh'
+        },
+        {
+          selector: '.viewport-two-thirds-height',
+          property: 'height',
+          value: '66vh'
+        },
+        {
+          selector: '.viewport-one-third-height',
+          property: 'height',
+          value: '33vh'
+        }
+      ]);
+    </script>
+    
+  </body>
+</html>
