@@ -118,16 +118,61 @@ button.reset {
 }
 
 table {
-  border: solid 1px $brand-offwhite;
   border-collapse: collapse;
   width: 100%;
 }
 
+thead {
+  th {
+    border-right: solid 1px $brand-almostwhite;
+    
+    &:last-child {
+      border-right-color: $brand-offwhite;
+    }
+  }
+}
+
+thead + tbody {
+  tr {
+    &:nth-child(even) {
+      background-color: $brand-almostwhite;
+    }
+    
+    &:nth-child(odd) {
+      background-color: inherit;
+    }
+  }
+}
+
+tbody {
+  tr {
+    &:nth-child(odd) {
+      background-color: $brand-almostwhite;
+    }
+    
+    &:last-child {
+      th {
+        border-bottom-color: $brand-offwhite;
+      }
+    }
+  }
+}
+
+tfoot {
+  border-top: solid 4px $brand-gray;
+}
+
 tr {
-  border-bottom: solid 1px $brand-offwhite;
+  &:first-child {
+    th {
+      border-top: none;
+    }
+  }
   
-  &:nth-child(odd) {
-    background-color: $brand-almostwhite;
+  &.section-separator {
+    td, th {
+      border-top-width: 4px;
+    }
   }
   
   &.brand-purple-bg {
@@ -160,21 +205,23 @@ tr {
 
 td {
   padding: 10px 20px;
-  border-right: solid 1px $brand-offwhite;
+  border: solid 1px $brand-offwhite;
 }
 
 th {
   text-align: left;
   font-weight: bold;
-  font-color: $text-color-secondary;
   text-transform: uppercase;
   letter-spacing: .5px;
   font-size: .875em;
   padding: 10px 20px;
   background-color: $brand-offwhite;
-  border-right: solid 1px $brand-almostwhite;
-  
-  &:last-child {
-    border-right-color: $brand-offwhite;
+  border-top: solid 1px $brand-almostwhite;
+}
+
+td, th {
+  &.hide {
+    border: none;
+    background-color: transparent !important;
   }
 }
