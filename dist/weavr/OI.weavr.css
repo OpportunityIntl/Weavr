@@ -302,6 +302,10 @@ button.reset {
             transform: rotate(360deg);
   }
 }
+.responsive-table {
+  overflow-x: auto;
+}
+
 table {
   border-collapse: collapse;
   width: 100%;

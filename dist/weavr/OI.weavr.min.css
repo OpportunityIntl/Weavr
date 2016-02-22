@@ -118,6 +118,8 @@ button.reset { padding: 0; background: none; border: none; outline: none; cursor
 @-webkit-keyframes loading-spinner { to { -webkit-transform: rotate(360deg); transform: rotate(360deg); } }
 
 @keyframes loading-spinner { to { -webkit-transform: rotate(360deg); transform: rotate(360deg); } }
+.responsive-table { overflow-x: auto; }
+
 table { border-collapse: collapse; width: 100%; }
 
 thead th { border-right: solid 1px #f9f8f5; }

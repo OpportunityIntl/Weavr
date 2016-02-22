@@ -346,6 +346,9 @@
             transform: rotate(360deg);
   }
 }
+.redactor-editor .responsive-table {
+  overflow-x: auto;
+}
 .redactor-editor table {
   border-collapse: collapse;
   width: 100%;
