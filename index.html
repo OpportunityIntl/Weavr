@@ -140,6 +140,12 @@
           </li>
           <li>
             <strong data-href="tables">Tables</strong>
+            <ul>
+              <li data-href="table-simple">Simple table</li>
+              <li data-href="table-header">Table with header</li>
+              <li data-href="table-footer">Table with footer</li>
+              <li data-href="table-complex">Complex table</li>
+            </ul>
           </li>
           <li>
             <strong data-href="typography">Typography</strong>
@@ -878,75 +884,498 @@
         <section id="tables">
           <h2 class="brand-teal">Tables</h2>
           
-          <table>
-            <tr>
-              <th>
-                Column 1
-              </th>
-              <th>
-                Column 2
-              </th>
-              <th>
-                Column 3
-              </th>
-              <th>
-                Column 4
-              </th>
-            </tr>
-            <tr>
-              <td>
-                Datum 1
-              </td>
-              <td>
-                Datum 2
-              </td>
-              <td>
-                Datum 3
-              </td>
-              <td>
-                Datum 4
-              </td>
-            </tr>
-            <tr>
-              <td>
-                Datum 5
-              </td>
-              <td>
-                Datum 6
-              </td>
-              <td>
-                Datum 7
-              </td>
-              <td>
-                Datum 8
-              </td>
-            </tr>
-            <tr>
-              <td>
-                Datum 9
-              </td>
-              <td>
-                Datum 10
-              </td>
-              <td>
-                Datum 11
-              </td>
-              <td>
-                Datum 12
-              </td>
-            </tr>
-            <tr>
-              <td>
-                Datum 13
-              </td>
-              <td>
-                Datum 14
-              </td>
-              <td>
-                Datum 15
-              </td>
-            </tr>
-          </table>
+          <h3 id="table-simple">Simple table</h3>
+          <div class="responsive-table">
+            <table>
+              <tr>
+                <td>
+                  Datum 1
+                </td>
+                <td>
+                  Datum 2
+                </td>
+                <td>
+                  Datum 3
+                </td>
+                <td>
+                  Datum 4
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Datum 5
+                </td>
+                <td>
+                  Datum 6
+                </td>
+                <td>
+                  Datum 7
+                </td>
+                <td>
+                  Datum 8
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Datum 9
+                </td>
+                <td>
+                  Datum 10
+                </td>
+                <td>
+                  Datum 11
+                </td>
+                <td>
+                  Datum 12
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Datum 13
+                </td>
+                <td>
+                  Datum 14
+                </td>
+                <td>
+                  Datum 15
+                </td>
+              </tr>
+            </table>
+          </div>
+          
+          <h3 id="table-header">Table with header</h3>
+          <div class="responsive-table">
+            <table>
+              <thead>
+                <tr>
+                  <th>
+                    Heading 1
+                  </th>
+                  <th>
+                    Heading 2
+                  </th>
+                  <th>
+                    Heading 3
+                  </th>
+                  <th>
+                    Heading 4
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    Datum 1
+                  </td>
+                  <td>
+                    Datum 2
+                  </td>
+                  <td>
+                    Datum 3
+                  </td>
+                  <td>
+                    Datum 4
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    Datum 5
+                  </td>
+                  <td>
+                    Datum 6
+                  </td>
+                  <td>
+                    Datum 7
+                  </td>
+                  <td>
+                    Datum 8
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    Datum 9
+                  </td>
+                  <td>
+                    Datum 10
+                  </td>
+                  <td>
+                    Datum 11
+                  </td>
+                  <td>
+                    Datum 12
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          
+          <h3 id="table-footer">Table with footer</h3>
+          <div class="responsive-table">
+            <table>
+              <thead>
+                <tr>
+                  <th>
+                    Heading 1
+                  </th>
+                  <th>
+                    Heading 2
+                  </th>
+                  <th>
+                    Heading 3
+                  </th>
+                  <th>
+                    Heading 4
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    Datum 1
+                  </td>
+                  <td>
+                    Datum 2
+                  </td>
+                  <td>
+                    Datum 3
+                  </td>
+                  <td>
+                    Datum 4
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    Datum 5
+                  </td>
+                  <td>
+                    Datum 6
+                  </td>
+                  <td>
+                    Datum 7
+                  </td>
+                  <td>
+                    Datum 8
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    Datum 9
+                  </td>
+                  <td>
+                    Datum 10
+                  </td>
+                  <td>
+                    Datum 11
+                  </td>
+                  <td>
+                    Datum 12
+                  </td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <td>
+                    Footer 1
+                  </td>
+                  <td>
+                    Footer 2
+                  </td>
+                  <td>
+                    Footer 3
+                  </td>
+                  <td>
+                    Footer 4
+                  </td>
+                </tr>
+              </tfoot>
+            </table>
+          </div>
+          
+          <h3 id="table-complex">Complex table</h3>
+          <p>
+            Has hidden cells, row headings, multiple rows in the table header,
+            a table footer, and row separators.
+          </p>
+          <div class="responsive-table">
+            <table>
+              <thead>
+                <tr>
+                	<th class="hide"></th>
+                	<th colspan="2">Loan Clients
+                	</th>
+                	<th colspan="2">Deposit Clients
+                	</th>
+                </tr>
+                <tr>
+                	<th class="hide"></th>
+                	<th>2013
+                	</th>
+                	<th>2014
+                	</th>
+                	<th>2013
+                	</th>
+                	<th>2014
+                	</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                	<th>DR Congo
+                	</th>
+                	<td class="align-right">9,059
+                	</td>
+                	<td class="align-right">5,399
+                	</td>
+                	<td class="align-right">-
+                	</td>
+                	<td class="align-right">3,534
+                	</td>
+                </tr>
+                <tr>
+                	<th>Ghana
+                	</th>
+                	<td class="align-right">194,600
+                	</td>
+                	<td class="align-right">210,821
+                	</td>
+                	<td class="align-right">459,515
+                	</td>
+                	<td class="align-right">534,002
+                	</td>
+                </tr>
+                <tr>
+                	<th>Kenya
+                	</th>
+                	<td class="align-right">11,281
+                	</td>
+                	<td class="align-right">10,875
+                	</td>
+                	<td class="align-right">-
+                	</td>
+                	<td class="align-right">-
+                	</td>
+                </tr>
+                <tr>
+                	<th>Malawi
+                	</th>
+                	<td class="align-right">59,710
+                	</td>
+                	<td class="align-right">48,032
+                	</td>
+                	<td class="align-right">483,590
+                	</td>
+                	<td class="align-right">668,459
+                	</td>
+                </tr>
+                <tr>
+                	<th>Mozambique
+                	</th>
+                	<td class="align-right">11,020
+                	</td>
+                	<td class="align-right">10,733
+                	</td>
+                	<td class="align-right">64,051
+                	</td>
+                	<td class="align-right">72,571
+                	</td>
+                </tr>
+                <tr>
+                	<th>Rwanda
+                	</th>
+                	<td class="align-right">39,038
+                	</td>
+                	<td class="align-right">34,121
+                	</td>
+                	<td class="align-right">115,599
+                	</td>
+                	<td class="align-right">175,421
+                	</td>
+                </tr>
+                <tr>
+                	<th>Tanzania
+                	</th>
+                	<td class="align-right">9,312
+                	</td>
+                	<td class="align-right">5,594
+                	</td>
+                	<td class="align-right">-
+                	</td>
+                	<td class="align-right">-
+                	</td>
+                </tr>
+                <tr>
+                	<th>Uganda
+                	</th>
+                	<td class="align-right">27,117
+                	</td>
+                	<td class="align-right">28,982
+                	</td>
+                	<td class="align-right">87,574
+                	</td>
+                	<td class="align-right">80,484
+                	</td>
+                </tr>
+                <tr class="section-separator">
+                	<th>Colombia
+                	</th>
+                	<td class="align-right">11,052
+                	</td>
+                	<td class="align-right">10,203
+                	</td>
+                	<td class="align-right">16,795
+                	</td>
+                	<td class="align-right">25,816
+                	</td>
+                </tr>
+                <tr>
+                	<th>Dominican Republic
+                	</th>
+                	<td class="align-right">17,532
+                	</td>
+                	<td class="align-right">24,033
+                	</td>
+                	<td class="align-right">-
+                	</td>
+                	<td class="align-right">37,646
+                	</td>
+                </tr>
+                <tr>
+                	<th>Honduras
+                	</th>
+                	<td class="align-right">9,451
+                	</td>
+                	<td class="align-right">7,877
+                	</td>
+                	<td class="align-right">-
+                	</td>
+                	<td class="align-right">-
+                	</td>
+                </tr>
+                <tr>
+                	<th>Nicaragua
+                	</th>
+                	<td class="align-right">17,531
+                	</td>
+                	<td class="align-right">14,107
+                	</td>
+                	<td class="align-right">-
+                	</td>
+                	<td class="align-right">-
+                	</td>
+                </tr>
+                <tr>
+                	<th>Peru
+                	</th>
+                	<td class="align-right">2,216
+                	</td>
+                	<td class="align-right">2,566
+                	</td>
+                	<td class="align-right">-
+                	</td>
+                	<td class="align-right">-
+                	</td>
+                </tr>
+                <tr class="section-separator">
+                	<th>Macedonia
+                	</th>
+                	<td class="align-right">6,823
+                	</td>
+                	<td class="align-right">6,921
+                	</td>
+                	<td class="align-right">8,438<br>
+                	</td>
+                	<td class="align-right">23,526
+                	</td>
+                </tr>
+                <tr>
+                	<th>Romania
+                	</th>
+                	<td class="align-right">1,965
+                	</td>
+                	<td class="align-right">1,713
+                	</td>
+                	<td class="align-right">-
+                	</td>
+                	<td class="align-right">-
+                	</td>
+                </tr>
+                <tr>
+                	<th>Serbia
+                	</th>
+                	<td class="align-right">20,520
+                	</td>
+                	<td class="align-right">27,824
+                	</td>
+                	<td class="align-right">23,915<br>
+                	</td>
+                	<td class="align-right">31,485
+                	</td>
+                </tr>
+                <tr class="section-separator">
+                	<th>China
+                	</th>
+                	<td class="align-right">872
+                	</td>
+                	<td class="align-right">1,001
+                	</td>
+                	<td class="align-right">-
+                	</td>
+                	<td class="align-right">-
+                	</td>
+                </tr>
+                <tr>
+                	<th>India
+                	</th>
+                	<td class="align-right">1,751,077
+                	</td>
+                	<td class="align-right">2,057,439
+                	</td>
+                	<td class="align-right">-
+                	</td>
+                	<td class="align-right">2,166,454
+                	</td>
+                </tr>
+                <tr>
+                	<th>Indonesia
+                	</th>
+                	<td class="align-right">31,622
+                	</td>
+                	<td class="align-right">343,202
+                	</td>
+                	<td class="align-right">40,656
+                	</td>
+                	<td class="align-right">250,351
+                	</td>
+                </tr>
+                <tr>
+                	<th>Philippines
+                	</th>
+                	<td class="align-right">661,808
+                	</td>
+                	<td class="align-right">596,586
+                	</td>
+                	<td class="align-right">58,440
+                	</td>
+                	<td class="align-right">52,467
+                	</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                	<th>Global
+                	</th>
+                	<td class="align-right"><strong>2,893,6060</strong>
+                	</td>
+                	<td class="align-right"><strong>3,448,029</strong>
+                	</td>
+                	<td class="align-right"><strong>1,358,573</strong>
+                	</td>
+                	<td class="align-right"><strong>4,122,216</strong>
+                	</td>
+                </tr>
+              </tfoot>
+            </table>
+          </div>
         </section>
         
         <section id="typography">
