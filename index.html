@@ -155,6 +155,7 @@
               <li data-href="blockquotes">Blockquotes</li>
               <li data-href="body-copy-and-asides">Body Copy and Asides</li>
               <li data-href="alignment">Alignment</li>
+              <li data-href="transformation">Transformation</li>
               <li data-href="everything-together">Everything together</li>
             </ul>
           </li>
@@ -1400,6 +1401,29 @@
             <p class="align-right">
               This paragraph is right-aligned with <code>.align-right</code>.
             </p>
+          </div>
+          
+          <h3 id="transformation">Transformation</h3>
+          <p>
+            Text can be transformed to <span class="transform-uppercase">uppercase</span>
+            with <code>.transform-uppercase</code>. For elements that are already
+            styled with the CSS <code>text-transform</code> property (such as headings
+            <code>&lt;h1&gt;</code>-<code>&lt;h3&gt;</code>),
+            they can be reset with <code>.transform-normal</code>. For example:
+          </p>
+          <div class="row large-gutter">
+            <div class="col col-6 t-col-6 m-col-6">
+              <div class="bordered padding-2x">
+                <h2>Look at this heading</h2>
+                <code>&lt;h2&gt;</code>
+              </div>
+            </div>
+            <div class="col col-6 t-col-6 m-col-6">
+              <div class="bordered padding-2x">
+                <h2 class="transform-normal">Look at this heading</h2>
+                <code>&lt;h2 class="transform-normal"&gt;</code>
+              </div>
+            </div>
           </div>
           
           <h3 id="everything-together">Everything together</h3>
