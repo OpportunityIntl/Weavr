@@ -118,20 +118,34 @@ button.reset { padding: 0; background: none; border: none; outline: none; cursor
 @-webkit-keyframes loading-spinner { to { -webkit-transform: rotate(360deg); transform: rotate(360deg); } }
 
 @keyframes loading-spinner { to { -webkit-transform: rotate(360deg); transform: rotate(360deg); } }
-table { border: solid 1px #efeeea; border-collapse: collapse; width: 100%; }
+.responsive-table { overflow-x: auto; }
 
-tr { border-bottom: solid 1px #efeeea; }
-tr:nth-child(odd) { background-color: #f9f8f5; }
+table { border-collapse: collapse; width: 100%; }
+
+thead th { border-right: solid 1px #f9f8f5; }
+thead th:last-child { border-right-color: #efeeea; }
+
+thead + tbody tr:nth-child(even) { background-color: #f9f8f5; }
+thead + tbody tr:nth-child(odd) { background-color: inherit; }
+
+tbody tr:nth-child(odd) { background-color: #f9f8f5; }
+tbody tr:last-child th { border-bottom-color: #efeeea; }
+
+tfoot { border-top: solid 4px #8f8e8c; }
+
+tr:first-child th { border-top: none; }
+tr.section-separator td, tr.section-separator th { border-top-width: 4px; }
 tr.brand-purple-bg td, tr.brand-purple-bg th { background-color: #4a0059; }
 tr.brand-teal-bg td, tr.brand-teal-bg th { background-color: #00abab; }
 tr.brand-pink-bg td, tr.brand-pink-bg th { background-color: #ed027e; }
 tr.brand-orange-bg td, tr.brand-orange-bg th { background-color: #f15b22; }
 tr.brand-darkgray-bg td, tr.brand-darkgray-bg th { background-color: #222; }
 
-td { padding: 10px 20px; border-right: solid 1px #efeeea; }
+td { padding: 10px 20px; border: solid 1px #efeeea; }
 
-th { text-align: left; font-weight: bold; font-color: #555; text-transform: uppercase; letter-spacing: .5px; font-size: .875em; padding: 10px 20px; background-color: #efeeea; border-right: solid 1px #f9f8f5; }
-th:last-child { border-right-color: #efeeea; }
+th { text-align: left; font-weight: bold; text-transform: uppercase; letter-spacing: .5px; font-size: .875em; padding: 10px 20px; background-color: #efeeea; border-top: solid 1px #f9f8f5; }
+
+td.hide, th.hide { border: none; background-color: transparent !important; }
 
 .brand-pink-bg { background-color: #ed027e; color: #fff; }
 
