@@ -757,15 +757,7 @@
 .redactor-editor blockquote + blockquote:before {
   top: -5px;
 }
-.redactor-editor .brand-purple-bg blockquote,
-.redactor-editor .brand-light-purple-bg blockquote,
-.redactor-editor .brand-pink-bg blockquote,
-.redactor-editor .brand-teal-bg blockquote,
-.redactor-editor .brand-light-teal-bg blockquote,
-.redactor-editor .brand-orange-bg blockquote,
-.redactor-editor .brand-green-bg blockquote,
-.redactor-editor .brand-darkgray-bg blockquote,
-.redactor-editor .brand-gray-bg blockquote {
+.redactor-editor [class*='brand-'][class*='-bg']:not(.brand-offwhite-bg):not(.brand-white-bg) blockquote {
   color: #fff;
 }
 .redactor-editor .brand-purple-bg blockquote:before {
@@ -1101,80 +1093,80 @@
 .redactor-editor .inline-form .select select {
   padding-right: 1.875em;
 }
-.redactor-editor [class*='brand'][class*='bg']:not(.brand-offwhite-bg) label {
+.redactor-editor [class*='brand'][class*='bg']:not(.brand-offwhite-bg):not(.brand-white-bg) label {
   color: inherit;
   opacity: .7;
 }
-.redactor-editor [class*='brand'][class*='bg']:not(.brand-offwhite-bg) input[type='text'], .redactor-editor [class*='brand'][class*='bg']:not(.brand-offwhite-bg) input[type='number'], .redactor-editor [class*='brand'][class*='bg']:not(.brand-offwhite-bg) input[type='email'], .redactor-editor [class*='brand'][class*='bg']:not(.brand-offwhite-bg) input[type='password'], .redactor-editor [class*='brand'][class*='bg']:not(.brand-offwhite-bg) input[type='phone'], .redactor-editor [class*='brand'][class*='bg']:not(.brand-offwhite-bg) textarea {
+.redactor-editor [class*='brand'][class*='bg']:not(.brand-offwhite-bg):not(.brand-white-bg) input[type='text'], .redactor-editor [class*='brand'][class*='bg']:not(.brand-offwhite-bg):not(.brand-white-bg) input[type='number'], .redactor-editor [class*='brand'][class*='bg']:not(.brand-offwhite-bg):not(.brand-white-bg) input[type='email'], .redactor-editor [class*='brand'][class*='bg']:not(.brand-offwhite-bg):not(.brand-white-bg) input[type='password'], .redactor-editor [class*='brand'][class*='bg']:not(.brand-offwhite-bg):not(.brand-white-bg) input[type='phone'], .redactor-editor [class*='brand'][class*='bg']:not(.brand-offwhite-bg):not(.brand-white-bg) textarea {
   border-color: #fff;
 }
-.redactor-editor [class*='brand'][class*='bg']:not(.brand-offwhite-bg) label.radio, .redactor-editor [class*='brand'][class*='bg']:not(.brand-offwhite-bg) label.checkbox {
+.redactor-editor [class*='brand'][class*='bg']:not(.brand-offwhite-bg):not(.brand-white-bg) label.radio, .redactor-editor [class*='brand'][class*='bg']:not(.brand-offwhite-bg):not(.brand-white-bg) label.checkbox {
   color: inherit;
   opacity: .7;
 }
-.redactor-editor [class*='brand'][class*='bg']:not(.brand-offwhite-bg) label.radio:before, .redactor-editor [class*='brand'][class*='bg']:not(.brand-offwhite-bg) label.checkbox:before {
+.redactor-editor [class*='brand'][class*='bg']:not(.brand-offwhite-bg):not(.brand-white-bg) label.radio:before, .redactor-editor [class*='brand'][class*='bg']:not(.brand-offwhite-bg):not(.brand-white-bg) label.checkbox:before {
   border-color: inherit;
 }
-.redactor-editor [class*='brand'][class*='bg']:not(.brand-offwhite-bg) label.radio:hover, .redactor-editor [class*='brand'][class*='bg']:not(.brand-offwhite-bg) label.checkbox:hover {
+.redactor-editor [class*='brand'][class*='bg']:not(.brand-offwhite-bg):not(.brand-white-bg) label.radio:hover, .redactor-editor [class*='brand'][class*='bg']:not(.brand-offwhite-bg):not(.brand-white-bg) label.checkbox:hover {
   color: inherit;
   opacity: 1;
 }
-.redactor-editor [class*='brand'][class*='bg']:not(.brand-offwhite-bg) label.radio:hover:before, .redactor-editor [class*='brand'][class*='bg']:not(.brand-offwhite-bg) label.checkbox:hover:before {
+.redactor-editor [class*='brand'][class*='bg']:not(.brand-offwhite-bg):not(.brand-white-bg) label.radio:hover:before, .redactor-editor [class*='brand'][class*='bg']:not(.brand-offwhite-bg):not(.brand-white-bg) label.checkbox:hover:before {
   border-color: inherit;
 }
-.redactor-editor [class*='brand'][class*='bg']:not(.brand-offwhite-bg) input[type="radio"]:checked + label.radio {
+.redactor-editor [class*='brand'][class*='bg']:not(.brand-offwhite-bg):not(.brand-white-bg) input[type="radio"]:checked + label.radio {
   color: inherit;
   opacity: 1;
 }
-.redactor-editor [class*='brand'][class*='bg']:not(.brand-offwhite-bg) input[type="radio"]:checked + label.radio:before {
+.redactor-editor [class*='brand'][class*='bg']:not(.brand-offwhite-bg):not(.brand-white-bg) input[type="radio"]:checked + label.radio:before {
   background-color: #fff;
   border-color: inherit;
 }
-.redactor-editor [class*='brand'][class*='bg']:not(.brand-offwhite-bg) input[type="checkbox"]:checked + label.checkbox {
+.redactor-editor [class*='brand'][class*='bg']:not(.brand-offwhite-bg):not(.brand-white-bg) input[type="checkbox"]:checked + label.checkbox {
   color: inherit;
   opacity: 1;
 }
-.redactor-editor [class*='brand'][class*='bg']:not(.brand-offwhite-bg) input[type="checkbox"]:checked + label.checkbox:before {
+.redactor-editor [class*='brand'][class*='bg']:not(.brand-offwhite-bg):not(.brand-white-bg) input[type="checkbox"]:checked + label.checkbox:before {
   color: inherit;
   border-color: inherit;
 }
-.redactor-editor [class*='brand'][class*='bg']:not(.brand-offwhite-bg) .select {
+.redactor-editor [class*='brand'][class*='bg']:not(.brand-offwhite-bg):not(.brand-white-bg) .select {
   border-color: inherit;
 }
-.redactor-editor [class*='brand'][class*='bg']:not(.brand-offwhite-bg) .brand-white-bg input[type='text'], .redactor-editor [class*='brand'][class*='bg']:not(.brand-offwhite-bg) .brand-white-bg input[type='number'], .redactor-editor [class*='brand'][class*='bg']:not(.brand-offwhite-bg) .brand-white-bg input[type='email'], .redactor-editor [class*='brand'][class*='bg']:not(.brand-offwhite-bg) .brand-white-bg input[type='password'], .redactor-editor [class*='brand'][class*='bg']:not(.brand-offwhite-bg) .brand-white-bg input[type='phone'], .redactor-editor [class*='brand'][class*='bg']:not(.brand-offwhite-bg) .brand-white-bg textarea {
+.redactor-editor [class*='brand'][class*='bg']:not(.brand-offwhite-bg):not(.brand-white-bg) .brand-white-bg input[type='text'], .redactor-editor [class*='brand'][class*='bg']:not(.brand-offwhite-bg):not(.brand-white-bg) .brand-white-bg input[type='number'], .redactor-editor [class*='brand'][class*='bg']:not(.brand-offwhite-bg):not(.brand-white-bg) .brand-white-bg input[type='email'], .redactor-editor [class*='brand'][class*='bg']:not(.brand-offwhite-bg):not(.brand-white-bg) .brand-white-bg input[type='password'], .redactor-editor [class*='brand'][class*='bg']:not(.brand-offwhite-bg):not(.brand-white-bg) .brand-white-bg input[type='phone'], .redactor-editor [class*='brand'][class*='bg']:not(.brand-offwhite-bg):not(.brand-white-bg) .brand-white-bg textarea {
   border-color: #8f8e8c;
 }
-.redactor-editor [class*='brand'][class*='bg']:not(.brand-offwhite-bg) .brand-white-bg input[type='text']:focus, .redactor-editor [class*='brand'][class*='bg']:not(.brand-offwhite-bg) .brand-white-bg input[type='number']:focus, .redactor-editor [class*='brand'][class*='bg']:not(.brand-offwhite-bg) .brand-white-bg input[type='email']:focus, .redactor-editor [class*='brand'][class*='bg']:not(.brand-offwhite-bg) .brand-white-bg input[type='password']:focus, .redactor-editor [class*='brand'][class*='bg']:not(.brand-offwhite-bg) .brand-white-bg input[type='phone']:focus, .redactor-editor [class*='brand'][class*='bg']:not(.brand-offwhite-bg) .brand-white-bg textarea:focus {
+.redactor-editor [class*='brand'][class*='bg']:not(.brand-offwhite-bg):not(.brand-white-bg) .brand-white-bg input[type='text']:focus, .redactor-editor [class*='brand'][class*='bg']:not(.brand-offwhite-bg):not(.brand-white-bg) .brand-white-bg input[type='number']:focus, .redactor-editor [class*='brand'][class*='bg']:not(.brand-offwhite-bg):not(.brand-white-bg) .brand-white-bg input[type='email']:focus, .redactor-editor [class*='brand'][class*='bg']:not(.brand-offwhite-bg):not(.brand-white-bg) .brand-white-bg input[type='password']:focus, .redactor-editor [class*='brand'][class*='bg']:not(.brand-offwhite-bg):not(.brand-white-bg) .brand-white-bg input[type='phone']:focus, .redactor-editor [class*='brand'][class*='bg']:not(.brand-offwhite-bg):not(.brand-white-bg) .brand-white-bg textarea:focus {
   border-color: #555;
 }
-.redactor-editor [class*='brand'][class*='bg']:not(.brand-offwhite-bg) .brand-white-bg .select {
+.redactor-editor [class*='brand'][class*='bg']:not(.brand-offwhite-bg):not(.brand-white-bg) .brand-white-bg .select {
   border-color: #8f8e8c;
 }
-.redactor-editor [class*='brand'][class*='bg']:not(.brand-offwhite-bg) .brand-white-bg .select.focus {
+.redactor-editor [class*='brand'][class*='bg']:not(.brand-offwhite-bg):not(.brand-white-bg) .brand-white-bg .select.focus {
   border-color: #555;
 }
-.redactor-editor [class*='brand'][class*='bg']:not(.brand-offwhite-bg) .brand-white-bg label.radio, .redactor-editor [class*='brand'][class*='bg']:not(.brand-offwhite-bg) .brand-white-bg label.checkbox {
+.redactor-editor [class*='brand'][class*='bg']:not(.brand-offwhite-bg):not(.brand-white-bg) .brand-white-bg label.radio, .redactor-editor [class*='brand'][class*='bg']:not(.brand-offwhite-bg):not(.brand-white-bg) .brand-white-bg label.checkbox {
   color: #8f8e8c;
   opacity: 1;
 }
-.redactor-editor [class*='brand'][class*='bg']:not(.brand-offwhite-bg) .brand-white-bg label.radio:before, .redactor-editor [class*='brand'][class*='bg']:not(.brand-offwhite-bg) .brand-white-bg label.checkbox:before {
+.redactor-editor [class*='brand'][class*='bg']:not(.brand-offwhite-bg):not(.brand-white-bg) .brand-white-bg label.radio:before, .redactor-editor [class*='brand'][class*='bg']:not(.brand-offwhite-bg):not(.brand-white-bg) .brand-white-bg label.checkbox:before {
   border-color: #8f8e8c;
 }
-.redactor-editor [class*='brand'][class*='bg']:not(.brand-offwhite-bg) .brand-white-bg label.radio:hover, .redactor-editor [class*='brand'][class*='bg']:not(.brand-offwhite-bg) .brand-white-bg label.checkbox:hover {
+.redactor-editor [class*='brand'][class*='bg']:not(.brand-offwhite-bg):not(.brand-white-bg) .brand-white-bg label.radio:hover, .redactor-editor [class*='brand'][class*='bg']:not(.brand-offwhite-bg):not(.brand-white-bg) .brand-white-bg label.checkbox:hover {
   color: inherit;
 }
-.redactor-editor [class*='brand'][class*='bg']:not(.brand-offwhite-bg) .brand-white-bg input[type="radio"]:checked + label.radio {
+.redactor-editor [class*='brand'][class*='bg']:not(.brand-offwhite-bg):not(.brand-white-bg) .brand-white-bg input[type="radio"]:checked + label.radio {
   color: #ed027e;
 }
-.redactor-editor [class*='brand'][class*='bg']:not(.brand-offwhite-bg) .brand-white-bg input[type="radio"]:checked + label.radio:before {
+.redactor-editor [class*='brand'][class*='bg']:not(.brand-offwhite-bg):not(.brand-white-bg) .brand-white-bg input[type="radio"]:checked + label.radio:before {
   background: #ed027e;
   border-color: #ed027e;
 }
-.redactor-editor [class*='brand'][class*='bg']:not(.brand-offwhite-bg) .brand-white-bg input[type="checkbox"]:checked + label.checkbox {
+.redactor-editor [class*='brand'][class*='bg']:not(.brand-offwhite-bg):not(.brand-white-bg) .brand-white-bg input[type="checkbox"]:checked + label.checkbox {
   color: inherit;
   opacity: 1;
 }
-.redactor-editor [class*='brand'][class*='bg']:not(.brand-offwhite-bg) .brand-white-bg input[type="checkbox"]:checked + label.checkbox:before {
+.redactor-editor [class*='brand'][class*='bg']:not(.brand-offwhite-bg):not(.brand-white-bg) .brand-white-bg input[type="checkbox"]:checked + label.checkbox:before {
   color: #ed027e;
   border-color: #ed027e;
 }

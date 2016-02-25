@@ -137,7 +137,7 @@ fieldset {
   }
 }
 
-[class*='brand'][class*='bg']:not(.brand-offwhite-bg) { // all background colors other than offwhite
+[class*='brand'][class*='bg']:not(.brand-offwhite-bg):not(.brand-white-bg) { // all background colors other than offwhite
   label {
     color: inherit;
     opacity: .7;

@@ -380,16 +380,8 @@ blockquote + blockquote {
   }
 }
 
-.brand-purple-bg,
-.brand-light-purple-bg,
-.brand-pink-bg,
-.brand-teal-bg,
-.brand-light-teal-bg,
-.brand-orange-bg,
-.brand-green-bg,
-.brand-darkgray-bg,
-.brand-gray-bg {
-  blockquote {
+[class*='brand-'][class*='-bg']:not(.brand-offwhite-bg):not(.brand-white-bg) {
+    blockquote {
     color: #fff;
   }
 }
