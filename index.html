@@ -7,6 +7,7 @@
     <title>The Weavr Kitchen Sink</title>
     
     <link rel="stylesheet" href="dist/weavr/OI.weavr.css">
+    <link rel="stylesheet" href="demo/OI.modal.min.css">
     
     <script type="text/javascript" src="//use.typekit.net/owg8owx.js"></script>
     <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
@@ -209,6 +210,8 @@
           </li>
           <li><strong data-href="tooltips">Tooltips</strong></li>
           <li><strong data-href="loading-indicator">Loading Indicator</strong></li>
+          <li><strong data-href="modals">Modals</strong></li>
+          <li><strong data-href="offcanvas">Off-Canvas Menus</strong></li>
           <li>
             <strong data-href="icons">Icons</strong>
             <ul>
@@ -3106,6 +3109,32 @@
           </div>
         </section>
         
+        <section id="modals">
+          <h2 class="brand-teal">Modals</h2>
+          <p>
+            The lightweight OI Modals library provides responsive modals built
+            on the Weavr framework. <a href="http://opportunityintl.github.io/OI-Modals" target="_blank">Check out the demo</a>
+            or <a href="https://github.com/opportunityintl/OI-Modals">read the documentation</a>
+            for more options and details.
+          </p>
+          <p class="align-center inline-buttons">
+            <a class="btn brand-teal-bg" data-modal="#modal-small">Normal Modal</a>
+            <a class="btn brand-green-bg" data-modal="#modal-medium">Medium Modal</a>
+            <a class="btn brand-orange-bg" data-modal="#modal-large">Large Modal</a>
+            <a class="btn brand-purple-bg" data-modal="#modal-x-large">X-large Modal</a>
+          </p>
+        </section>
+        
+        <section id="offcanvas">
+          <h2 class="brand-teal">Off-canvas Menus</h2>
+          <p>
+            The OI OffCanvas library provides offcanvas menus built on the Weavr
+            framework. <a href="https://github.com/opportunityintl/OI-OffCanvas">Check out the repo</a>
+            in GitHub for more options and details.
+          </p>
+          <iframe src="http://opportunityintl.github.io/OI-OffCanvas" width="100%" height="600" style="border: solid 1px #efeeea;"></iframe>
+        </section>
+        
         <section id="icons">
           <h2 class="brand-teal">Icons</h2>
           
@@ -3433,8 +3462,95 @@
       </div>
     </footer>
     
+    <div class="modal" id="modal-small">
+    <div class="modal-container">
+      <button type="button" class="reset icon-cross close"></button>
+      <div class="modal-content">
+        <div>
+          <img src="http://placehold.it/400x200" class="block">
+        </div>
+        <div class="padding-2x">
+          <h2 class="align-center">This is a normal modal</h2>
+          <p>
+            Intelligentsia quinoa you probably haven't heard of them four dollar toast. You probably haven't heard of them aesthetic polaroid lumbersexual, fanny pack Truffaut next level lo-fi paleo post-ironic viral ennui pug.
+          </p>
+          <p class="align-center">
+            <a class="btn brand-teal-bg">Check out this button</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal" id="modal-medium">
+    <div class="modal-container contained-6">
+      <button type="button" class="reset icon-cross close"></button>
+      <div class="modal-content">
+        <div>
+          <img src="http://placehold.it/630x315" class="block">
+        </div>
+        <div class="padding-2x">
+          <h2 class="align-center">This is a medium modal</h2>
+          <p>
+            Intelligentsia quinoa you probably haven't heard of them four dollar toast. You probably haven't heard of them aesthetic polaroid lumbersexual, fanny pack Truffaut next level lo-fi paleo post-ironic viral ennui pug.
+          </p>
+          <p class="align-center">
+            <a class="btn brand-green-bg">Check out this button</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal" id="modal-large">
+    <div class="modal-container contained-9">
+      <button type="button" class="reset icon-cross close"></button>
+      <div class="modal-content">
+        <div>
+          <img src="http://placehold.it/945x420" class="block">
+        </div>
+        <div class="padding-2x">
+          <h2 class="align-center">This is a large modal</h2>
+          <p>
+            Intelligentsia quinoa you probably haven't heard of them four dollar toast. You probably haven't heard of them aesthetic polaroid lumbersexual, fanny pack Truffaut next level lo-fi paleo post-ironic viral ennui pug.
+          </p>
+          <p class="align-center">
+            <a class="btn brand-orange-bg">Check out this button</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal" id="modal-x-large">
+    <div class="modal-container contained-12">
+      <button type="button" class="reset icon-cross close"></button>
+      <div class="modal-content">
+        <div>
+          <img src="http://placehold.it/1260x525" class="block">
+        </div>
+        <div class="padding-2x">
+          <h2 class="large align-center brand-teal">This is an extra large modal</h2>
+          <div class="row large-gutter">
+            <div class="col col-6 t-col-12 m-col-12">
+              <p>
+                Intelligentsia quinoa you probably haven't heard of them four dollar toast. You probably haven't heard of them aesthetic polaroid lumbersexual, fanny pack Truffaut next level lo-fi paleo post-ironic viral ennui pug.
+              </p>
+            </div>
+            <div class="col col-6 t-col-12 m-col-12">
+              <p>
+                Brooklyn sriracha stumptown pour-over authentic. Sriracha food truck Tumblr four dollar toast migas Schlitz crucifix, gentrify chia trust fund twee. Actually Echo Park cliche, beard cronut salvia twee swag.
+              </p>
+            </div>
+          </div>
+          <p class="align-center">
+            <a class="btn brand-purple-bg">Check out this button</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script type="text/javascript" src="dist/weavr/OI.weavr.min.js"></script>
+    <script type="text/javascript" src="demo/OI.modal.min.js"></script>
     
     <!--[if lte IE 9]>
       <script type="text/javascript" src="dist/weavr/OI.placeholder.min.js"></script>
@@ -3443,6 +3559,9 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.0/jquery.scrollTo.min.js"></script>
     
     <script type="text/javascript">
+      // automatically set up triggers for elements with data-modal attribute
+      $('[data-modal]').modal();
+    
       $('form').submit(function() {
         return false;
       });
