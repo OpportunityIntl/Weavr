@@ -137,19 +137,14 @@ fieldset {
   }
 }
 
-.brand-green-bg,
-.brand-purple-bg,
-.brand-orange-bg,
-.brand-teal-bg,
-.brand-pink-bg,
-.brand-darkgray-bg {
+[class*='brand'][class*='bg']:not(.brand-offwhite-bg) { // all background colors other than offwhite
   label {
     color: inherit;
     opacity: .7;
   }
   
   input[type='text'], input[type='number'], input[type='email'], input[type='password'], input[type='phone'], textarea {
-    border-color: inherit;
+    border-color: #fff; // would like to use 'inherit' here, but a bug in Chrome prevents that from working correctly
   }
   
   label.radio, label.checkbox {
@@ -176,7 +171,7 @@ fieldset {
       opacity: 1;
       
       &:before {
-        background: inherit;
+        background-color: #fff;
         border-color: inherit;
       }
     }
@@ -230,7 +225,7 @@ fieldset {
     
     input[type="radio"] {
       &:checked + label.radio {
-        color: inherit;
+        color: $brand-pink;
         
         &:before {
           background: $brand-pink;
