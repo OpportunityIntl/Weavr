@@ -1,0 +1,50 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    
+    <title>Weavr | {{ page.title }}</title>
+    
+    <link rel="stylesheet" href="{{site.baseurl}}/dist/weavr/OI.weavr.css">
+    <link rel="stylesheet" href="{{site.baseurl}}/css/OI.modal.min.css">
+    <link rel="stylesheet" href="{{site.baseurl}}/css/kitchensink.css">
+    
+    <script type="text/javascript" src="//use.typekit.net/owg8owx.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+    
+    
+  </head>
+  <body>
+    {{ content }}
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script type="text/javascript" src="{{site.baseurl}}/dist/weavr/OI.weavr.min.js"></script>
+    <script type="text/javascript" src="{{site.baseurl}}/js/OI.modal.min.js"></script>
+    
+    <!--[if lte IE 9]>
+      <script type="text/javascript" src="{{site.baseurl}}/dist/weavr/OI.placeholder.min.js"></script>
+    <![endif]-->
+    
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.0/jquery.scrollTo.min.js"></script>
+    
+    <script type="text/javascript">
+      // automatically set up triggers for elements with data-modal attribute
+      $('[data-modal]').modal();
+    
+      $('form').submit(function() {
+        return false;
+      });
+      
+      $('[data-href]').click(function() {
+        $(window).scrollTo('#' + $(this).data('href'), 500);
+      });
+      
+      new ChooseAmountModule($('.choose-amount-module'), $('#donation_amount'), {
+        callback: function(value) {
+          $('#output').html('$' + this.formatNumber(value !== null ? value : 0));
+        }
+      });
+    </script>
+  </body>
+</html>
