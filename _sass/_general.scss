@@ -34,12 +34,15 @@ pre:last-child {
   line-height: 1;
   padding: 0 .25em .125em;
   font-size: 2em;
-  opacity: 1;
-  -webkit-animation: logo-in 2s 1;
-  animation: logo-in 2s 1;
   
   &.large {
     font-size: 4em;
+  }
+  
+  &.animate-in {
+    opacity: 1;
+    -webkit-animation: logo-in 2s 1;
+    animation: logo-in 2s 1;
   }
 }
 
@@ -80,6 +83,12 @@ pre:last-child {
 /*************************/
 /**** Docs navigation ****/
 /*************************/
+
+nav {
+  ul {
+    line-height: 2.25em;
+  }
+}
 
 .sidebar {
   float: left;
