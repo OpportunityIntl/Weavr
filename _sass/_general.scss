@@ -162,5 +162,6 @@ nav {
 }
 
 .sidebar + .content {
-  margin-left: 240px;
+  float: left;
+  width: calc(100% - 240px);
 }
