@@ -1,0 +1,4 @@
+---
+title: 'Paragraphs'
+layout: documentation
+---

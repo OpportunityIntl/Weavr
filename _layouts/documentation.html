@@ -7,17 +7,29 @@
     
     <title>Weavr | {{ page.title }}</title>
     
-    <link rel="stylesheet" href="{{site.baseurl}}/dist/weavr/OI.weavr.css">
+    <link rel="stylesheet" href="{{site.baseurl}}/dist/weavr/OI.weavr.min.css">
     <link rel="stylesheet" href="{{site.baseurl}}/css/OI.modal.min.css">
-    <link rel="stylesheet" href="{{site.baseurl}}/css/kitchensink.css">
+    
+    <link rel="stylesheet" href="{{site.baseurl}}/css/main.css">
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
     
     <script type="text/javascript" src="//use.typekit.net/owg8owx.js"></script>
     <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
     
-    
   </head>
   <body>
-    {{ content }}
+    <section class="padding-2x">
+      <div class="contained-12 centered">
+        <div class="sidebar">
+          {% include sidenav.html %}
+        </div>
+        <div class="content">
+          <h1>{{page.title}}</h1>
+          {{ content }}
+        </div>
+        <div class="clear"></div>
+      </div>
+    </section>
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script type="text/javascript" src="{{site.baseurl}}/dist/weavr/OI.weavr.min.js"></script>
@@ -32,20 +44,6 @@
     <script type="text/javascript">
       // automatically set up triggers for elements with data-modal attribute
       $('[data-modal]').modal();
-    
-      $('form').submit(function() {
-        return false;
-      });
-      
-      $('[data-href]').click(function() {
-        $(window).scrollTo('#' + $(this).data('href'), 500);
-      });
-      
-      new ChooseAmountModule($('.choose-amount-module'), $('#donation_amount'), {
-        callback: function(value) {
-          $('#output').html('$' + this.formatNumber(value !== null ? value : 0));
-        }
-      });
     </script>
   </body>
 </html>
