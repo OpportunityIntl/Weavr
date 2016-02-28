@@ -89,6 +89,13 @@ div.demo {
   padding: 30px;
   position: relative;
   
+  &[class*='brand-'][class*='-bg']:not(.brand-offwhite-bg) {
+    &:before {
+      background-color: #fff;
+      color: #333;
+    }
+  }
+  
   &:before {
     content: 'Demo';
     display: block;
@@ -98,6 +105,7 @@ div.demo {
     background-color: $brand-purple;
     color: #fff;
     font-size: .75em;
+    font-weight: bold;
     padding: .5em .75em;
     text-transform: uppercase;
     letter-spacing: .5px;

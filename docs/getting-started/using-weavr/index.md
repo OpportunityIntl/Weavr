@@ -23,9 +23,10 @@ Below is a minimal boilerplate HTML document for Weavr. Note that Weavr's Javasc
     <link href="path/to/weavr/OI.weavr.min.css" rel="stylesheet">
     <!-- load stylesheets that depend on Weavr here -->
     
+    <!-- For IE8 support, if needed: -->
     <!--[if lt IE 9]>
-      <script src="[[++assetlocation]]/v2/js/html5shiv.js"></script>
-      <script src="[[++assetlocation]]/v2/js/respond.min.js"></script>
+      <script src="path/to/html5shiv.js"></script>
+      <script src="path/to/respond.min.js"></script>
     <![endif]-->
   </head>
   <body>
