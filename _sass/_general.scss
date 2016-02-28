@@ -127,11 +127,16 @@ nav {
 }
 
 .sidebar {
-  float: left;
-  width: 200px;
-  padding-right: 40px;
-  margin-right: 40px;
-  border-right: solid 5px $brand-offwhite;
+  display: none;
+  
+  @media (min-width: 960px) {
+    display: block;
+    float: left;
+    width: 200px;
+    padding-right: 40px;
+    margin-right: 40px;
+    border-right: solid 5px $brand-offwhite;
+  }
   
   nav {
     a {
@@ -162,6 +167,8 @@ nav {
 }
 
 .sidebar + .content {
-  float: left;
-  width: calc(100% - 240px);
+  @media (min-width: 960px) {
+    float: left;
+    width: calc(100% - 240px);
+  }
 }
