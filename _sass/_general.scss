@@ -80,6 +80,34 @@ pre:last-child {
   }  
 }
 
+/********************/
+/**** Demo boxes ****/
+/********************/
+
+div.demo {
+  border: solid 1px $brand-offwhite;
+  padding: 30px;
+  position: relative;
+  
+  &:before {
+    content: 'Demo';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: $brand-purple;
+    color: #fff;
+    font-size: .75em;
+    padding: .5em .75em;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+  }
+  
+  @media (min-width: 480px) {
+    padding: 40px;
+  }
+}
+
 /*************************/
 /**** Docs navigation ****/
 /*************************/
