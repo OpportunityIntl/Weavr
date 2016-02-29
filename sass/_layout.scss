@@ -71,13 +71,21 @@
 /**** Padding classes ****/
 /*************************/
 
-@include padding(6,6, $gutter);
+@include padding(6,6, $mobile-gutter);
+
+@media (min-width: 480px) {
+  @include padding(6,6, $gutter);
+}
 
 /************************/
 /**** Margin classes ****/
 /************************/
 
-@include margin(6, $gutter);
+@include margin(6, $mobile-gutter);
+
+@media (min-width: 480px) {
+  @include margin(6, $gutter);
+}
 
 /*************************/
 /**** Display classes ****/
