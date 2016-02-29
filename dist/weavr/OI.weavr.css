@@ -2760,11 +2760,17 @@ button.btn {
   .row.large-gutter {
     margin-bottom: 40px;
   }
+  .row.large-gutter:last-child {
+    margin-bottom: 0;
+  }
   .row.large-gutter > .col {
     margin-bottom: 0;
   }
   .row.small-gutter {
     margin-bottom: 10px;
+  }
+  .row.small-gutter:last-child {
+    margin-bottom: 0;
   }
   .row.small-gutter > .col {
     margin-bottom: 0;

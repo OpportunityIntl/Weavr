@@ -2509,11 +2509,17 @@
   .redactor-editor .row.large-gutter {
     margin-bottom: 40px;
   }
+  .redactor-editor .row.large-gutter:last-child {
+    margin-bottom: 0;
+  }
   .redactor-editor .row.large-gutter > .col {
     margin-bottom: 0;
   }
   .redactor-editor .row.small-gutter {
     margin-bottom: 10px;
+  }
+  .redactor-editor .row.small-gutter:last-child {
+    margin-bottom: 0;
   }
   .redactor-editor .row.small-gutter > .col {
     margin-bottom: 0;

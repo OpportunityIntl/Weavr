@@ -28,6 +28,10 @@
     
     @media (min-width: 1024px) {
       margin-bottom: 2 * $gutter;
+      
+      &:last-child {
+        margin-bottom: 0;
+      }
     }
     
     > .col {
@@ -54,6 +58,10 @@
     
     @media (min-width: 1024px) {
       margin-bottom: 0.5 * $gutter;
+      
+      &:last-child {
+        margin-bottom: 0;
+      }
     }
     
     > .col {

@@ -917,7 +917,9 @@ button.btn { display: inline-block; width: auto; }
   .tablet-only { display: none; }
   .mobile-only { display: none; }
   .no-netbook { display: none; } }
-@media (min-width: 1024px) { /* laptop */ .row { margin-bottom: 20px; } .row.large-gutter { margin-bottom: 40px; } .row.large-gutter > .col { margin-bottom: 0; } .row.small-gutter { margin-bottom: 10px; } .row.small-gutter > .col { margin-bottom: 0; } .row > .col { margin-bottom: 0; } .row > .col.col-12 { width: 100%; }
+@media (min-width: 1024px) { /* laptop */ .row { margin-bottom: 20px; } .row.large-gutter { margin-bottom: 40px; }
+  .row.large-gutter:last-child { margin-bottom: 0; } .row.large-gutter > .col { margin-bottom: 0; } .row.small-gutter { margin-bottom: 10px; }
+  .row.small-gutter:last-child { margin-bottom: 0; } .row.small-gutter > .col { margin-bottom: 0; } .row > .col { margin-bottom: 0; } .row > .col.col-12 { width: 100%; }
   .row > .col.col-11 { width: 91.66667%; }
   .row > .col.col-10 { width: 83.33333%; }
   .row > .col.col-9 { width: 75%; }
