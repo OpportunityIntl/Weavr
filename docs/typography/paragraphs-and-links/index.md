@@ -68,4 +68,4 @@ You can change the text alignment of a paragraph (or any other element) with Wea
 ---
 
 {% include prev.html url='docs/typography/headings' title='Headings' %}
-{% include next.html url='docs/typography/lists' title='Lists' %}
+{% include next.html url='docs/typography/horizontal-rules' title='Horizontal Rules' %}

@@ -111,5 +111,5 @@ Add the modifier class `.inline` to display list items inline instead of stacked
 
 ---
 
-{% include prev.html url='docs/typography/paragraphs-and-links' title='Paragraphs and Links' %}
+{% include prev.html url='docs/typography/horizontal-rules' title='Horizontal Rules' %}
 {% include next.html url='docs/typography/blockquotes' title='Blockquotes' %}
