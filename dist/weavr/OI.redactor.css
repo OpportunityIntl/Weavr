@@ -258,16 +258,24 @@
 }
 .redactor-editor hr {
   display: block;
-  height: 1px;
+  height: 2px;
   background-color: #efeeea;
   border: none;
-  margin: 20px 0;
+  margin: 30px 0;
 }
-.redactor-editor section {
-  position: relative;
+.redactor-editor hr.large {
+  height: 5px;
+}
+.redactor-editor hr.decorative {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
 }
 .redactor-editor .brand-offwhite-bg hr {
   background-color: #8f8e8c;
+}
+.redactor-editor section {
+  position: relative;
 }
 .redactor-editor .flex-video {
   position: relative;
@@ -2317,6 +2325,9 @@
   /* tablet */
   .redactor-editor {
     /* tablet */
+  }
+  .redactor-editor hr {
+    margin: 40px 0;
   }
   .redactor-editor p {
     line-height: 1.75;
