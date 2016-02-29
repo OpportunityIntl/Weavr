@@ -201,5 +201,5 @@ Here are a few examples of ways you might combine background images, background 
 
 ---
 
-{% include prev.html url='docs/layout/image-backgrounds' title='Image Backgrounds' %}
-{% include next.html url='docs/layout/margins-and-padding' title='Margins and Padding' %}
+{% include prev.html url='docs/components/image-backgrounds' title='Image Backgrounds' %}
+{% include next.html url='docs/components/tables' title='Tables' %}

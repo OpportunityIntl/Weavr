@@ -93,5 +93,5 @@ Turn the background color overlay into a gradient by adding the `.gradient` modi
 
 ---
 
-{% include prev.html url='docs/layout/viewport-height-sections' title='Viewport Height Sections' %}
-{% include next.html url='docs/layout/background-overlays' title='Background overlays' %}
+{% include prev.html url='docs/components/images-and-videos' title='Images and Videos' %}
+{% include next.html url='docs/components/background-overlays' title='Background overlays' %}
