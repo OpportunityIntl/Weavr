@@ -99,5 +99,7 @@ Add the `.large` modifier class to make a blockquote larger.
 </blockquote>
 ```
 
+---
+
 {% include prev.html url='docs/typography/lists' title='Lists' %}
 {% include next.html url='docs/layout' title='Layout' %}

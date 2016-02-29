@@ -15,4 +15,6 @@ Weavr's default styles are highly opinionated to promote consistency in design p
 
 Take a look at the [Weavr Kitchen Sink]({{ site.baseurl }}/kitchensink) to get an at-a-glance look at the styles and elements that the Weavr framework contains. Then, dive into the sections and pages in this documentation to learn more about how to use Weavr in your project.
 
+---
+
 {% include next.html url='docs/getting-started/using-weavr' title='Using Weavr' %}

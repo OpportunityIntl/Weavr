@@ -400,5 +400,7 @@ Gutters are only applied to a row's first-level columns, so you can safely nest 
 </div>
 ```
 
+---
+
 {% include prev.html url='docs/layout' title='Layout' %}
 {% include next.html url='docs/layout/containers' title='Containers' %}

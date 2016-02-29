@@ -65,5 +65,7 @@ You can change the text alignment of a paragraph (or any other element) with Wea
 <p class="align-right">This paragraph is right aligned</p>
 ```
 
+---
+
 {% include prev.html url='docs/typography/headings' title='Headings' %}
 {% include next.html url='docs/typography/lists' title='Lists' %}
