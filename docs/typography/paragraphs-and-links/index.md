@@ -3,7 +3,7 @@ title: 'Paragraphs and Links'
 layout: documentation
 ---
 
-Here's what default paragraph styles look like:
+Here's what default paragraph and link styles look like:
 
 <div class="demo">
 <p>
@@ -12,6 +12,19 @@ Here's what default paragraph styles look like:
 <p>
   Opportunity International was founded in 1971 by two visionary leaders who were inspired to take action by their experiences with people living in extreme poverty.
 </p>
+<p>
+  Al Whittaker, former president of Bristol Myers International Corporation in the U.S., and Australian entrepreneur David Bussau sought a solution that would help people transform their lives. They entered unchartered territory when they launched what we know now as Opportunity International, which was one of the first non-profit organizations to recognize the benefits of offering <a href="http://opportunity.org/what-we-do/microfinance/">financial services for people living in poverty</a> in developing countries.
+</p>
+</div>
+
+## Links against colored backgrounds
+
+Against colored backgrounds, links are displayed with white text and an underline.
+
+<div class="demo brand-purple-bg">
+  <p class="align-center">
+    <a>This is a hyperlink against a purple background</a>
+  </p>
 </div>
 
 ## Large and small modifiers
