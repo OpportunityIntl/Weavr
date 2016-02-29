@@ -34,6 +34,43 @@ $font-secondary: "Times New Roman", Times, serif;
   }
 }
 
+@mixin padding($leftright, $topbottom, $gutter, $prefix: null) {
+  $lmodifier: null;
+  $tmodifier: null;
+  @for $l from 0 through $leftright {
+    @if $l == 0 {$lmodifier: null;} @else {$lmodifier: 'x';}
+    @for $t from 0 through $topbottom {
+      @if $t == 0 {$tmodifier: null;} @else {$tmodifier: 'x';}
+      @if ($l != $t) {
+        .#{$prefix}padding-#{$l}#{$lmodifier}-#{$t}#{$tmodifier} {
+          padding: $l * $gutter $t * $gutter;
+        }
+      } @else {
+        .#{$prefix}padding-#{$t}#{$tmodifier} {
+          padding: $t * $gutter;
+        }
+      }
+    }
+  }
+}
+
+@mixin margin($max, $gutter, $prefix: null) {
+  .#{$prefix}margin-top-0 {
+    margin-top: 0;
+  }
+  .#{$prefix}margin-bottom-0 {
+    margin-bottom: 0;
+  }
+  @for $i from 1 through $max {
+    .#{$prefix}margin-top-#{$i}x {
+      margin-top: $i * $gutter;
+    }
+    .#{$prefix}margin-bottom-#{$i}x {
+      margin-bottom: $i * $gutter;
+    }
+  }
+}
+
 // Hack to get css_mqpack to keep media queries in correct order.
 // Processor outputs consolidated media queries in the order it first finds them.
 @media (min-width: 480px) { /* tablet */ }

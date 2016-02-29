@@ -1987,23 +1987,6 @@ button.btn {
   max-width: 1260px;
 }
 
-/* Deprecated container classes */
-.contained-1260 {
-  max-width: 1260px;
-}
-
-.contained-960 {
-  max-width: 945px;
-}
-
-.contained-680 {
-  max-width: 630px;
-}
-
-.contained-480 {
-  max-width: 420px;
-}
-
 .centered {
   margin-left: auto;
   margin-right: auto;
@@ -2012,170 +1995,259 @@ button.btn {
 /*************************/
 /**** Padding classes ****/
 /*************************/
+.padding-0 {
+  padding: 0px;
+}
+
 .padding-0-1x {
-  padding: 0 15px;
+  padding: 0px 20px;
 }
 
 .padding-0-2x {
-  padding: 0 30px;
+  padding: 0px 40px;
 }
 
 .padding-0-3x {
-  padding: 0 45px;
+  padding: 0px 60px;
 }
 
 .padding-0-4x {
-  padding: 0 60px;
+  padding: 0px 80px;
 }
 
-.padding-1x-4x {
-  padding: 15px 60px;
+.padding-0-5x {
+  padding: 0px 100px;
 }
 
-.padding-1x-3x {
-  padding: 15px 45px;
-}
-
-.padding-1x-2x {
-  padding: 15px 30px;
-}
-
-.padding-1x {
-  padding: 15px;
+.padding-0-6x {
+  padding: 0px 120px;
 }
 
 .padding-1x-0 {
-  padding: 15px 0;
+  padding: 20px 0px;
 }
 
-.padding-2x-4x {
-  padding: 30px 60px;
+.padding-1x {
+  padding: 20px;
 }
 
-.padding-2x-3x {
-  padding: 30px 45px;
+.padding-1x-2x {
+  padding: 20px 40px;
 }
 
-.padding-2x {
-  padding: 30px;
+.padding-1x-3x {
+  padding: 20px 60px;
 }
 
-.padding-2x-1x {
-  padding: 30px 15px;
+.padding-1x-4x {
+  padding: 20px 80px;
+}
+
+.padding-1x-5x {
+  padding: 20px 100px;
+}
+
+.padding-1x-6x {
+  padding: 20px 120px;
 }
 
 .padding-2x-0 {
-  padding: 30px 0;
+  padding: 40px 0px;
 }
 
-.padding-3x-4x {
-  padding: 45px 60px;
+.padding-2x-1x {
+  padding: 40px 20px;
 }
 
-.padding-3x {
-  padding: 45px;
+.padding-2x {
+  padding: 40px;
 }
 
-.padding-3x-2x {
-  padding: 45px 30px;
+.padding-2x-3x {
+  padding: 40px 60px;
 }
 
-.padding-3x-1x {
-  padding: 45px 15px;
+.padding-2x-4x {
+  padding: 40px 80px;
+}
+
+.padding-2x-5x {
+  padding: 40px 100px;
+}
+
+.padding-2x-6x {
+  padding: 40px 120px;
 }
 
 .padding-3x-0 {
-  padding: 45px 0;
+  padding: 60px 0px;
 }
 
-.padding-4x {
+.padding-3x-1x {
+  padding: 60px 20px;
+}
+
+.padding-3x-2x {
+  padding: 60px 40px;
+}
+
+.padding-3x {
   padding: 60px;
 }
 
-.padding-4x-3x {
-  padding: 60px 45px;
+.padding-3x-4x {
+  padding: 60px 80px;
 }
 
-.padding-4x-2x {
-  padding: 60px 30px;
+.padding-3x-5x {
+  padding: 60px 100px;
 }
 
-.padding-4x-1x {
-  padding: 60px 15px;
+.padding-3x-6x {
+  padding: 60px 120px;
 }
 
 .padding-4x-0 {
-  padding: 60px 0;
+  padding: 80px 0px;
 }
 
-.padding-6x {
-  padding: 90px;
+.padding-4x-1x {
+  padding: 80px 20px;
+}
+
+.padding-4x-2x {
+  padding: 80px 40px;
+}
+
+.padding-4x-3x {
+  padding: 80px 60px;
+}
+
+.padding-4x {
+  padding: 80px;
+}
+
+.padding-4x-5x {
+  padding: 80px 100px;
+}
+
+.padding-4x-6x {
+  padding: 80px 120px;
+}
+
+.padding-5x-0 {
+  padding: 100px 0px;
+}
+
+.padding-5x-1x {
+  padding: 100px 20px;
+}
+
+.padding-5x-2x {
+  padding: 100px 40px;
+}
+
+.padding-5x-3x {
+  padding: 100px 60px;
+}
+
+.padding-5x-4x {
+  padding: 100px 80px;
+}
+
+.padding-5x {
+  padding: 100px;
+}
+
+.padding-5x-6x {
+  padding: 100px 120px;
 }
 
 .padding-6x-0 {
-  padding: 90px 0;
+  padding: 120px 0px;
 }
 
 .padding-6x-1x {
-  padding: 90px 15px;
+  padding: 120px 20px;
 }
 
 .padding-6x-2x {
-  padding: 90px 30px;
+  padding: 120px 40px;
 }
 
 .padding-6x-3x {
-  padding: 90px 45px;
+  padding: 120px 60px;
 }
 
 .padding-6x-4x {
-  padding: 90px 60px;
+  padding: 120px 80px;
 }
 
 .padding-6x-5x {
-  padding: 90px 75px;
+  padding: 120px 100px;
 }
+
+.padding-6x {
+  padding: 120px;
+}
+
 /************************/
 /**** Margin classes ****/
 /************************/
-.margin-bottom-4x {
-  margin-bottom: 80px;
-}
-
-.margin-bottom-3x {
-  margin-bottom: 60px;
-}
-
-.margin-bottom-2x {
-  margin-bottom: 40px;
-}
-
-.margin-bottom-1x {
-  margin-bottom: 20px;
+.margin-top-0 {
+  margin-top: 0;
 }
 
 .margin-bottom-0 {
   margin-bottom: 0;
 }
 
-.margin-top-4x {
-  margin-top: 80px;
+.margin-top-1x {
+  margin-top: 20px;
 }
 
-.margin-top-3x {
-  margin-top: 60px;
+.margin-bottom-1x {
+  margin-bottom: 20px;
 }
 
 .margin-top-2x {
   margin-top: 40px;
 }
 
-.margin-top-1x {
-  margin-top: 20px;
+.margin-bottom-2x {
+  margin-bottom: 40px;
 }
 
-.margin-top-0 {
-  margin-top: 0;
+.margin-top-3x {
+  margin-top: 60px;
+}
+
+.margin-bottom-3x {
+  margin-bottom: 60px;
+}
+
+.margin-top-4x {
+  margin-top: 80px;
+}
+
+.margin-bottom-4x {
+  margin-bottom: 80px;
+}
+
+.margin-top-5x {
+  margin-top: 100px;
+}
+
+.margin-bottom-5x {
+  margin-bottom: 100px;
+}
+
+.margin-top-6x {
+  margin-top: 120px;
+}
+
+.margin-bottom-6x {
+  margin-bottom: 120px;
 }
 
 /*************************/
@@ -2588,129 +2660,6 @@ button.btn {
   }
   .row > .col.t-col-1 {
     width: 8.33333%;
-  }
-  .padding-0-1x {
-    padding: 0 20px;
-  }
-
-  .padding-0-2x {
-    padding: 0 40px;
-  }
-
-  .padding-0-3x {
-    padding: 0 60px;
-  }
-
-  .padding-0-4x {
-    padding: 0 80px;
-  }
-
-  .padding-1x-4x {
-    padding: 20px 80px;
-  }
-
-  .padding-1x-3x {
-    padding: 20px 60px;
-  }
-
-  .padding-1x-2x {
-    padding: 20px 40px;
-  }
-
-  .padding-1x {
-    padding: 20px;
-  }
-
-  .padding-1x-0 {
-    padding: 20px 0;
-  }
-
-  .padding-2x-4x {
-    padding: 40px 80px;
-  }
-
-  .padding-2x-3x {
-    padding: 40px 60px;
-  }
-
-  .padding-2x {
-    padding: 40px;
-  }
-
-  .padding-2x-1x {
-    padding: 40px 20px;
-  }
-
-  .padding-2x-0 {
-    padding: 40px 0;
-  }
-
-  .padding-3x-4x {
-    padding: 60px 80px;
-  }
-
-  .padding-3x {
-    padding: 60px;
-  }
-
-  .padding-3x-2x {
-    padding: 60px 40px;
-  }
-
-  .padding-3x-1x {
-    padding: 60px 20px;
-  }
-
-  .padding-3x-0 {
-    padding: 60px 0;
-  }
-
-  .padding-4x {
-    padding: 80px;
-  }
-
-  .padding-4x-3x {
-    padding: 80px 60px;
-  }
-
-  .padding-4x-2x {
-    padding: 80px 40px;
-  }
-
-  .padding-4x-1x {
-    padding: 80px 20px;
-  }
-
-  .padding-4x-0 {
-    padding: 80px 0;
-  }
-
-  .padding-6x {
-    padding: 120px;
-  }
-
-  .padding-6x-0 {
-    padding: 120px 0;
-  }
-
-  .padding-6x-1x {
-    padding: 120px 20px;
-  }
-
-  .padding-6x-2x {
-    padding: 120px 40px;
-  }
-
-  .padding-6x-3x {
-    padding: 120px 60px;
-  }
-
-  .padding-6x-4x {
-    padding: 120px 80px;
-  }
-
-  .padding-6x-5x {
-    padding: 120px 100px;
   }
   .desktop-only {
     display: none;
