@@ -623,7 +623,7 @@ h1 .subheading, h2 .subheading, h3 .subheading, h4 .subheading, h5 .subheading, 
   margin-top: .25em;
 }
 h1 .superheading, h2 .superheading, h3 .superheading, h4 .superheading, h5 .superheading, h6 .superheading {
-  margin-bottom: .5em;
+  margin-bottom: .375em;
 }
 h1.bordered, h2.bordered, h3.bordered, h4.bordered, h5.bordered, h6.bordered {
   display: inline-block;

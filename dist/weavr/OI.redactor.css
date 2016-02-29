@@ -609,7 +609,7 @@
   margin-top: .25em;
 }
 .redactor-editor h1 .superheading, .redactor-editor h2 .superheading, .redactor-editor h3 .superheading, .redactor-editor h4 .superheading, .redactor-editor h5 .superheading, .redactor-editor h6 .superheading {
-  margin-bottom: .5em;
+  margin-bottom: .375em;
 }
 .redactor-editor h1.bordered, .redactor-editor h2.bordered, .redactor-editor h3.bordered, .redactor-editor h4.bordered, .redactor-editor h5.bordered, .redactor-editor h6.bordered {
   display: inline-block;
