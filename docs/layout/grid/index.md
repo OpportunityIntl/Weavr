@@ -12,149 +12,149 @@ For the desktop breakpoint, the columns should add up to 12. For breakpoints bel
 <div class="demo">
   <div class="row">
     <div class="col col-1 t-col-3 m-col-6">
-      <div class="brand-offwhite-bg padding-1x"></div>
+      <div class="brand-purple-bg padding-1x"></div>
     </div>
     <div class="col col-1 t-col-3 m-col-6">
-      <div class="brand-offwhite-bg padding-1x"></div>
+      <div class="brand-purple-bg padding-1x"></div>
     </div>
     <div class="col col-1 t-col-3 m-col-6">
-      <div class="brand-offwhite-bg padding-1x"></div>
+      <div class="brand-purple-bg padding-1x"></div>
     </div>
     <div class="col col-1 t-col-3 m-col-6">
-      <div class="brand-offwhite-bg padding-1x"></div>
+      <div class="brand-purple-bg padding-1x"></div>
     </div>
     <div class="col col-1 t-col-3 m-col-6">
-      <div class="brand-offwhite-bg padding-1x"></div>
+      <div class="brand-purple-bg padding-1x"></div>
     </div>
     <div class="col col-1 t-col-3 m-col-6">
-      <div class="brand-offwhite-bg padding-1x"></div>
+      <div class="brand-purple-bg padding-1x"></div>
     </div>
     <div class="col col-1 t-col-3 m-col-6">
-      <div class="brand-offwhite-bg padding-1x"></div>
+      <div class="brand-purple-bg padding-1x"></div>
     </div>
     <div class="col col-1 t-col-3 m-col-6">
-      <div class="brand-offwhite-bg padding-1x"></div>
+      <div class="brand-purple-bg padding-1x"></div>
     </div>
     <div class="col col-1 t-col-3 m-col-6">
-      <div class="brand-offwhite-bg padding-1x"></div>
+      <div class="brand-purple-bg padding-1x"></div>
     </div>
     <div class="col col-1 t-col-3 m-col-6">
-      <div class="brand-offwhite-bg padding-1x"></div>
+      <div class="brand-purple-bg padding-1x"></div>
     </div>
     <div class="col col-1 t-col-3 m-col-6">
-      <div class="brand-offwhite-bg padding-1x"></div>
+      <div class="brand-purple-bg padding-1x"></div>
     </div>
     <div class="col col-1 t-col-3 m-col-6">
-      <div class="brand-offwhite-bg padding-1x"></div>
+      <div class="brand-purple-bg padding-1x"></div>
     </div>
   </div>
   <div class="row">
     <div class="col col-2 t-col-4 m-col-6">
-      <div class="brand-offwhite-bg padding-1x"></div>
+      <div class="brand-purple-bg padding-1x"></div>
     </div>
     <div class="col col-2 t-col-4 m-col-6">
-      <div class="brand-offwhite-bg padding-1x"></div>
+      <div class="brand-purple-bg padding-1x"></div>
     </div>
     <div class="col col-2 t-col-4 m-col-6">
-      <div class="brand-offwhite-bg padding-1x"></div>
+      <div class="brand-purple-bg padding-1x"></div>
     </div>
     <div class="col col-2 t-col-4 m-col-6">
-      <div class="brand-offwhite-bg padding-1x"></div>
+      <div class="brand-purple-bg padding-1x"></div>
     </div>
     <div class="col col-2 t-col-4 m-col-6">
-      <div class="brand-offwhite-bg padding-1x"></div>
+      <div class="brand-purple-bg padding-1x"></div>
     </div>
     <div class="col col-2 t-col-4 m-col-6">
-      <div class="brand-offwhite-bg padding-1x"></div>
+      <div class="brand-purple-bg padding-1x"></div>
     </div>
   </div>
   <div class="row">
     <div class="col col-3 t-col-6 m-col-6">
-      <div class="brand-offwhite-bg padding-1x"></div>
+      <div class="brand-purple-bg padding-1x"></div>
     </div>
     <div class="col col-3 t-col-6 m-col-6">
-      <div class="brand-offwhite-bg padding-1x"></div>
+      <div class="brand-purple-bg padding-1x"></div>
     </div>
     <div class="col col-3 t-col-6 m-col-6">
-      <div class="brand-offwhite-bg padding-1x"></div>
+      <div class="brand-purple-bg padding-1x"></div>
     </div>
     <div class="col col-3 t-col-6 m-col-6">
-      <div class="brand-offwhite-bg padding-1x"></div>
+      <div class="brand-purple-bg padding-1x"></div>
     </div>
   </div>
   <div class="row">
     <div class="col col-4 t-col-4 m-col-12">
-      <div class="brand-offwhite-bg padding-1x"></div>
+      <div class="brand-purple-bg padding-1x"></div>
     </div>
     <div class="col col-4 t-col-4 m-col-6">
-      <div class="brand-offwhite-bg padding-1x"></div>
+      <div class="brand-purple-bg padding-1x"></div>
     </div>
     <div class="col col-4 t-col-4 m-col-6">
-      <div class="brand-offwhite-bg padding-1x"></div>
+      <div class="brand-purple-bg padding-1x"></div>
     </div>
   </div>
   <div class="row">
     <div class="col col-5 t-col-4 m-col-6">
-      <div class="brand-offwhite-bg padding-1x"></div>
+      <div class="brand-purple-bg padding-1x"></div>
     </div>
     <div class="col col-2 t-col-4 m-col-6">
-      <div class="brand-offwhite-bg padding-1x"></div>
+      <div class="brand-purple-bg padding-1x"></div>
     </div>
     <div class="col col-5 t-col-4 m-col-12">
-      <div class="brand-offwhite-bg padding-1x"></div>
+      <div class="brand-purple-bg padding-1x"></div>
     </div>
   </div>
   <div class="row">
     <div class="col col-6 t-col-6 m-col-12">
-      <div class="brand-offwhite-bg padding-1x"></div>
+      <div class="brand-purple-bg padding-1x"></div>
     </div>
     <div class="col col-6 t-col-6 m-col-12">
-      <div class="brand-offwhite-bg padding-1x"></div>
+      <div class="brand-purple-bg padding-1x"></div>
     </div>
   </div>
   <div class="row">
     <div class="col col-7 t-col-7 m-col-7">
-      <div class="brand-offwhite-bg padding-1x"></div>
+      <div class="brand-purple-bg padding-1x"></div>
     </div>
     <div class="col col-5 t-col-5 m-col-5">
-      <div class="brand-offwhite-bg padding-1x"></div>
+      <div class="brand-purple-bg padding-1x"></div>
     </div>
   </div>
   <div class="row">
     <div class="col col-8 t-col-8 m-col-7">
-      <div class="brand-offwhite-bg padding-1x"></div>
+      <div class="brand-purple-bg padding-1x"></div>
     </div>
     <div class="col col-4 t-col-4 m-col-5">
-      <div class="brand-offwhite-bg padding-1x"></div>
+      <div class="brand-purple-bg padding-1x"></div>
     </div>
   </div>
   <div class="row">
     <div class="col col-9 t-col-8 m-col-7">
-      <div class="brand-offwhite-bg padding-1x"></div>
+      <div class="brand-purple-bg padding-1x"></div>
     </div>
     <div class="col col-3 t-col-4 m-col-5">
-      <div class="brand-offwhite-bg padding-1x"></div>
+      <div class="brand-purple-bg padding-1x"></div>
     </div>
   </div>
   <div class="row">
     <div class="col col-10 t-col-9 m-col-8">
-      <div class="brand-offwhite-bg padding-1x"></div>
+      <div class="brand-purple-bg padding-1x"></div>
     </div>
     <div class="col col-2 t-col-3 m-col-4">
-      <div class="brand-offwhite-bg padding-1x"></div>
+      <div class="brand-purple-bg padding-1x"></div>
     </div>
   </div>
   <div class="row">
     <div class="col col-11 t-col-10 m-col-9">
-      <div class="brand-offwhite-bg padding-1x"></div>
+      <div class="brand-purple-bg padding-1x"></div>
     </div>
     <div class="col col-1 t-col-2 m-col-3">
-      <div class="brand-offwhite-bg padding-1x"></div>
+      <div class="brand-purple-bg padding-1x"></div>
     </div>
   </div>
   <div class="row">
     <div class="col col-12 t-col-12 m-col-12">
-      <div class="brand-offwhite-bg padding-1x"></div>
+      <div class="brand-purple-bg padding-1x"></div>
     </div>
   </div>
 </div>
@@ -214,32 +214,32 @@ The gutter between columns can be made larger, smaller, or removed with the modi
 <div class="demo">
   <div class="row large-gutter">
     <div class="col col-4 t-col-4 m-col-12">
-      <div class="brand-offwhite-bg padding-1x"></div>
+      <div class="brand-purple-bg padding-1x"></div>
     </div>
     <div class="col col-4 t-col-4 m-col-6">
-      <div class="brand-offwhite-bg padding-1x"></div>
+      <div class="brand-purple-bg padding-1x"></div>
     </div>
     <div class="col col-4 t-col-4 m-col-6">
-      <div class="brand-offwhite-bg padding-1x"></div>
+      <div class="brand-purple-bg padding-1x"></div>
     </div>
   </div>
   <div class="row large-gutter">
     <div class="col col-5 t-col-4 m-col-6">
-      <div class="brand-offwhite-bg padding-1x"></div>
+      <div class="brand-purple-bg padding-1x"></div>
     </div>
     <div class="col col-2 t-col-4 m-col-6">
-      <div class="brand-offwhite-bg padding-1x"></div>
+      <div class="brand-purple-bg padding-1x"></div>
     </div>
     <div class="col col-5 t-col-4 m-col-12">
-      <div class="brand-offwhite-bg padding-1x"></div>
+      <div class="brand-purple-bg padding-1x"></div>
     </div>
   </div>
   <div class="row large-gutter">
     <div class="col col-6 t-col-6 m-col-12">
-      <div class="brand-offwhite-bg padding-1x"></div>
+      <div class="brand-purple-bg padding-1x"></div>
     </div>
     <div class="col col-6 t-col-6 m-col-12">
-      <div class="brand-offwhite-bg padding-1x"></div>
+      <div class="brand-purple-bg padding-1x"></div>
     </div>
   </div>
 </div>
@@ -253,32 +253,32 @@ The gutter between columns can be made larger, smaller, or removed with the modi
 <div class="demo">
   <div class="row small-gutter">
     <div class="col col-4 t-col-4 m-col-12">
-      <div class="brand-offwhite-bg padding-1x"></div>
+      <div class="brand-purple-bg padding-1x"></div>
     </div>
     <div class="col col-4 t-col-4 m-col-6">
-      <div class="brand-offwhite-bg padding-1x"></div>
+      <div class="brand-purple-bg padding-1x"></div>
     </div>
     <div class="col col-4 t-col-4 m-col-6">
-      <div class="brand-offwhite-bg padding-1x"></div>
+      <div class="brand-purple-bg padding-1x"></div>
     </div>
   </div>
   <div class="row small-gutter">
     <div class="col col-5 t-col-4 m-col-6">
-      <div class="brand-offwhite-bg padding-1x"></div>
+      <div class="brand-purple-bg padding-1x"></div>
     </div>
     <div class="col col-2 t-col-4 m-col-6">
-      <div class="brand-offwhite-bg padding-1x"></div>
+      <div class="brand-purple-bg padding-1x"></div>
     </div>
     <div class="col col-5 t-col-4 m-col-12">
-      <div class="brand-offwhite-bg padding-1x"></div>
+      <div class="brand-purple-bg padding-1x"></div>
     </div>
   </div>
   <div class="row small-gutter">
     <div class="col col-6 t-col-6 m-col-12">
-      <div class="brand-offwhite-bg padding-1x"></div>
+      <div class="brand-purple-bg padding-1x"></div>
     </div>
     <div class="col col-6 t-col-6 m-col-12">
-      <div class="brand-offwhite-bg padding-1x"></div>
+      <div class="brand-purple-bg padding-1x"></div>
     </div>
   </div>
 </div>
@@ -330,7 +330,7 @@ The gutter between columns can be made larger, smaller, or removed with the modi
 
 ## Nested grids
 
-Gutters are only applied to a row's first-level columns, so ou can safely nest rows inside of columns.
+Gutters are only applied to a row's first-level columns, so you can safely nest rows inside of columns.
 
 <div class="demo">
   <div class="row no-gutter brand-offwhite-bg">
