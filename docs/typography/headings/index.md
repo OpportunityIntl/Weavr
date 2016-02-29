@@ -114,3 +114,6 @@ There may be times when you need to use a specific heading tag for semantics but
 <h3>Normal H3 <span class="subheading">subheading</span></h3>
 <h3 class="small">Small H3 <span class="subheading">subheading</span></h3>
 ```
+
+{% include prev.html url='docs/typography' title='Typography' %}
+{% include next.html url='docs/typography/paragraphs-and-links' title='Paragraphs and Links' %}

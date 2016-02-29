@@ -56,3 +56,6 @@ Before version 8, iOS Safari had a nasty bug that caused viewport units (`vh`, `
   ]);
 </script>
 ```
+
+{% include prev.html url='docs' title='Getting Started' %}
+{% include next.html url='docs/typography' title='Typography' %}

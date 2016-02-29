@@ -98,3 +98,6 @@ Add the `.large` modifier class to make a blockquote larger.
   <cite>Sheilah Jjumba, clothing store owner, Uganda</cite>
 </blockquote>
 ```
+
+{% include prev.html url='docs/typography/lists' title='Lists' %}
+{% include next.html url='docs/layout' title='Layout' %}
