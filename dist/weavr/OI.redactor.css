@@ -69,7 +69,6 @@
   /**************************/
   /*** Container classes ****/
   /**************************/
-  /* Deprecated container classes */
   /*************************/
   /**** Padding classes ****/
   /*************************/
@@ -610,7 +609,7 @@
   margin-top: .25em;
 }
 .redactor-editor h1 .superheading, .redactor-editor h2 .superheading, .redactor-editor h3 .superheading, .redactor-editor h4 .superheading, .redactor-editor h5 .superheading, .redactor-editor h6 .superheading {
-  margin-bottom: .5em;
+  margin-bottom: .375em;
 }
 .redactor-editor h1.bordered, .redactor-editor h2.bordered, .redactor-editor h3.bordered, .redactor-editor h4.bordered, .redactor-editor h5.bordered, .redactor-editor h6.bordered {
   display: inline-block;
@@ -757,15 +756,7 @@
 .redactor-editor blockquote + blockquote:before {
   top: -5px;
 }
-.redactor-editor .brand-purple-bg blockquote,
-.redactor-editor .brand-light-purple-bg blockquote,
-.redactor-editor .brand-pink-bg blockquote,
-.redactor-editor .brand-teal-bg blockquote,
-.redactor-editor .brand-light-teal-bg blockquote,
-.redactor-editor .brand-orange-bg blockquote,
-.redactor-editor .brand-green-bg blockquote,
-.redactor-editor .brand-darkgray-bg blockquote,
-.redactor-editor .brand-gray-bg blockquote {
+.redactor-editor [class*='brand-'][class*='-bg']:not(.brand-offwhite-bg):not(.brand-white-bg) blockquote {
   color: #fff;
 }
 .redactor-editor .brand-purple-bg blockquote:before {
@@ -1101,300 +1092,80 @@
 .redactor-editor .inline-form .select select {
   padding-right: 1.875em;
 }
-.redactor-editor .brand-green-bg label,
-.redactor-editor .brand-purple-bg label,
-.redactor-editor .brand-orange-bg label,
-.redactor-editor .brand-teal-bg label,
-.redactor-editor .brand-pink-bg label,
-.redactor-editor .brand-darkgray-bg label {
+.redactor-editor [class*='brand'][class*='bg']:not(.brand-offwhite-bg):not(.brand-white-bg) label {
   color: inherit;
   opacity: .7;
 }
-.redactor-editor .brand-green-bg input[type='text'], .redactor-editor .brand-green-bg input[type='number'], .redactor-editor .brand-green-bg input[type='email'], .redactor-editor .brand-green-bg input[type='password'], .redactor-editor .brand-green-bg input[type='phone'], .redactor-editor .brand-green-bg textarea,
-.redactor-editor .brand-purple-bg input[type='text'],
-.redactor-editor .brand-purple-bg input[type='number'],
-.redactor-editor .brand-purple-bg input[type='email'],
-.redactor-editor .brand-purple-bg input[type='password'],
-.redactor-editor .brand-purple-bg input[type='phone'],
-.redactor-editor .brand-purple-bg textarea,
-.redactor-editor .brand-orange-bg input[type='text'],
-.redactor-editor .brand-orange-bg input[type='number'],
-.redactor-editor .brand-orange-bg input[type='email'],
-.redactor-editor .brand-orange-bg input[type='password'],
-.redactor-editor .brand-orange-bg input[type='phone'],
-.redactor-editor .brand-orange-bg textarea,
-.redactor-editor .brand-teal-bg input[type='text'],
-.redactor-editor .brand-teal-bg input[type='number'],
-.redactor-editor .brand-teal-bg input[type='email'],
-.redactor-editor .brand-teal-bg input[type='password'],
-.redactor-editor .brand-teal-bg input[type='phone'],
-.redactor-editor .brand-teal-bg textarea,
-.redactor-editor .brand-pink-bg input[type='text'],
-.redactor-editor .brand-pink-bg input[type='number'],
-.redactor-editor .brand-pink-bg input[type='email'],
-.redactor-editor .brand-pink-bg input[type='password'],
-.redactor-editor .brand-pink-bg input[type='phone'],
-.redactor-editor .brand-pink-bg textarea,
-.redactor-editor .brand-darkgray-bg input[type='text'],
-.redactor-editor .brand-darkgray-bg input[type='number'],
-.redactor-editor .brand-darkgray-bg input[type='email'],
-.redactor-editor .brand-darkgray-bg input[type='password'],
-.redactor-editor .brand-darkgray-bg input[type='phone'],
-.redactor-editor .brand-darkgray-bg textarea {
-  border-color: inherit;
+.redactor-editor [class*='brand'][class*='bg']:not(.brand-offwhite-bg):not(.brand-white-bg) input[type='text'], .redactor-editor [class*='brand'][class*='bg']:not(.brand-offwhite-bg):not(.brand-white-bg) input[type='number'], .redactor-editor [class*='brand'][class*='bg']:not(.brand-offwhite-bg):not(.brand-white-bg) input[type='email'], .redactor-editor [class*='brand'][class*='bg']:not(.brand-offwhite-bg):not(.brand-white-bg) input[type='password'], .redactor-editor [class*='brand'][class*='bg']:not(.brand-offwhite-bg):not(.brand-white-bg) input[type='phone'], .redactor-editor [class*='brand'][class*='bg']:not(.brand-offwhite-bg):not(.brand-white-bg) textarea {
+  border-color: #fff;
 }
-.redactor-editor .brand-green-bg label.radio, .redactor-editor .brand-green-bg label.checkbox,
-.redactor-editor .brand-purple-bg label.radio,
-.redactor-editor .brand-purple-bg label.checkbox,
-.redactor-editor .brand-orange-bg label.radio,
-.redactor-editor .brand-orange-bg label.checkbox,
-.redactor-editor .brand-teal-bg label.radio,
-.redactor-editor .brand-teal-bg label.checkbox,
-.redactor-editor .brand-pink-bg label.radio,
-.redactor-editor .brand-pink-bg label.checkbox,
-.redactor-editor .brand-darkgray-bg label.radio,
-.redactor-editor .brand-darkgray-bg label.checkbox {
+.redactor-editor [class*='brand'][class*='bg']:not(.brand-offwhite-bg):not(.brand-white-bg) label.radio, .redactor-editor [class*='brand'][class*='bg']:not(.brand-offwhite-bg):not(.brand-white-bg) label.checkbox {
   color: inherit;
   opacity: .7;
 }
-.redactor-editor .brand-green-bg label.radio:before, .redactor-editor .brand-green-bg label.checkbox:before,
-.redactor-editor .brand-purple-bg label.radio:before,
-.redactor-editor .brand-purple-bg label.checkbox:before,
-.redactor-editor .brand-orange-bg label.radio:before,
-.redactor-editor .brand-orange-bg label.checkbox:before,
-.redactor-editor .brand-teal-bg label.radio:before,
-.redactor-editor .brand-teal-bg label.checkbox:before,
-.redactor-editor .brand-pink-bg label.radio:before,
-.redactor-editor .brand-pink-bg label.checkbox:before,
-.redactor-editor .brand-darkgray-bg label.radio:before,
-.redactor-editor .brand-darkgray-bg label.checkbox:before {
+.redactor-editor [class*='brand'][class*='bg']:not(.brand-offwhite-bg):not(.brand-white-bg) label.radio:before, .redactor-editor [class*='brand'][class*='bg']:not(.brand-offwhite-bg):not(.brand-white-bg) label.checkbox:before {
   border-color: inherit;
 }
-.redactor-editor .brand-green-bg label.radio:hover, .redactor-editor .brand-green-bg label.checkbox:hover,
-.redactor-editor .brand-purple-bg label.radio:hover,
-.redactor-editor .brand-purple-bg label.checkbox:hover,
-.redactor-editor .brand-orange-bg label.radio:hover,
-.redactor-editor .brand-orange-bg label.checkbox:hover,
-.redactor-editor .brand-teal-bg label.radio:hover,
-.redactor-editor .brand-teal-bg label.checkbox:hover,
-.redactor-editor .brand-pink-bg label.radio:hover,
-.redactor-editor .brand-pink-bg label.checkbox:hover,
-.redactor-editor .brand-darkgray-bg label.radio:hover,
-.redactor-editor .brand-darkgray-bg label.checkbox:hover {
+.redactor-editor [class*='brand'][class*='bg']:not(.brand-offwhite-bg):not(.brand-white-bg) label.radio:hover, .redactor-editor [class*='brand'][class*='bg']:not(.brand-offwhite-bg):not(.brand-white-bg) label.checkbox:hover {
   color: inherit;
   opacity: 1;
 }
-.redactor-editor .brand-green-bg label.radio:hover:before, .redactor-editor .brand-green-bg label.checkbox:hover:before,
-.redactor-editor .brand-purple-bg label.radio:hover:before,
-.redactor-editor .brand-purple-bg label.checkbox:hover:before,
-.redactor-editor .brand-orange-bg label.radio:hover:before,
-.redactor-editor .brand-orange-bg label.checkbox:hover:before,
-.redactor-editor .brand-teal-bg label.radio:hover:before,
-.redactor-editor .brand-teal-bg label.checkbox:hover:before,
-.redactor-editor .brand-pink-bg label.radio:hover:before,
-.redactor-editor .brand-pink-bg label.checkbox:hover:before,
-.redactor-editor .brand-darkgray-bg label.radio:hover:before,
-.redactor-editor .brand-darkgray-bg label.checkbox:hover:before {
+.redactor-editor [class*='brand'][class*='bg']:not(.brand-offwhite-bg):not(.brand-white-bg) label.radio:hover:before, .redactor-editor [class*='brand'][class*='bg']:not(.brand-offwhite-bg):not(.brand-white-bg) label.checkbox:hover:before {
   border-color: inherit;
 }
-.redactor-editor .brand-green-bg input[type="radio"]:checked + label.radio,
-.redactor-editor .brand-purple-bg input[type="radio"]:checked + label.radio,
-.redactor-editor .brand-orange-bg input[type="radio"]:checked + label.radio,
-.redactor-editor .brand-teal-bg input[type="radio"]:checked + label.radio,
-.redactor-editor .brand-pink-bg input[type="radio"]:checked + label.radio,
-.redactor-editor .brand-darkgray-bg input[type="radio"]:checked + label.radio {
+.redactor-editor [class*='brand'][class*='bg']:not(.brand-offwhite-bg):not(.brand-white-bg) input[type="radio"]:checked + label.radio {
   color: inherit;
   opacity: 1;
 }
-.redactor-editor .brand-green-bg input[type="radio"]:checked + label.radio:before,
-.redactor-editor .brand-purple-bg input[type="radio"]:checked + label.radio:before,
-.redactor-editor .brand-orange-bg input[type="radio"]:checked + label.radio:before,
-.redactor-editor .brand-teal-bg input[type="radio"]:checked + label.radio:before,
-.redactor-editor .brand-pink-bg input[type="radio"]:checked + label.radio:before,
-.redactor-editor .brand-darkgray-bg input[type="radio"]:checked + label.radio:before {
-  background: inherit;
+.redactor-editor [class*='brand'][class*='bg']:not(.brand-offwhite-bg):not(.brand-white-bg) input[type="radio"]:checked + label.radio:before {
+  background-color: #fff;
   border-color: inherit;
 }
-.redactor-editor .brand-green-bg input[type="checkbox"]:checked + label.checkbox,
-.redactor-editor .brand-purple-bg input[type="checkbox"]:checked + label.checkbox,
-.redactor-editor .brand-orange-bg input[type="checkbox"]:checked + label.checkbox,
-.redactor-editor .brand-teal-bg input[type="checkbox"]:checked + label.checkbox,
-.redactor-editor .brand-pink-bg input[type="checkbox"]:checked + label.checkbox,
-.redactor-editor .brand-darkgray-bg input[type="checkbox"]:checked + label.checkbox {
+.redactor-editor [class*='brand'][class*='bg']:not(.brand-offwhite-bg):not(.brand-white-bg) input[type="checkbox"]:checked + label.checkbox {
   color: inherit;
   opacity: 1;
 }
-.redactor-editor .brand-green-bg input[type="checkbox"]:checked + label.checkbox:before,
-.redactor-editor .brand-purple-bg input[type="checkbox"]:checked + label.checkbox:before,
-.redactor-editor .brand-orange-bg input[type="checkbox"]:checked + label.checkbox:before,
-.redactor-editor .brand-teal-bg input[type="checkbox"]:checked + label.checkbox:before,
-.redactor-editor .brand-pink-bg input[type="checkbox"]:checked + label.checkbox:before,
-.redactor-editor .brand-darkgray-bg input[type="checkbox"]:checked + label.checkbox:before {
+.redactor-editor [class*='brand'][class*='bg']:not(.brand-offwhite-bg):not(.brand-white-bg) input[type="checkbox"]:checked + label.checkbox:before {
   color: inherit;
   border-color: inherit;
 }
-.redactor-editor .brand-green-bg .select,
-.redactor-editor .brand-purple-bg .select,
-.redactor-editor .brand-orange-bg .select,
-.redactor-editor .brand-teal-bg .select,
-.redactor-editor .brand-pink-bg .select,
-.redactor-editor .brand-darkgray-bg .select {
+.redactor-editor [class*='brand'][class*='bg']:not(.brand-offwhite-bg):not(.brand-white-bg) .select {
   border-color: inherit;
 }
-.redactor-editor .brand-green-bg .brand-white-bg input[type='text'], .redactor-editor .brand-green-bg .brand-white-bg input[type='number'], .redactor-editor .brand-green-bg .brand-white-bg input[type='email'], .redactor-editor .brand-green-bg .brand-white-bg input[type='password'], .redactor-editor .brand-green-bg .brand-white-bg input[type='phone'], .redactor-editor .brand-green-bg .brand-white-bg textarea,
-.redactor-editor .brand-purple-bg .brand-white-bg input[type='text'],
-.redactor-editor .brand-purple-bg .brand-white-bg input[type='number'],
-.redactor-editor .brand-purple-bg .brand-white-bg input[type='email'],
-.redactor-editor .brand-purple-bg .brand-white-bg input[type='password'],
-.redactor-editor .brand-purple-bg .brand-white-bg input[type='phone'],
-.redactor-editor .brand-purple-bg .brand-white-bg textarea,
-.redactor-editor .brand-orange-bg .brand-white-bg input[type='text'],
-.redactor-editor .brand-orange-bg .brand-white-bg input[type='number'],
-.redactor-editor .brand-orange-bg .brand-white-bg input[type='email'],
-.redactor-editor .brand-orange-bg .brand-white-bg input[type='password'],
-.redactor-editor .brand-orange-bg .brand-white-bg input[type='phone'],
-.redactor-editor .brand-orange-bg .brand-white-bg textarea,
-.redactor-editor .brand-teal-bg .brand-white-bg input[type='text'],
-.redactor-editor .brand-teal-bg .brand-white-bg input[type='number'],
-.redactor-editor .brand-teal-bg .brand-white-bg input[type='email'],
-.redactor-editor .brand-teal-bg .brand-white-bg input[type='password'],
-.redactor-editor .brand-teal-bg .brand-white-bg input[type='phone'],
-.redactor-editor .brand-teal-bg .brand-white-bg textarea,
-.redactor-editor .brand-pink-bg .brand-white-bg input[type='text'],
-.redactor-editor .brand-pink-bg .brand-white-bg input[type='number'],
-.redactor-editor .brand-pink-bg .brand-white-bg input[type='email'],
-.redactor-editor .brand-pink-bg .brand-white-bg input[type='password'],
-.redactor-editor .brand-pink-bg .brand-white-bg input[type='phone'],
-.redactor-editor .brand-pink-bg .brand-white-bg textarea,
-.redactor-editor .brand-darkgray-bg .brand-white-bg input[type='text'],
-.redactor-editor .brand-darkgray-bg .brand-white-bg input[type='number'],
-.redactor-editor .brand-darkgray-bg .brand-white-bg input[type='email'],
-.redactor-editor .brand-darkgray-bg .brand-white-bg input[type='password'],
-.redactor-editor .brand-darkgray-bg .brand-white-bg input[type='phone'],
-.redactor-editor .brand-darkgray-bg .brand-white-bg textarea {
+.redactor-editor [class*='brand'][class*='bg']:not(.brand-offwhite-bg):not(.brand-white-bg) .brand-white-bg input[type='text'], .redactor-editor [class*='brand'][class*='bg']:not(.brand-offwhite-bg):not(.brand-white-bg) .brand-white-bg input[type='number'], .redactor-editor [class*='brand'][class*='bg']:not(.brand-offwhite-bg):not(.brand-white-bg) .brand-white-bg input[type='email'], .redactor-editor [class*='brand'][class*='bg']:not(.brand-offwhite-bg):not(.brand-white-bg) .brand-white-bg input[type='password'], .redactor-editor [class*='brand'][class*='bg']:not(.brand-offwhite-bg):not(.brand-white-bg) .brand-white-bg input[type='phone'], .redactor-editor [class*='brand'][class*='bg']:not(.brand-offwhite-bg):not(.brand-white-bg) .brand-white-bg textarea {
   border-color: #8f8e8c;
 }
-.redactor-editor .brand-green-bg .brand-white-bg input[type='text']:focus, .redactor-editor .brand-green-bg .brand-white-bg input[type='number']:focus, .redactor-editor .brand-green-bg .brand-white-bg input[type='email']:focus, .redactor-editor .brand-green-bg .brand-white-bg input[type='password']:focus, .redactor-editor .brand-green-bg .brand-white-bg input[type='phone']:focus, .redactor-editor .brand-green-bg .brand-white-bg textarea:focus,
-.redactor-editor .brand-purple-bg .brand-white-bg input[type='text']:focus,
-.redactor-editor .brand-purple-bg .brand-white-bg input[type='number']:focus,
-.redactor-editor .brand-purple-bg .brand-white-bg input[type='email']:focus,
-.redactor-editor .brand-purple-bg .brand-white-bg input[type='password']:focus,
-.redactor-editor .brand-purple-bg .brand-white-bg input[type='phone']:focus,
-.redactor-editor .brand-purple-bg .brand-white-bg textarea:focus,
-.redactor-editor .brand-orange-bg .brand-white-bg input[type='text']:focus,
-.redactor-editor .brand-orange-bg .brand-white-bg input[type='number']:focus,
-.redactor-editor .brand-orange-bg .brand-white-bg input[type='email']:focus,
-.redactor-editor .brand-orange-bg .brand-white-bg input[type='password']:focus,
-.redactor-editor .brand-orange-bg .brand-white-bg input[type='phone']:focus,
-.redactor-editor .brand-orange-bg .brand-white-bg textarea:focus,
-.redactor-editor .brand-teal-bg .brand-white-bg input[type='text']:focus,
-.redactor-editor .brand-teal-bg .brand-white-bg input[type='number']:focus,
-.redactor-editor .brand-teal-bg .brand-white-bg input[type='email']:focus,
-.redactor-editor .brand-teal-bg .brand-white-bg input[type='password']:focus,
-.redactor-editor .brand-teal-bg .brand-white-bg input[type='phone']:focus,
-.redactor-editor .brand-teal-bg .brand-white-bg textarea:focus,
-.redactor-editor .brand-pink-bg .brand-white-bg input[type='text']:focus,
-.redactor-editor .brand-pink-bg .brand-white-bg input[type='number']:focus,
-.redactor-editor .brand-pink-bg .brand-white-bg input[type='email']:focus,
-.redactor-editor .brand-pink-bg .brand-white-bg input[type='password']:focus,
-.redactor-editor .brand-pink-bg .brand-white-bg input[type='phone']:focus,
-.redactor-editor .brand-pink-bg .brand-white-bg textarea:focus,
-.redactor-editor .brand-darkgray-bg .brand-white-bg input[type='text']:focus,
-.redactor-editor .brand-darkgray-bg .brand-white-bg input[type='number']:focus,
-.redactor-editor .brand-darkgray-bg .brand-white-bg input[type='email']:focus,
-.redactor-editor .brand-darkgray-bg .brand-white-bg input[type='password']:focus,
-.redactor-editor .brand-darkgray-bg .brand-white-bg input[type='phone']:focus,
-.redactor-editor .brand-darkgray-bg .brand-white-bg textarea:focus {
+.redactor-editor [class*='brand'][class*='bg']:not(.brand-offwhite-bg):not(.brand-white-bg) .brand-white-bg input[type='text']:focus, .redactor-editor [class*='brand'][class*='bg']:not(.brand-offwhite-bg):not(.brand-white-bg) .brand-white-bg input[type='number']:focus, .redactor-editor [class*='brand'][class*='bg']:not(.brand-offwhite-bg):not(.brand-white-bg) .brand-white-bg input[type='email']:focus, .redactor-editor [class*='brand'][class*='bg']:not(.brand-offwhite-bg):not(.brand-white-bg) .brand-white-bg input[type='password']:focus, .redactor-editor [class*='brand'][class*='bg']:not(.brand-offwhite-bg):not(.brand-white-bg) .brand-white-bg input[type='phone']:focus, .redactor-editor [class*='brand'][class*='bg']:not(.brand-offwhite-bg):not(.brand-white-bg) .brand-white-bg textarea:focus {
   border-color: #555;
 }
-.redactor-editor .brand-green-bg .brand-white-bg .select,
-.redactor-editor .brand-purple-bg .brand-white-bg .select,
-.redactor-editor .brand-orange-bg .brand-white-bg .select,
-.redactor-editor .brand-teal-bg .brand-white-bg .select,
-.redactor-editor .brand-pink-bg .brand-white-bg .select,
-.redactor-editor .brand-darkgray-bg .brand-white-bg .select {
+.redactor-editor [class*='brand'][class*='bg']:not(.brand-offwhite-bg):not(.brand-white-bg) .brand-white-bg .select {
   border-color: #8f8e8c;
 }
-.redactor-editor .brand-green-bg .brand-white-bg .select.focus,
-.redactor-editor .brand-purple-bg .brand-white-bg .select.focus,
-.redactor-editor .brand-orange-bg .brand-white-bg .select.focus,
-.redactor-editor .brand-teal-bg .brand-white-bg .select.focus,
-.redactor-editor .brand-pink-bg .brand-white-bg .select.focus,
-.redactor-editor .brand-darkgray-bg .brand-white-bg .select.focus {
+.redactor-editor [class*='brand'][class*='bg']:not(.brand-offwhite-bg):not(.brand-white-bg) .brand-white-bg .select.focus {
   border-color: #555;
 }
-.redactor-editor .brand-green-bg .brand-white-bg label.radio, .redactor-editor .brand-green-bg .brand-white-bg label.checkbox,
-.redactor-editor .brand-purple-bg .brand-white-bg label.radio,
-.redactor-editor .brand-purple-bg .brand-white-bg label.checkbox,
-.redactor-editor .brand-orange-bg .brand-white-bg label.radio,
-.redactor-editor .brand-orange-bg .brand-white-bg label.checkbox,
-.redactor-editor .brand-teal-bg .brand-white-bg label.radio,
-.redactor-editor .brand-teal-bg .brand-white-bg label.checkbox,
-.redactor-editor .brand-pink-bg .brand-white-bg label.radio,
-.redactor-editor .brand-pink-bg .brand-white-bg label.checkbox,
-.redactor-editor .brand-darkgray-bg .brand-white-bg label.radio,
-.redactor-editor .brand-darkgray-bg .brand-white-bg label.checkbox {
+.redactor-editor [class*='brand'][class*='bg']:not(.brand-offwhite-bg):not(.brand-white-bg) .brand-white-bg label.radio, .redactor-editor [class*='brand'][class*='bg']:not(.brand-offwhite-bg):not(.brand-white-bg) .brand-white-bg label.checkbox {
   color: #8f8e8c;
   opacity: 1;
 }
-.redactor-editor .brand-green-bg .brand-white-bg label.radio:before, .redactor-editor .brand-green-bg .brand-white-bg label.checkbox:before,
-.redactor-editor .brand-purple-bg .brand-white-bg label.radio:before,
-.redactor-editor .brand-purple-bg .brand-white-bg label.checkbox:before,
-.redactor-editor .brand-orange-bg .brand-white-bg label.radio:before,
-.redactor-editor .brand-orange-bg .brand-white-bg label.checkbox:before,
-.redactor-editor .brand-teal-bg .brand-white-bg label.radio:before,
-.redactor-editor .brand-teal-bg .brand-white-bg label.checkbox:before,
-.redactor-editor .brand-pink-bg .brand-white-bg label.radio:before,
-.redactor-editor .brand-pink-bg .brand-white-bg label.checkbox:before,
-.redactor-editor .brand-darkgray-bg .brand-white-bg label.radio:before,
-.redactor-editor .brand-darkgray-bg .brand-white-bg label.checkbox:before {
+.redactor-editor [class*='brand'][class*='bg']:not(.brand-offwhite-bg):not(.brand-white-bg) .brand-white-bg label.radio:before, .redactor-editor [class*='brand'][class*='bg']:not(.brand-offwhite-bg):not(.brand-white-bg) .brand-white-bg label.checkbox:before {
   border-color: #8f8e8c;
 }
-.redactor-editor .brand-green-bg .brand-white-bg label.radio:hover, .redactor-editor .brand-green-bg .brand-white-bg label.checkbox:hover,
-.redactor-editor .brand-purple-bg .brand-white-bg label.radio:hover,
-.redactor-editor .brand-purple-bg .brand-white-bg label.checkbox:hover,
-.redactor-editor .brand-orange-bg .brand-white-bg label.radio:hover,
-.redactor-editor .brand-orange-bg .brand-white-bg label.checkbox:hover,
-.redactor-editor .brand-teal-bg .brand-white-bg label.radio:hover,
-.redactor-editor .brand-teal-bg .brand-white-bg label.checkbox:hover,
-.redactor-editor .brand-pink-bg .brand-white-bg label.radio:hover,
-.redactor-editor .brand-pink-bg .brand-white-bg label.checkbox:hover,
-.redactor-editor .brand-darkgray-bg .brand-white-bg label.radio:hover,
-.redactor-editor .brand-darkgray-bg .brand-white-bg label.checkbox:hover {
+.redactor-editor [class*='brand'][class*='bg']:not(.brand-offwhite-bg):not(.brand-white-bg) .brand-white-bg label.radio:hover, .redactor-editor [class*='brand'][class*='bg']:not(.brand-offwhite-bg):not(.brand-white-bg) .brand-white-bg label.checkbox:hover {
   color: inherit;
 }
-.redactor-editor .brand-green-bg .brand-white-bg input[type="radio"]:checked + label.radio,
-.redactor-editor .brand-purple-bg .brand-white-bg input[type="radio"]:checked + label.radio,
-.redactor-editor .brand-orange-bg .brand-white-bg input[type="radio"]:checked + label.radio,
-.redactor-editor .brand-teal-bg .brand-white-bg input[type="radio"]:checked + label.radio,
-.redactor-editor .brand-pink-bg .brand-white-bg input[type="radio"]:checked + label.radio,
-.redactor-editor .brand-darkgray-bg .brand-white-bg input[type="radio"]:checked + label.radio {
-  color: inherit;
+.redactor-editor [class*='brand'][class*='bg']:not(.brand-offwhite-bg):not(.brand-white-bg) .brand-white-bg input[type="radio"]:checked + label.radio {
+  color: #ed027e;
 }
-.redactor-editor .brand-green-bg .brand-white-bg input[type="radio"]:checked + label.radio:before,
-.redactor-editor .brand-purple-bg .brand-white-bg input[type="radio"]:checked + label.radio:before,
-.redactor-editor .brand-orange-bg .brand-white-bg input[type="radio"]:checked + label.radio:before,
-.redactor-editor .brand-teal-bg .brand-white-bg input[type="radio"]:checked + label.radio:before,
-.redactor-editor .brand-pink-bg .brand-white-bg input[type="radio"]:checked + label.radio:before,
-.redactor-editor .brand-darkgray-bg .brand-white-bg input[type="radio"]:checked + label.radio:before {
+.redactor-editor [class*='brand'][class*='bg']:not(.brand-offwhite-bg):not(.brand-white-bg) .brand-white-bg input[type="radio"]:checked + label.radio:before {
   background: #ed027e;
   border-color: #ed027e;
 }
-.redactor-editor .brand-green-bg .brand-white-bg input[type="checkbox"]:checked + label.checkbox,
-.redactor-editor .brand-purple-bg .brand-white-bg input[type="checkbox"]:checked + label.checkbox,
-.redactor-editor .brand-orange-bg .brand-white-bg input[type="checkbox"]:checked + label.checkbox,
-.redactor-editor .brand-teal-bg .brand-white-bg input[type="checkbox"]:checked + label.checkbox,
-.redactor-editor .brand-pink-bg .brand-white-bg input[type="checkbox"]:checked + label.checkbox,
-.redactor-editor .brand-darkgray-bg .brand-white-bg input[type="checkbox"]:checked + label.checkbox {
+.redactor-editor [class*='brand'][class*='bg']:not(.brand-offwhite-bg):not(.brand-white-bg) .brand-white-bg input[type="checkbox"]:checked + label.checkbox {
   color: inherit;
   opacity: 1;
 }
-.redactor-editor .brand-green-bg .brand-white-bg input[type="checkbox"]:checked + label.checkbox:before,
-.redactor-editor .brand-purple-bg .brand-white-bg input[type="checkbox"]:checked + label.checkbox:before,
-.redactor-editor .brand-orange-bg .brand-white-bg input[type="checkbox"]:checked + label.checkbox:before,
-.redactor-editor .brand-teal-bg .brand-white-bg input[type="checkbox"]:checked + label.checkbox:before,
-.redactor-editor .brand-pink-bg .brand-white-bg input[type="checkbox"]:checked + label.checkbox:before,
-.redactor-editor .brand-darkgray-bg .brand-white-bg input[type="checkbox"]:checked + label.checkbox:before {
+.redactor-editor [class*='brand'][class*='bg']:not(.brand-offwhite-bg):not(.brand-white-bg) .brand-white-bg input[type="checkbox"]:checked + label.checkbox:before {
   color: #ed027e;
   border-color: #ed027e;
 }
@@ -2060,144 +1831,198 @@
 .redactor-editor .contained-12 {
   max-width: 1260px;
 }
-.redactor-editor .contained-1260 {
-  max-width: 1260px;
-}
-.redactor-editor .contained-960 {
-  max-width: 945px;
-}
-.redactor-editor .contained-680 {
-  max-width: 630px;
-}
-.redactor-editor .contained-480 {
-  max-width: 420px;
-}
 .redactor-editor .centered {
   margin-left: auto;
   margin-right: auto;
 }
+.redactor-editor .padding-0 {
+  padding: 0px;
+}
 .redactor-editor .padding-0-1x {
-  padding: 0 15px;
+  padding: 0px 20px;
 }
 .redactor-editor .padding-0-2x {
-  padding: 0 30px;
+  padding: 0px 40px;
 }
 .redactor-editor .padding-0-3x {
-  padding: 0 45px;
+  padding: 0px 60px;
 }
 .redactor-editor .padding-0-4x {
-  padding: 0 60px;
+  padding: 0px 80px;
 }
-.redactor-editor .padding-1x-4x {
-  padding: 15px 60px;
+.redactor-editor .padding-0-5x {
+  padding: 0px 100px;
 }
-.redactor-editor .padding-1x-3x {
-  padding: 15px 45px;
-}
-.redactor-editor .padding-1x-2x {
-  padding: 15px 30px;
-}
-.redactor-editor .padding-1x {
-  padding: 15px;
+.redactor-editor .padding-0-6x {
+  padding: 0px 120px;
 }
 .redactor-editor .padding-1x-0 {
-  padding: 15px 0;
+  padding: 20px 0px;
 }
-.redactor-editor .padding-2x-4x {
-  padding: 30px 60px;
+.redactor-editor .padding-1x {
+  padding: 20px;
 }
-.redactor-editor .padding-2x-3x {
-  padding: 30px 45px;
+.redactor-editor .padding-1x-2x {
+  padding: 20px 40px;
 }
-.redactor-editor .padding-2x {
-  padding: 30px;
+.redactor-editor .padding-1x-3x {
+  padding: 20px 60px;
 }
-.redactor-editor .padding-2x-1x {
-  padding: 30px 15px;
+.redactor-editor .padding-1x-4x {
+  padding: 20px 80px;
+}
+.redactor-editor .padding-1x-5x {
+  padding: 20px 100px;
+}
+.redactor-editor .padding-1x-6x {
+  padding: 20px 120px;
 }
 .redactor-editor .padding-2x-0 {
-  padding: 30px 0;
+  padding: 40px 0px;
 }
-.redactor-editor .padding-3x-4x {
-  padding: 45px 60px;
+.redactor-editor .padding-2x-1x {
+  padding: 40px 20px;
 }
-.redactor-editor .padding-3x {
-  padding: 45px;
+.redactor-editor .padding-2x {
+  padding: 40px;
 }
-.redactor-editor .padding-3x-2x {
-  padding: 45px 30px;
+.redactor-editor .padding-2x-3x {
+  padding: 40px 60px;
 }
-.redactor-editor .padding-3x-1x {
-  padding: 45px 15px;
+.redactor-editor .padding-2x-4x {
+  padding: 40px 80px;
+}
+.redactor-editor .padding-2x-5x {
+  padding: 40px 100px;
+}
+.redactor-editor .padding-2x-6x {
+  padding: 40px 120px;
 }
 .redactor-editor .padding-3x-0 {
-  padding: 45px 0;
+  padding: 60px 0px;
 }
-.redactor-editor .padding-4x {
+.redactor-editor .padding-3x-1x {
+  padding: 60px 20px;
+}
+.redactor-editor .padding-3x-2x {
+  padding: 60px 40px;
+}
+.redactor-editor .padding-3x {
   padding: 60px;
 }
-.redactor-editor .padding-4x-3x {
-  padding: 60px 45px;
+.redactor-editor .padding-3x-4x {
+  padding: 60px 80px;
 }
-.redactor-editor .padding-4x-2x {
-  padding: 60px 30px;
+.redactor-editor .padding-3x-5x {
+  padding: 60px 100px;
 }
-.redactor-editor .padding-4x-1x {
-  padding: 60px 15px;
+.redactor-editor .padding-3x-6x {
+  padding: 60px 120px;
 }
 .redactor-editor .padding-4x-0 {
-  padding: 60px 0;
+  padding: 80px 0px;
 }
-.redactor-editor .padding-6x {
-  padding: 90px;
+.redactor-editor .padding-4x-1x {
+  padding: 80px 20px;
+}
+.redactor-editor .padding-4x-2x {
+  padding: 80px 40px;
+}
+.redactor-editor .padding-4x-3x {
+  padding: 80px 60px;
+}
+.redactor-editor .padding-4x {
+  padding: 80px;
+}
+.redactor-editor .padding-4x-5x {
+  padding: 80px 100px;
+}
+.redactor-editor .padding-4x-6x {
+  padding: 80px 120px;
+}
+.redactor-editor .padding-5x-0 {
+  padding: 100px 0px;
+}
+.redactor-editor .padding-5x-1x {
+  padding: 100px 20px;
+}
+.redactor-editor .padding-5x-2x {
+  padding: 100px 40px;
+}
+.redactor-editor .padding-5x-3x {
+  padding: 100px 60px;
+}
+.redactor-editor .padding-5x-4x {
+  padding: 100px 80px;
+}
+.redactor-editor .padding-5x {
+  padding: 100px;
+}
+.redactor-editor .padding-5x-6x {
+  padding: 100px 120px;
 }
 .redactor-editor .padding-6x-0 {
-  padding: 90px 0;
+  padding: 120px 0px;
 }
 .redactor-editor .padding-6x-1x {
-  padding: 90px 15px;
+  padding: 120px 20px;
 }
 .redactor-editor .padding-6x-2x {
-  padding: 90px 30px;
+  padding: 120px 40px;
 }
 .redactor-editor .padding-6x-3x {
-  padding: 90px 45px;
+  padding: 120px 60px;
 }
 .redactor-editor .padding-6x-4x {
-  padding: 90px 60px;
+  padding: 120px 80px;
 }
 .redactor-editor .padding-6x-5x {
-  padding: 90px 75px;
+  padding: 120px 100px;
 }
-.redactor-editor .margin-bottom-4x {
-  margin-bottom: 80px;
+.redactor-editor .padding-6x {
+  padding: 120px;
 }
-.redactor-editor .margin-bottom-3x {
-  margin-bottom: 60px;
-}
-.redactor-editor .margin-bottom-2x {
-  margin-bottom: 40px;
-}
-.redactor-editor .margin-bottom-1x {
-  margin-bottom: 20px;
+.redactor-editor .margin-top-0 {
+  margin-top: 0;
 }
 .redactor-editor .margin-bottom-0 {
   margin-bottom: 0;
 }
-.redactor-editor .margin-top-4x {
-  margin-top: 80px;
+.redactor-editor .margin-top-1x {
+  margin-top: 20px;
 }
-.redactor-editor .margin-top-3x {
-  margin-top: 60px;
+.redactor-editor .margin-bottom-1x {
+  margin-bottom: 20px;
 }
 .redactor-editor .margin-top-2x {
   margin-top: 40px;
 }
-.redactor-editor .margin-top-1x {
-  margin-top: 20px;
+.redactor-editor .margin-bottom-2x {
+  margin-bottom: 40px;
 }
-.redactor-editor .margin-top-0 {
-  margin-top: 0;
+.redactor-editor .margin-top-3x {
+  margin-top: 60px;
+}
+.redactor-editor .margin-bottom-3x {
+  margin-bottom: 60px;
+}
+.redactor-editor .margin-top-4x {
+  margin-top: 80px;
+}
+.redactor-editor .margin-bottom-4x {
+  margin-bottom: 80px;
+}
+.redactor-editor .margin-top-5x {
+  margin-top: 100px;
+}
+.redactor-editor .margin-bottom-5x {
+  margin-bottom: 100px;
+}
+.redactor-editor .margin-top-6x {
+  margin-top: 120px;
+}
+.redactor-editor .margin-bottom-6x {
+  margin-bottom: 120px;
 }
 .redactor-editor .desktop-only {
   display: none;
@@ -2272,6 +2097,19 @@
 .redactor-editor .bg-image.overlay.brand-dark-purple-bg:before {
   background-color: #2d0a3c;
   opacity: .85;
+}
+.redactor-editor .bg-image.overlay.brand-dark-purple-bg.gradient:before {
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(45, 10, 60, 0)), color-stop(25%, rgba(45, 10, 60, 0)), color-stop(75%, rgba(45, 10, 60, 0.75)), color-stop(100%, rgba(45, 10, 60, 0.75)));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, rgba(45, 10, 60, 0) 0%, rgba(45, 10, 60, 0) 25%, rgba(45, 10, 60, 0.75) 75%, rgba(45, 10, 60, 0.75) 100%);
+  /* Chrome10+,Safari5.1+ */
+  /* Opera 11.10+ */
+  /* IE10+ */
+  background: linear-gradient(to bottom, rgba(45, 10, 60, 0) 0%, rgba(45, 10, 60, 0) 25%, rgba(45, 10, 60, 0.75) 75%, rgba(45, 10, 60, 0.75) 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#000000',GradientType=0 );
+  /* IE6-9 */
 }
 .redactor-editor .bg-image.overlay.brand-pink-bg:before {
   background-color: #ed027e;
@@ -2587,99 +2425,6 @@
   .redactor-editor .row > .col.t-col-1 {
     width: 8.33333%;
   }
-  .redactor-editor .padding-0-1x {
-    padding: 0 20px;
-  }
-  .redactor-editor .padding-0-2x {
-    padding: 0 40px;
-  }
-  .redactor-editor .padding-0-3x {
-    padding: 0 60px;
-  }
-  .redactor-editor .padding-0-4x {
-    padding: 0 80px;
-  }
-  .redactor-editor .padding-1x-4x {
-    padding: 20px 80px;
-  }
-  .redactor-editor .padding-1x-3x {
-    padding: 20px 60px;
-  }
-  .redactor-editor .padding-1x-2x {
-    padding: 20px 40px;
-  }
-  .redactor-editor .padding-1x {
-    padding: 20px;
-  }
-  .redactor-editor .padding-1x-0 {
-    padding: 20px 0;
-  }
-  .redactor-editor .padding-2x-4x {
-    padding: 40px 80px;
-  }
-  .redactor-editor .padding-2x-3x {
-    padding: 40px 60px;
-  }
-  .redactor-editor .padding-2x {
-    padding: 40px;
-  }
-  .redactor-editor .padding-2x-1x {
-    padding: 40px 20px;
-  }
-  .redactor-editor .padding-2x-0 {
-    padding: 40px 0;
-  }
-  .redactor-editor .padding-3x-4x {
-    padding: 60px 80px;
-  }
-  .redactor-editor .padding-3x {
-    padding: 60px;
-  }
-  .redactor-editor .padding-3x-2x {
-    padding: 60px 40px;
-  }
-  .redactor-editor .padding-3x-1x {
-    padding: 60px 20px;
-  }
-  .redactor-editor .padding-3x-0 {
-    padding: 60px 0;
-  }
-  .redactor-editor .padding-4x {
-    padding: 80px;
-  }
-  .redactor-editor .padding-4x-3x {
-    padding: 80px 60px;
-  }
-  .redactor-editor .padding-4x-2x {
-    padding: 80px 40px;
-  }
-  .redactor-editor .padding-4x-1x {
-    padding: 80px 20px;
-  }
-  .redactor-editor .padding-4x-0 {
-    padding: 80px 0;
-  }
-  .redactor-editor .padding-6x {
-    padding: 120px;
-  }
-  .redactor-editor .padding-6x-0 {
-    padding: 120px 0;
-  }
-  .redactor-editor .padding-6x-1x {
-    padding: 120px 20px;
-  }
-  .redactor-editor .padding-6x-2x {
-    padding: 120px 40px;
-  }
-  .redactor-editor .padding-6x-3x {
-    padding: 120px 60px;
-  }
-  .redactor-editor .padding-6x-4x {
-    padding: 120px 80px;
-  }
-  .redactor-editor .padding-6x-5x {
-    padding: 120px 100px;
-  }
   .redactor-editor .desktop-only {
     display: none;
   }
@@ -2764,11 +2509,17 @@
   .redactor-editor .row.large-gutter {
     margin-bottom: 40px;
   }
+  .redactor-editor .row.large-gutter:last-child {
+    margin-bottom: 0;
+  }
   .redactor-editor .row.large-gutter > .col {
     margin-bottom: 0;
   }
   .redactor-editor .row.small-gutter {
     margin-bottom: 10px;
+  }
+  .redactor-editor .row.small-gutter:last-child {
+    margin-bottom: 0;
   }
   .redactor-editor .row.small-gutter > .col {
     margin-bottom: 0;
