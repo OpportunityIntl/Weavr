@@ -17,18 +17,32 @@ body {
 
 hr {
   display: block;
-  height: 1px;
+  height: 2px;
   background-color: $brand-offwhite;
   border: none;
-  margin: $gutter 0;
-}
-
-section {
-  position: relative;
+  margin: 2 * $mobile-gutter 0;
+  
+  &.large {
+    height: 5px;
+  }
+  
+  &.decorative {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  @media (min-width: 480px) {
+    margin: 2 * $gutter 0;
+  }
 }
 
 .brand-offwhite-bg hr {
   background-color: $brand-gray;
+}
+
+section {
+  position: relative;
 }
 
 .flex-video {
