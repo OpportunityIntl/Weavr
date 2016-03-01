@@ -198,8 +198,3 @@ Here are a few examples of ways you might combine background images, background 
   </div>
 </div>
 ```
-
----
-
-{% include prev.html url='docs/components/image-backgrounds' title='Image Backgrounds' %}
-{% include next.html url='docs/components/tables' title='Tables' %}

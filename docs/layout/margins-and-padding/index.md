@@ -38,8 +38,3 @@ Below are all of the possible margin classes:
 `.margin-top-0`, `.margin-top-1x`, `.margin-top-2x`, `.margin-top-3x`, `.margin-top-4x`, `.margin-top-5x`, `.margin-top-6x`
 
 `.margin-bottom-0`, `.margin-bottom-1x`, `.margin-bottom-2x`, `.margin-bottom-3x`, `.margin-bottom-4x`, `.margin-bottom-5x`, `.margin-bottom-6x`
-
----
-
-{% include prev.html url='docs/layout/viewport-height-sections' title='Viewport Height Sections' %}
-{% include next.html url='docs/layout/body-copy' title='Body Copy' %}

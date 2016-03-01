@@ -108,8 +108,3 @@ Add the modifier class `.inline` to display list items inline instead of stacked
   <li>Inline list item 3</li>
 </ul>
 ```
-
----
-
-{% include prev.html url='docs/typography/horizontal-rules' title='Horizontal Rules' %}
-{% include next.html url='docs/typography/blockquotes' title='Blockquotes' %}

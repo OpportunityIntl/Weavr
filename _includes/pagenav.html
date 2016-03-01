@@ -1,0 +1,61 @@
+{% assign prev_page = nil %}
+{% assign current_page = nil %}
+{% assign next_page = nil %}
+
+{% for section in site.nav %}
+  {% capture section_url %}{{ site.baseurl }}/{{ section.url }}/{% endcapture %}
+  
+  {% if current_page %}
+    {% unless next_page %}
+      {% assign next_page = section %}
+      {% assign next_page_title = section.title %}
+      {% assign next_page_url = section_url %}
+    {% endunless %}
+    
+    {% break %}
+  {% endif %}
+  
+  {% if page.url == section_url %}
+    {% assign current_page = page %}
+  {% else %}
+    {% assign prev_page = section %}
+    {% assign prev_page_title = section.title %}
+    {% assign prev_page_url = section_url %}
+  {% endif %}
+  
+  {% for document in section.pages %}
+    {% capture document_url %}{{ section_url }}{{ document.url }}/{% endcapture %}
+    
+    {% if current_page %}
+      {% unless next_page %}
+        {% assign next_page = document %}
+        {% assign next_page_title = document.title %}
+        {% assign next_page_url = document_url %}
+      {% endunless %}
+      
+      {% break %}
+    {% else %}
+      {% if page.url == document_url %}
+        {% assign current_page = page %}
+      {% else %}
+        {% assign prev_page = document %}
+        {% assign prev_page_title = document.title %}
+        {% assign prev_page_url = document_url %}
+      {% endif %}
+    {% endif %}
+  {% endfor %}
+{% endfor %}
+
+<hr>
+
+{% if prev_page %}
+<div class="float-left">
+  <a href="{{ prev_page_url }}" class="btn brand-purple-bg">Previous: {{ prev_page_title }}</a>
+</div>
+{% endif %}
+
+{% if next_page %}
+<div class="align-right">
+  <a href="{{ next_page_url }}" class="btn brand-purple-bg">Next: {{ next_page_title }}</a>
+</div>
+{% endif %}

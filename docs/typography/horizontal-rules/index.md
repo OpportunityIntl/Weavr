@@ -52,8 +52,3 @@ Add the `.decorative` modifier class to use a more "decorative" version of a hor
 ```html
 <hr class="large decorative">
 ```
-
----
-
-{% include prev.html url='docs/typography/paragraphs-and-links' title='Paragraphs and Links' %}
-{% include next.html url='docs/typography/lists' title='Lists' %}

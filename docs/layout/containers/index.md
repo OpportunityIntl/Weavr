@@ -69,8 +69,3 @@ Containers can be centered by adding the `.centered` modifier class. This sets t
 <div class="contained-6 centered brand-purple-bg padding-1x margin-bottom-2x"></div>
 <div class="contained-4 centered brand-purple-bg padding-1x"></div>
 ```
-
----
-
-{% include prev.html url='docs/layout/grid' title='Grid' %}
-{% include next.html url='docs/layout/viewport-height-sections' title='Viewport Height Sections' %}

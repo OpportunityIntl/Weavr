@@ -215,8 +215,3 @@ All background color classes, with the exception of `.brand-offwhite-bg`, set th
     </div>
   </div>
 </div>
-
----
-
-{% include prev.html url='docs/components' title='Components' %}
-{% include next.html url='docs/components/buttons' title='Buttons' %}

@@ -48,8 +48,3 @@ Weavr's Javascript automatically checks the height of the content contained in a
     </div>
   </section>
 </div>
-
----
-
-{% include prev.html url='docs/layout/containers' title='Containers' %}
-{% include next.html url='docs/layout/margins-and-padding' title='Margins and Padding' %}

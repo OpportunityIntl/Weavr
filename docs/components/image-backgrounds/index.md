@@ -90,8 +90,3 @@ Turn the background color overlay into a gradient by adding the `.gradient` modi
   <div class="viewport-one-third-height bg-image overlay brand-offwhite-bg gradient" style="background-image: url('{{ site.baseurl }}/images/sample-bg-image.jpg')"></div>
   <div class="viewport-one-third-height bg-image overlay brand-darkgray-bg gradient" style="background-image: url('{{ site.baseurl }}/images/sample-bg-image.jpg')"></div>
 ```
-
----
-
-{% include prev.html url='docs/components/images-and-videos' title='Images and Videos' %}
-{% include next.html url='docs/components/background-overlays' title='Background overlays' %}
