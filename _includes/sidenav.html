@@ -1,47 +1,16 @@
 <nav>
   <ul class="level-1 no-list-style">
-    <li>
-      <a href="{{site.baseurl}}/docs">Getting started</a>
-      <ul class="level-2">
-        <li><a href="{{site.baseurl}}/docs/getting-started/using-weavr">Using Weavr</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="{{site.baseurl}}/docs/typography">Typography</a>
-      <ul class="level-2">
-        <li><a href="{{site.baseurl}}/docs/typography/headings">Headings</a></li>
-        <li><a href="{{site.baseurl}}/docs/typography/paragraphs-and-links">Paragraphs and Links</a></li>
-        <li><a href="{{site.baseurl}}/docs/typography/horizontal-rules">Horizontal Rules</a></li>
-        <li><a href="{{site.baseurl}}/docs/typography/lists">Lists</a></li>
-        <li><a href="{{site.baseurl}}/docs/typography/blockquotes">Blockquotes</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="{{site.baseurl}}/docs/layout">Layout</a>
-      <ul class="level-2">
-        <li><a href="{{site.baseurl}}/docs/layout/grid">Grid</a></li>
-        <li><a href="{{site.baseurl}}/docs/layout/containers">Containers</a></li>
-        <li><a href="{{site.baseurl}}/docs/layout/viewport-height-sections">Viewport height sections</a></li>
-        <li><a href="{{site.baseurl}}/docs/layout/margins-and-padding">Margins and padding</a></li>
-        <li><a href="{{site.baseurl}}/docs/layout/body-copy">Body copy</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="{{site.baseurl}}/docs/components">Components</a>
-      <ul class="level-2">
-        <li><a href="{{site.baseurl}}/docs/components/colors">Colors</a></li>
-        <li><a href="{{site.baseurl}}/docs/components/buttons">Buttons</a></li>
-        <li><a href="{{site.baseurl}}/docs/components/images-and-videos">Images and videos</a></li>
-        <li><a href="{{site.baseurl}}/docs/components/image-backgrounds">Image backgrounds</a></li>
-        <li><a href="{{site.baseurl}}/docs/components/background-overlays">Background overlays</a></li>
-        <li><a href="{{site.baseurl}}/docs/components/tables">Tables</a></li>
-        <li><a href="{{site.baseurl}}/docs/components/forms">Forms</a></li>
-        <li><a href="{{site.baseurl}}/docs/components/icons">Icons</a></li>
-        <li><a href="{{site.baseurl}}/docs/components/loading-indicators">Loading indicators</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="{{site.baseurl}}/docs/libraries">Libraries</a>
-    </li>
+    {% for section in site.nav %}
+      <li {% if page.url contains section.url %}class="current"{% endif %}>
+        <a href="{{ site.baseurl }}/{{ section.url }}">{{ section.title }}</a>
+        <ul class="level-2">
+          {% for document in section.pages %}
+            <li {% if page.url contains document.url %}class="current"{% endif %}>
+              <a href="{{ site.baseurl }}/{{ document.url }}">{{ document.title }}</a>
+            </li>
+          {% endfor %}
+        </ul>
+      </li>
+    {% endfor %}
   </ul>
 </nav>
