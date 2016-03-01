@@ -132,7 +132,7 @@ nav {
   @media (min-width: 960px) {
     display: block;
     float: left;
-    width: 200px;
+    width: 275px;
     padding-right: 40px;
     margin-right: 40px;
     border-right: solid 5px $brand-offwhite;
@@ -169,7 +169,7 @@ nav {
 .sidebar + .content {
   @media (min-width: 960px) {
     float: left;
-    width: calc(100% - 240px);
+    width: calc(100% - 315px);
   }
 }
 
@@ -177,8 +177,8 @@ nav {
   height: 0;
   padding-bottom: 66.66%;
   margin-bottom: 10px;
-}
-
-.swatch:last-child {
-  margin-bottom: 0;
+  
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
