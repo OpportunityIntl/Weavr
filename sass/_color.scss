@@ -1,16 +1,32 @@
+.brand-pink {
+  color: $brand-pink;
+}
+
 .brand-pink-bg {
   background-color: $brand-pink;
   color: #fff;
+}
+
+.brand-light-pink {
+  color: $brand-light-pink;
 }
 
 .brand-light-pink-bg {
   background-color: $brand-light-pink;
   color: #fff;
 }
-    
+
+.brand-orange {
+  color: $brand-orange;
+}
+
 .brand-orange-bg {
   background-color: $brand-orange;
   color: #fff;
+}
+
+.brand-light-orange {
+  color: $brand-light-orange;
 }
 
 .brand-light-orange-bg {
@@ -18,9 +34,17 @@
   color: #fff;
 }
 
+.brand-teal {
+  color: $brand-teal;
+}
+
 .brand-teal-bg {
   background-color: $brand-teal;
   color: #fff;
+}
+
+.brand-light-teal {
+  color: $brand-light-teal;
 }
 
 .brand-light-teal-bg {
@@ -28,9 +52,17 @@
   color: #fff;
 }
 
+.brand-purple {
+  color: $brand-purple;
+}
+
 .brand-purple-bg {
   background-color: $brand-purple;
   color: #fff;
+}
+
+.brand-light-purple {
+  color: $brand-light-purple;
 }
 
 .brand-light-purple-bg {
@@ -38,9 +70,17 @@
   color: #fff;
 }
 
+.brand-dark-purple {
+  color: $brand-dark-purple;
+}
+
 .brand-dark-purple-bg {
   background-color: $brand-dark-purple;
   color: #fff;
+}
+
+.brand-green {
+  color: $brand-green;
 }
 
 .brand-green-bg {
@@ -48,19 +88,36 @@
   color: #fff;
 }
 
+.brand-gray {
+  color: $brand-gray;
+}
+
 .brand-gray-bg {
   background-color: $brand-gray;
   color: #fff;
 }
 
-.brand-darkgray-bg {
+.brand-dark-gray {
+  color: #222;
+}
+
+.brand-darkgray-bg, /* darkgray is deprecated, start using dark-gray */
+.brand-dark-gray-bg {
   background-color: #222;
   color: #fff;
+}
+
+.brand-offwhite {
+  color: $brand-offwhite;
 }
 
 .brand-offwhite-bg {
   background-color: $brand-offwhite;
   color: #333;
+}
+
+.brand-white {
+  color: #fff;
 }
 
 .brand-white-bg {
@@ -72,42 +129,10 @@
   background-color: transparent;
 }
 
-.brand-pink {
-  color: $brand-pink;
+.text-color {
+  color: $text-color;
 }
 
-.brand-orange {
-  color: $brand-orange;
-}
-
-.brand-teal {
-  color: $brand-teal;
-}
-
-.brand-purple {
-  color: $brand-purple;
-}
-
-.brand-light-purple {
-  color: $brand-light-purple;
-}
-
-.brand-dark-purple {
-  color: $brand-dark-purple;
-}
-
-.brand-green {
-  color: $brand-green;
-}
-
-.brand-gray {
-  color: $brand-gray;
-}
-
-.brand-offwhite {
-  color: $brand-offwhite;
-}
-
-.brand-white {
-  color: #fff;
+.text-color-secondary {
+  color: $text-color-secondary;
 }
