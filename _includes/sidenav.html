@@ -6,7 +6,7 @@
         <ul class="level-2">
           {% for document in section.pages %}
             <li {% if page.url contains document.url %}class="current"{% endif %}>
-              <a href="{{ site.baseurl }}/{{ document.url }}">{{ document.title }}</a>
+              <a href="{{ site.baseurl }}/{{ section.url }}/{{ document.url }}">{{ document.title }}</a>
             </li>
           {% endfor %}
         </ul>
