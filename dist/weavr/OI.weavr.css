@@ -387,9 +387,17 @@ td.hide, th.hide {
   background-color: transparent !important;
 }
 
+.brand-pink {
+  color: #ed027e;
+}
+
 .brand-pink-bg {
   background-color: #ed027e;
   color: #fff;
+}
+
+.brand-light-pink {
+  color: #ea69a7;
 }
 
 .brand-light-pink-bg {
@@ -397,9 +405,17 @@ td.hide, th.hide {
   color: #fff;
 }
 
+.brand-orange {
+  color: #f15b22;
+}
+
 .brand-orange-bg {
   background-color: #f15b22;
   color: #fff;
+}
+
+.brand-light-orange {
+  color: #f37d50;
 }
 
 .brand-light-orange-bg {
@@ -407,9 +423,17 @@ td.hide, th.hide {
   color: #fff;
 }
 
+.brand-teal {
+  color: #00abab;
+}
+
 .brand-teal-bg {
   background-color: #00abab;
   color: #fff;
+}
+
+.brand-light-teal {
+  color: #6cc9c8;
 }
 
 .brand-light-teal-bg {
@@ -417,9 +441,17 @@ td.hide, th.hide {
   color: #fff;
 }
 
+.brand-purple {
+  color: #4a0059;
+}
+
 .brand-purple-bg {
   background-color: #4a0059;
   color: #fff;
+}
+
+.brand-light-purple {
+  color: #611171;
 }
 
 .brand-light-purple-bg {
@@ -427,9 +459,17 @@ td.hide, th.hide {
   color: #fff;
 }
 
+.brand-dark-purple {
+  color: #2d0a3c;
+}
+
 .brand-dark-purple-bg {
   background-color: #2d0a3c;
   color: #fff;
+}
+
+.brand-green {
+  color: #7bc557;
 }
 
 .brand-green-bg {
@@ -437,19 +477,36 @@ td.hide, th.hide {
   color: #fff;
 }
 
+.brand-gray {
+  color: #8f8e8c;
+}
+
 .brand-gray-bg {
   background-color: #8f8e8c;
   color: #fff;
 }
 
-.brand-darkgray-bg {
+.brand-dark-gray {
+  color: #222;
+}
+
+.brand-darkgray-bg,
+.brand-dark-gray-bg {
   background-color: #222;
   color: #fff;
+}
+
+.brand-offwhite {
+  color: #efeeea;
 }
 
 .brand-offwhite-bg {
   background-color: #efeeea;
   color: #333;
+}
+
+.brand-white {
+  color: #fff;
 }
 
 .brand-white-bg {
@@ -461,44 +518,12 @@ td.hide, th.hide {
   background-color: transparent;
 }
 
-.brand-pink {
-  color: #ed027e;
+.text-color {
+  color: #333;
 }
 
-.brand-orange {
-  color: #f15b22;
-}
-
-.brand-teal {
-  color: #00abab;
-}
-
-.brand-purple {
-  color: #4a0059;
-}
-
-.brand-light-purple {
-  color: #611171;
-}
-
-.brand-dark-purple {
-  color: #2d0a3c;
-}
-
-.brand-green {
-  color: #7bc557;
-}
-
-.brand-gray {
-  color: #8f8e8c;
-}
-
-.brand-offwhite {
-  color: #efeeea;
-}
-
-.brand-white {
-  color: #fff;
+.text-color-secondary {
+  color: #555;
 }
 
 /**************************/

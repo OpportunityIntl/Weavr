@@ -420,57 +420,100 @@
   border: none;
   background-color: transparent !important;
 }
+.redactor-editor .brand-pink {
+  color: #ed027e;
+}
 .redactor-editor .brand-pink-bg {
   background-color: #ed027e;
   color: #fff;
+}
+.redactor-editor .brand-light-pink {
+  color: #ea69a7;
 }
 .redactor-editor .brand-light-pink-bg {
   background-color: #ea69a7;
   color: #fff;
 }
+.redactor-editor .brand-orange {
+  color: #f15b22;
+}
 .redactor-editor .brand-orange-bg {
   background-color: #f15b22;
   color: #fff;
+}
+.redactor-editor .brand-light-orange {
+  color: #f37d50;
 }
 .redactor-editor .brand-light-orange-bg {
   background-color: #f37d50;
   color: #fff;
 }
+.redactor-editor .brand-teal {
+  color: #00abab;
+}
 .redactor-editor .brand-teal-bg {
   background-color: #00abab;
   color: #fff;
+}
+.redactor-editor .brand-light-teal {
+  color: #6cc9c8;
 }
 .redactor-editor .brand-light-teal-bg {
   background-color: #6cc9c8;
   color: #fff;
 }
+.redactor-editor .brand-purple {
+  color: #4a0059;
+}
 .redactor-editor .brand-purple-bg {
   background-color: #4a0059;
   color: #fff;
+}
+.redactor-editor .brand-light-purple {
+  color: #611171;
 }
 .redactor-editor .brand-light-purple-bg {
   background-color: #611171;
   color: #fff;
 }
+.redactor-editor .brand-dark-purple {
+  color: #2d0a3c;
+}
 .redactor-editor .brand-dark-purple-bg {
   background-color: #2d0a3c;
   color: #fff;
+}
+.redactor-editor .brand-green {
+  color: #7bc557;
 }
 .redactor-editor .brand-green-bg {
   background-color: #7bc557;
   color: #fff;
 }
+.redactor-editor .brand-gray {
+  color: #8f8e8c;
+}
 .redactor-editor .brand-gray-bg {
   background-color: #8f8e8c;
   color: #fff;
 }
-.redactor-editor .brand-darkgray-bg {
+.redactor-editor .brand-dark-gray {
+  color: #222;
+}
+.redactor-editor .brand-darkgray-bg,
+.redactor-editor .brand-dark-gray-bg {
   background-color: #222;
   color: #fff;
+}
+.redactor-editor .brand-offwhite {
+  color: #efeeea;
 }
 .redactor-editor .brand-offwhite-bg {
   background-color: #efeeea;
   color: #333;
+}
+.redactor-editor .brand-white {
+  color: #fff;
 }
 .redactor-editor .brand-white-bg {
   background-color: #fff;
@@ -479,35 +522,11 @@
 .redactor-editor .transparent-bg {
   background-color: transparent;
 }
-.redactor-editor .brand-pink {
-  color: #ed027e;
+.redactor-editor .text-color {
+  color: #333;
 }
-.redactor-editor .brand-orange {
-  color: #f15b22;
-}
-.redactor-editor .brand-teal {
-  color: #00abab;
-}
-.redactor-editor .brand-purple {
-  color: #4a0059;
-}
-.redactor-editor .brand-light-purple {
-  color: #611171;
-}
-.redactor-editor .brand-dark-purple {
-  color: #2d0a3c;
-}
-.redactor-editor .brand-green {
-  color: #7bc557;
-}
-.redactor-editor .brand-gray {
-  color: #8f8e8c;
-}
-.redactor-editor .brand-offwhite {
-  color: #efeeea;
-}
-.redactor-editor .brand-white {
-  color: #fff;
+.redactor-editor .text-color-secondary {
+  color: #555;
 }
 .redactor-editor ::-webkit-input-placeholder {
   color: #8f8e8c;
