@@ -192,7 +192,7 @@ Here are a few examples of ways you might combine background images, background 
 </div>
 
 ```html
-<div class="viewport-half-height bg-image overlay brand-darkgray-bg gradient" style="background-image: url('{{ site.baseurl }}/images/sample-bg-image.jpg')">
+<div class="viewport-half-height bg-image overlay" style="background-image: url('{{ site.baseurl }}/images/sample-bg-image.jpg')">
   <div class="content-overlay padding-2x bottom right brand-purple-bg">
     <h1>Here's a heading <span class="subheading">and subheading</span></h1>
   </div>
