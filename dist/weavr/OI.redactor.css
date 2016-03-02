@@ -6,6 +6,9 @@
 /* Colors */
 .redactor-editor {
   /* Colors */
+  /***************/
+  /**** Logos ****/
+  /***************/
   /**************************/
   /**** Placeholder text ****/
   /**************************/
@@ -419,6 +422,42 @@
 .redactor-editor td.hide, .redactor-editor th.hide {
   border: none;
   background-color: transparent !important;
+}
+.redactor-editor .oi-logo {
+  width: 126px;
+  height: 40px;
+  display: block;
+  background-image: url("images/logo-onwhite-sprite-mobile.png");
+  background-repeat: no-repeat;
+  background-position: left 0%;
+  background-size: auto 500%;
+}
+.redactor-editor .oi-logo.australia {
+  background-image: url("images/logo-au-onwhite-sprite-mobile.png");
+}
+.redactor-editor .oi-logo.canada {
+  background-image: url("images/logo-ca-onwhite-sprite-mobile.png");
+}
+.redactor-editor .oi-logo.on-dark {
+  background-image: url("images/logo-ondark-sprite-mobile.png");
+}
+.redactor-editor .oi-logo.on-dark.australia {
+  background-image: url("images/logo-au-ondark-sprite-mobile.png");
+}
+.redactor-editor .oi-logo.on-dark.canada {
+  background-image: url("images/logo-ca-ondark-sprite-mobile.png");
+}
+.redactor-editor .oi-logo.brand-purple {
+  background-position: left 25%;
+}
+.redactor-editor .oi-logo.brand-teal {
+  background-position: left 50%;
+}
+.redactor-editor .oi-logo.brand-orange {
+  background-position: left 75%;
+}
+.redactor-editor .oi-logo.brand-pink {
+  background-position: left 100%;
 }
 .redactor-editor .brand-pink {
   color: #ed027e;
@@ -2822,5 +2861,67 @@
   .redactor-editor .brand-teal-bg.loading-indicator,
   .redactor-editor .brand-teal-bg .loading-indicator {
     background-image: url("images/loading-indicator-white-2x.png");
+  }
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi) {
+  .redactor-editor .oi-logo {
+    background-image: url("images/logo-onwhite-sprite-mobile-2x.png");
+  }
+  .redactor-editor .oi-logo.australia {
+    background-image: url("images/logo-au-onwhite-sprite-mobile-2x.png");
+  }
+  .redactor-editor .oi-logo.canada {
+    background-image: url("images/logo-ca-onwhite-sprite-mobile-2x.png");
+  }
+  .redactor-editor .oi-logo.on-dark {
+    background-image: url("images/logo-ondark-sprite-mobile-2x.png");
+  }
+  .redactor-editor .oi-logo.on-dark.australia {
+    background-image: url("images/logo-au-ondark-sprite-mobile-2x.png");
+  }
+  .redactor-editor .oi-logo.on-dark.canada {
+    background-image: url("images/logo-ca-ondark-sprite-mobile-2x.png");
+  }
+}
+@media (min-width: 960px) {
+  .redactor-editor .oi-logo {
+    width: 215px;
+    height: 75px;
+    background-image: url("images/logo-onwhite-sprite.png");
+  }
+  .redactor-editor .oi-logo.australia {
+    background-image: url("images/logo-au-onwhite-sprite.png");
+  }
+  .redactor-editor .oi-logo.canada {
+    background-image: url("images/logo-ca-onwhite-sprite.png");
+  }
+  .redactor-editor .oi-logo.on-dark {
+    background-image: url("images/logo-ondark-sprite.png");
+  }
+  .redactor-editor .oi-logo.on-dark.australia {
+    background-image: url("images/logo-au-ondark-sprite.png");
+  }
+  .redactor-editor .oi-logo.on-dark.canada {
+    background-image: url("images/logo-ca-ondark-sprite.png");
+  }
+}
+@media only screen and (min-width: 960px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 960px) and (min-resolution: 192dpi) {
+  .redactor-editor .oi-logo {
+    background-image: url("images/logo-onwhite-sprite-2x.png");
+  }
+  .redactor-editor .oi-logo.australia {
+    background-image: url("images/logo-au-onwhite-sprite-2x.png");
+  }
+  .redactor-editor .oi-logo.canada {
+    background-image: url("images/logo-ca-onwhite-sprite-2x.png");
+  }
+  .redactor-editor .oi-logo.on-dark {
+    background-image: url("images/logo-ondark-sprite-2x.png");
+  }
+  .redactor-editor .oi-logo.on-dark.australia {
+    background-image: url("images/logo-au-ondark-sprite-2x.png");
+  }
+  .redactor-editor .oi-logo.on-dark.canada {
+    background-image: url("images/logo-ca-ondark-sprite-2x.png");
   }
 }

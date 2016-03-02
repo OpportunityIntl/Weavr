@@ -149,6 +149,20 @@ th { text-align: left; font-weight: bold; text-transform: uppercase; letter-spac
 
 td.hide, th.hide { border: none; background-color: transparent !important; }
 
+/***************/
+/**** Logos ****/
+/***************/
+.oi-logo { width: 126px; height: 40px; display: block; background-image: url("images/logo-onwhite-sprite-mobile.png"); background-repeat: no-repeat; background-position: left 0%; background-size: auto 500%; }
+.oi-logo.australia { background-image: url("images/logo-au-onwhite-sprite-mobile.png"); }
+.oi-logo.canada { background-image: url("images/logo-ca-onwhite-sprite-mobile.png"); }
+.oi-logo.on-dark { background-image: url("images/logo-ondark-sprite-mobile.png"); }
+.oi-logo.on-dark.australia { background-image: url("images/logo-au-ondark-sprite-mobile.png"); }
+.oi-logo.on-dark.canada { background-image: url("images/logo-ca-ondark-sprite-mobile.png"); }
+.oi-logo.brand-purple { background-position: left 25%; }
+.oi-logo.brand-teal { background-position: left 50%; }
+.oi-logo.brand-orange { background-position: left 75%; }
+.oi-logo.brand-pink { background-position: left 100%; }
+
 .brand-pink { color: #ed027e; }
 
 .brand-pink-bg { background-color: #ed027e; color: #fff; }
@@ -1010,3 +1024,18 @@ button.btn { display: inline-block; width: auto; }
   .no-desktop { display: none; } }
 @media (min-width: 1260px) { /* desktop */ }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { .loading-indicator { background-image: url("images/loading-indicator-2x.png"); } .loading-indicator.white { background-image: url("images/loading-indicator-white-2x.png"); } .brand-purple-bg.loading-indicator, .brand-purple-bg .loading-indicator, .brand-pink-bg.loading-indicator, .brand-pink-bg .loading-indicator, .brand-orange-bg.loading-indicator, .brand-orange-bg .loading-indicator, .brand-green-bg.loading-indicator, .brand-green-bg .loading-indicator, .brand-teal-bg.loading-indicator, .brand-teal-bg .loading-indicator { background-image: url("images/loading-indicator-white-2x.png"); } }
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi) { .oi-logo { background-image: url("images/logo-onwhite-sprite-mobile-2x.png"); }
+  .oi-logo.australia { background-image: url("images/logo-au-onwhite-sprite-mobile-2x.png"); }
+  .oi-logo.canada { background-image: url("images/logo-ca-onwhite-sprite-mobile-2x.png"); } .oi-logo.on-dark { background-image: url("images/logo-ondark-sprite-mobile-2x.png"); }
+  .oi-logo.on-dark.australia { background-image: url("images/logo-au-ondark-sprite-mobile-2x.png"); }
+  .oi-logo.on-dark.canada { background-image: url("images/logo-ca-ondark-sprite-mobile-2x.png"); } }
+@media (min-width: 960px) { .oi-logo { width: 215px; height: 75px; background-image: url("images/logo-onwhite-sprite.png"); }
+  .oi-logo.australia { background-image: url("images/logo-au-onwhite-sprite.png"); }
+  .oi-logo.canada { background-image: url("images/logo-ca-onwhite-sprite.png"); } .oi-logo.on-dark { background-image: url("images/logo-ondark-sprite.png"); }
+  .oi-logo.on-dark.australia { background-image: url("images/logo-au-ondark-sprite.png"); }
+  .oi-logo.on-dark.canada { background-image: url("images/logo-ca-ondark-sprite.png"); } }
+@media only screen and (min-width: 960px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 960px) and (min-resolution: 192dpi) { .oi-logo { background-image: url("images/logo-onwhite-sprite-2x.png"); }
+  .oi-logo.australia { background-image: url("images/logo-au-onwhite-sprite-2x.png"); }
+  .oi-logo.canada { background-image: url("images/logo-ca-onwhite-sprite-2x.png"); } .oi-logo.on-dark { background-image: url("images/logo-ondark-sprite-2x.png"); }
+  .oi-logo.on-dark.australia { background-image: url("images/logo-au-ondark-sprite-2x.png"); }
+  .oi-logo.on-dark.canada { background-image: url("images/logo-ca-ondark-sprite-2x.png"); } }
