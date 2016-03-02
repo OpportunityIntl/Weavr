@@ -250,51 +250,24 @@ td, th {
 /***************/
 
 .oi-logo {
-  width: 126px;
-  height: 40px;
+  width: 215px;
+  height: 75px;
   display: block;
-  background-image: url('images/logo-onwhite-sprite-mobile.png');
+  background-image: url('images/logo-onwhite-sprite.png');
   background-repeat: no-repeat;
   background-position: left 0%;
   background-size: auto 500%;
   
   &.australia {
-    background-image: url('images/logo-au-onwhite-sprite-mobile.png');
+    background-image: url('images/logo-au-onwhite-sprite.png');
   }
   
   &.canada {
-    background-image: url('images/logo-ca-onwhite-sprite-mobile.png');
+    background-image: url('images/logo-ca-onwhite-sprite.png');
   }
   
   @media only screen and (-webkit-min-device-pixel-ratio: 2),
   only screen and (min-resolution: 192dpi) {
-    background-image: url('images/logo-onwhite-sprite-mobile-2x.png');
-    
-    &.australia {
-      background-image: url('images/logo-au-onwhite-sprite-mobile-2x.png');
-    }
-    
-    &.canada {
-      background-image: url('images/logo-ca-onwhite-sprite-mobile-2x.png');
-    }
-  }
-  
-  @media (min-width: 960px) {
-    width: 215px;
-    height: 75px;
-    background-image: url('images/logo-onwhite-sprite.png');
-    
-    &.australia {
-      background-image: url('images/logo-au-onwhite-sprite.png');
-    }
-    
-    &.canada {
-      background-image: url('images/logo-ca-onwhite-sprite.png');
-    }
-  }
-  
-  @media only screen and (min-width: 960px) and (-webkit-min-device-pixel-ratio: 2),
-  only screen and (min-width: 960px) and (min-resolution: 192dpi) {
     background-image: url('images/logo-onwhite-sprite-2x.png');
     
     &.australia {
@@ -306,44 +279,46 @@ td, th {
     }
   }
   
-  &.on-dark {
-    background-image: url('images/logo-ondark-sprite-mobile.png');
+  &.small {
+    width: 126px;
+    height: 40px;
+    background-image: url('images/logo-onwhite-sprite-mobile.png');
     
     &.australia {
-      background-image: url('images/logo-au-ondark-sprite-mobile.png');
+      background-image: url('images/logo-au-onwhite-sprite-mobile.png');
     }
     
     &.canada {
-      background-image: url('images/logo-ca-ondark-sprite-mobile.png');
+      background-image: url('images/logo-ca-onwhite-sprite-mobile.png');
     }
     
     @media only screen and (-webkit-min-device-pixel-ratio: 2),
     only screen and (min-resolution: 192dpi) {
-      background-image: url('images/logo-ondark-sprite-mobile-2x.png');
+      background-image: url('images/logo-onwhite-sprite-mobile-2x.png');
       
       &.australia {
-        background-image: url('images/logo-au-ondark-sprite-mobile-2x.png');
+        background-image: url('images/logo-au-onwhite-sprite-mobile-2x.png');
       }
       
       &.canada {
-        background-image: url('images/logo-ca-ondark-sprite-mobile-2x.png');
+        background-image: url('images/logo-ca-onwhite-sprite-mobile-2x.png');
       }
     }
+  }
+  
+  &.on-dark {
+    background-image: url('images/logo-ondark-sprite.png');
     
-    @media (min-width: 960px) {
-      background-image: url('images/logo-ondark-sprite.png');
-      
-      &.australia {
-        background-image: url('images/logo-au-ondark-sprite.png');
-      }
-      
-      &.canada {
-        background-image: url('images/logo-ca-ondark-sprite.png');
-      }
+    &.australia {
+      background-image: url('images/logo-au-ondark-sprite.png');
     }
     
-    @media only screen and (min-width: 960px) and (-webkit-min-device-pixel-ratio: 2),
-    only screen and (min-width: 960px) and (min-resolution: 192dpi) {
+    &.canada {
+      background-image: url('images/logo-ca-ondark-sprite.png');
+    }
+    
+    @media only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (min-resolution: 192dpi) {
       background-image: url('images/logo-ondark-sprite-2x.png');
       
       &.australia {
@@ -352,6 +327,31 @@ td, th {
       
       &.canada {
         background-image: url('images/logo-ca-ondark-sprite-2x.png');
+      }
+    }
+    
+    &.small {
+      background-image: url('images/logo-ondark-sprite-mobile.png');
+      
+      &.australia {
+        background-image: url('images/logo-au-ondark-sprite-mobile.png');
+      }
+      
+      &.canada {
+        background-image: url('images/logo-ca-ondark-sprite-mobile.png');
+      }
+      
+      @media only screen and (-webkit-min-device-pixel-ratio: 2),
+      only screen and (min-resolution: 192dpi) {
+        background-image: url('images/logo-ondark-sprite-mobile-2x.png');
+        
+        &.australia {
+          background-image: url('images/logo-au-ondark-sprite-mobile-2x.png');
+        }
+        
+        &.canada {
+          background-image: url('images/logo-ca-ondark-sprite-mobile-2x.png');
+        }
       }
     }
   }
