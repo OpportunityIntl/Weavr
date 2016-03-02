@@ -993,7 +993,8 @@ button.btn { display: inline-block; width: auto; }
   .netbook-only { display: none; }
   .tablet-only { display: block; }
   .mobile-only { display: none; }
-  .no-tablet { display: none; } }
+  .no-tablet { display: none; }
+  .no-mobile { display: block; } }
 @media (min-width: 800px) { /* netbook */ .row > .col.n-col-12 { width: 100%; }
   .row > .col.n-col-11 { width: 91.66667%; }
   .row > .col.n-col-10 { width: 83.33333%; }

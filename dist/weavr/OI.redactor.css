@@ -2718,6 +2718,9 @@
   .redactor-editor .no-tablet {
     display: none;
   }
+  .redactor-editor .no-mobile {
+    display: block;
+  }
 }
 @media (min-width: 800px) {
   /* netbook */
