@@ -130,6 +130,10 @@
   .no-tablet {
     display: none;
   }
+  
+  .no-mobile {
+    display: block;
+  }
 }
 
 @media (min-width: 800px) {

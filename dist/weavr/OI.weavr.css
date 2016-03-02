@@ -387,6 +387,66 @@ td.hide, th.hide {
   background-color: transparent !important;
 }
 
+/***************/
+/**** Logos ****/
+/***************/
+.oi-logo {
+  width: 215px;
+  height: 75px;
+  display: block;
+  background-image: url("images/logo-onwhite-sprite.png");
+  background-repeat: no-repeat;
+  background-position: left 0%;
+  background-size: auto 500%;
+}
+.oi-logo.australia {
+  background-image: url("images/logo-au-onwhite-sprite.png");
+}
+.oi-logo.canada {
+  background-image: url("images/logo-ca-onwhite-sprite.png");
+}
+.oi-logo.small {
+  width: 126px;
+  height: 40px;
+  background-image: url("images/logo-onwhite-sprite-mobile.png");
+}
+.oi-logo.small.australia {
+  background-image: url("images/logo-au-onwhite-sprite-mobile.png");
+}
+.oi-logo.small.canada {
+  background-image: url("images/logo-ca-onwhite-sprite-mobile.png");
+}
+.oi-logo.on-dark {
+  background-image: url("images/logo-ondark-sprite.png");
+}
+.oi-logo.on-dark.australia {
+  background-image: url("images/logo-au-ondark-sprite.png");
+}
+.oi-logo.on-dark.canada {
+  background-image: url("images/logo-ca-ondark-sprite.png");
+}
+.oi-logo.on-dark.small {
+  background-image: url("images/logo-ondark-sprite-mobile.png");
+}
+.oi-logo.on-dark.small.australia {
+  background-image: url("images/logo-au-ondark-sprite-mobile.png");
+}
+.oi-logo.on-dark.small.canada {
+  background-image: url("images/logo-ca-ondark-sprite-mobile.png");
+}
+.oi-logo.brand-purple {
+  background-position: left 25%;
+}
+.oi-logo.brand-teal {
+  background-position: left 50%;
+}
+.oi-logo.brand-orange {
+  background-position: left 75%;
+}
+.oi-logo.brand-pink {
+  background-position: left 100%;
+}
+
 .brand-pink {
   color: #ed027e;
 }
@@ -2977,6 +3037,10 @@ button.btn {
   .no-tablet {
     display: none;
   }
+
+  .no-mobile {
+    display: block;
+  }
 }
 @media (min-width: 800px) {
   /* netbook */
@@ -3139,5 +3203,43 @@ button.btn {
   .brand-teal-bg.loading-indicator,
   .brand-teal-bg .loading-indicator {
     background-image: url("images/loading-indicator-white-2x.png");
+  }
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi) {
+  .oi-logo {
+    background-image: url("images/logo-onwhite-sprite-2x.png");
+  }
+  .oi-logo.australia {
+    background-image: url("images/logo-au-onwhite-sprite-2x.png");
+  }
+  .oi-logo.canada {
+    background-image: url("images/logo-ca-onwhite-sprite-2x.png");
+  }
+  .oi-logo.small {
+    background-image: url("images/logo-onwhite-sprite-mobile-2x.png");
+  }
+  .oi-logo.small.australia {
+    background-image: url("images/logo-au-onwhite-sprite-mobile-2x.png");
+  }
+  .oi-logo.small.canada {
+    background-image: url("images/logo-ca-onwhite-sprite-mobile-2x.png");
+  }
+  .oi-logo.on-dark {
+    background-image: url("images/logo-ondark-sprite-2x.png");
+  }
+  .oi-logo.on-dark.australia {
+    background-image: url("images/logo-au-ondark-sprite-2x.png");
+  }
+  .oi-logo.on-dark.canada {
+    background-image: url("images/logo-ca-ondark-sprite-2x.png");
+  }
+  .oi-logo.on-dark.small {
+    background-image: url("images/logo-ondark-sprite-mobile-2x.png");
+  }
+  .oi-logo.on-dark.small.australia {
+    background-image: url("images/logo-au-ondark-sprite-mobile-2x.png");
+  }
+  .oi-logo.on-dark.small.canada {
+    background-image: url("images/logo-ca-ondark-sprite-mobile-2x.png");
   }
 }
