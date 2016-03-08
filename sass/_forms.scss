@@ -22,7 +22,7 @@ input[type='text'], input[type='number'], input[type='email'], input[type='passw
   box-shadow: none;
   
   &:focus {
-    border-color: #555;
+    border-color: $text-color-secondary;
   }
 }
 
@@ -43,9 +43,9 @@ input[type='submit'], input[type="button"] {
 
 label {
   display: block;
-  font-family: $font-secondary;
-  font-style: italic;
-  color: $brand-gray;
+  color: $text-color-secondary;
+  font-size: .875em;
+  font-weight: bold;
   margin-bottom: 0.5 * $gutter;
 }
 
@@ -198,7 +198,7 @@ fieldset {
       border-color: $brand-gray;
       
       &:focus {
-        border-color: #555;
+        border-color: $text-color-secondary;
       }
     }
     
@@ -206,7 +206,7 @@ fieldset {
       border-color: $brand-gray;
       
       &.focus {
-        border-color: #555;
+        border-color: $text-color-secondary;
       }
     }
     
@@ -392,7 +392,7 @@ input[type="radio"]:checked + label.btn {
   transition: border-color .2s;
   
   &.focus {
-    border-color: #555;
+    border-color: $text-color-secondary;
   }
   
   select {

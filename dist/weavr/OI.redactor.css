@@ -1098,9 +1098,9 @@
 }
 .redactor-editor label {
   display: block;
-  font-family: "Times New Roman", Times, serif;
-  font-style: italic;
-  color: #8f8e8c;
+  color: #555;
+  font-size: .875em;
+  font-weight: bold;
   margin-bottom: 10px;
 }
 .redactor-editor fieldset {
