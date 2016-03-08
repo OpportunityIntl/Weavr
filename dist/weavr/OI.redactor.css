@@ -1284,6 +1284,8 @@
 .redactor-editor label.radio, .redactor-editor label.checkbox {
   font-family: "proxima-nova", Arial, sans-serif;
   font-style: normal;
+  font-weight: normal;
+  font-size: 1em;
   position: relative;
   cursor: pointer;
   line-height: 1em;

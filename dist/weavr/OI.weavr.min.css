@@ -475,7 +475,7 @@ input[type="radio"]:checked + label.radio:before { background: #ed027e; border-c
 input[type="checkbox"]:checked + label.checkbox { color: #333; }
 input[type="checkbox"]:checked + label.checkbox:before { content: '\e607'; font-family: "oi-icons"; color: #ed027e; border-color: #ed027e; }
 
-label.radio, label.checkbox { font-family: "proxima-nova", Arial, sans-serif; font-style: normal; position: relative; cursor: pointer; line-height: 1em; }
+label.radio, label.checkbox { font-family: "proxima-nova", Arial, sans-serif; font-style: normal; font-weight: normal; font-size: 1em; position: relative; cursor: pointer; line-height: 1em; }
 label.radio:before, label.checkbox:before { content: ''; display: block; border: solid 1px #8f8e8c; width: .75em; height: .75em; line-height: .75em; text-align: center; position: absolute; left: 0; }
 label.radio.inline, label.checkbox.inline { display: inline-block; margin-right: 20px; }
 label.radio.inline:last-of-type, label.checkbox.inline:last-of-type { margin-right: 0; }
