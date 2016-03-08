@@ -47,6 +47,25 @@
           $('#output').html('$' + this.formatNumber(value !== null ? value : 0));
         }
       });
+      
+      (function($) {
+        var keypoint = $('nav').offset().top + $('nav').outerHeight(true);
+        var scrollTop;
+        var $sidebar = $('#sidebar');
+        var $document = $(document);
+        var fixed = false;
+        $document.on('scroll.sidebar', function() {
+          scrollTop = $document.scrollTop();
+          
+          if (scrollTop > keypoint && !fixed) {
+            $sidebar.addClass('fixed');
+            fixed = true;
+          } else if (scrollTop <= keypoint && fixed) {
+            $sidebar.removeClass('fixed');
+            fixed = false;
+          }
+        });
+      })(jQuery);
     </script>
   </body>
 </html>

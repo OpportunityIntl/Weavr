@@ -1,11 +1,16 @@
 #sidebar {
-  position: fixed;
-  left: 0;
-  top: 0;
   width: 340px;
-  height: 100%;
-  overflow: auto;
-  top: 76px;
+  position: absolute;
+  left: 0;
+  
+  &.fixed {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 340px;
+    height: 100%;
+    overflow: auto;
+  }
 }
 
 #sidebar ul.level-1 > li {
@@ -18,7 +23,7 @@
 
 [data-href]:hover {
   cursor: pointer;
-  color: #00abab;
+  color: $brand-green;
 }
 
 #content {
