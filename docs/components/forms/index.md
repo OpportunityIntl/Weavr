@@ -116,6 +116,8 @@ This requires that the input be placed immediately before the label. Add the cla
 <div class="demo">
   <div class="row">
     <div class="col col-6 t-col-6 m-col-12">
+      <label>Radio buttons</label>
+      
       <input type="radio" id="radio-group-1" name="radio-group" value="1">
       <label for="radio-group-1" class="radio">Radio button 1</label>
 
@@ -126,6 +128,8 @@ This requires that the input be placed immediately before the label. Add the cla
       <label for="radio-group-3" class="radio">Radio button 3</label>
     </div>
     <div class="col col-6 t-col-6 m-col-12">
+      <label>Checkboxes</label>
+      
       <input type="checkbox" id="checkbox-1" value="1">
       <label for="checkbox-1" class="checkbox">Checkbox 1</label>
       
@@ -139,7 +143,8 @@ This requires that the input be placed immediately before the label. Add the cla
 </div>
 
 ```html
-<!-- Radio buttons -->
+<label>Radio buttons</label>
+
 <input type="radio" id="radio-group-1" name="radio-group" value="1">
 <label for="radio-group-1" class="radio">Radio button 1</label>
 
@@ -149,7 +154,8 @@ This requires that the input be placed immediately before the label. Add the cla
 <input type="radio" id="radio-group-3" name="radio-group" value="3">
 <label for="radio-group-3" class="radio">Radio button 3</label>
 
-<!-- Checkboxes -->
+<label>Checkboxes</label>
+
 <input type="checkbox" id="checkbox-1" value="1">
 <label for="checkbox-1" class="checkbox">Checkbox 1</label>
 
@@ -167,6 +173,8 @@ To display radio buttons and checkboxes as inline elements, just add the `.inlin
 <div class="demo">
   <div class="row">
     <div class="col col-12 t-col-12 m-col-12">
+      <label>Inline radio buttons</label>
+      
       <input type="radio" id="inline-radio-group-1" name="inline-radio-group" value="1">
       <label for="inline-radio-group-1" class="radio inline">Inline Radio 1</label>
 
@@ -179,6 +187,8 @@ To display radio buttons and checkboxes as inline elements, just add the `.inlin
   </div>
   <div class="row">
     <div class="col col-12 t-col-12 m-col-12">
+      <label>Inline checkboxes</label>
+      
       <input type="checkbox" id="inline-checkbox-1" value="1">
       <label for="inline-checkbox-1" class="checkbox inline">Inline checkbox 1</label>
       
@@ -192,7 +202,8 @@ To display radio buttons and checkboxes as inline elements, just add the `.inlin
 </div>
 
 ```html
-<!-- Inline radio buttons -->
+<label>Inline radio buttons</label>
+
 <input type="radio" id="inline-radio-group-1" name="inline-radio-group" value="1">
 <label for="inline-radio-group-1" class="radio inline">Inline Radio 1</label>
 
@@ -202,7 +213,8 @@ To display radio buttons and checkboxes as inline elements, just add the `.inlin
 <input type="radio" id="inline-radio-group-3" name="inline-radio-group" value="3">
 <label for="inline-radio-group-3" class="radio inline">Inline Radio 3</label>
 
-<!-- Inline checkboxes -->
+<label>Inline checkboxes</label>
+
 <input type="checkbox" id="inline-checkbox-1" value="1">
 <label for="inline-checkbox-1" class="checkbox inline">Inline checkbox 1</label>
 
@@ -211,4 +223,109 @@ To display radio buttons and checkboxes as inline elements, just add the `.inlin
 
 <input type="checkbox" id="inline-checkbox-3" value="3">
 <label for="inline-checkbox-3" class="checkbox inline">Inline checkbox 3</label>
+```
+
+### Small radio buttons and checkboxes
+
+To make the radio buttons and checkboxes smaller, add the `.small` modifier class.
+
+<div class="demo">
+  <div class="row">
+    <div class="col col-12 t-col-12 m-col-12">
+      <label>Small radio buttons</label>
+      
+      <input type="radio" id="small-inline-radio-group-1" name="small-inline-radio-group small" value="1">
+      <label for="small-inline-radio-group-1" class="radio inline small">Option 1</label>
+
+      <input type="radio" id="small-inline-radio-group-2" name="small-inline-radio-group small" value="2">
+      <label for="small-inline-radio-group-2" class="radio inline small">Option 2</label>
+
+      <input type="radio" id="small-inline-radio-group-3" name="small-inline-radio-group small" value="3">
+      <label for="small-inline-radio-group-3" class="radio inline small">Option 3</label>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col col-12 t-col-12 m-col-12">
+      <label>Small checkboxes</label>
+      
+      <input type="checkbox" id="small-inline-checkbox-1" value="1">
+      <label for="small-inline-checkbox-1" class="checkbox inline small">Option 1</label>
+      
+      <input type="checkbox" id="small-inline-checkbox-2" value="2">
+      <label for="small-inline-checkbox-2" class="checkbox inline small">Option 2</label>
+      
+      <input type="checkbox" id="small-inline-checkbox-3" value="3">
+      <label for="small-inline-checkbox-3" class="checkbox inline small">Option 3</label>
+    </div>
+  </div>
+</div>
+
+```html
+<label>Small radio buttons</label>
+
+<input type="radio" id="small-inline-radio-group-1" name="small-inline-radio-group small" value="1">
+<label for="small-inline-radio-group-1" class="radio inline small">Option 1</label>
+
+<input type="radio" id="small-inline-radio-group-2" name="small-inline-radio-group small" value="2">
+<label for="small-inline-radio-group-2" class="radio inline small">Option 2</label>
+
+<input type="radio" id="small-inline-radio-group-3" name="small-inline-radio-group small" value="3">
+<label for="small-inline-radio-group-3" class="radio inline small">Option 3</label>
+
+<label>Small checkboxes</label>
+
+<input type="checkbox" id="small-inline-checkbox-1" value="1">
+<label for="small-inline-checkbox-1" class="checkbox inline small">Option 1</label>
+
+<input type="checkbox" id="small-inline-checkbox-2" value="2">
+<label for="small-inline-checkbox-2" class="checkbox inline small">Option 2</label>
+
+<input type="checkbox" id="small-inline-checkbox-3" value="3">
+<label for="small-inline-checkbox-3" class="checkbox inline small">Option 3</label>
+```
+
+### Radio inputs styled as buttons
+
+Radio inputs can be styled to look like buttons. Just use the class `.btn` instead of `.radio` on the label tag.
+
+<div class="demo">
+  <div class="row">
+    <div class="col col-3 t-col-6 m-col-6">
+      <input type="radio" id="button-radio-1" name="button-radio" value="20">
+      <label class="btn" for="button-radio-1">$20</label>
+    </div>
+    <div class="col col-3 t-col-6 m-col-6">
+      <input type="radio" id="button-radio-2" name="button-radio" value="50">
+      <label class="btn" for="button-radio-2">$50</label>
+    </div>
+    <div class="col col-3 t-col-6 m-col-6">
+      <input type="radio" id="button-radio-3" name="button-radio" value="100">
+      <label class="btn" for="button-radio-3">$100</label>
+    </div>
+    <div class="col col-3 t-col-6 m-col-6">
+      <input type="radio" id="button-radio-4" name="button-radio" value="150">
+      <label class="btn" for="button-radio-4">$150</label>
+    </div>
+  </div>
+</div>
+
+```html
+<div class="row">
+  <div class="col col-3 t-col-6 m-col-6">
+    <input type="radio" id="button-radio-1" name="button-radio" value="20">
+    <label class="btn" for="button-radio-1">$20</label>
+  </div>
+  <div class="col col-3 t-col-6 m-col-6">
+    <input type="radio" id="button-radio-2" name="button-radio" value="50">
+    <label class="btn" for="button-radio-2">$50</label>
+  </div>
+  <div class="col col-3 t-col-6 m-col-6">
+    <input type="radio" id="button-radio-3" name="button-radio" value="100">
+    <label class="btn" for="button-radio-3">$100</label>
+  </div>
+  <div class="col col-3 t-col-6 m-col-6">
+    <input type="radio" id="button-radio-4" name="button-radio" value="150">
+    <label class="btn" for="button-radio-4">$150</label>
+  </div>
+</div>
 ```
