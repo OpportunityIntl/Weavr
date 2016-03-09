@@ -329,3 +329,170 @@ Radio inputs can be styled to look like buttons. Just use the class `.btn` inste
   </div>
 </div>
 ```
+
+## Icon inputs
+
+You also display icons in an input to provide a more immediate visual indicator of what the field is asking for. Wrap the input in a `div` with the class `.input-icon`, and add an `i` tag after the input with one of Weavr's [icon classes]({{ site.baseurl }}/docs/components/icons). If you want a `label` for this input, be sure to place it outside the `.input-icon` element.
+
+<div class="demo">
+  <div class="contained-3 centered">
+    <label for="icon-input-1">Email</label>
+    <div class="input-icon">
+      <input type="email" id="icon-input-1" placeholder="e.g. joe@example.com">
+      <i class="icon-mail"></i>
+    </div>
+  </div>
+</div>
+
+```html
+<label for="icon-input-1">Email</label>
+<div class="input-icon">
+  <input type="email" id="icon-input-1" placeholder="e.g. joe@example.com">
+  <i class="icon-mail"></i>
+</div>
+```
+
+## Prefixes and Postfixes
+
+You can add an input "prefix" or "postfix" by wrapping the input in a `div` with the class `input-group` and adding a `div` with the class `.prefix` before the input or the class `.postfix` after the input.
+
+<div class="demo">
+  <div class="row">
+    <div class="col col-6 t-col-6 m-col-12">
+      <label for="input-group-1">Input group 1</label>
+      <div class="input-group">
+        <div class="prefix">prefix</div>
+        <input type="text" name="name" id="input-group-1" placeholder="Text input">
+      </div>
+    </div>
+    <div class="col col-6 t-col-6 m-col-12">
+      <label for="input-group-2">Input group 2</label>
+      <div class="input-group">
+        <input type="text" name="name" id="input-group-2" placeholder="Text input">
+        <div class="postfix">postfix</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+```html
+<label for="input-group-1">Input group 1</label>
+<div class="input-group">
+  <div class="prefix">prefix</div>
+  <input type="text" name="name" id="input-group-1" placeholder="Text input">
+</div>
+
+<label for="input-group-2">Input group 2</label>
+<div class="input-group">
+  <input type="text" name="name" id="input-group-2" placeholder="Text input">
+  <div class="postfix">postfix</div>
+</div>
+```
+
+<div class="alert">
+  <p>
+    <strong>NOTE:</strong> Due to the fragile nature of the CSS technique used in these elements, the text inside the prefix or postfix can't contain any whitespaces. Use <code>&amp;nbsp;</code> in place of any spaces.
+  </p>
+</div>
+
+## Alerts
+
+Create alert boxes with `.alert`. Add `.error`, `.warning`, or `.success` to change the type.
+
+<div class="demo">
+  <div class="alert">
+    This is a general alert.
+  </div>
+  <div class="alert error">
+    This is an error alert.
+  </div>
+  <div class="alert warning">
+    This is a warning alert.
+  </div>
+  <div class="alert success">
+    This is a success alert.
+  </div>
+</div>
+
+```html
+<div class="alert">
+  This is a general alert.
+</div>
+<div class="alert error">
+  This is an error alert.
+</div>
+<div class="alert warning">
+  This is a warning alert.
+</div>
+<div class="alert success">
+  This is a success alert.
+</div>
+```
+
+You can put paragraphs, lists, etc. inside the alert:
+
+<div class="demo">
+  <div class="alert error">
+    <p>Here's a paragraph inside an alert, followed by:</p>
+    <ul>
+      <li>an</li>
+      <li>unordered</li>
+      <li>list</li>
+    </ul>
+  </div>
+</div>
+
+```html
+<div class="alert error">
+  <p>Here's a paragraph inside an alert, followed by:</p>
+  <ul>
+    <li>an</li>
+    <li>unordered</li>
+    <li>list</li>
+  </ul>
+</div>
+```
+
+## Errors
+
+Weavr comes with classes for displaying errors on forms. You've already seen the error alerts demonstrated above.
+
+Use the class `.error` on inputs to indicate that the field has an error. For select boxes, add the `.error` class to the `.select` wrapper, not the actual `select` tag. You can also add the `.error` class to the label.
+
+To display error messages below an input, add a `div` with the class `.error-message` immediately after the input (or in the case of select boxes, after the `.select` wrapper).
+
+<div class="demo">
+  <div class="row">
+    <div class="col col-6 t-col-6 m-col-12">
+      <label for="error-input-1" class="error">Input with error</label> 
+      <input type="text" id="error-input-1" class="error" placeholder="Placeholder text" />
+      <div class="error-message">This is the error message</div>
+    </div>
+    <div class="col col-6 t-col-6 m-col-12">
+      <label for="error-select-box" class="error">Select box with error</label> 
+      <div class="select error">
+        <select name="select" id="error-select-box">
+          <option value="">Choose an option</option>
+          <option value="1">Option 1</option>
+          <option value="2">Option 2</option>
+          <option value="3">Option 3</option>
+        </select>
+      </div>
+      <div class="error-message">This is the error message</div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col col-12 t-col-12 m-col-12">
+      <label class="error">Radio input errors</label>
+      <input type="radio" name="radio-error" id="radio-error-1" value="">
+      <label for="radio-error-1" class="radio inline error">Option 1</label>
+      <input type="radio" name="radio-error" id="radio-error-2" value="">
+      <label for="radio-error-2" class="radio inline error">Option 2</label>
+      <input type="radio" name="radio-error" id="radio-error-3" value="">
+      <label for="radio-error-3" class="radio inline error">Option 3</label>
+      <div class="error-message">
+        This field has an error
+      </div>
+    </div>
+  </div>
+</div>
