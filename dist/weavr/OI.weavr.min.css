@@ -152,7 +152,9 @@ td.hide, th.hide { border: none; background-color: transparent !important; }
 /***************/
 /**** Logos ****/
 /***************/
-.oi-logo { width: 215px; height: 75px; display: block; background-image: url("images/logo-onwhite-sprite.png"); background-repeat: no-repeat; background-position: left 0%; background-size: auto 500%; }
+.oi-logo { width: 215px; height: 75px; background-image: url("images/logo-onwhite-sprite.png"); background-repeat: no-repeat; background-position: left 0%; background-size: auto 500%; }
+.oi-logo:not(div) { display: inline-block; }
+.oi-logo.block { display: block; }
 .oi-logo.australia { background-image: url("images/logo-au-onwhite-sprite.png"); }
 .oi-logo.canada { background-image: url("images/logo-ca-onwhite-sprite.png"); }
 .oi-logo.small { width: 126px; height: 40px; background-image: url("images/logo-onwhite-sprite-mobile.png"); }

@@ -426,11 +426,16 @@
 .redactor-editor .oi-logo {
   width: 215px;
   height: 75px;
-  display: block;
   background-image: url("images/logo-onwhite-sprite.png");
   background-repeat: no-repeat;
   background-position: left 0%;
   background-size: auto 500%;
+}
+.redactor-editor .oi-logo:not(div) {
+  display: inline-block;
+}
+.redactor-editor .oi-logo.block {
+  display: block;
 }
 .redactor-editor .oi-logo.australia {
   background-image: url("images/logo-au-onwhite-sprite.png");
