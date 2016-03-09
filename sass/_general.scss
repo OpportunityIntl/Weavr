@@ -252,11 +252,18 @@ td, th {
 .oi-logo {
   width: 215px;
   height: 75px;
-  display: block;
   background-image: url('images/logo-onwhite-sprite.png');
   background-repeat: no-repeat;
   background-position: left 0%;
   background-size: auto 500%;
+  
+  &:not(div) {
+    display: inline-block;
+  }
+  
+  &.block {
+    display: block;
+  }
   
   &.australia {
     background-image: url('images/logo-au-onwhite-sprite.png');

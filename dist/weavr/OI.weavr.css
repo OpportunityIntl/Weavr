@@ -393,11 +393,16 @@ td.hide, th.hide {
 .oi-logo {
   width: 215px;
   height: 75px;
-  display: block;
   background-image: url("images/logo-onwhite-sprite.png");
   background-repeat: no-repeat;
   background-position: left 0%;
   background-size: auto 500%;
+}
+.oi-logo:not(div) {
+  display: inline-block;
+}
+.oi-logo.block {
+  display: block;
 }
 .oi-logo.australia {
   background-image: url("images/logo-au-onwhite-sprite.png");
