@@ -95,10 +95,10 @@ button.reset {
     width: 30px;
     height: 30px;
     border-radius: 100%;
-    border-top: solid 5px #4a0059;
-    border-right: solid 5px #00abab;
-    border-bottom: solid 5px #ed027e;
-    border-left: solid 5px #f15b22;
+    border-top: solid 5px $brand-purple;
+    border-right: solid 5px $brand-teal;
+    border-bottom: solid 5px $brand-pink;
+    border-left: solid 5px $brand-orange;
     transform: translateZ(0);
     animation: spin 1.25s infinite ease-in-out;
   }
