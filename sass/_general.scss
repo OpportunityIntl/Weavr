@@ -88,45 +88,48 @@ button.reset {
 }
 
 .loading-indicator {
-  display: inline-block;
-  width: 30px;
-  height: 30px;
-  background-image: url('images/loading-indicator.png');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 30px;
-  animation: loading-spinner 1s steps(12, end) infinite;
-  
-  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-    background-image: url('images/loading-indicator-2x.png');
+  &:before {
+    content: '';
+    display: inline-block;
+    box-sizing: border-box;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    border-top: solid 5px #4a0059;
+    border-right: solid 5px #00abab;
+    border-bottom: solid 5px #ed027e;
+    border-left: solid 5px #f15b22;
+    transform: translateZ(0);
+    animation: spin 1.25s infinite ease-in-out;
   }
   
-  &.white {
-    background-image: url('images/loading-indicator-white.png');
-    
-    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-      background-image: url('images/loading-indicator-white-2x.png');
-    }
+  &.large:before {
+    height: 40px;
+    width: 40px;
+  }
+  
+  &.small:before {
+    height: 20px;
+    width: 20px;
   }
 }
 
-.brand-purple-bg,
-.brand-pink-bg,
-.brand-orange-bg,
-.brand-green-bg,
-.brand-teal-bg {
-  &.loading-indicator,
-  .loading-indicator {
-    background-image: url('images/loading-indicator-white.png');
-    
-    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-      background-image: url('images/loading-indicator-white-2x.png');
-    }
+[class*='brand-'][class*='-bg']:not(.brand-offwhite-bg):not(.brand-darkgray-bg) .loading-indicator,
+.loading-indicator.monochromatic {
+  &:before {
+    border-top-color: rgba(255,255,255,.125);
+    border-right-color: rgba(255,255,255,.25);
+    border-bottom-color: rgba(255,255,255,.5);
+    border-left-color: rgba(255,255,255,.75);
   }
-}
+} 
 
-@keyframes loading-spinner {
-  to {
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  
+  100% {
     transform: rotate(360deg);
   }
 }
