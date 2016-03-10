@@ -112,14 +112,17 @@ img.block { display: block; width: 100%; }
 
 button.reset { padding: 0; background: none; border: none; outline: none; cursor: pointer; -webkit-appearance: none; -moz-appearance: none; appearance: none; font-size: 1em; }
 
-.loading-indicator { display: inline-block; width: 30px; height: 30px; background-image: url("images/loading-indicator.png"); background-repeat: no-repeat; background-position: center; background-size: 30px; -webkit-animation: loading-spinner 1s steps(12, end) infinite; animation: loading-spinner 1s steps(12, end) infinite; }
-.loading-indicator.white { background-image: url("images/loading-indicator-white.png"); }
+.loading-indicator:before { content: ''; display: inline-block; box-sizing: border-box; width: 30px; height: 30px; border-radius: 100%; border-top: solid 5px #4a0059; border-right: solid 5px #00abab; border-bottom: solid 5px #ed027e; border-left: solid 5px #f15b22; -webkit-transform: translateZ(0); transform: translateZ(0); -webkit-animation: spin 1.25s infinite ease-in-out; animation: spin 1.25s infinite ease-in-out; }
+.loading-indicator.large:before { height: 40px; width: 40px; }
+.loading-indicator.small:before { height: 20px; width: 20px; }
 
-.brand-purple-bg.loading-indicator, .brand-purple-bg .loading-indicator, .brand-pink-bg.loading-indicator, .brand-pink-bg .loading-indicator, .brand-orange-bg.loading-indicator, .brand-orange-bg .loading-indicator, .brand-green-bg.loading-indicator, .brand-green-bg .loading-indicator, .brand-teal-bg.loading-indicator, .brand-teal-bg .loading-indicator { background-image: url("images/loading-indicator-white.png"); }
+[class*='brand-'][class*='-bg']:not(.brand-offwhite-bg):not(.brand-darkgray-bg) .loading-indicator:before, .loading-indicator.monochromatic:before { border-top-color: rgba(255, 255, 255, 0.125); border-right-color: rgba(255, 255, 255, 0.25); border-bottom-color: rgba(255, 255, 255, 0.5); border-left-color: rgba(255, 255, 255, 0.75); }
 
-@-webkit-keyframes loading-spinner { to { -webkit-transform: rotate(360deg); transform: rotate(360deg); } }
+@-webkit-keyframes spin { 0% { -webkit-transform: rotate(0deg); transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); transform: rotate(360deg); } }
 
-@keyframes loading-spinner { to { -webkit-transform: rotate(360deg); transform: rotate(360deg); } }
+@keyframes spin { 0% { -webkit-transform: rotate(0deg); transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); transform: rotate(360deg); } }
 .responsive-table { overflow-x: auto; }
 
 table { border-collapse: collapse; width: 100%; }
@@ -1032,7 +1035,6 @@ button.btn { display: inline-block; width: auto; }
   .mobile-only { display: none; }
   .no-desktop { display: none; } }
 @media (min-width: 1260px) { /* desktop */ }
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { .loading-indicator { background-image: url("images/loading-indicator-2x.png"); } .loading-indicator.white { background-image: url("images/loading-indicator-white-2x.png"); } .brand-purple-bg.loading-indicator, .brand-purple-bg .loading-indicator, .brand-pink-bg.loading-indicator, .brand-pink-bg .loading-indicator, .brand-orange-bg.loading-indicator, .brand-orange-bg .loading-indicator, .brand-green-bg.loading-indicator, .brand-green-bg .loading-indicator, .brand-teal-bg.loading-indicator, .brand-teal-bg .loading-indicator { background-image: url("images/loading-indicator-white-2x.png"); } }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi) { .oi-logo { background-image: url("images/logo-onwhite-sprite-2x.png"); }
   .oi-logo.australia { background-image: url("images/logo-au-onwhite-sprite-2x.png"); }
   .oi-logo.canada { background-image: url("images/logo-ca-onwhite-sprite-2x.png"); } .oi-logo.small { background-image: url("images/logo-onwhite-sprite-mobile-2x.png"); }
