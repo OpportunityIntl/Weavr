@@ -302,6 +302,20 @@ button.reset {
   border-left-color: rgba(255, 255, 255, 0.75);
 }
 
+.btn .loading {
+  display: inline-block;
+  padding-left: 2.5em;
+  position: relative;
+}
+.btn .loading:before {
+  position: absolute;
+  left: 0;
+  height: 2em;
+  width: 2em;
+  vertical-align: middle;
+  top: -.3125em;
+}
+
 @-webkit-keyframes spin {
   0% {
     -webkit-transform: rotate(0deg);
