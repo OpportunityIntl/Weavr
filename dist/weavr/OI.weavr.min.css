@@ -112,11 +112,11 @@ img.block { display: block; width: 100%; }
 
 button.reset { padding: 0; background: none; border: none; outline: none; cursor: pointer; -webkit-appearance: none; -moz-appearance: none; appearance: none; font-size: 1em; }
 
-.loading-indicator:before { content: ''; display: inline-block; box-sizing: border-box; width: 30px; height: 30px; border-radius: 100%; border-top: solid 5px #4a0059; border-right: solid 5px #00abab; border-bottom: solid 5px #ed027e; border-left: solid 5px #f15b22; -webkit-transform: translateZ(0); transform: translateZ(0); -webkit-animation: spin 1.25s infinite ease-in-out; animation: spin 1.25s infinite ease-in-out; }
+.loading-indicator:before { content: ''; display: inline-block; box-sizing: border-box; width: 30px; height: 30px; border-radius: 100%; border-top: solid 5px #4a0059; border-right: solid 5px #00abab; border-bottom: solid 5px #ed027e; border-left: solid 5px #f15b22; -webkit-transform: translateZ(0); transform: translateZ(0); -webkit-animation: spin 1.25s infinite cubic-bezier(0.5, 0.25, 0.5, 0.75); animation: spin 1.25s infinite cubic-bezier(0.5, 0.25, 0.5, 0.75); }
 .loading-indicator.large:before { height: 40px; width: 40px; }
 .loading-indicator.small:before { height: 20px; width: 20px; }
 
-[class*='brand-'][class*='-bg']:not(.brand-offwhite-bg):not(.brand-darkgray-bg) .loading-indicator:before, .loading-indicator.monochromatic:before { border-top-color: rgba(255, 255, 255, 0.125); border-right-color: rgba(255, 255, 255, 0.25); border-bottom-color: rgba(255, 255, 255, 0.5); border-left-color: rgba(255, 255, 255, 0.75); }
+[class*='brand-'][class*='-bg']:not(.brand-offwhite-bg):not(.brand-darkgray-bg):not(.brand-dark-gray-bg) .loading-indicator:before, .loading-indicator.monochromatic:before { border-top-color: rgba(255, 255, 255, 0.125); border-right-color: rgba(255, 255, 255, 0.25); border-bottom-color: rgba(255, 255, 255, 0.5); border-left-color: rgba(255, 255, 255, 0.75); }
 
 @-webkit-keyframes spin { 0% { -webkit-transform: rotate(0deg); transform: rotate(0deg); }
   100% { -webkit-transform: rotate(360deg); transform: rotate(360deg); } }
