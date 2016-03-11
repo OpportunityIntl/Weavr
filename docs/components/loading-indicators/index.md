@@ -100,7 +100,7 @@ Note that the full-color indicator is used against offwhite and dark gray backgr
 
 ## Loading indicator on buttons
 
-You might want to display the loading indicator in a button to indicate that an action has been taken and that the request is processing. Inside a link or `button` tag, wrap the button text in a span with the `.loading-indicator` class.
+You might want to display the loading indicator in a button to indicate that an action has been taken and that the request is processing. Inside a link or `button` tag, wrap the button text in a span with the `.loading-indicator` class. The indicator scales with the size of the button.
 
 <div class="demo align-center">
   <button type="button" class="btn brand-pink-bg"><span class="loading-indicator">Processing</span></button>
@@ -112,6 +112,6 @@ You might want to display the loading indicator in a button to indicate that an 
 
 <div class="alert">
   <p>
-    <strong>NOTE:</strong> Because the indicator uses the `:before` pseudo-element, you can only use this in links styled as buttons and `button` tags.
+    <strong>NOTE:</strong> Because the indicator uses the <code>:before</code> pseudo-element, you can only use this in links styled as buttons and <code>button</code> tags.
   </p>
 </div>
