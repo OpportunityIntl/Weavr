@@ -118,6 +118,9 @@ button.reset { padding: 0; background: none; border: none; outline: none; cursor
 
 [class*='brand-'][class*='-bg']:not(.brand-offwhite-bg):not(.brand-darkgray-bg):not(.brand-dark-gray-bg) .loading-indicator:before, .loading-indicator.monochromatic:before { border-top-color: rgba(255, 255, 255, 0.125); border-right-color: rgba(255, 255, 255, 0.25); border-bottom-color: rgba(255, 255, 255, 0.5); border-left-color: rgba(255, 255, 255, 0.75); }
 
+.btn .loading-indicator { display: inline-block; padding-left: 2.5em; position: relative; }
+.btn .loading-indicator:before { position: absolute; left: 0; height: 2em; width: 2em; vertical-align: middle; top: -.3125em; }
+
 @-webkit-keyframes spin { 0% { -webkit-transform: rotate(0deg); transform: rotate(0deg); }
   100% { -webkit-transform: rotate(360deg); transform: rotate(360deg); } }
 
