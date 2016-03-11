@@ -33,23 +33,23 @@ Add the modifier classes `.large` or `.small` to maker the indicator larger or s
 
 ## Against colored backgrounds
 
-Indicators automatically switch to a monochromatic variation against colored backgrounds as long as the background color is set by a [background color class]({{ site.baseurl }}/docs/components/colors).
+A monochromatic version of the indicator is available for use against colored backgrounds. Just add the `.monochromatic` class to the indicator.
 
 <div class="demo">
   <div class="row no-gutter">
     <div class="col col-4 t-col-4 m-col-12">
       <div class="brand-purple-bg padding-1x align-center">
-        <span class="loading-indicator"></span>
+        <span class="loading-indicator monochromatic"></span>
       </div>
     </div>
     <div class="col col-4 t-col-4 m-col-12">
       <div class="brand-teal-bg padding-1x align-center">
-        <span class="loading-indicator"></span>
+        <span class="loading-indicator monochromatic"></span>
       </div>
     </div>
     <div class="col col-4 t-col-4 m-col-12">
       <div class="brand-orange-bg padding-1x align-center">
-        <span class="loading-indicator"></span>
+        <span class="loading-indicator monochromatic"></span>
       </div>
     </div>
   </div>
@@ -57,57 +57,26 @@ Indicators automatically switch to a monochromatic variation against colored bac
 
 ```html
 <div class="brand-purple-bg">
-  <span class="loading-indicator"></span>
+  <span class="loading-indicator monochromatic"></span>
 </div>
 <div class="brand-teal-bg">
-  <span class="loading-indicator"></span>
+  <span class="loading-indicator monochromatic"></span>
 </div>
 <div class="brand-orange-bg">
-  <span class="loading-indicator"></span>
-</div>
-```
-
-If you would like to use the monochromatic variation against a background that wasn't set via a background color class, you can add the `.monochromatic` modifier class to the indicator.
-
-<div class="demo">
-  <div class="padding-2x align-center" style="background-color: #ed027e;">
-    <span class="loading-indicator monochromatic"></span>
-  </div>
-</div>
-
-```html
-<div class="padding-2x align-center" style="background-color: #ed027e;">
   <span class="loading-indicator monochromatic"></span>
 </div>
 ```
-
-Note that the full-color indicator is used against offwhite and dark gray backgrounds.
-
-<div class="demo">
-  <div class="row no-gutter">
-    <div class="col col-6 t-col-6 m-col-12">
-      <div class="brand-offwhite-bg padding-1x align-center">
-        <span class="loading-indicator"></span>
-      </div>
-    </div>
-    <div class="col col-6 t-col-6 m-col-12">
-      <div class="brand-dark-gray-bg padding-1x align-center">
-        <span class="loading-indicator"></span>
-      </div>
-    </div>
-  </div>
-</div>
 
 ## Loading indicator on buttons
 
 You might want to display the loading indicator in a button to indicate that an action has been taken and that the request is processing. Inside a link or `button` tag, wrap the button text in a span with the `.loading-indicator` class. The indicator scales with the size of the button.
 
 <div class="demo align-center">
-  <button type="button" class="btn brand-pink-bg"><span class="loading-indicator">Processing</span></button>
+  <button type="button" class="btn brand-pink-bg"><span class="loading-indicator monochromatic">Processing</span></button>
 </div>
 
 ```html
-<button type="button" class="btn brand-pink-bg"><span class="loading-indicator">Processing</span></button>
+<button type="button" class="btn brand-pink-bg"><span class="loading-indicator monochromatic">Processing</span></button>
 ```
 
 <div class="alert">
