@@ -302,12 +302,12 @@ button.reset {
   border-left-color: rgba(255, 255, 255, 0.75);
 }
 
-.btn .loading {
+.btn .loading-indicator {
   display: inline-block;
   padding-left: 2.5em;
   position: relative;
 }
-.btn .loading:before {
+.btn .loading-indicator:before {
   position: absolute;
   left: 0;
   height: 2em;

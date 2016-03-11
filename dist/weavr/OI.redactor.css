@@ -349,12 +349,12 @@
   border-bottom-color: rgba(255, 255, 255, 0.5);
   border-left-color: rgba(255, 255, 255, 0.75);
 }
-.redactor-editor .btn .loading {
+.redactor-editor .btn .loading-indicator {
   display: inline-block;
   padding-left: 2.5em;
   position: relative;
 }
-.redactor-editor .btn .loading:before {
+.redactor-editor .btn .loading-indicator:before {
   position: absolute;
   left: 0;
   height: 2em;
