@@ -155,9 +155,6 @@ th { text-align: left; font-weight: bold; text-transform: uppercase; letter-spac
 
 td.hide, th.hide { border: none; background-color: transparent !important; }
 
-/***************/
-/**** Logos ****/
-/***************/
 .oi-logo { width: 215px; height: 75px; background-image: url("images/logo-onwhite-sprite.png"); background-repeat: no-repeat; background-position: left 0%; background-size: auto 500%; }
 .oi-logo:not(div) { display: inline-block; }
 .oi-logo.block { display: block; }
