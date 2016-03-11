@@ -23,15 +23,14 @@
     height: 20px;
     width: 20px;
   }
-}
-
-[class*='brand-'][class*='-bg']:not(.brand-offwhite-bg):not(.brand-darkgray-bg):not(.brand-dark-gray-bg) .loading-indicator,
-.loading-indicator.monochromatic {
-  &:before {
-    border-top-color: rgba(255,255,255,.125);
-    border-right-color: rgba(255,255,255,.25);
-    border-bottom-color: rgba(255,255,255,.5);
-    border-left-color: rgba(255,255,255,.75);
+  
+  &.monochromatic {
+    &:before {
+      border-top-color: rgba(255,255,255,.125);
+      border-right-color: rgba(255,255,255,.25);
+      border-bottom-color: rgba(255,255,255,.5);
+      border-left-color: rgba(255,255,255,.75);
+    }
   }
 }
 

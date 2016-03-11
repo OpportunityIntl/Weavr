@@ -295,8 +295,6 @@ button.reset {
   height: 20px;
   width: 20px;
 }
-
-[class*='brand-'][class*='-bg']:not(.brand-offwhite-bg):not(.brand-darkgray-bg):not(.brand-dark-gray-bg) .loading-indicator:before,
 .loading-indicator.monochromatic:before {
   border-top-color: rgba(255, 255, 255, 0.125);
   border-right-color: rgba(255, 255, 255, 0.25);
