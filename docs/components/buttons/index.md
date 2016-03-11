@@ -102,21 +102,33 @@ Make a button larger or smaller by adding the modifier classes `.large` and `.sm
 Buttons can be disabled by adding the `disabled` attribute (for `input`s and `buttons`) and by adding the `.disabled` class to links. For disabled links, Weavr's Javascript automatically cancels any click events on them.
 
 <div class="demo">
-  <div class="inline-buttons">
+  <p class="inline-buttons">
     <a class="btn brand-purple-bg disabled">Disabled link</a>
     <input type="submit" class="btn brand-purple-bg" value="Disabled submit input" disabled />
     <input type="button" class="btn brand-purple-bg" value="Disabled button input" disabled />
     <button class="btn brand-purple-bg" disabled>Disabled button</button>
-  </div>
+  </p>
+  <p class="inline-buttons">
+    <a class="btn ghost brand-purple disabled">Disabled link</a>
+    <input type="submit" class="btn ghost brand-purple" value="Disabled submit input" disabled />
+    <input type="button" class="btn ghost brand-purple" value="Disabled button input" disabled />
+    <button class="btn ghost brand-purple" disabled>Disabled button</button>
+  </p>
 </div>
 
 ```html
-<div class="inline-buttons">
+<p class="inline-buttons">
   <a class="btn brand-purple-bg disabled">Disabled link</a>
   <input type="submit" class="btn brand-purple-bg" value="Disabled submit input" disabled />
   <input type="button" class="btn brand-purple-bg" value="Disabled button input" disabled />
   <button class="btn brand-purple-bg" disabled>Disabled button</button>
-</div>
+</p>
+<p class="inline-buttons">
+  <a class="btn ghost brand-purple disabled">Disabled link</a>
+  <input type="submit" class="btn ghost brand-purple" value="Disabled submit input" disabled />
+  <input type="button" class="btn ghost brand-purple" value="Disabled button input" disabled />
+  <button class="btn ghost brand-purple" disabled>Disabled button</button>
+</p>
 ```
 
 ## White buttons
