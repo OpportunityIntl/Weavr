@@ -220,6 +220,19 @@ button.btn {
         background-color: #fff;
       }
     }
+    
+    &:disabled, &.disabled {
+      background-color: transparent;
+      box-shadow: none;
+      color: $brand-gray;
+      border-color: $brand-gray;
+      
+      &:hover {
+        box-shadow: none;
+        background-color: transparent;
+        color: $brand-gray;
+      }
+    }
   }
   
   &:disabled, &.disabled {
