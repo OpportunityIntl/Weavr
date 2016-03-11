@@ -323,7 +323,7 @@ Weavr includes a custom set of icons. You can use icon classes to quickly add an
 
 These classes place the icon in a `:before` pseudo-element, so you can technically add the class to any element that supports `:before`. Note that this means icon classes will not do anything on inputs or image tags.
 
-If you need to place a standalone icon (i.e. you're not prepending the icon to an element that already content), use the `i` element:
+If you need to place a standalone icon (i.e. you're not prepending the icon to an element that already contains content), use the `i` element:
 
 ```html
   <i class="icon-cart"></i>
