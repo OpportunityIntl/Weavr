@@ -1733,6 +1733,17 @@
   color: #333;
   background-color: #fff;
 }
+.redactor-editor .btn.ghost:disabled, .redactor-editor .btn.ghost.disabled {
+  background-color: transparent;
+  box-shadow: none;
+  color: #8f8e8c;
+  border-color: #8f8e8c;
+}
+.redactor-editor .btn.ghost:disabled:hover, .redactor-editor .btn.ghost.disabled:hover {
+  box-shadow: none;
+  background-color: transparent;
+  color: #8f8e8c;
+}
 .redactor-editor .btn:disabled, .redactor-editor .btn.disabled {
   background-color: #8f8e8c;
   box-shadow: inset 0 100px 0 0 #8f8e8c;
