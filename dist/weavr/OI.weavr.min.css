@@ -115,8 +115,7 @@ button.reset { padding: 0; background: none; border: none; outline: none; cursor
 .loading-indicator:before { content: ''; display: inline-block; box-sizing: border-box; width: 30px; height: 30px; border-radius: 100%; border-top: solid 5px #4a0059; border-right: solid 5px #00abab; border-bottom: solid 5px #ed027e; border-left: solid 5px #f15b22; -webkit-transform: translateZ(0); transform: translateZ(0); -webkit-animation: spin 1.25s infinite cubic-bezier(0.5, 0.25, 0.5, 0.75); animation: spin 1.25s infinite cubic-bezier(0.5, 0.25, 0.5, 0.75); }
 .loading-indicator.large:before { height: 40px; width: 40px; }
 .loading-indicator.small:before { height: 20px; width: 20px; }
-
-[class*='brand-'][class*='-bg']:not(.brand-offwhite-bg):not(.brand-darkgray-bg):not(.brand-dark-gray-bg) .loading-indicator:before, .loading-indicator.monochromatic:before { border-top-color: rgba(255, 255, 255, 0.125); border-right-color: rgba(255, 255, 255, 0.25); border-bottom-color: rgba(255, 255, 255, 0.5); border-left-color: rgba(255, 255, 255, 0.75); }
+.loading-indicator.monochromatic:before { border-top-color: rgba(255, 255, 255, 0.125); border-right-color: rgba(255, 255, 255, 0.25); border-bottom-color: rgba(255, 255, 255, 0.5); border-left-color: rgba(255, 255, 255, 0.75); }
 
 .btn .loading-indicator { display: inline-block; padding-left: 2.5em; position: relative; }
 .btn .loading-indicator:before { position: absolute; left: 0; height: 2em; width: 2em; vertical-align: middle; top: -.3125em; }
