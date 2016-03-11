@@ -84,7 +84,7 @@ i.large { font-size: 3em; }
 i.transparency { opacity: .8; -webkit-transition: opacity .3s; transition: opacity .3s; }
 i.transparency:hover { opacity: 1; }
 
-* { box-sizing: border-box; }
+*, *:before, *:after { box-sizing: border-box; }
 
 html { font-size: 16px; -webkit-text-size-adjust: 100%; }
 

@@ -242,7 +242,9 @@
 .redactor-editor i.transparency:hover {
   opacity: 1;
 }
-.redactor-editor * {
+.redactor-editor *,
+.redactor-editor *:before,
+.redactor-editor *:after {
   box-sizing: border-box;
 }
 .redactor-editor html {
