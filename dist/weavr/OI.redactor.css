@@ -331,8 +331,8 @@
   border-left: solid 5px #f15b22;
   -webkit-transform: translateZ(0);
           transform: translateZ(0);
-  -webkit-animation: spin 1.25s infinite ease-in-out;
-          animation: spin 1.25s infinite ease-in-out;
+  -webkit-animation: spin 1.25s infinite cubic-bezier(0.5, 0.25, 0.5, 0.75);
+          animation: spin 1.25s infinite cubic-bezier(0.5, 0.25, 0.5, 0.75);
 }
 .redactor-editor .loading-indicator.large:before {
   height: 40px;
@@ -342,7 +342,7 @@
   height: 20px;
   width: 20px;
 }
-.redactor-editor [class*='brand-'][class*='-bg']:not(.brand-offwhite-bg):not(.brand-darkgray-bg) .loading-indicator:before,
+.redactor-editor [class*='brand-'][class*='-bg']:not(.brand-offwhite-bg):not(.brand-darkgray-bg):not(.brand-dark-gray-bg) .loading-indicator:before,
 .redactor-editor .loading-indicator.monochromatic:before {
   border-top-color: rgba(255, 255, 255, 0.125);
   border-right-color: rgba(255, 255, 255, 0.25);

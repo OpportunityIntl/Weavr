@@ -100,7 +100,7 @@ button.reset {
     border-bottom: solid 5px $brand-pink;
     border-left: solid 5px $brand-orange;
     transform: translateZ(0);
-    animation: spin 1.25s infinite ease-in-out;
+    animation: spin 1.25s infinite cubic-bezier(.5,.25,.5,.75);
   }
   
   &.large:before {
@@ -114,7 +114,7 @@ button.reset {
   }
 }
 
-[class*='brand-'][class*='-bg']:not(.brand-offwhite-bg):not(.brand-darkgray-bg) .loading-indicator,
+[class*='brand-'][class*='-bg']:not(.brand-offwhite-bg):not(.brand-darkgray-bg):not(.brand-dark-gray-bg) .loading-indicator,
 .loading-indicator.monochromatic {
   &:before {
     border-top-color: rgba(255,255,255,.125);
