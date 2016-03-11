@@ -368,7 +368,8 @@
       }
     }
 
-    &.brand-darkgray-bg {
+    &.brand-darkgray-bg, /* darkgray is deprecated, start using dark-gray */
+    &.brand-dark-gray-bg {
       
       &:before {
         background-color: #000;

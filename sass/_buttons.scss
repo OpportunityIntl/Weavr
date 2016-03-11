@@ -37,8 +37,9 @@ button.btn {
     top: .125em;
   }
   
-  &.brand-darkgray-bg {
-    box-shadow: inset 0 100px 0 0 $brand-darkgray;
+  &.brand-darkgray-bg, /* darkgray is deprecated, start using dark-gray */
+  &.brand-dark-gray-bg {
+    box-shadow: inset 0 100px 0 0 $brand-dark-gray;
     &:hover{
       box-shadow: 0 0 0 0 #333 inset;
     }
@@ -183,12 +184,13 @@ button.btn {
       }
     }
     
-    &.brand-darkgray {
-      color: $brand-darkgray;
-      border-color: $brand-darkgray;
+    &.brand-darkgray, /* darkgray is deprecated, start using dark-gray */
+    &.brand-dark-gray {
+      color: $brand-dark-gray;
+      border-color: $brand-dark-gray;
       &:hover {
         color: #fff;
-        background-color: $brand-darkgray;
+        background-color: $brand-dark-gray;
       }
     }
     
@@ -280,10 +282,11 @@ button.btn {
   }
 }
 
-.brand-darkgray-bg {
+.brand-darkgray-bg, /* darkgray is deprecated, start using dark-gray */
+.brand-dark-gray-bg {
   .btn {
     &.brand-white-bg, &.ghost.brand-white:hover {
-      color: $brand-darkgray;
+      color: $brand-dark-gray;
     }
   }
 }

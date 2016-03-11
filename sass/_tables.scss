@@ -81,9 +81,10 @@ tr {
       background-color: $brand-orange;
     }
   }
-  &.brand-darkgray-bg {
+  &.brand-darkgray-bg, /* darkgray is deprecated, start using dark-gray */
+  &.brand-dark-gray-bg {
     td, th {
-      background-color: $brand-darkgray;
+      background-color: $brand-dark-gray;
     }
   }
 }

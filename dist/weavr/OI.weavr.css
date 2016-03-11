@@ -391,7 +391,7 @@ tr.brand-pink-bg td, tr.brand-pink-bg th {
 tr.brand-orange-bg td, tr.brand-orange-bg th {
   background-color: #f15b22;
 }
-tr.brand-darkgray-bg td, tr.brand-darkgray-bg th {
+tr.brand-darkgray-bg td, tr.brand-darkgray-bg th, tr.brand-dark-gray-bg td, tr.brand-dark-gray-bg th {
   background-color: #222;
 }
 
@@ -1687,10 +1687,10 @@ button.btn {
   font-size: 1.125em;
   top: .125em;
 }
-.btn.brand-darkgray-bg {
+.btn.brand-darkgray-bg, .btn.brand-dark-gray-bg {
   box-shadow: inset 0 100px 0 0 #222;
 }
-.btn.brand-darkgray-bg:hover {
+.btn.brand-darkgray-bg:hover, .btn.brand-dark-gray-bg:hover {
   box-shadow: 0 0 0 0 #333 inset;
 }
 .btn.brand-gray-bg {
@@ -1818,11 +1818,11 @@ button.btn {
   color: #fff;
   background-color: #7bc557;
 }
-.btn.ghost.brand-darkgray {
+.btn.ghost.brand-darkgray, .btn.ghost.brand-dark-gray {
   color: #222;
   border-color: #222;
 }
-.btn.ghost.brand-darkgray:hover {
+.btn.ghost.brand-darkgray:hover, .btn.ghost.brand-dark-gray:hover {
   color: #fff;
   background-color: #222;
 }
@@ -1884,7 +1884,9 @@ button.btn {
   color: #7bc557;
 }
 
-.brand-darkgray-bg .btn.brand-white-bg, .brand-darkgray-bg .btn.ghost.brand-white:hover {
+.brand-darkgray-bg .btn.brand-white-bg, .brand-darkgray-bg .btn.ghost.brand-white:hover,
+.brand-dark-gray-bg .btn.brand-white-bg,
+.brand-dark-gray-bg .btn.ghost.brand-white:hover {
   color: #222;
 }
 
@@ -2573,11 +2575,11 @@ button.btn {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#000000',GradientType=0 );
   /* IE6-9 */
 }
-.bg-image.overlay.brand-darkgray-bg:before {
+.bg-image.overlay.brand-darkgray-bg:before, .bg-image.overlay.brand-dark-gray-bg:before {
   background-color: #000;
   opacity: .75;
 }
-.bg-image.overlay.brand-darkgray-bg.gradient:before {
+.bg-image.overlay.brand-darkgray-bg.gradient:before, .bg-image.overlay.brand-dark-gray-bg.gradient:before {
   /* FF3.6+ */
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, transparent), color-stop(25%, transparent), color-stop(75%, rgba(0, 0, 0, 0.75)), color-stop(100%, rgba(0, 0, 0, 0.75)));
   /* Chrome,Safari4+ */

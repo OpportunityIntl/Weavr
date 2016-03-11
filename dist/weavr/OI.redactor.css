@@ -427,7 +427,7 @@
 .redactor-editor tr.brand-orange-bg td, .redactor-editor tr.brand-orange-bg th {
   background-color: #f15b22;
 }
-.redactor-editor tr.brand-darkgray-bg td, .redactor-editor tr.brand-darkgray-bg th {
+.redactor-editor tr.brand-darkgray-bg td, .redactor-editor tr.brand-darkgray-bg th, .redactor-editor tr.brand-dark-gray-bg td, .redactor-editor tr.brand-dark-gray-bg th {
   background-color: #222;
 }
 .redactor-editor td {
@@ -1571,10 +1571,10 @@
   font-size: 1.125em;
   top: .125em;
 }
-.redactor-editor .btn.brand-darkgray-bg {
+.redactor-editor .btn.brand-darkgray-bg, .redactor-editor .btn.brand-dark-gray-bg {
   box-shadow: inset 0 100px 0 0 #222;
 }
-.redactor-editor .btn.brand-darkgray-bg:hover {
+.redactor-editor .btn.brand-darkgray-bg:hover, .redactor-editor .btn.brand-dark-gray-bg:hover {
   box-shadow: 0 0 0 0 #333 inset;
 }
 .redactor-editor .btn.brand-gray-bg {
@@ -1702,11 +1702,11 @@
   color: #fff;
   background-color: #7bc557;
 }
-.redactor-editor .btn.ghost.brand-darkgray {
+.redactor-editor .btn.ghost.brand-darkgray, .redactor-editor .btn.ghost.brand-dark-gray {
   color: #222;
   border-color: #222;
 }
-.redactor-editor .btn.ghost.brand-darkgray:hover {
+.redactor-editor .btn.ghost.brand-darkgray:hover, .redactor-editor .btn.ghost.brand-dark-gray:hover {
   color: #fff;
   background-color: #222;
 }
@@ -1761,7 +1761,9 @@
 .redactor-editor .brand-green-bg .btn.brand-white-bg, .redactor-editor .brand-green-bg .btn.ghost.brand-white:hover {
   color: #7bc557;
 }
-.redactor-editor .brand-darkgray-bg .btn.brand-white-bg, .redactor-editor .brand-darkgray-bg .btn.ghost.brand-white:hover {
+.redactor-editor .brand-darkgray-bg .btn.brand-white-bg, .redactor-editor .brand-darkgray-bg .btn.ghost.brand-white:hover,
+.redactor-editor .brand-dark-gray-bg .btn.brand-white-bg,
+.redactor-editor .brand-dark-gray-bg .btn.ghost.brand-white:hover {
   color: #222;
 }
 .redactor-editor .brand-gray-bg .btn.brand-white-bg, .redactor-editor .brand-gray-bg .btn.ghost.brand-white:hover {
@@ -2331,11 +2333,11 @@
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#000000',GradientType=0 );
   /* IE6-9 */
 }
-.redactor-editor .bg-image.overlay.brand-darkgray-bg:before {
+.redactor-editor .bg-image.overlay.brand-darkgray-bg:before, .redactor-editor .bg-image.overlay.brand-dark-gray-bg:before {
   background-color: #000;
   opacity: .75;
 }
-.redactor-editor .bg-image.overlay.brand-darkgray-bg.gradient:before {
+.redactor-editor .bg-image.overlay.brand-darkgray-bg.gradient:before, .redactor-editor .bg-image.overlay.brand-dark-gray-bg.gradient:before {
   /* FF3.6+ */
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, transparent), color-stop(25%, transparent), color-stop(75%, rgba(0, 0, 0, 0.75)), color-stop(100%, rgba(0, 0, 0, 0.75)));
   /* Chrome,Safari4+ */
