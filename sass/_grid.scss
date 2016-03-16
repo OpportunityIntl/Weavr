@@ -117,202 +117,40 @@
       margin-bottom: 0;
     }
     
-    &.m-col-12 {
-      width: 12/12 * 100%;
-    }
-    
-    &.m-col-11 {
-      width: 11/12 * 100%;
-    }
-    
-    &.m-col-10 {
-      width: 10/12 * 100%;
-    }
-    
-    &.m-col-9 {
-      width: 9/12 * 100%;
-    }
-    
-    &.m-col-8 {
-      width: 8/12 * 100%;
-    }
-    
-    &.m-col-7 {
-      width: 7/12 * 100%;
-    }
-    
-    &.m-col-6 {
-      width: 6/12 * 100%;
-    }
-    
-    &.m-col-5 {
-      width: 5/12 * 100%;
-    }
-    
-    &.m-col-4 {
-      width: 4/12 * 100%;
-    }
-    
-    &.m-col-3 {
-      width: 3/12 * 100%;
-    }
-    
-    &.m-col-2 {
-      width: 2/12 * 100%;
-    }
-    
-    &.m-col-1 {
-      width: 1/12 * 100%;
-    }
+    @include columns(12, 'm-');
     
     @media (min-width: 480px) {
-      &.t-col-12 {
-        width: 12/12 * 100%;
-      }
-      
-      &.t-col-11 {
-        width: 11/12 * 100%;
-      }
-      
-      &.t-col-10 {
-        width: 10/12 * 100%;
-      }
-      
-      &.t-col-9 {
-        width: 9/12 * 100%;
-      }
-      
-      &.t-col-8 {
-        width: 8/12 * 100%;
-      }
-      
-      &.t-col-7 {
-        width: 7/12 * 100%;
-      }
-      
-      &.t-col-6 {
-        width: 6/12 * 100%;
-      }
-      
-      &.t-col-5 {
-        width: 5/12 * 100%;
-      }
-      
-      &.t-col-4 {
-        width: 4/12 * 100%;
-      }
-      
-      &.t-col-3 {
-        width: 3/12 * 100%;
-      }
-      
-      &.t-col-2 {
-        width: 2/12 * 100%;
-      }
-      
-      &.t-col-1 {
-        width: 1/12 * 100%;
-      }
+      @include columns(12, 't-');
     }
     
     @media (min-width: 800px) {
-      &.n-col-12 {
-        width: 12/12 * 100%;
-      }
-      
-      &.n-col-11 {
-        width: 11/12 * 100%;
-      }
-      
-      &.n-col-10 {
-        width: 10/12 * 100%;
-      }
-      
-      &.n-col-9 {
-        width: 9/12 * 100%;
-      }
-      
-      &.n-col-8 {
-        width: 8/12 * 100%;
-      }
-      
-      &.n-col-7 {
-        width: 7/12 * 100%;
-      }
-      
-      &.n-col-6 {
-        width: 6/12 * 100%;
-      }
-      
-      &.n-col-5 {
-        width: 5/12 * 100%;
-      }
-      
-      &.n-col-4 {
-        width: 4/12 * 100%;
-      }
-      
-      &.n-col-3 {
-        width: 3/12 * 100%;
-      }
-      
-      &.n-col-2 {
-        width: 2/12 * 100%;
-      }
-      
-      &.n-col-1 {
-        width: 1/12 * 100%;
-      }
+      @include columns(12, 'n-');
     }
     
     @media (min-width: 1024px) {
-      &.col-12 {
-        width: 12/12 * 100%;
-      }
-      
-      &.col-11 {
-        width: 11/12 * 100%;
-      }
-      
-      &.col-10 {
-        width: 10/12 * 100%;
-      }
-      
-      &.col-9 {
-        width: 9/12 * 100%;
-      }
-      
-      &.col-8 {
-        width: 8/12 * 100%;
-      }
-      
-      &.col-7 {
-        width: 7/12 * 100%;
-      }
-      
-      &.col-6 {
-        width: 6/12 * 100%;
-      }
-      
-      &.col-5 {
-        width: 5/12 * 100%;
-      }
-      
-      &.col-4 {
-        width: 4/12 * 100%;
-      }
-      
-      &.col-3 {
-        width: 3/12 * 100%;
-      }
-      
-      &.col-2 {
-        width: 2/12 * 100%;
-      }
-      
-      &.col-1 {
-        width: 1/12 * 100%;
-      }
+      @include columns(12);
+    }
+  }
+}
+
+/************************/
+/**** Grid 10 system ****/
+/************************/
+
+.row.grid-10 {
+  > .col {
+    @include columns(10, 'm-');
+    
+    @media (min-width: 480px) {
+      @include columns(10, 't-');
+    }
+    
+    @media (min-width: 800px) {
+      @include columns(10, 'n-');
+    }
+    
+    @media (min-width: 1024px) {
+      @include columns(10);
     }
   }
 }

@@ -34,6 +34,14 @@ $font-secondary: "Times New Roman", Times, serif;
   }
 }
 
+@mixin columns($cols, $prefix: null) {
+  @for $i from 1 through $cols {
+    &.#{$prefix}col-#{$i} {
+      width: ($i / $cols) * 100%;
+    }
+  }
+}
+
 @mixin padding($leftright, $topbottom, $gutter, $prefix: null) {
   $lmodifier: null;
   $tmodifier: null;
