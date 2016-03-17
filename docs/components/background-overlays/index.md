@@ -140,7 +140,7 @@ Here are a few examples of ways you might combine background images, background 
         <h1>Here's a heading</h1>
         <p>
           And here's a paragraph of text below it. Notice that this paragraph has several sentences in it. Three sentences, in fact. Actually, that last one wasn't a complete sentence. And now there are 5 sentences.
-        <p>
+        </p>
       </div>
     </div>
   </div>
@@ -153,7 +153,7 @@ Here are a few examples of ways you might combine background images, background 
       <h1>Here's a heading</h1>
       <p>
         And here's a paragraph of text below it. Notice that this paragraph has several sentences in it. Three sentences, in fact. Actually, that last one wasn't a complete sentence. And now there are 5 sentences.
-      <p>
+      </p>
     </div>
   </div>
 </div>
