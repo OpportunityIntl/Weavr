@@ -22,17 +22,17 @@ You can define subheadings and "superheadings" (we may have made that term up) b
   <h1>This is a heading <span class="subheading">and this is the subheading</span></h1>
 </div>
 
-```html
+~~~html
 <h1>This is a heading <span class="subheading">and this is the subheading</span></h1>
-```
+~~~
 
 <div class="demo">
   <h1><span class="superheading">This is a superheading</span> above a heading</h1>
 </div>
 
-```html
+~~~html
 <h1><span class="superheading">This is a superheading</span> above a heading</h1>
-```
+~~~
 
 <div class="alert warning">
   <p><strong>NOTE:</strong> The empty space in the markup before the subheading span and after the superheading span is not necessary visually, but it is necessary for search engines and web crawlers to read the heading correctly.</p>
@@ -47,22 +47,22 @@ Headings can also be displayed with a border and padding for visual effect. Simp
     <h3 class="bordered">A bordered heading</h3>
   </div>
 </div>
-```html
+~~~html
 <div class="align-center">
   <h3 class="bordered">A bordered heading</h3>
 </div>
-```
+~~~
 
 <div class="demo">
   <div class="align-center">
     <h3 class="bordered brand-teal">A bordered heading with color</h3>
   </div>
 </div>
-```html
+~~~html
 <div class="align-center">
   <h3 class="bordered brand-teal">A bordered heading with color</h3>
 </div>
-```
+~~~
 
 Bordered headings display white against dark and colored backgrounds.
 
@@ -71,11 +71,11 @@ Bordered headings display white against dark and colored backgrounds.
     <h3 class="bordered">A bordered heading on purple</h3>
   </div>
 </div>
-```html
+~~~html
 <div class="align-center brand-purple-bg padding-2x">
   <h3 class="bordered">A bordered heading on purple</h3>
 </div>
-```
+~~~
 
 ## Large and Small modifiers
 
@@ -101,7 +101,7 @@ There may be times when you need to use a specific heading tag for semantics but
   </div>
 </div>
 
-```html
+~~~html
 <h1 class="large">Large H1 <span class="subheading">subheading</span></h1>
 <h1>Normal H1 <span class="subheading">subheading</span></h1>
 <h1 class="small">Small H1 <span class="subheading">subheading</span></h1>
@@ -113,4 +113,4 @@ There may be times when you need to use a specific heading tag for semantics but
 <h3 class="large">Large H3 <span class="subheading">subheading</span></h3>
 <h3>Normal H3 <span class="subheading">subheading</span></h3>
 <h3 class="small">Small H3 <span class="subheading">subheading</span></h3>
-```
+~~~

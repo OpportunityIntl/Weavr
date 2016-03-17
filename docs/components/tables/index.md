@@ -38,7 +38,7 @@ For a minimal table, with no headings or footer, there's no need to wrap your ro
   </div>
 </div>
 
-```html
+~~~html
 <table>
   <tr>
     <td>Datum 1</td>
@@ -48,19 +48,19 @@ For a minimal table, with no headings or footer, there's no need to wrap your ro
   </tr>
   ...
 </table>
-```
+~~~
 
 ## Responsive tables
 
 In lieu of elaborate responsive table solutions (which typically involved some Javascript wizardry and additional markup), you can simply wrap a table in a `div` with the class `.responsive-table`. If the available width is smaller than the minimum width of the table, the `.responsive-table` div will become scrollable. This is in place in all the demos on this page if you want to resize your browser and see it in action.
 
-```html
+~~~html
 <div class="responsive-table">
   <table>
     ...
   </table>
 </div>
-```
+~~~
 
 ## Table headings
 
@@ -101,7 +101,7 @@ If you want headings for your table columns, it's time to start using the `thead
   </div>
 </div>
 
-```html
+~~~html
 <table>
   <thead>
     <tr>
@@ -121,7 +121,7 @@ If you want headings for your table columns, it's time to start using the `thead
     ...
   </tbody>
 </table>
-```
+~~~
 
 ## Table footer
 
@@ -170,7 +170,7 @@ Use the `tfoot` tag to create a footer rows for you table. A thicker and darker 
   </div>
 </div>
 
-```html
+~~~html
 <table>
   <thead>
     ...
@@ -187,7 +187,7 @@ Use the `tfoot` tag to create a footer rows for you table. A thicker and darker 
     </tr>
   </tfoot>
 </table>
-```
+~~~
 
 ## Row headings
 
@@ -239,7 +239,7 @@ To add row headings on your table. Use a `th` in place of the first `td` in your
   </div>
 </div>
 
-```html
+~~~html
 <table>
   <thead>
     <tr>
@@ -261,7 +261,7 @@ To add row headings on your table. Use a `th` in place of the first `td` in your
     ...
   </tbody>
 </table>
-```
+~~~
 
 ## Hiding cells
 
@@ -302,7 +302,7 @@ If you want to segment body rows into sections, you can add the `.section-separa
   </div>
 </div>
 
-```html
+~~~html
 <table>
   <tr>
     ...
@@ -317,7 +317,7 @@ If you want to segment body rows into sections, you can add the `.section-separa
     ...
   </tr>
 </table>
-```
+~~~
 
 ## A complex demo
 
@@ -495,7 +495,7 @@ Here's an example of a more complex table that incorporates everything. It also 
   </div>
 </div>
 
-```html
+~~~html
 <table>
   <thead>
     <tr>
@@ -663,4 +663,4 @@ Here's an example of a more complex table that incorporates everything. It also 
     </tr>
   </tfoot>
 </table>
-```
+~~~

@@ -75,7 +75,7 @@ Lists can be displayed without bullets or numbers with the `.no-list-style` modi
   </div>
 </div>
 
-```html
+~~~html
 <ul class="no-list-style">
   <li>Unordered list item 1</li>
   <li>Unordered list item 2</li>
@@ -87,7 +87,7 @@ Lists can be displayed without bullets or numbers with the `.no-list-style` modi
   <li>Ordered list item 2</li>
   <li>Ordered list item 3</li>
 </ol>
-```
+~~~
 
 ## Inline lists
 
@@ -101,10 +101,10 @@ Add the modifier class `.inline` to display list items inline instead of stacked
   </ul>
 </div>
 
-```html
+~~~html
 <ul class="inline">
   <li>Inline list item 1</li>
   <li>Inline list item 2</li>
   <li>Inline list item 3</li>
 </ul>
-```
+~~~

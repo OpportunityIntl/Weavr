@@ -9,9 +9,9 @@ To add a background image to an element, add the class `.bg-image` along with th
   <div class="viewport-half-height bg-image" style="background-image: url('{{ site.baseurl }}/images/sample-bg-image.jpg')"></div> 
 </div>
 
-```html
+~~~html
 <div class="viewport-half-height bg-image" style="background-image: url('{{ site.baseurl }}/images/sample-bg-image.jpg')"></div> 
-```
+~~~
 
 ## Background position
 
@@ -23,9 +23,9 @@ For example, to position the background image to be vertically aligned to the to
   <div class="viewport-half-height bg-image top" style="background-image: url('{{ site.baseurl }}/images/sample-bg-image.jpg')"></div> 
 </div>
 
-```html
+~~~html
 <div class="viewport-half-height bg-image top" style="background-image: url('{{ site.baseurl }}/images/sample-bg-image.jpg')"></div> 
-```
+~~~
 
 To align the background image to the bottom right of the container:
 
@@ -33,9 +33,9 @@ To align the background image to the bottom right of the container:
   <div class="viewport-half-height bg-image bottom right" style="background-image: url('{{ site.baseurl }}/images/sample-bg-image.jpg')"></div> 
 </div>
 
-```html
+~~~html
 <div class="viewport-half-height bg-image bottom right" style="background-image: url('{{ site.baseurl }}/images/sample-bg-image.jpg')"></div> 
-```
+~~~
 
 <div class="alert">
   <p>
@@ -61,11 +61,11 @@ You can overlay a background color over the background image by adding the `.ove
   </div>
 </div>
 
-```html
+~~~html
 <div class="viewport-one-third-height bg-image overlay brand-dark-purple-bg" style="background-image: url('{{ site.baseurl }}/images/sample-bg-image.jpg')"></div>
 <div class="viewport-one-third-height bg-image overlay brand-teal-bg" style="background-image: url('{{ site.baseurl }}/images/sample-bg-image.jpg')"></div>
 <div class="viewport-one-third-height bg-image overlay brand-white-bg" style="background-image: url('{{ site.baseurl }}/images/sample-bg-image.jpg')"></div>
-```
+~~~
 
 ## Gradient overlays
 
@@ -85,8 +85,8 @@ Turn the background color overlay into a gradient by adding the `.gradient` modi
   </div>
 </div>
 
-```html
+~~~html
   <div class="viewport-one-third-height bg-image overlay brand-white-bg gradient" style="background-image: url('{{ site.baseurl }}/images/sample-bg-image.jpg')"></div>
   <div class="viewport-one-third-height bg-image overlay brand-offwhite-bg gradient" style="background-image: url('{{ site.baseurl }}/images/sample-bg-image.jpg')"></div>
   <div class="viewport-one-third-height bg-image overlay brand-darkgray-bg gradient" style="background-image: url('{{ site.baseurl }}/images/sample-bg-image.jpg')"></div>
-```
+~~~

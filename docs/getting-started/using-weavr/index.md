@@ -10,7 +10,7 @@ To get started, add the `dist/weavr` directory to your project's assets director
 
 Below is a minimal boilerplate HTML document for Weavr. Note that Weavr's Javascript, as well as the [Javascript libraries built on top of Weavr]({{ site.baseurl }}/docs/libraries), depend on jQuery. Be sure to load jQuery before loading `OI.weavr.min.js` and any other scripts that depend on Weavr.
 
-```html
+~~~html
 <!DOCTYPE html>
 <html>
   <head>
@@ -37,13 +37,13 @@ Below is a minimal boilerplate HTML document for Weavr. Note that Weavr's Javasc
     <!-- load scripts that depend on Weavr here -->
   </body>
 </html>
-```
+~~~
 
 ## Viewport Units bug on iOS Safari
 
 Before version 8, iOS Safari had a nasty bug that caused viewport units (`vh`, `vw`, `vmin`, `vmax`) to go haywire. Weavr uses the `vh` unit for its viewport height layout classes. If you need to support iOS Safari 7 and below, Weavr comes with a "buggyfill" script, `OI.viewportunitsfix.js`. Include it in your document's `<head>`, after your stylesheets:
 
-```html
+~~~html
 <script type="text/javascript" src="path/to/weavr/OI.viewportunitsfix.min.js"></script>
 <script type="text/javascript">
   iOSSafariViewportUnitsFix([
@@ -55,4 +55,4 @@ Before version 8, iOS Safari had a nasty bug that caused viewport units (`vh`, `
     {selector: '.viewport-one-third-height', property: 'height', value: '33vh'}
   ]);
 </script>
-```
+~~~

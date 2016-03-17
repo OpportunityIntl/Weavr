@@ -9,9 +9,9 @@ Weavr comes with graphic files for the many variations of Opportunity's web logo
   <span class="oi-logo"></span>
 </div>
 
-```html
+~~~html
 <span class="oi-logo"></span>
-```
+~~~
 
 <div class="alert">
   <p>
@@ -37,11 +37,11 @@ Weavr includes country-specific logos for Opportunity's fundraising partners in 
   </div>
 </div>
 
-```html
+~~~html
 <span class="oi-logo"></span>
 <span class="oi-logo australia"></span>
 <span class="oi-logo canada"></span>
-```
+~~~
 
 ## Size
 
@@ -61,11 +61,11 @@ The logo can be displayed smaller (ideal for mobile) by adding the modifier clas
   </div>
 </div>
 
-```html
+~~~html
 <span class="oi-logo small"></span>
 <span class="oi-logo small australia"></span>
 <span class="oi-logo small canada"></span>
-```
+~~~
 
 ## Color variations
 
@@ -95,13 +95,13 @@ The Opportunity logo comes in monochromatic variations for each of the primary b
   </div>
 </div>
 
-```html
+~~~html
 <div class="oi-logo"></div>
 <div class="oi-logo brand-purple"></div>
 <div class="oi-logo brand-teal"></div>
 <div class="oi-logo brand-orange"></div>
 <div class="oi-logo brand-pink"></div>
-```
+~~~
 
 ## On dark backgrounds
 
@@ -118,7 +118,7 @@ For logos placed on a dark or colored background, add the `.on-dark` class to ge
   </div>
 </div>
 
-```html
+~~~html
 <span class="oi-logo on-dark"></span>
 <span class="oi-logo canada brand-teal on-dark"></span>
-```
+~~~

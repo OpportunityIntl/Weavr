@@ -325,9 +325,9 @@ These classes place the icon in a `:before` pseudo-element, so you can technical
 
 If you need to place a standalone icon (i.e. you're not prepending the icon to an element that already contains content), use the `i` element:
 
-```html
+~~~html
   <i class="icon-cart"></i>
-```
+~~~
 
 <div class="alert">
   <p>

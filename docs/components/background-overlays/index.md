@@ -5,25 +5,25 @@ layout: documentation
 
 The foundational markup to overlay content over a container (i.e. place content over a background image, or align content over a container with a fixed height and/or width) is this:
 
-```html
+~~~html
 <div class="overlay">
   <div class="content-overlay">
     Content goes here.
   </div>
 </div>
-```
+~~~
 
 This sets the position of the `.overlay` container to `relative` and the position of the `.content-overlay` to `absolute`.
 
 You're going to need more than this, though. Since the content has `position: absolute`, it has no impact on the size of its container, so the `.overlay` container needs to have a defined height. Without a defined height, the content overlay will be overlapping awkwardly with other elements after the container. For this demo, let's define the container's height with a viewport height class.
 
-```html
+~~~html
 <div class="overlay viewport-half-height">
   <div class="content-overlay">
     Content goes here.
   </div>
 </div>
-```
+~~~
 
 But this still isn't a realistic use-case. If we're overlaying content over a container (as opposed to just placing the content _in_ the container) it's probably for one of two reasons: 1) to vertically center content over a container with a defined height that's taller than the content, or 2) to position text over an image, probably with a color overlay between the background image and the content for legibility.
 
@@ -43,13 +43,13 @@ Let's take a look. We're adding a background color to the container to better il
   </div>
 </div>
 
-```html
+~~~html
 <div class="overlay viewport-half-height brand-offwhite-bg">
   <div class="content-overlay middle align-center">
     <h1>Overlaid heading</h1>
   </div>
 </div>
-```
+~~~
 
 ### Content taller than container
 
@@ -75,13 +75,13 @@ Let's take the demo from above and add a background image and background color o
   </div>
 </div>
 
-```html
+~~~html
 <div class="viewport-half-height bg-image overlay brand-dark-purple-bg" style="background-image: url('{{ site.baseurl }}/images/sample-bg-image.jpg')">
   <div class="content-overlay middle align-center padding-2x">
     Content goes here.
   </div>
 </div>
-```
+~~~
 
 ### Positioning content
 
@@ -97,13 +97,13 @@ For example, to position the content at the bottom of the container:
   </div>
 </div>
 
-```html
+~~~html
 <div class="viewport-half-height bg-image overlay brand-dark-purple-bg" style="background-image: url('{{ site.baseurl }}/images/sample-bg-image.jpg')">
   <div class="content-overlay bottom align-center padding-2x">
     Content goes here.
   </div>
 </div>
-```
+~~~
 
 And if we want to position the content in the bottom right of the container:
 
@@ -115,13 +115,13 @@ And if we want to position the content in the bottom right of the container:
   </div>
 </div>
 
-```html
+~~~html
 <div class="viewport-half-height bg-image overlay brand-dark-purple-bg" style="background-image: url('{{ site.baseurl }}/images/sample-bg-image.jpg')">
   <div class="content-overlay bottom right align-center padding-2x">
     Content goes here.
   </div>
 </div>
-```
+~~~
 
 <div class="alert">
   <p>
@@ -146,7 +146,7 @@ Here are a few examples of ways you might combine background images, background 
   </div>
 </div>
 
-```html
+~~~html
 <div class="viewport-half-height bg-image overlay brand-dark-purple-bg" style="background-image: url('{{ site.baseurl }}/images/sample-bg-image.jpg')">
   <div class="content-overlay padding-2x middle align-center">
     <div class="contained-6 centered">
@@ -157,7 +157,7 @@ Here are a few examples of ways you might combine background images, background 
     </div>
   </div>
 </div>
-```
+~~~
 
 <div class="demo">
   <div class="viewport-half-height bg-image overlay brand-darkgray-bg gradient" style="background-image: url('{{ site.baseurl }}/images/sample-bg-image.jpg')">
@@ -171,7 +171,7 @@ Here are a few examples of ways you might combine background images, background 
   </div>
 </div>
 
-```html
+~~~html
 <div class="viewport-half-height bg-image overlay brand-darkgray-bg gradient" style="background-image: url('{{ site.baseurl }}/images/sample-bg-image.jpg')">
   <div class="content-overlay padding-2x bottom align-center">
     <h1 class="margin-bottom-1x">Here's a heading</h1>
@@ -181,7 +181,7 @@ Here are a few examples of ways you might combine background images, background 
     </div>
   </div>
 </div>
-```
+~~~
 
 <div class="demo">
   <div class="viewport-half-height bg-image overlay" style="background-image: url('{{ site.baseurl }}/images/sample-bg-image.jpg')">
@@ -191,10 +191,10 @@ Here are a few examples of ways you might combine background images, background 
   </div>
 </div>
 
-```html
+~~~html
 <div class="viewport-half-height bg-image overlay" style="background-image: url('{{ site.baseurl }}/images/sample-bg-image.jpg')">
   <div class="content-overlay padding-2x bottom right brand-purple-bg">
     <h1>Here's a heading <span class="subheading">and subheading</span></h1>
   </div>
 </div>
-```
+~~~

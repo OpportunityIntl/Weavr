@@ -14,14 +14,14 @@ Make a button by adding the `.btn` class along with a [color class]({{ site.base
   </div>
 </div>
 
-```html
+~~~html
 <div class="inline-buttons">
   <a class="btn brand-purple-bg">Link</a>
   <input type="submit" value="Submit Input" class="btn brand-teal-bg" />
   <input type="button" value="Button Input" class="btn brand-orange-bg" />
   <button type="button" class="btn brand-pink-bg">Button</button>
 </div>
-```
+~~~
 
 Weavr's buttons come in three sizes, two styles, and each of Opportunity's brand colors. They can either be displayed as `inline-block` elements (i.e. only as wide as needed to accommodate the button text) or `block` elements, filling the width of their container and centering the text.
 
@@ -36,12 +36,12 @@ Buttons are displayed as `inline-block` by default. Add the `.block` modifier cl
   <button type="button" class="btn block brand-purple-bg">A block button</button>
 </div>
 
-```html
+~~~html
 <p class="align-center">
   <button type="button" class="btn brand-purple-bg">An inline button</button>
 </p>
 <button type="button" class="btn block brand-purple-bg">A block button</button>
-```
+~~~
 
 If you need to display buttons side-by-side, use the `.inline-buttons` class on the buttons' container. It will provide a uniform gutter between the buttons and gracefully handle wrapping as the viewport gets smaller. You can see this in action in the first demo on this page.
 
@@ -56,12 +56,12 @@ There are two styles available: "normal" and "ghost". For normal buttons, be sur
   </div>
 </div>
 
-```html
+~~~html
 <p class="inline-buttons">
   <button type="button" class="btn brand-orange-bg">A normal button</button>
   <button type="button" class="btn brand-orange ghost">A ghost button</button>
 </p>
-```
+~~~
 
 ## Sizes
 
@@ -82,7 +82,7 @@ Make a button larger or smaller by adding the modifier classes `.large` and `.sm
   </p>
 </div>
 
-```html
+~~~html
 <p class="inline-buttons">
   <a class="btn large brand-pink-bg">Large button</a>
   <a class="btn large brand-pink ghost">Large button</a>
@@ -95,7 +95,7 @@ Make a button larger or smaller by adding the modifier classes `.large` and `.sm
   <a class="btn small brand-teal-bg">Small button</a>
   <a class="btn small brand-teal ghost">Small button</a>
 </p>
-```
+~~~
 
 ## Disabled buttons
 
@@ -116,7 +116,7 @@ Buttons can be disabled by adding the `disabled` attribute (for `input`s and `bu
   </p>
 </div>
 
-```html
+~~~html
 <p class="inline-buttons">
   <a class="btn brand-purple-bg disabled">Disabled link</a>
   <input type="submit" class="btn brand-purple-bg" value="Disabled submit input" disabled />
@@ -129,7 +129,7 @@ Buttons can be disabled by adding the `disabled` attribute (for `input`s and `bu
   <input type="button" class="btn ghost brand-purple" value="Disabled button input" disabled />
   <button class="btn ghost brand-purple" disabled>Disabled button</button>
 </p>
-```
+~~~
 
 ## White buttons
 
@@ -230,7 +230,7 @@ If a button is contained in an element with a background color class, you can us
   </div>
 </div>
 
-```html
+~~~html
 <div class="row no-gutter">
   <div class="col col-4 t-col-6 m-col-12">
     <div class="brand-pink-bg padding-1x">
@@ -271,4 +271,4 @@ If a button is contained in an element with a background color class, you can us
 
 ...
 
-```
+~~~

@@ -42,7 +42,7 @@ Weavr contains default styles for labels, text inputs (as well as email, phone, 
   </form>
 </div>
 
-```html
+~~~html
 <form>
   <div class="row">
     <div class="col col-4 t-col-6 m-col-12">
@@ -75,7 +75,7 @@ Weavr contains default styles for labels, text inputs (as well as email, phone, 
     </div>
   </div>
 </form>
-```
+~~~
 
 ## Select boxes
 
@@ -95,7 +95,7 @@ Wrap select boxes in a `div` with the class `.select`. This allows us to style t
   </div>
 </div>
 
-```html
+~~~html
 <label for="select-box">Select box</label>
 <div class="select">
   <select name="select" id="select-box">
@@ -105,7 +105,7 @@ Wrap select boxes in a `div` with the class `.select`. This allows us to style t
     <option value="3">Option 3</option>
   </select>
 </div>
-```
+~~~
 
 ## Radio buttons and checkboxes
 
@@ -142,7 +142,7 @@ This requires that the input be placed immediately before the label. Add the cla
   </div>
 </div>
 
-```html
+~~~html
 <label>Radio buttons</label>
 
 <input type="radio" id="radio-group-1" name="radio-group" value="1">
@@ -164,7 +164,7 @@ This requires that the input be placed immediately before the label. Add the cla
 
 <input type="checkbox" id="checkbox-3" value="3">
 <label for="checkbox-3" class="checkbox">Checkbox 3</label>
-```
+~~~
 
 ### Inline radio buttons and checkboxes
 
@@ -201,7 +201,7 @@ To display radio buttons and checkboxes as inline elements, just add the `.inlin
   </div>
 </div>
 
-```html
+~~~html
 <label>Inline radio buttons</label>
 
 <input type="radio" id="inline-radio-group-1" name="inline-radio-group" value="1">
@@ -223,7 +223,7 @@ To display radio buttons and checkboxes as inline elements, just add the `.inlin
 
 <input type="checkbox" id="inline-checkbox-3" value="3">
 <label for="inline-checkbox-3" class="checkbox inline">Inline checkbox 3</label>
-```
+~~~
 
 ### Small radio buttons and checkboxes
 
@@ -260,7 +260,7 @@ To make the radio buttons and checkboxes smaller, add the `.small` modifier clas
   </div>
 </div>
 
-```html
+~~~html
 <label>Small radio buttons</label>
 
 <input type="radio" id="small-inline-radio-group-1" name="small-inline-radio-group small" value="1">
@@ -282,7 +282,7 @@ To make the radio buttons and checkboxes smaller, add the `.small` modifier clas
 
 <input type="checkbox" id="small-inline-checkbox-3" value="3">
 <label for="small-inline-checkbox-3" class="checkbox inline small">Option 3</label>
-```
+~~~
 
 ### Radio inputs styled as buttons
 
@@ -309,7 +309,7 @@ Radio inputs can be styled to look like buttons. Just use the class `.btn` inste
   </div>
 </div>
 
-```html
+~~~html
 <div class="row">
   <div class="col col-3 t-col-6 m-col-6">
     <input type="radio" id="button-radio-1" name="button-radio" value="20">
@@ -328,7 +328,7 @@ Radio inputs can be styled to look like buttons. Just use the class `.btn` inste
     <label class="btn" for="button-radio-4">$150</label>
   </div>
 </div>
-```
+~~~
 
 ## Icon inputs
 
@@ -344,13 +344,13 @@ You also display icons in an input to provide a more immediate visual indicator 
   </div>
 </div>
 
-```html
+~~~html
 <label for="icon-input-1">Email</label>
 <div class="input-icon">
   <input type="email" id="icon-input-1" placeholder="e.g. joe@example.com">
   <i class="icon-mail"></i>
 </div>
-```
+~~~
 
 ## Prefixes and Postfixes
 
@@ -375,7 +375,7 @@ You can add an input "prefix" or "postfix" by wrapping the input in a `div` with
   </div>
 </div>
 
-```html
+~~~html
 <label for="input-group-1">Input group 1</label>
 <div class="input-group">
   <div class="prefix">prefix</div>
@@ -387,7 +387,7 @@ You can add an input "prefix" or "postfix" by wrapping the input in a `div` with
   <input type="text" name="name" id="input-group-2" placeholder="Text input">
   <div class="postfix">postfix</div>
 </div>
-```
+~~~
 
 <div class="alert">
   <p>
@@ -414,7 +414,7 @@ Create alert boxes with `.alert`. Add `.error`, `.warning`, or `.success` to cha
   </div>
 </div>
 
-```html
+~~~html
 <div class="alert">
   This is a general alert.
 </div>
@@ -427,7 +427,7 @@ Create alert boxes with `.alert`. Add `.error`, `.warning`, or `.success` to cha
 <div class="alert success">
   This is a success alert.
 </div>
-```
+~~~
 
 You can put paragraphs, lists, etc. inside the alert:
 
@@ -442,7 +442,7 @@ You can put paragraphs, lists, etc. inside the alert:
   </div>
 </div>
 
-```html
+~~~html
 <div class="alert error">
   <p>Here's a paragraph inside an alert, followed by:</p>
   <ul>
@@ -451,7 +451,7 @@ You can put paragraphs, lists, etc. inside the alert:
     <li>list</li>
   </ul>
 </div>
-```
+~~~
 
 ## Errors
 

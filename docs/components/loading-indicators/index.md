@@ -11,9 +11,9 @@ To add the loading indicator, add a `div` or `span` with the class `.loading-ind
   <span class="loading-indicator"></span>
 </div>
 
-```html
+~~~html
 <span class="loading-indicator"></span>
-```
+~~~
 
 ## Sizes
 
@@ -25,11 +25,11 @@ Add the modifier classes `.large` or `.small` to maker the indicator larger or s
 <span class="loading-indicator large"></span>
 </div>
 
-```html
+~~~html
 <span class="loading-indicator small"></span>
 <span class="loading-indicator"></span>
 <span class="loading-indicator large"></span>
-```
+~~~
 
 ## Against colored backgrounds
 
@@ -55,7 +55,7 @@ A monochromatic version of the indicator is available for use against colored ba
   </div>
 </div>
 
-```html
+~~~html
 <div class="brand-purple-bg">
   <span class="loading-indicator monochromatic"></span>
 </div>
@@ -65,7 +65,7 @@ A monochromatic version of the indicator is available for use against colored ba
 <div class="brand-orange-bg">
   <span class="loading-indicator monochromatic"></span>
 </div>
-```
+~~~
 
 ## Loading indicator on buttons
 
@@ -75,9 +75,9 @@ You might want to display the loading indicator in a button to indicate that an 
   <button type="button" class="btn brand-pink-bg"><span class="loading-indicator monochromatic">Processing</span></button>
 </div>
 
-```html
+~~~html
 <button type="button" class="btn brand-pink-bg"><span class="loading-indicator monochromatic">Processing</span></button>
-```
+~~~
 
 <div class="alert">
   <p>

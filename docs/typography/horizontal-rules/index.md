@@ -33,9 +33,9 @@ You can add the `.large` modifier class to make the horizontal rule thicker:
   <hr class="large">
 </div>
 
-```html
+~~~html
 <hr class="large">
-```
+~~~
 
 Add the `.decorative` modifier class to use a more "decorative" version of a horizontal rule. We put "decorative" in quotes because Opportunity's brand doesn't really include decorative elements, but we needed a term to describe this less practical but more interesting treatment of horizontal rules.
 
@@ -49,6 +49,6 @@ Add the `.decorative` modifier class to use a more "decorative" version of a hor
   </p>
 </div>
 
-```html
+~~~html
 <hr class="large decorative">
-```
+~~~

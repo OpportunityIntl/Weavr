@@ -159,7 +159,7 @@ For the desktop breakpoint, the columns should add up to 12. For breakpoints bel
   </div>
 </div>
 
-```html
+~~~html
 <!-- excerpts of the markup in the demo -->
 <div class="row">
   <div class="col col-4 t-col-4 m-col-12">
@@ -196,7 +196,7 @@ For the desktop breakpoint, the columns should add up to 12. For breakpoints bel
     ...
   </div>
 </div>
-```
+~~~
 
 <div class="alert">
   <p>
@@ -244,11 +244,11 @@ The gutter between columns can be made larger, smaller, or removed with the modi
   </div>
 </div>
 
-```html
+~~~html
 <div class="row large-gutter">
   ...
 </div>
-```
+~~~
 
 <div class="demo">
   <div class="row small-gutter">
@@ -283,11 +283,11 @@ The gutter between columns can be made larger, smaller, or removed with the modi
   </div>
 </div>
 
-```html
+~~~html
 <div class="row small-gutter">
   ...
 </div>
-```
+~~~
 
 <div class="demo">
   <div class="row no-gutter">
@@ -322,11 +322,11 @@ The gutter between columns can be made larger, smaller, or removed with the modi
   </div>
 </div>
 
-```html
+~~~html
 <div class="row no-gutter">
   ...
 </div>
-```
+~~~
 
 ## Nested grids
 
@@ -366,7 +366,7 @@ Gutters are only applied to a row's first-level columns, so you can safely nest 
   </div>
 </div>
 
-```html
+~~~html
 <div class="row no-gutter brand-offwhite-bg">
   <div class="col col-8 t-col-8 m-col-12">
     <div class="padding-2x">
@@ -398,4 +398,4 @@ Gutters are only applied to a row's first-level columns, so you can safely nest 
     </div>
   </div>
 </div>
-```
+~~~

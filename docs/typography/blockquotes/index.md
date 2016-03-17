@@ -14,14 +14,14 @@ For blockquotes, wrap the quote in a paragraph tag, and wrap the optional citati
   </blockquote>
 </div>
 
-```html
+~~~html
 <blockquote>
   <p>
     I have learned so much from my Trust Group, including how to save and manage money properly. Now, because of Opportunity, my business has been more successful and I have been able to pay for my children’s education."
   </p>
   <cite>Sheilah Jjumba, clothing store owner, Uganda</cite>
 </blockquote>
-```
+~~~
 
 If there are multiple blockquote elements in a row, the borders will collapse automatically:
 
@@ -40,7 +40,7 @@ If there are multiple blockquote elements in a row, the borders will collapse au
   </blockquote>
 </div>
 
-```html
+~~~html
 <blockquote>
   <p>
     When I first met my Opportunity loan officer, I had nothing. Now, I have truly become a provider, and I know my future is in God’s hands.”
@@ -53,7 +53,7 @@ If there are multiple blockquote elements in a row, the borders will collapse au
   </p>
   <cite>Maureen Alinaiswe, Student at the Nuvila Primary School in Uganda</cite>
 </blockquote>
-```
+~~~
 
 ## No borders
 
@@ -68,14 +68,14 @@ To remove the border above and below the blockquote, add the `.no-border` modifi
   </blockquote>
 </div>
 
-```html
+~~~html
 <blockquote class="no-border">
   <p>
     I have learned so much from my Trust Group, including how to save and manage money properly. Now, because of Opportunity, my business has been more successful and I have been able to pay for my children’s education."
   </p>
   <cite>Sheilah Jjumba, clothing store owner, Uganda</cite>
 </blockquote>
-```
+~~~
 
 ## Large blockquotes
 
@@ -90,11 +90,11 @@ Add the `.large` modifier class to make a blockquote larger.
   </blockquote>
 </div>
 
-```html
+~~~html
 <blockquote class="large no-border">
   <p>
     I have learned so much from my Trust Group, including how to save and manage money properly. Now, because of Opportunity, my business has been more successful and I have been able to pay for my children’s education."
   </p>
   <cite>Sheilah Jjumba, clothing store owner, Uganda</cite>
 </blockquote>
-```
+~~~

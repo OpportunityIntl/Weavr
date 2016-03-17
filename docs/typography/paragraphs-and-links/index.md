@@ -43,11 +43,11 @@ Paragraphs can be modified with the `.large` and `.small` modifiers:
   </p>
 </div>
 
-```html
+~~~html
 <p class="large">This is a large paragraph...</p>
 <p>This is a normal paragraph...</p>
 <p class="small">This is a small paragraph...</p>
-```
+~~~
 
 ## Alignment
 
@@ -59,8 +59,8 @@ You can change the text alignment of a paragraph (or any other element) with Wea
   <p class="align-right">This paragraph is right aligned</p>
 </div>
 
-```html
+~~~html
 <p class="align-left">This paragraph is left aligned</p>
 <p class="align-center">This paragraph is center aligned</p>
 <p class="align-right">This paragraph is right aligned</p>
-```
+~~~
