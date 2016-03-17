@@ -50,12 +50,12 @@
 
 {% if prev_page %}
 <div class="float-left">
-  <a href="{{ prev_page_url }}" class="btn brand-purple-bg">Previous: {{ prev_page_title }}</a>
+  <a href="{{ site.baseurl }}{{ prev_page_url }}" class="btn brand-purple-bg">Previous: {{ prev_page_title }}</a>
 </div>
 {% endif %}
 
 {% if next_page %}
 <div class="align-right">
-  <a href="{{ next_page_url }}" class="btn brand-purple-bg">Next: {{ next_page_title }}</a>
+  <a href="{{ site.baseurl }}{{ next_page_url }}" class="btn brand-purple-bg">Next: {{ next_page_title }}</a>
 </div>
 {% endif %}
