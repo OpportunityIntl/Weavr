@@ -3,7 +3,7 @@
 {% assign next_page = nil %}
 
 {% for section in site.nav %}
-  {% capture section_url %}{{ site.baseurl }}/{{ section.url }}/{% endcapture %}
+  {% capture section_url %}/{{ section.url }}/{% endcapture %}
   
   {% if current_page %}
     {% unless next_page %}
