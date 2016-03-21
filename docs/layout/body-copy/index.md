@@ -117,4 +117,27 @@ Asides can also float to the right of the copy by adding the modifier class `.ri
 
 ## Full-width elements
 
-With the exception of asides, all elements in a body-copy layout will be constrained to the narrower width. To make an element extend to the left and right edges of the container, add the `.full-width` modifier class.
+All elements except for asides and `div`s are automatically constrained to the narrower body copy column width in a body copy layout. To make an element break out of the body copy column and extend to the left and right edges of the container, add the `.full-width` modifier class. For example, say you have a `figure` with a photo and caption. Figures are by default constrained to the width of the body copy column, but if you want the element instead to extend to the edges of the body-copy container:
+
+~~~html
+<div class="contained-9 centered body-copy">
+  <p>...</p>
+  <figure class="full-width">
+    <img ... />
+    <figcaption>...</figcaption>
+  </figure>
+  <p>...</p>
+</div>
+~~~
+
+On the flip side, if you have a `div` (which by default expands to fill the width of the body copy container) that you want to be contained within the body copy column, add the appropriate [container class]({{ site.baseurl }}/docs/layout/containers) and center the `div` with `.centered`. For example:
+
+~~~html
+<div class="contained-9 centered body-copy">
+  <p>...</p>
+  <div class="contained-6 centered">
+    ...
+  </div>
+  <p>...</p>
+</div>
+~~~
