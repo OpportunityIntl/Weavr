@@ -32,7 +32,16 @@ Body copy layouts can be created within 6-, 9-, or 12-column containers. Start b
       <figcaption>Caption for this full-width image</figcaption>
     </figure>
     <p>
-      Ugh you probably haven't heard of them ethical cred chia tattooed bespoke, tote bag leggings locavore fap forage aesthetic. Street art migas lomo, keffiyeh stumptown yuccie biodiesel aesthetic flexitarian pop-up kombucha church-key bespoke. Blog knausgaard mumblecore tofu. Twee chicharrones hoodie forage, lo-fi cronut pug. Post-ironic chicharrones next level, polaroid VHS pickled fashion axe selfies cronut mustache craft beer tofu gochujang.
+      Ugh you probably haven't heard of them ethical cred chia tattooed bespoke, tote bag leggings locavore forage aesthetic. Street art migas lomo, keffiyeh stumptown yuccie biodiesel aesthetic flexitarian pop-up kombucha church-key bespoke. Blog knausgaard mumblecore tofu. Twee chicharrones hoodie forage, lo-fi cronut pug. Post-ironic chicharrones next level, polaroid VHS pickled fashion axe selfies cronut mustache craft beer tofu gochujang.
+    </p>
+    <aside class="right">
+      <figure>
+        <img src="{{ site.baseurl }}/images/sample-bg-image.jpg" />
+        <figcaption>Asides can have images and captions too</figcaption>
+      </figure>
+    </aside>
+    <p>
+      Kale chips neutra squid flexitarian locavore iPhone irony shoreditch artisan aesthetic, shabby chic authentic blog chicharrones meditation. Austin lo-fi man bun, post-ironic blue bottle chicharrones jean shorts raw denim. Pitchfork austin freegan try-hard, 8-bit authentic ugh. Craft beer crucifix you probably haven't heard of them cliche wayfarers fixie. Paleo +1 kogi celiac, try-hard listicle heirloom poutine intelligentsia semiotics freegan vegan roof party. Artisan ugh fingerstache, PBR&B keffiyeh portland schlitz knausgaard drinking vinegar chillwave venmo vice 90's. Squid thundercats deep v green juice, yr wayfarers yuccie.
     </p>
   </div>
 </div>
@@ -56,7 +65,16 @@ Body copy layouts can be created within 6-, 9-, or 12-column containers. Start b
     <figcaption>Caption for this full-width image</figcaption>
   </figure>
   <p>
-    Ugh you probably haven't heard of them ethical cred chia tattooed bespoke, tote bag leggings locavore fap forage aesthetic. Street art migas lomo, keffiyeh stumptown yuccie biodiesel aesthetic flexitarian pop-up kombucha church-key bespoke. Blog knausgaard mumblecore tofu. Twee chicharrones hoodie forage, lo-fi cronut pug. Post-ironic chicharrones next level, polaroid VHS pickled fashion axe selfies cronut mustache craft beer tofu gochujang.
+    Ugh you probably haven't heard of them ethical cred chia tattooed bespoke, tote bag leggings locavore forage aesthetic. Street art migas lomo, keffiyeh stumptown yuccie biodiesel aesthetic flexitarian pop-up kombucha church-key bespoke. Blog knausgaard mumblecore tofu. Twee chicharrones hoodie forage, lo-fi cronut pug. Post-ironic chicharrones next level, polaroid VHS pickled fashion axe selfies cronut mustache craft beer tofu gochujang.
+  </p>
+  <aside class="right">
+    <figure>
+      <img src="{{ site.baseurl }}/images/sample-bg-image.jpg" />
+      <figcaption>Asides can have images and captions too</figcaption>
+    </figure>
+  </aside>
+  <p>
+    Kale chips neutra squid flexitarian locavore iPhone irony shoreditch artisan aesthetic, shabby chic authentic blog chicharrones meditation. Austin lo-fi man bun, post-ironic blue bottle chicharrones jean shorts raw denim. Pitchfork austin freegan try-hard, 8-bit authentic ugh. Craft beer crucifix you probably haven't heard of them cliche wayfarers fixie. Paleo +1 kogi celiac, try-hard listicle heirloom poutine intelligentsia semiotics freegan vegan roof party. Artisan ugh fingerstache, PBR&B keffiyeh portland schlitz knausgaard drinking vinegar chillwave venmo vice 90's. Squid thundercats deep v green juice, yr wayfarers yuccie.
   </p>
 </div>
 ~~~
