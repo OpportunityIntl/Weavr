@@ -40,7 +40,7 @@ You can define subheadings and "superheadings" (we may have made that term up) b
 
 ## Bordered headings
 
-Headings can also be displayed with a border and padding for visual effect. Simply add the class `.bordered` to the heading tag, along with an optional [color class]({{ site.baseurl }}/docs/components/colors). The `.bordered` class sets the display to `inline-block`.
+Headings can also be displayed with a border and padding for visual effect. Simply add the class `.bordered` to the heading tag, along with an optional [color class]({{ site.baseurl }}/docs/elements/colors). The `.bordered` class sets the display to `inline-block`.
 
 <div class="demo">
   <div class="align-center">

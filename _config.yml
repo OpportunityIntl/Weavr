@@ -42,8 +42,8 @@ nav:
         url: 'display-classes'
       - title: 'Body Copy'
         url: 'body-copy'
-  - title: 'Components'
-    url: 'docs/components'
+  - title: 'Elements'
+    url: 'docs/elements'
     pages:
       - title: 'Colors'
         url: 'colors'

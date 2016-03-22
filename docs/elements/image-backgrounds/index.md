@@ -45,7 +45,7 @@ To align the background image to the bottom right of the container:
 
 ## Background color overlays
 
-You can overlay a background color over the background image by adding the `.overlay` class along with a [background color class]({{ site.baseurl }}/docs/components/colors). Check out the [Weavr Kitchen Sink]({{ site.baseurl }}/kitchensink/#background-images-and-overlays) for a demonstration of all the possible color overlays.
+You can overlay a background color over the background image by adding the `.overlay` class along with a [background color class]({{ site.baseurl }}/docs/elements/colors). Check out the [Weavr Kitchen Sink]({{ site.baseurl }}/kitchensink/#background-images-and-overlays) for a demonstration of all the possible color overlays.
 
 <div class="demo">
   <div class="row large-gutter">

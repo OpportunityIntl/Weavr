@@ -3,7 +3,7 @@ title: 'Buttons'
 layout: documentation
 ---
 
-Make a button by adding the `.btn` class along with a [color class]({{ site.baseurl }}/docs/components/colors) to a submit input, button input, link, or button element.
+Make a button by adding the `.btn` class along with a [color class]({{ site.baseurl }}/docs/elements/colors) to a submit input, button input, link, or button element.
 
 <div class="demo">
   <div class="inline-buttons">

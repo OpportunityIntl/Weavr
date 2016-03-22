@@ -332,7 +332,7 @@ Radio inputs can be styled to look like buttons. Just use the class `.btn` inste
 
 ## Icon inputs
 
-You also display icons in an input to provide a more immediate visual indicator of what the field is asking for. Wrap the input in a `div` with the class `.input-icon`, and add an `i` tag after the input with one of Weavr's [icon classes]({{ site.baseurl }}/docs/components/icons). If you want a `label` for this input, be sure to place it outside the `.input-icon` element.
+You also display icons in an input to provide a more immediate visual indicator of what the field is asking for. Wrap the input in a `div` with the class `.input-icon`, and add an `i` tag after the input with one of Weavr's [icon classes]({{ site.baseurl }}/docs/elements/icons). If you want a `label` for this input, be sure to place it outside the `.input-icon` element.
 
 <div class="demo">
   <div class="contained-3 centered">
