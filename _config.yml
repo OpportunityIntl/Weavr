@@ -1,7 +1,7 @@
 # Site settings
 title: Weavr
-baseurl: "/Weavr" # the subpath of your site, e.g. /blog/
-url: "http://opportunityintl.github.io" # the base hostname & protocol for your site
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://weavr.opportunity.org" # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown
