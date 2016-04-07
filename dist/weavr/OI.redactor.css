@@ -2187,21 +2187,6 @@
 .redactor-editor .margin-bottom-6x {
   margin-bottom: 90px;
 }
-.redactor-editor .desktop-only {
-  display: none;
-}
-.redactor-editor .netbook-only {
-  display: none;
-}
-.redactor-editor .tablet-only {
-  display: none;
-}
-.redactor-editor .mobile-only {
-  display: block;
-}
-.redactor-editor .no-mobile {
-  display: none;
-}
 .redactor-editor .bg-image {
   background-size: cover;
   background-position: center;
@@ -2810,24 +2795,6 @@
   .redactor-editor .margin-bottom-6x {
     margin-bottom: 120px;
   }
-  .redactor-editor .desktop-only {
-    display: none;
-  }
-  .redactor-editor .netbook-only {
-    display: none;
-  }
-  .redactor-editor .tablet-only {
-    display: block;
-  }
-  .redactor-editor .mobile-only {
-    display: none;
-  }
-  .redactor-editor .no-tablet {
-    display: none;
-  }
-  .redactor-editor .no-mobile {
-    display: block;
-  }
 }
 @media (min-width: 800px) {
   /* netbook */
@@ -2899,21 +2866,6 @@
   }
   .redactor-editor .row.grid-10 > .col.n-col-10 {
     width: 100%;
-  }
-  .redactor-editor .desktop-only {
-    display: none;
-  }
-  .redactor-editor .netbook-only {
-    display: block;
-  }
-  .redactor-editor .tablet-only {
-    display: none;
-  }
-  .redactor-editor .mobile-only {
-    display: none;
-  }
-  .redactor-editor .no-netbook {
-    display: none;
   }
 }
 @media (min-width: 1024px) {
@@ -3011,20 +2963,8 @@
   .redactor-editor .row.grid-10 > .col.col-10 {
     width: 100%;
   }
-  .redactor-editor .desktop-only {
-    display: block;
-  }
-  .redactor-editor .netbook-only {
-    display: none;
-  }
-  .redactor-editor .tablet-only {
-    display: none;
-  }
-  .redactor-editor .mobile-only {
-    display: none;
-  }
   .redactor-editor .no-desktop {
-    display: none;
+    display: none !important;
   }
 }
 @media (min-width: 1260px) {
@@ -3069,5 +3009,20 @@
   }
   .redactor-editor .oi-logo.on-dark.small.canada {
     background-image: url("images/logo-ca-ondark-sprite-mobile-2x.png");
+  }
+}
+@media (max-width: 479px) {
+  .redactor-editor .no-mobile {
+    display: none !important;
+  }
+}
+@media (min-width: 480px) and (max-width: 799px) {
+  .redactor-editor .no-tablet {
+    display: none !important;
+  }
+}
+@media (min-width: 800px) and (max-width: 1023px) {
+  .redactor-editor .no-netbook {
+    display: none !important;
   }
 }
