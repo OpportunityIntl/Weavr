@@ -863,15 +863,6 @@ button.btn { display: inline-block; width: auto; }
 /*************************/
 /**** Display classes ****/
 /*************************/
-.desktop-only { display: none; }
-
-.netbook-only { display: none; }
-
-.tablet-only { display: none; }
-
-.mobile-only { display: block; }
-
-.no-mobile { display: none; }
 /***************************/
 /**** Background images ****/
 /***************************/
@@ -1018,12 +1009,7 @@ button.btn { display: inline-block; width: auto; }
   .margin-top-5x { margin-top: 100px; }
   .margin-bottom-5x { margin-bottom: 100px; }
   .margin-top-6x { margin-top: 120px; }
-  .margin-bottom-6x { margin-bottom: 120px; } .desktop-only { display: none; }
-  .netbook-only { display: none; }
-  .tablet-only { display: block; }
-  .mobile-only { display: none; }
-  .no-tablet { display: none; }
-  .no-mobile { display: block; } }
+  .margin-bottom-6x { margin-bottom: 120px; } }
 @media (min-width: 800px) { /* netbook */ .row > .col.n-col-1 { width: 8.33333%; }
   .row > .col.n-col-2 { width: 16.66667%; }
   .row > .col.n-col-3 { width: 25%; }
@@ -1044,11 +1030,7 @@ button.btn { display: inline-block; width: auto; }
   .row.grid-10 > .col.n-col-7 { width: 70%; }
   .row.grid-10 > .col.n-col-8 { width: 80%; }
   .row.grid-10 > .col.n-col-9 { width: 90%; }
-  .row.grid-10 > .col.n-col-10 { width: 100%; } .desktop-only { display: none; }
-  .netbook-only { display: block; }
-  .tablet-only { display: none; }
-  .mobile-only { display: none; }
-  .no-netbook { display: none; } }
+  .row.grid-10 > .col.n-col-10 { width: 100%; } }
 @media (min-width: 1024px) { /* laptop */ .row { margin-bottom: 20px; } .row.large-gutter { margin-bottom: 40px; }
   .row.large-gutter:last-child { margin-bottom: 0; } .row.large-gutter > .col { margin-bottom: 0; } .row.small-gutter { margin-bottom: 10px; }
   .row.small-gutter:last-child { margin-bottom: 0; } .row.small-gutter > .col { margin-bottom: 0; } .row > .col { margin-bottom: 0; } .row > .col.col-1 { width: 8.33333%; }
@@ -1071,11 +1053,7 @@ button.btn { display: inline-block; width: auto; }
   .row.grid-10 > .col.col-7 { width: 70%; }
   .row.grid-10 > .col.col-8 { width: 80%; }
   .row.grid-10 > .col.col-9 { width: 90%; }
-  .row.grid-10 > .col.col-10 { width: 100%; } .desktop-only { display: block; }
-  .netbook-only { display: none; }
-  .tablet-only { display: none; }
-  .mobile-only { display: none; }
-  .no-desktop { display: none; } }
+  .row.grid-10 > .col.col-10 { width: 100%; } .no-desktop { display: none !important; } }
 @media (min-width: 1260px) { /* desktop */ }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi) { .oi-logo { background-image: url("images/logo-onwhite-sprite-2x.png"); }
   .oi-logo.australia { background-image: url("images/logo-au-onwhite-sprite-2x.png"); }
@@ -1086,3 +1064,6 @@ button.btn { display: inline-block; width: auto; }
   .oi-logo.on-dark.canada { background-image: url("images/logo-ca-ondark-sprite-2x.png"); } .oi-logo.on-dark.small { background-image: url("images/logo-ondark-sprite-mobile-2x.png"); }
   .oi-logo.on-dark.small.australia { background-image: url("images/logo-au-ondark-sprite-mobile-2x.png"); }
   .oi-logo.on-dark.small.canada { background-image: url("images/logo-ca-ondark-sprite-mobile-2x.png"); } }
+@media (max-width: 479px) { .no-mobile { display: none !important; } }
+@media (min-width: 480px) and (max-width: 799px) { .no-tablet { display: none !important; } }
+@media (min-width: 800px) and (max-width: 1023px) { .no-netbook { display: none !important; } }

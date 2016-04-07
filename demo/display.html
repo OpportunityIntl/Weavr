@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    
+    <title>Testing display classes</title>
+    
+    <link rel="stylesheet" href="../dist/weavr/OI.weavr.css">
+    
+    <script type="text/javascript" src="//use.typekit.net/owg8owx.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+    
+  </head>
+  <body>
+    
+    <div class="row no-gutter">
+      <!-- Desktop only -->
+      <div class="col col-3 n-col-6 t-col-6 m-col-12">
+        <div class="padding-2x">
+          <h2 class="align-center">Desktop Only</h2>
+          <p>
+            If everything is working properly, this column should only have content on desktops.
+          </p>
+          <hr class="large">
+          
+          <p class="no-mobile no-tablet no-netbook">
+            Paragraph copy goes here.
+          </p>
+          <a class="btn brand-purple-bg no-mobile no-tablet no-netbook">Inline button</a>
+          <a class="btn brand-purple-bg no-mobile no-tablet no-netbook block">Block button</a>
+          <form class="no-mobile no-tablet no-netbook">
+            This is a form element.
+          </form>
+          <label for="desktop-input" class="no-mobile no-tablet no-netbook">Label</label>
+          <input type="text" id="desktop-input" placeholder="Text input" class="no-mobile no-tablet no-netbook" />
+          <div class="select no-mobile no-tablet no-netbook">
+            <select>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+            </select>
+          </div>
+          <hr class="no-mobile no-tablet no-netbook">
+        </div>
+      </div>
+      
+      <!-- Netbook only -->
+      <div class="col col-3 n-col-6 t-col-6 m-col-12">
+        <div class="padding-2x">
+          <h2 class="align-center">Netbook Only</h2>
+          <p>
+            If everything is working properly, this column should only have content on netbooks.
+          </p>
+          <hr class="large">
+          
+          <p class="no-mobile no-tablet no-desktop">
+            Paragraph copy goes here.
+          </p>
+          <a class="btn brand-purple-bg no-mobile no-tablet no-desktop">Inline button</a>
+          <a class="btn brand-purple-bg no-mobile no-tablet no-desktop block">Block button</a>
+          <form class="no-mobile no-tablet no-desktop">
+            This is a form element.
+          </form>
+          <label for="tablet-input" class="no-mobile no-tablet no-desktop">Label</label>
+          <input type="text" id="tablet-input" placeholder="Text input" class="no-mobile no-tablet no-desktop" />
+          <div class="select no-mobile no-tablet no-desktop">
+            <select>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+            </select>
+          </div>
+          <hr class="no-mobile no-tablet no-desktop">
+        </div>
+      </div>
+      
+      <!-- Tablet only -->
+      <div class="col col-3 n-col-6 t-col-6 m-col-12">
+        <div class="padding-2x">
+          <h2 class="align-center">Tablet Only</h2>
+          <p>
+            If everything is working properly, this column should only have content on tablets.
+          </p>
+          <hr class="large">
+          
+          <p class="no-mobile no-netbook no-desktop">
+            Paragraph copy goes here.
+          </p>
+          <a class="btn brand-purple-bg no-mobile no-netbook no-desktop">Inline button</a>
+          <a class="btn brand-purple-bg no-mobile no-netbook no-desktop block">Block button</a>
+          <form class="no-mobile no-netbook no-desktop">
+            This is a form element.
+          </form>
+          <label for="tablet-input" class="no-mobile no-netbook no-desktop">Label</label>
+          <input type="text" id="tablet-input" placeholder="Text input" class="no-mobile no-netbook no-desktop" />
+          <div class="select no-mobile no-netbook no-desktop">
+            <select>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+            </select>
+          </div>
+          <hr class="no-mobile no-netbook no-desktop">
+        </div>
+      </div>
+      
+      <!-- Mobile only -->
+      <div class="col col-3 n-col-6 t-col-6 m-col-12">
+        <div class="padding-2x">
+          <h2 class="align-center">Mobile Only</h2>
+          <p>
+            If everything is working properly, this column should only have content on mobile.
+          </p>
+          <hr class="large">
+          
+          <p class="no-tablet no-netbook no-desktop">
+            Paragraph copy goes here.
+          </p>
+          <a class="btn brand-purple-bg no-tablet no-netbook no-desktop">Inline button</a>
+          <a class="btn brand-purple-bg no-tablet no-netbook no-desktop block">Block inline button</a>
+          <form class="no-tablet no-netbook no-desktop">
+            This is a form element.
+          </form>
+          <label for="mobile-input" class="no-tablet no-netbook no-desktop">Label</label>
+          <input type="text" id="mobile-input" placeholder="Text input" class="no-tablet no-netbook no-desktop" />
+          <div class="select no-tablet no-netbook no-desktop">
+            <select>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+            </select>
+          </div>
+          <hr class="no-tablet no-netbook no-desktop">
+        </div>
+      </div>
+    </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script type="text/javascript" src="../dist/weavr/OI.weavr.min.js"></script>
+    
+    <!--[if lte IE 9]>
+      <script type="text/javascript" src="dist/weavr/OI.placeholder.min.js"></script>
+    <![endif]-->
+    
+  </body>
+</html>
