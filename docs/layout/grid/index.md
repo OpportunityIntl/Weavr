@@ -399,3 +399,110 @@ Gutters are only applied to a row's first-level columns, so you can safely nest 
   </div>
 </div>
 ~~~
+
+## Ten-column grids
+
+Weavr recently added support for 10-column grids. Configure a row to support 10 columns instead of the default 12 by adding `.grid-10`. Columns are defined in the same way as before, with `.col-[number of columns]`, but keep in mind that the number is now out of a maximum of 10.
+
+<div class="demo">
+  <div class="row grid-10">
+    <div class="col col-1 t-col-2 m-col-5">
+      <div class="brand-purple-bg padding-1x"></div>
+    </div>
+    <div class="col col-1 t-col-2 m-col-5">
+      <div class="brand-purple-bg padding-1x"></div>
+    </div>
+    <div class="col col-1 t-col-2 m-col-5">
+      <div class="brand-purple-bg padding-1x"></div>
+    </div>
+    <div class="col col-1 t-col-2 m-col-5">
+      <div class="brand-purple-bg padding-1x"></div>
+    </div>
+    <div class="col col-1 t-col-2 m-col-5">
+      <div class="brand-purple-bg padding-1x"></div>
+    </div>
+    <div class="col col-1 t-col-2 m-col-5">
+      <div class="brand-purple-bg padding-1x"></div>
+    </div>
+    <div class="col col-1 t-col-2 m-col-5">
+      <div class="brand-purple-bg padding-1x"></div>
+    </div>
+    <div class="col col-1 t-col-2 m-col-5">
+      <div class="brand-purple-bg padding-1x"></div>
+    </div>
+    <div class="col col-1 t-col-2 m-col-5">
+      <div class="brand-purple-bg padding-1x"></div>
+    </div>
+    <div class="col col-1 t-col-2 m-col-5">
+      <div class="brand-purple-bg padding-1x"></div>
+    </div>
+  </div>
+  <div class="row grid-10">
+    <div class="col col-2 t-col-2 m-col-5">
+      <div class="brand-purple-bg padding-1x"></div>
+    </div>
+    <div class="col col-2 t-col-2 m-col-5">
+      <div class="brand-purple-bg padding-1x"></div>
+    </div>
+    <div class="col col-2 t-col-2 m-col-5">
+      <div class="brand-purple-bg padding-1x"></div>
+    </div>
+    <div class="col col-2 t-col-2 m-col-5">
+      <div class="brand-purple-bg padding-1x"></div>
+    </div>
+    <div class="col col-2 t-col-2 m-col-10">
+      <div class="brand-purple-bg padding-1x"></div>
+    </div>
+  </div>
+  <div class="row grid-10">
+    <div class="col col-4 t-col-4 m-col-10">
+      <div class="brand-purple-bg padding-1x"></div>
+    </div>
+    <div class="col col-2 t-col-2 m-col-10">
+      <div class="brand-purple-bg padding-1x"></div>
+    </div>
+    <div class="col col-4 t-col-4 m-col-10">
+      <div class="brand-purple-bg padding-1x"></div>
+    </div>
+  </div>
+  <div class="row grid-10">
+    <div class="col col-5 t-col-5 m-col-10">
+      <div class="brand-purple-bg padding-1x"></div>
+    </div>
+    <div class="col col-5 t-col-5 m-col-10">
+      <div class="brand-purple-bg padding-1x"></div>
+    </div>
+  </div>
+  <div class="row grid-10">
+    <div class="col col-10 t-col-10 m-col-10">
+      <div class="brand-purple-bg padding-1x"></div>
+    </div>
+  </div>
+</div>
+
+~~~html
+<div class="row grid-10">
+  <div class="col col-4 t-col-4 m-col-10">
+    ...
+  </div>
+  <div class="col col-2 t-col-2 m-col-10">
+    ...
+  </div>
+  <div class="col col-4 t-col-4 m-col-10">
+    ...
+  </div>
+</div>
+<div class="row grid-10">
+  <div class="col col-5 t-col-5 m-col-10">
+    ...
+  </div>
+  <div class="col col-5 t-col-5 m-col-10">
+    ...
+  </div>
+</div>
+<div class="row grid-10">
+  <div class="col col-10 t-col-10 m-col-10">
+    ...
+  </div>
+</div>
+~~~
